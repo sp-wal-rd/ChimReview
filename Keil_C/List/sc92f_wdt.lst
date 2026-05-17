@@ -1,0 +1,1124 @@
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SC92F_WDT
+OBJECT MODULE PLACED IN ..\Output\sc92f_wdt.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.exe ..\FWLib\SC92F_Lib\src\sc92f_wdt.c OMF2 DEFINE(SC92F836xB) LARGE INCDIR(
+                    -..\FWLib\SC92F_Lib\inc;..\User;..\User\HeadFiles;..\User\global;..\Project\Chimney\Workspace\UiBoard\Keil_C\Project\..\U
+                    -ser\global;..\User\stateflow;..\User\hal\wm_UiBoardControl;..\User\hal\wm_gpio_map;..\User\hal\wm_led_control;..\Drivers
+                    -;..\User\hal\wm_7seg_control;..\User\hal\wm_uart;..\Drivers\TKDriver\C) BROWSE DEBUG OBJECTEXTEND OPTIMIZE(8,SIZE) CODE 
+                    -NOCOND SYMBOLS LISTINCLUDE PRINT(..\List\sc92f_wdt.lst) OBJECT(..\Output\sc92f_wdt.obj)
+
+line level    source
+
+   1          /**
+   2           ******************************************************************************
+   3           * @file    sc92f_wdt.c
+   4           * @author  SOC AE Team
+   5           * @version V1.2.1
+   6           * @date    2025-07-24
+   7           * @brief   WDT function module
+   8           ******************************************************************************
+   9           * @attention
+  10           *
+  11           *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
+  12           *intended for use with SinOne products. No other uses are authorized. This 
+  13           *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
+  14           *all applicable laws, including copyright laws. 
+  15           *2.The software which is for guidance only aims at providing customers with 
+  16           *coding information regarding their products in order for them to save time. 
+  17           *As a result, SinOne shall not be held liable for any direct, indirect or 
+  18           *consequential damages with respect to any claims arising from the content of 
+  19           *such software and/or the use made by customers of the coding information 
+  20           *contained herein in connection with their products.
+  21           *
+  22           *  COPYRIGHT 2025 SinOne Microelectronics
+  23           ******************************************************************************
+  24           */
+  25          
+  26          /* Includes ------------------------------------------------------------------*/
+  27          #include "sc92f_wdt.h"
+   1      =1  /**
+   2      =1   ******************************************************************************
+   3      =1   * @file    sc92f_wdt.h
+   4      =1   * @author  SOC AE Team
+   5      =1   * @version V1.2.1
+   6      =1   * @date    2025-07-24
+   7      =1   * @brief   Header file of WDT module.
+   8      =1   ******************************************************************************
+   9      =1   * @attention
+  10      =1   *
+  11      =1   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
+  12      =1   *intended for use with SinOne products. No other uses are authorized. This 
+  13      =1   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
+  14      =1   *all applicable laws, including copyright laws. 
+  15      =1   *2.The software which is for guidance only aims at providing customers with 
+  16      =1   *coding information regarding their products in order for them to save time. 
+  17      =1   *As a result, SinOne shall not be held liable for any direct, indirect or 
+  18      =1   *consequential damages with respect to any claims arising from the content of 
+  19      =1   *such software and/or the use made by customers of the coding information 
+  20      =1   *contained herein in connection with their products.
+  21      =1   *
+  22      =1   *  COPYRIGHT 2025 SinOne Microelectronics
+  23      =1   ******************************************************************************
+  24      =1   */
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 2   
+
+  25      =1   
+  26      =1  /* Define to prevent recursive inclusion -------------------------------------*/
+  27      =1  #ifndef _sc92f_WDT_H_
+  28      =1  #define _sc92f_WDT_H_
+  29      =1  
+  30      =1  /* Includes ------------------------------------------------------------------*/
+  31      =1  #include "sc92f.h"
+   1      =2  /**
+   2      =2   ******************************************************************************
+   3      =2   * @file    Header file of SC92 Series
+   4      =2   * @author  SOC AE Team
+   5      =2   * @version V1.2.1
+   6      =2   * @date    2025-07-24
+   7      =2   * @brief   Header file of SC92 Series.
+   8      =2   ******************************************************************************
+   9      =2   * @attention
+  10      =2   *
+  11      =2   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
+  12      =2   *intended for use with SinOne products. No other uses are authorized. This 
+  13      =2   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
+  14      =2   *all applicable laws, including copyright laws. 
+  15      =2   *2.The software which is for guidance only aims at providing customers with 
+  16      =2   *coding information regarding their products in order for them to save time. 
+  17      =2   *As a result, SinOne shall not be held liable for any direct, indirect or 
+  18      =2   *consequential damages with respect to any claims arising from the content of 
+  19      =2   *such software and/or the use made by customers of the coding information 
+  20      =2   *contained herein in connection with their products.
+  21      =2   *
+  22      =2   *  COPYRIGHT 2025 SinOne Microelectronics
+  23      =2   ******************************************************************************
+  24      =2   */
+  25      =2   
+  26      =2  /* Includes ------------------------------------------------------------------*/
+  27      =2  #ifndef _sc92f_H
+  28      =2  #define _sc92f_H
+  29      =2  
+  30      =2  #ifdef SC92F841x
+  33      =2  
+  34      =2  #ifdef SC92Fx41xB
+  37      =2  
+  38      =2  #ifdef SC92F741x
+  41      =2  
+  42      =2  
+  43      =2  #ifdef SC92F854x
+  46      =2  
+  47      =2  #ifdef SC92F754x
+  50      =2  
+  51      =2  #ifdef SC92F844xB
+  54      =2  
+  55      =2  #ifdef SC92F744xB
+  58      =2  
+  59      =2  #ifdef SC92F846xB
+  62      =2  
+  63      =2  #ifdef SC92F746xB
+  66      =2  
+  67      =2  #ifdef SC92F836xB
+  68      =2    #include "SC92F836xB_C.H"
+   1      =3                                                   /*--------------------------------------------------------------------------
+   2      =3  SC92F836XB_C.H
+   3      =3  
+   4      =3  C Header file for SC92F836XB microcontroller.
+   5      =3  Copyright (c) 2018 Shenzhen SinOne Microelectronics CO., Ltd.
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 3   
+
+   6      =3  All rights reserved.
+   7      =3  ÉîÛÚÊÐÈüÔªÎ¢µç×Ó¹É·ÝÓÐÏÞ¹«Ë¾
+   8      =3  °æ±¾ºÅ:  V2.0    
+   9      =3  ÈÕÆÚ:  2018.08.24
+  10      =3  --------------------------------------------------------------------------*/
+  11      =3  #ifndef _SC92F836XB_H_
+  12      =3  #define _SC92F836XB_H_
+  13      =3  
+  14      =3  /* ------------------- ×Ö½Ú¼Ä´æÆ÷-------------------- */
+  15      =3  ///*CPU*/
+  16      =3  ///ÀÛ¼ÓÆ÷£Á
+  17      =3  sfr     ACC         = 0xE0;             
+  18      =3  ///Í¨ÓÃ¼Ä´æÆ÷B          
+  19      =3  sfr     B           = 0xF0;             
+  20      =3  ///³ÌÐò×´Ì¬×Ö           
+  21      =3  sfr     PSW         = 0xD0;             
+  22      =3  ///Êý¾ÝÖ¸Õë¸ß8Î»                
+  23      =3  sfr     DPH     = 0x83;         
+  24      =3  ///Êý¾ÝÖ¸ÕëµÍ8Î»                
+  25      =3  sfr     DPL         = 0x82;             
+  26      =3  ///¶ÑÕ»Ö¸Õë     
+  27      =3  sfr     SP          = 0x81;             
+  28      =3                  
+  29      =3  
+  30      =3  /*system*/
+  31      =3  ///µçÔ´¹ÜÀí¿ØÖÆ¼Ä´æÆ÷
+  32      =3  sfr     PCON    = 0x87;         
+  33      =3  
+  34      =3  /*interrupt*/
+  35      =3  ///ÖÐ¶ÏÓÅÏÈ¼¶¿ØÖÆ¼Ä´æÆ÷1
+  36      =3  sfr     IP1     = 0XB9;     
+  37      =3  ///ÖÐ¶ÏÓÅÏÈÈ¨¿ØÖÆ¼Ä´æÆ÷
+  38      =3  sfr     IP          = 0xB8;             
+  39      =3  ///ÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+  40      =3  sfr     IE          = 0xA8;             
+  41      =3  ///ÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷1
+  42      =3  sfr     IE1     = 0XA9;         
+  43      =3  
+  44      =3  /*PORT*/
+  45      =3  ///P5¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  46      =3  sfr     P5PH    = 0xDA;         
+  47      =3  ///P5¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  48      =3  sfr         P5CON       = 0xD9;         
+  49      =3  ///P5¿ÚÊý¾Ý¼Ä´æÆ÷
+  50      =3  sfr     P5          = 0xD8;             
+  51      =3  ///P2¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  52      =3  sfr     P2PH    = 0xA2;         
+  53      =3  ///P2¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  54      =3  sfr         P2CON       = 0xA1;         
+  55      =3  ///P2¿ÚÊý¾Ý¼Ä´æÆ÷
+  56      =3  sfr     P2          = 0xA0;             
+  57      =3  ///P1¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  58      =3  sfr     P1PH    = 0x92;         
+  59      =3  ///P1¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷   
+  60      =3  sfr         P1CON       = 0x91;         
+  61      =3  ///P1¿ÚÊý¾Ý¼Ä´æÆ÷
+  62      =3  sfr     P1          = 0x90;             
+  63      =3  ///P0¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  64      =3  sfr         P0PH        = 0x9B;         
+  65      =3  ///P0¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  66      =3  sfr         P0CON       = 0x9A;         
+  67      =3  ///P0¿ÚÊý¾Ý¼Ä´æÆ÷
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 4   
+
+  68      =3  sfr     P0          = 0x80;             
+  69      =3  ///IOHÉèÖÃ¼Ä´æÆ÷
+  70      =3  sfr     IOHCON  = 0x97;         
+  71      =3  
+  72      =3  /*TIMER*/
+  73      =3  ///¶¨Ê±Æ÷ÆµÂÊ¿ØÖÆ¼Ä´æÆ÷
+  74      =3  sfr     TMCON   = 0x8E;         
+  75      =3  ///¶¨Ê±Æ÷1¸ß8Î»
+  76      =3  sfr     TH1         = 0x8D;             
+  77      =3  ///¶¨Ê±Æ÷0¸ß8Î»
+  78      =3  sfr     TH0         = 0x8C;             
+  79      =3  ///¶¨Ê±Æ÷1µÍ8Î»
+  80      =3  sfr     TL1         = 0x8B;             
+  81      =3  ///¶¨Ê±Æ÷0µÍ8Î»
+  82      =3  sfr     TL0         = 0x8A;             
+  83      =3  ///¶¨Ê±Æ÷¹¤×÷Ä£Ê½¼Ä´æÆ÷
+  84      =3  sfr     TMOD    = 0x89;         
+  85      =3  ///¶¨Ê±Æ÷¿ØÖÆ¼Ä´æÆ÷
+  86      =3  sfr     TCON    = 0x88;         
+  87      =3  ///¶¨Ê±Æ÷2¿ØÖÆ¼Ä´æÆ÷
+  88      =3  sfr     T2CON   = 0xC8;     
+  89      =3  ///¶¨Ê±Æ÷2¹¤×÷Ä£Ê½¼Ä´æÆ÷
+  90      =3  sfr     T2MOD   = 0xC9;         
+  91      =3  ///¶¨Ê±Æ÷2ÖØÔØ/²¶×½µÍ8Î»
+  92      =3  sfr     RCAP2L  = 0xCA;     
+  93      =3  ///¶¨Ê±Æ÷2ÖØÔØ/²¶×½¸ß8Î»
+  94      =3  sfr     RCAP2H  = 0xCB;     
+  95      =3  ///¶¨Ê±Æ÷2µÍ8Î»
+  96      =3  sfr     TL2     = 0xCC;     
+  97      =3  ///¶¨Ê±Æ÷2¸ß8Î»
+  98      =3  sfr     TH2     = 0xCD;     
+  99      =3  
+ 100      =3  
+ 101      =3  /*ADC*/
+ 102      =3  ///ADC¹¦ÄÜÅäÖÃ¼Ä´æÆ÷0
+ 103      =3  sfr     ADCCFG0 = 0xAB;         
+ 104      =3  ///ADC¹¦ÄÜÅäÖÃ¼Ä´æÆ÷1
+ 105      =3  sfr         ADCCFG1 = 0xAC;             
+ 106      =3  ///ADC¹¦ÄÜÅäÖÃ¼Ä´æÆ÷2
+ 107      =3  sfr     ADCCFG2 = 0XAA;     
+ 108      =3  ///ADC¿ØÖÆ¼Ä´æÆ÷
+ 109      =3  sfr     ADCCON  = 0XAD;     
+ 110      =3  ///ADC ½á¹û¼Ä´æÆ÷
+ 111      =3  sfr     ADCVL   = 0xAE;         
+ 112      =3  ///ADC ½á¹û¼Ä´æÆ÷
+ 113      =3  sfr     ADCVH   = 0xAF;         
+ 114      =3  
+ 115      =3  /*PWM*/
+ 116      =3  ///PWMÉèÖÃ¼Ä´æÆ÷
+ 117      =3  sfr     PWMCFG  = 0xD1;         
+ 118      =3  ///PWM¿ØÖÆ¼Ä´æÆ÷
+ 119      =3  sfr     PWMCON  = 0xD2;         
+ 120      =3  ///PWMÖÜÆÚÉèÖÃ¼Ä´æÆ÷
+ 121      =3  sfr     PWMPRD  = 0xD3;         
+ 122      =3  ///PWMÕ¼¿Õ±ÈÉèÖÃ¼Ä´æÆ÷A
+ 123      =3  sfr     PWMDTYA = 0xD4;         
+ 124      =3  ///PWM0ÉèÖÃ¼Ä´æÆ÷
+ 125      =3  sfr     PWMDTY0 = 0xD5;         
+ 126      =3  ///PWM1ÉèÖÃ¼Ä´æÆ÷
+ 127      =3  sfr     PWMDTY1 = 0xD6;         
+ 128      =3  ///PWM2ÉèÖÃ¼Ä´æÆ÷
+ 129      =3  sfr     PWMDTY2 = 0xD7;         
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 5   
+
+ 130      =3  ///PWMÕ¼¿Õ±ÈÉèÖÃ¼Ä´æÆ÷B
+ 131      =3  sfr     PWMDTYB = 0xDC;         
+ 132      =3  ///PWM3ÉèÖÃ¼Ä´æÆ÷
+ 133      =3  sfr     PWMDTY3 = 0xDD;         
+ 134      =3  ///PWM4ÉèÖÃ¼Ä´æÆ÷
+ 135      =3  sfr     PWMDTY4 = 0xDE;         
+ 136      =3  ///PWM5ÉèÖÃ¼Ä´æÆ÷
+ 137      =3  sfr     PWMDTY5 = 0xDF;         
+ 138      =3  
+ 139      =3  ///*WatchDog*/
+ 140      =3  ///µÍÆµ¶¨Ê±Æ÷¿ØÖÆ¼Ä´æÆ÷
+ 141      =3  sfr         BTMCON  = 0XCE;     
+ 142      =3  ///WDT¿ØÖÆ¼Ä´æÆ÷
+ 143      =3  sfr     WDTCON  = 0xCF;         
+ 144      =3  
+ 145      =3  /*LCD*/
+ 146      =3  ///LCDµçÑ¹Êä³ö¿ØÖÆ¼Ä´æÆ÷
+ 147      =3  sfr     OTCON   = 0X8F;         
+ 148      =3  ///P0 LCD Bais Êä³ö¼Ä´æÆ÷
+ 149      =3  sfr     P0VO    = 0X9C;     
+ 150      =3  
+ 151      =3  /*INT*/
+ 152      =3  ///INT0 ÏÂ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 153      =3  sfr     INT0F   = 0XBA;         
+ 154      =3  ///INT0 ÉÏ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 155      =3  sfr     INT0R   = 0XBB;         
+ 156      =3  ///INT1 ÏÂ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 157      =3  sfr     INT1F   = 0XBC;         
+ 158      =3  ///INT1 ÉÏ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 159      =3  sfr     INT1R   = 0XBD;         
+ 160      =3  ///INT2 ÏÂ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 161      =3  sfr     INT2F   = 0XC6;         
+ 162      =3  ///INT2 ÉÏ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 163      =3  sfr     INT2R   = 0XC7;         
+ 164      =3  
+ 165      =3  /*IAP */
+ 166      =3  ///IAP¿ØÖÆ¼Ä´æÆ÷
+ 167      =3  sfr     IAPCTL  = 0xF6;         
+ 168      =3  ///IAPÊý¾Ý¼Ä´æÆ÷
+ 169      =3  sfr     IAPDAT  = 0xF5;         
+ 170      =3  ///IAPÀ©Õ¹µØÖ·¼Ä´æÆ÷
+ 171      =3  sfr     IAPADE  = 0xF4;     
+ 172      =3  ///IAPÐ´ÈëµØÖ·¸ßÎ»¼Ä´æÆ÷
+ 173      =3  sfr     IAPADH  = 0xF3;         
+ 174      =3  ///IAPÐ´ÈëµØÖ·µÍ8Î»¼Ä´æÆ÷
+ 175      =3  sfr     IAPADL  = 0xF2;         
+ 176      =3  ///IAP±£»¤¼Ä´æÆ÷
+ 177      =3  sfr     IAPKEY  = 0xF1;         
+ 178      =3  
+ 179      =3  /*uart*/
+ 180      =3  ///´®¿Ú¿ØÖÆ¼Ä´æÆ÷
+ 181      =3  sfr     SCON    = 0x98;     
+ 182      =3  ///´®¿ÚÊý¾Ý»º´æ¼Ä´æÆ÷
+ 183      =3  sfr     SBUF    = 0x99;     
+ 184      =3  
+ 185      =3  /*ÈýºÏÒ»*/
+ 186      =3  ///SPI¿ØÖÆ¼Ä´æÆ÷0
+ 187      =3  sfr     SSCON0  = 0X9D;   
+ 188      =3  ///SPI¿ØÖÆ¼Ä´æÆ÷1
+ 189      =3  sfr     SSCON1  = 0X9E;   
+ 190      =3  ///SPI¿ØÖÆ¼Ä´æÆ÷2
+ 191      =3  sfr     SSCON2  = 0X95;   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 6   
+
+ 192      =3  ///SPIÊý¾Ý¼Ä´æÆ÷
+ 193      =3  sfr     SSDAT   = 0X9F;   
+ 194      =3  
+ 195      =3  sfr     OPINX   = 0XFE; 
+ 196      =3  sfr     OPREG   = 0XFF;
+ 197      =3  sfr     EXADH   = 0XF7;
+ 198      =3  
+ 199      =3  /*Check Sum*/
+ 200      =3  ///Check Sum½á¹û¼Ä´æÆ÷µÍÎ»
+ 201      =3  sfr     CHKSUML = 0XFC;   
+ 202      =3  ///Check Sum½á¹û¼Ä´æÆ÷¸ßÎ»
+ 203      =3  sfr     CHKSUMH = 0XFD;   
+ 204      =3  
+ 205      =3  /*³Ë³ý·¨*/
+ 206      =3  ///À©Õ¹ÀÛ¼ÓÆ÷0
+ 207      =3  sfr     EXA0    = 0xE9;   
+ 208      =3  ///À©Õ¹ÀÛ¼ÓÆ÷1
+ 209      =3  sfr     EXA1    = 0xEA;   
+ 210      =3  ///À©Õ¹ÀÛ¼ÓÆ÷2
+ 211      =3  sfr     EXA2    = 0xEB;   
+ 212      =3  ///À©Õ¹ÀÛ¼ÓÆ÷3
+ 213      =3  sfr     EXA3    = 0xEC;   
+ 214      =3  ///À©Õ¹B¼Ä´æÆ÷0
+ 215      =3  sfr     EXBL    = 0xED;   
+ 216      =3  ///À©Õ¹B¼Ä´æÆ÷1
+ 217      =3  sfr     EXBH    = 0xEE;   
+ 218      =3  ///ÔËËã¿ØÖÆ¼Ä´æÆ÷
+ 219      =3  sfr     OPERCON = 0xEF;   
+ 220      =3  
+ 221      =3  /* ------------------- Î»¼Ä´æÆ÷-------------------- */
+ 222      =3  /*PSW*/
+ 223      =3  ///±êÖ¾Î»               0:¼Ó·¨ÔËËã×î¸ßÎ»ÎÞ½øÎ»£¬»òÕß¼õ·¨ÔËËã×î¸ßÎ»ÎÞ½èÎ»Ê±              1:¼Ó·¨ÔËËã×î¸ßÎ»ÓÐ½øÎ»£¬»òÕß¼õ·¨ÔËËã×î¸ßÎ»Ó
+             -Ð½èÎ»Ê±
+ 224      =3  sbit    CY          = PSW^7;    
+ 225      =3  ///½øÎ»¸¨Öú±êÖ¾Î»       0:ÎÞ½èÎ»¡¢½øÎ»          1:¼Ó·¨ÔËËãÊ±ÔÚbit3Î»ÓÐ½øÎ»£¬»ò¼õ·¨ÔËËãÔÚbit3Î»ÓÐ½èÎ»Ê±
+ 226      =3  sbit    AC          = PSW^6;    
+ 227      =3  ///ÓÃ»§±êÖ¾Î»
+ 228      =3  sbit    F0          = PSW^5;    
+ 229      =3  ///¹¤×÷¼Ä´æÆ÷×éÑ¡ÔñÎ»
+ 230      =3  sbit    RS1         = PSW^4;    
+ 231      =3  ///¹¤×÷¼Ä´æÆ÷×éÑ¡ÔñÎ»
+ 232      =3  sbit    RS0         = PSW^3;    
+ 233      =3  ///Òç³ö±êÖ¾Î»
+ 234      =3  sbit    OV          = PSW^2;    
+ 235      =3  ///F1±êÖ¾
+ 236      =3  sbit    F1          = PSW^1;    
+ 237      =3  ///ÆæÅ¼±êÖ¾Î»           0:ACCÖÐ1µÄ¸öÊýÎªÅ¼Êý£¨°üÀ¨0¸ö£©         1:ACCÖÐ1µÄ¸öÊýÎªÆæÊý
+ 238      =3  sbit    P           = PSW^0;    
+ 239      =3  
+ 240      =3  /*T2CON*/
+ 241      =3  sbit    TF2     = T2CON^7;
+ 242      =3  sbit    EXF2    = T2CON^6;
+ 243      =3  sbit    RCLK    = T2CON^5;
+ 244      =3  sbit    TCLK    = T2CON^4;
+ 245      =3  sbit    EXEN2   = T2CON^3;
+ 246      =3  sbit    TR2         = T2CON^2;
+ 247      =3  sbit    T2      = T2CON^1;
+ 248      =3  sbit    CP          = T2CON^0;
+ 249      =3  
+ 250      =3  
+ 251      =3  /*IP*/
+ 252      =3  ///ADCÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨ ADCµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±               1:Éè¶¨ ADCµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 7   
+
+ 253      =3  sbit    IPADC   = IP^6;   
+ 254      =3  ///Timer2ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»   0:Éè¶¨ Timer2µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±            1:Éè¶¨Timer2µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 255      =3  sbit    IPT2    = IP^5;   
+ 256      =3  ///UARTÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨UARTµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±              1:Éè¶¨UARTµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 257      =3  sbit    IPUART  = IP^4;   
+ 258      =3  ///Timer1ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»   0:Éè¶¨ Timer 1µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±   1:Éè¶¨ Timer 1µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 259      =3  sbit    IPT1    = IP^3;   
+ 260      =3  ///INT1ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨INT1ÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±                    1:Éè¶¨INT1µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 261      =3  sbit    IPINT1  = IP^2;   
+ 262      =3  ///Timer0ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»   0:Éè¶¨ Timer 0µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±   1:Éè¶¨ Timer 0µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 263      =3  sbit    IPT0    = IP^1;   
+ 264      =3  ///INT0ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨INT0ÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±                    1:Éè¶¨INT0µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 265      =3  sbit    IPINT0  = IP^0;   
+ 266      =3  
+ 267      =3  /*IE*/
+ 268      =3  ///ÖÐ¶ÏÊ¹ÄÜµÄ×Ü¿ØÖÆ     0:¹Ø±ÕËùÓÐµÄÖÐ¶Ï        1:´ò¿ªËùÓÐµÄÖÐ¶Ï
+ 269      =3  sbit    EA        = IE^7;         
+ 270      =3  ///ADCÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ          0:¹Ø±ÕADCÖÐ¶Ï               1:´ò¿ªADCÖÐ¶Ï
+ 271      =3  sbit    EADC  = IE^6;     
+ 272      =3  ///Timer2ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ   0:¹Ø±ÕTimer2ÖÐ¶Ï    1:´ò¿ªTimer2ÖÐ¶Ï
+ 273      =3  sbit    ET2   = IE^5;     
+ 274      =3  ///UARTÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕUARTÖÐ¶Ï          1:´ò¿ªUARTÖÐ¶Ï
+ 275      =3  sbit    EUART = IE^4;     
+ 276      =3  ///Timer1ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ   0:¹Ø±ÕTIMER1ÖÐ¶Ï        1:´ò¿ªTIMER1ÖÐ¶Ï
+ 277      =3  sbit    ET1   = IE^3;     
+ 278      =3  ///INT1ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕINT1ÖÐ¶Ï      1:´ò¿ªINT1ÖÐ¶Ï
+ 279      =3  sbit    EINT1 = IE^2;     
+ 280      =3  ///Timer0ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ   0:¹Ø±ÕTIMER0ÖÐ¶Ï        1:´ò¿ªTIMER0ÖÐ¶Ï
+ 281      =3  sbit    ET0       = IE^1;         
+ 282      =3  ///INT0ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕINT0ÖÐ¶Ï      1:´ò¿ªINT0ÖÐ¶Ï
+ 283      =3  sbit    EINT0 = IE^0;     
+ 284      =3  
+ 285      =3  /*TCON*/
+ 286      =3  ///T1Òç³öÖÐ¶ÏÇëÇó±êÖ¾Î» T1²úÉúÒç³ö£¬·¢ÉúÖÐ¶ÏÊ±£¬Ó²¼þ½«TF1ÖÃÎª¡°1¡±£¬ÉêÇëÖÐ¶Ï£¬CPUÏìÓ¦Ê±£¬Ó²¼þÇå¡°0¡±¡£
+ 287      =3  sbit    TF1         = TCON^7;   
+ 288      =3  ///¶¨Ê±Æ÷T1µÄÔËÐÐ¿ØÖÆÎ» 0:Timer1½ûÖ¹¼ÆÊý                1:Timer1¿ªÊ¼¼ÆÊý
+ 289      =3  sbit    TR1         = TCON^6;   
+ 290      =3  ///T0Òç³öÖÐ¶ÏÇëÇó±êÖ¾Î» T0²úÉúÒç³ö£¬·¢ÉúÖÐ¶ÏÊ±£¬Ó²¼þ½«TF0ÖÃÎª¡°1¡±£¬ÉêÇëÖÐ¶Ï£¬CPUÏìÓ¦Ê±£¬Ó²¼þÇå¡°0¡±¡£
+ 291      =3  sbit    TF0         = TCON^5;   
+ 292      =3  ///¶¨Ê±Æ÷T0µÄÔËÐÐ¿ØÖÆÎ» 0:Timer0½ûÖ¹¼ÆÊý                1:Timer0¿ªÊ¼¼ÆÊý
+ 293      =3  sbit    TR0         = TCON^4;   
+ 294      =3  
+ 295      =3  /*SCON*/
+ 296      =3  sbit    SM0     = SCON^7;
+ 297      =3  sbit    SM1     = SCON^6;
+ 298      =3  sbit    SM2     = SCON^5;
+ 299      =3  sbit    REN     = SCON^4;
+ 300      =3  sbit    TB8     = SCON^3;
+ 301      =3  sbit    RB8     = SCON^2;
+ 302      =3  sbit    TI      = SCON^1;
+ 303      =3  sbit    RI      = SCON^0;
+ 304      =3  
+ 305      =3  /******************* P0 ******************
+ 306      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 307      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP06/P07
+ 308      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP02/P03/P04/P06/P07
+ 309      =3  ******************************************/
+ 310      =3  sbit    P07     = P0^7;
+ 311      =3  sbit    P06     = P0^6;
+ 312      =3  sbit    P05     = P0^5;
+ 313      =3  sbit    P04     = P0^4;
+ 314      =3  sbit    P03     = P0^3;
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 8   
+
+ 315      =3  sbit    P02     = P0^2;
+ 316      =3  sbit    P01     = P0^1;
+ 317      =3  sbit    P00     = P0^0;
+ 318      =3  
+ 319      =3  /******************* P1 ******************
+ 320      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 321      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP16/P17
+ 322      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP16/P17
+ 323      =3  ******************************************/
+ 324      =3  sbit    P17     = P1^7;
+ 325      =3  sbit    P16     = P1^6;
+ 326      =3  sbit    P15     = P1^5;
+ 327      =3  sbit    P14     = P1^4;
+ 328      =3  sbit    P13     = P1^3;
+ 329      =3  sbit    P12     = P1^2;
+ 330      =3  sbit    P11     = P1^1;
+ 331      =3  sbit    P10     = P1^0;
+ 332      =3  
+ 333      =3  /******************* P2 ******************
+ 334      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 335      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP22/P23
+ 336      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP22/P23/P27
+ 337      =3  ******************************************/
+ 338      =3  sbit    P27     = P2^7;
+ 339      =3  sbit    P26     = P2^6;
+ 340      =3  sbit    P25     = P2^5;
+ 341      =3  sbit    P24     = P2^4;
+ 342      =3  sbit    P23     = P2^3;
+ 343      =3  sbit    P22     = P2^2;
+ 344      =3  sbit    P21     = P2^1;
+ 345      =3  sbit    P20     = P2^0;
+ 346      =3  
+ 347      =3  /******************* P5 ******************
+ 348      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 349      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP50/P51
+ 350      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP50/P51
+ 351      =3  ******************************************/
+ 352      =3  sbit    P51     = P5^1;
+ 353      =3  sbit    P50     = P5^0;
+ 354      =3  
+ 355      =3  /****************************************************************************
+ 356      =3  *×¢Òâ£º·â×°Î´Òý³öµÄ¹Ü½Å£¬ÐèÉèÖÃÎªÇ¿ÍÆÍìÊä³öÄ£Ê½
+ 357      =3  *ICÑ¡ÐÍ£ºÇë¸ù¾ÝËùÊ¹ÓÃµÄICÐÍºÅ,ÔÚ³õÊ¼»¯ÍêIO¿Úºó£¬µ÷ÓÃÏà¶ÔÓ¦µÄÎ´Òý³ö¹Ü½ÅµÄIO¿ÚÅäÖÃ;
+ 358      =3  *ÈçÈôÑ¡ÔñSC92F8363B£¬Ôò²»ÓÃµ÷ÓÃºê¶¨Òå¡£
+ 359      =3  *****************************************************************************/
+ 360      =3  ///SC92F8362BµÄÎ´Òý³öÀ´µÄIO¿ÚÅäÖÃ
+ 361      =3  #define  SC92F8362B_NIO_Init()   {P0CON|=0xC0,P1CON|=0xC0,P2CON|=0x0C,P5CON|=0x03;}  
+ 362      =3  ///SC92F8361BµÄÎ´Òý³öÀ´µÄIO¿ÚÅäÖÃ
+ 363      =3  #define  SC92F8361B_NIO_Init()   {P0CON|=0xEC,P1CON|=0xC0,P2CON|=0x8C,P5CON|=0x03;}  
+ 364      =3  
+ 365      =3  #endif
+  69      =2  #endif
+  70      =2  
+  71      =2  #ifdef SC92F736xB
+  74      =2  
+  75      =2  #ifdef SC92F742x
+  78      =2  
+  79      =2  #ifdef SC92F7003
+  82      =2  
+  83      =2  #ifdef SC92F8003
+  86      =2  
+  87      =2  #ifdef SC92F8003B
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 9   
+
+  90      =2  
+  91      =2  #ifdef SC92F740x
+  94      =2  
+  95      =2  #ifdef SC92F74Ax
+  98      =2  
+  99      =2  #ifdef SC92F84Ax
+ 102      =2  
+ 103      =2  #ifdef SC92F73Ax
+ 106      =2  
+ 107      =2  #ifdef SC92F83Ax
+ 110      =2  
+ 111      =2  #ifdef SC92F74Ax_2
+ 114      =2  
+ 115      =2  #ifdef SC92F84Ax_2
+ 118      =2  
+ 119      =2  #ifdef SC92F730x
+ 122      =2  
+ 123      =2  #ifdef SC92F730x_2
+ 126      =2  
+ 127      =2  #ifdef SC92F720x
+ 130      =2  
+ 131      =2  #ifdef SC92F827X
+ 134      =2  
+ 135      =2  #ifdef SC92F837X
+ 138      =2  
+ 139      =2  #ifdef SC92F7490
+ 142      =2  
+ 143      =2  #ifdef SC92F725X
+ 146      =2  
+ 147      =2  #ifdef SC92F735X
+ 150      =2  
+ 151      =2  #ifdef SC92F732X
+ 154      =2  
+ 155      =2  #ifdef SC92FWxx
+ 158      =2  
+ 159      =2  #ifdef SC93F833x
+ 162      =2  
+ 163      =2  #ifdef SC93F843x
+ 166      =2  
+ 167      =2  #ifdef SC93F743x
+ 170      =2  
+ 171      =2  #ifdef SC92F848x
+ 174      =2  
+ 175      =2  #ifdef SC92F748x
+ 178      =2  
+ 179      =2  #ifdef SC92F859x
+ 182      =2  
+ 183      =2  #ifdef SC92F759x
+ 186      =2  
+ 187      =2  #ifdef SC92L853x
+ 190      =2  
+ 191      =2  #ifdef SC92L753x
+ 194      =2  
+ 195      =2  #ifdef SC92R511x
+ 198      =2  
+ 199      =2  #ifdef SC92R342
+ 202      =2  
+ 203      =2  #ifdef SC92F84Hx
+ 206      =2  
+ 207      =2  #ifdef SC92F83Hx
+ 210      =2  
+ 211      =2  #ifdef SC92F646x
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 10  
+
+ 214      =2  
+ 215      =2  #ifdef SC92F546x
+ 218      =2  
+ 219      =2  #ifdef SC92F542x
+ 222      =2  
+ 223      =2  #ifdef SC92F7308B
+ 226      =2  
+ 227      =2  
+ 228      =2  #ifdef SC92R436
+ 231      =2  
+ 232      =2  #ifdef SC92R438
+ 235      =2  
+ 236      =2  #ifdef SC92R439
+ 239      =2  
+ 240      =2  #if defined (SC92R445)
+ 243      =2  
+ 244      =2  #if defined (SC92F6x1x) || defined (SC92F5x1x)
+ 247      =2  
+ 248      =2  #if defined (SC92L840x)
+ 251      =2  
+ 252      =2  #if defined (SC92R422A)
+ 255      =2  
+ 256      =2  #if defined (SC92F652x)
+ 259      =2  
+ 260      =2  #define enableInterrupts()    EA=1       /** ?a??×ü?D??  **/
+ 261      =2  #define disableInterrupts()   EA=0       /** 1?±?×ü?D??  **/
+ 262      =2  
+ 263      =2  #define     __I     volatile const   /*!< defines 'read only' permissions     */
+ 264      =2  #define     __O     volatile         /*!< defines 'write only' permissions    */
+ 265      =2  #define     __IO    volatile         /*!< defines 'read / write' permissions  */
+ 266      =2  
+ 267      =2  /*!< Signed integer types  */
+ 268      =2  typedef   signed char     int8_t;
+ 269      =2  typedef   signed short    int16_t;
+ 270      =2  typedef   signed long     int32_t;
+ 271      =2  
+ 272      =2  /*!< Unsigned integer types  */
+ 273      =2  typedef unsigned char     uint8_t;
+ 274      =2  typedef unsigned short    uint16_t;
+ 275      =2  typedef unsigned long     uint32_t;
+ 276      =2  
+ 277      =2  typedef int32_t  s32;
+ 278      =2  typedef int16_t  s16;
+ 279      =2  typedef int8_t   s8;
+ 280      =2  
+ 281      =2  typedef uint32_t  u32;
+ 282      =2  typedef uint16_t  u16;
+ 283      =2  typedef uint8_t   u8;
+ 284      =2  
+ 285      =2  typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+ 286      =2  
+ 287      =2  typedef enum {RESET = 0, SET = !RESET} FlagStatus,
+ 288      =2  ITStatus, BitStatus;
+ 289      =2  
+ 290      =2  typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
+ 291      =2  
+ 292      =2  typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;
+ 293      =2  
+ 294      =2  typedef enum {LOW = 0, HIGH = !LOW} PriorityStatus;
+ 295      =2  
+ 296      =2  typedef enum
+ 297      =2  {
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 11  
+
+ 298      =2          Status_ERROR = 0x00U,
+ 299      =2          Status_OK = 0x01U,
+ 300      =2          Status_BUSY = 0x02U,
+ 301      =2          Status_TIMEOUT = 0x03U
+ 302      =2  } StatusTypeDef;
+ 303      =2  
+ 304      =2  #define SET_BIT(SFR,BIT)                                ((SFR) |= (BIT))
+ 305      =2  
+ 306      =2  #define CLEAR_BIT(SFR,BIT)                      ((SFR) &= ~(BIT))
+ 307      =2  
+ 308      =2  #define READ_BIT(SFR, BIT)      ((SFR) & (BIT))
+ 309      =2  
+ 310      =2  #define CLEAR_REG(SFR)          ((SFR) = (0x0))
+ 311      =2  
+ 312      =2  #define WRITE_REG(SFR, VAL)     ((SFR) = (VAL))
+ 313      =2  
+ 314      =2  #endif
+ 315      =2  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
+  32      =1  
+  33      =1  /** @addtogroup sc92f_StdPeriph_Driver
+  34      =1   * @{
+  35      =1   */
+  36      =1   
+  37      =1   /** @addtogroup WDT
+  38      =1   * @{
+  39      =1   */
+  40      =1   
+  41      =1   /** @defgroup WDT_Enumerations WDT Enumerations
+  42      =1   * @{
+  43      =1   */
+  44      =1  typedef enum
+  45      =1  {
+  46      =1    WDT_OverflowTime_500MS   = (uint8_t)0x00,        /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª500MS */
+  47      =1    WDT_OverflowTime_250MS   = (uint8_t)0x01,        /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª250MS */
+  48      =1    WDT_OverflowTime_125MS   = (uint8_t)0x02,        /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª125MS */
+  49      =1    WDT_OverflowTime_62_5MS  = (uint8_t)0x03,        /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª62.5MS */
+  50      =1    WDT_OverflowTime_31_5MS  = (uint8_t)0x04,        /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª31.5MS */
+  51      =1    WDT_OverflowTime_15_75MS = (uint8_t)0x05,        /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª15.75MS */
+  52      =1    WDT_OverflowTime_7_88MS  = (uint8_t)0x06,        /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª7.88MS */
+  53      =1    WDT_OverflowTime_3_94MS  = (uint8_t)0x07         /*!< ¿´ÃÅ¹·Òç³öÊ±¼äÎª3.94MS */
+  54      =1  } WDT_OverflowTime_TypeDef;
+  55      =1  /**
+  56      =1   * @}
+  57      =1   */
+  58      =1  
+  59      =1  /**
+  60      =1   * @}
+  61      =1   */
+  62      =1  /* End of enumerations -----------------------------------------------------*/
+  63      =1  
+  64      =1  /** @addtogroup WDT_Exported_Functions WDT Exported Functions
+  65      =1   * @{
+  66      =1   */
+  67      =1  
+  68      =1  /*macro function********************************************************/
+  69      =1  
+  70      =1  /**
+  71      =1   * @brief  WDTÎ¹¹·
+  72      =1   * @param  None
+  73      =1   * @retval None
+  74      =1   */
+  75      =1  #define WDT_SetReload() SET_BIT(WDTCON,0x10)
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 12  
+
+  76      =1  /* WDT Base functions ********************************************************/
+  77      =1  void WDT_DeInit(void);
+  78      =1  void WDT_Init(WDT_OverflowTime_TypeDef
+  79      =1                OverflowTime);
+  80      =1  void WDT_Cmd(FunctionalState NewState);
+  81      =1  #endif
+  82      =1  /**
+  83      =1   * @}
+  84      =1   */
+  85      =1  /* End of WDT Functions.        */
+  86      =1  
+  87      =1  /**
+  88      =1   * @}
+  89      =1   */
+  90      =1  
+  91      =1  /**
+  92      =1   * @}
+  93      =1   */
+  94      =1  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
+  28          
+  29          /** @addtogroup sc92f_StdPeriph_Driver
+  30           * @{
+  31           */
+  32          
+  33          /** @defgroup wdt
+  34           * @brief wdt driver modules
+  35           * @{
+  36           */
+  37          
+  38          /** @defgroup wdt_Exported_Functions
+  39           * @{
+  40           */
+  41           
+  42           /** @defgroup wdt_Exported_Functions_Group1 Configuration of the wdt computation unit functions
+  43           *  @brief   Configuration of the wdt computation unit functions
+  44           *
+  45           
+  46          @verbatim
+  47           ===============================================================================
+  48                               ##### wdt base functions #####
+  49           ===============================================================================
+  50          @endverbatim
+  51            * @{
+  52            */
+  53           /**
+  54           * @brief  The WDT-related register is reset to the default value
+  55           * @param  None         
+  56           * @retval None
+  57           */
+  58          void WDT_DeInit(void)
+  59          {
+  60   1        WDTCON = 0X00;
+  61   1      }
+  62          
+  63          /**************************************************
+  64          *º¯ÊýÃû³Æ:void WDT_Init(WDT_OverflowTime_TypeDef OverflowTime)
+  65          *º¯Êý¹¦ÄÜ:WDT³õÊ¼»¯ÅäÖÃº¯Êý
+  66          *Èë¿Ú²ÎÊý:
+  67          WDT_OverflowTime_TypeDef:OverflowTime:WDTÒç³öÊ±¼äÑ¡Ôñ
+  68          *³ö¿Ú²ÎÊý:void
+  69          **************************************************/
+  70           /**
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 13  
+
+  71           * @brief  WDT initialization configuration function
+  72           * @param   OverflowTime:WDT overflow time selection
+  73           *          - WDT_OverflowTime_500MS: Settings  500MS
+  74           *          - WDT_OverflowTime_250MS: Settings 250MS
+  75           *          - WDT_OverflowTime_125MS: Settings 125MS
+  76           *          - WDT_OverflowTime_62_5MS:Settings 62.5MS
+  77           *          - WDT_OverflowTime_31_5MS:Settings 31.5MS
+  78           *          - WDT_OverflowTime_15_75MS:Settings 15.75MS
+  79           *          - WDT_OverflowTime_7_88MS:Settings 7.88MS
+  80           *          - WDT_OverflowTime_3_94MS:Settings 3.94MS
+  81           * @retval None
+  82           */
+  83          void WDT_Init(WDT_OverflowTime_TypeDef
+  84                        OverflowTime)
+  85          {
+  86   1        WDTCON = (WDTCON & 0XF8) | OverflowTime;
+  87   1      }
+  88          
+  89          
+  90          /**
+  91           * @brief  WDT function switch function
+  92           * @param  NewState[in]:Function Enable/disable selection   
+  93           *              - DISABLE: disable    
+  94           *              - ENABLE:Enable    
+  95           * @retval None
+  96           */
+  97          void WDT_Cmd(FunctionalState NewState)
+  98          {
+  99   1        OPINX = 0XC1;
+ 100   1      
+ 101   1        if(NewState == DISABLE)
+ 102   1        {
+ 103   2          OPREG &= 0X7F;
+ 104   2        }
+ 105   1        else
+ 106   1        {
+ 107   2          OPREG |= 0X80;
+ 108   2        }
+ 109   1      }
+ 110          /**
+ 111           * @}
+ 112           */
+ 113          /* End of wdt_Group1.   */
+ 114          /**
+ 115           * @}
+ 116           */
+ 117          
+ 118          /**
+ 119           * @}
+ 120           */
+ 121          
+ 122          /**
+ 123           * @}
+ 124           */
+ 125          /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 14  
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION WDT_DeInit (BEGIN)
+                                           ; SOURCE LINE # 58
+                                           ; SOURCE LINE # 59
+                                           ; SOURCE LINE # 60
+0000 E4                CLR     A
+0001 F5CF              MOV     WDTCON,A
+                                           ; SOURCE LINE # 61
+0003 22                RET     
+             ; FUNCTION WDT_DeInit (END)
+
+             ; FUNCTION _WDT_Init (BEGIN)
+                                           ; SOURCE LINE # 83
+;---- Variable 'OverflowTime' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 85
+                                           ; SOURCE LINE # 86
+0000 E5CF              MOV     A,WDTCON
+0002 54F8              ANL     A,#0F8H
+0004 4F                ORL     A,R7
+0005 F5CF              MOV     WDTCON,A
+                                           ; SOURCE LINE # 87
+0007 22                RET     
+             ; FUNCTION _WDT_Init (END)
+
+             ; FUNCTION _WDT_Cmd (BEGIN)
+                                           ; SOURCE LINE # 97
+;---- Variable 'NewState' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 98
+                                           ; SOURCE LINE # 99
+0000 75FEC1            MOV     OPINX,#0C1H
+                                           ; SOURCE LINE # 101
+0003 EF                MOV     A,R7
+0004 7004              JNZ     ?C0003
+                                           ; SOURCE LINE # 102
+                                           ; SOURCE LINE # 103
+0006 53FF7F            ANL     OPREG,#07FH
+                                           ; SOURCE LINE # 104
+0009 22                RET     
+000A         ?C0003:
+                                           ; SOURCE LINE # 106
+                                           ; SOURCE LINE # 107
+000A 43FF80            ORL     OPREG,#080H
+                                           ; SOURCE LINE # 108
+                                           ; SOURCE LINE # 109
+000D         ?C0005:
+000D 22                RET     
+             ; FUNCTION _WDT_Cmd (END)
+
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 15  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+uint16_t . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+OPREG. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FFH  1
+P0 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0080H  1
+SSDAT. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009FH  1
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+P2 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A0H  1
+Status_OK. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+EUART. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ACH  1
+TMCON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008EH  1
+AC . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D6H  1
+FlagStatus . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+RESET. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+OTCON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008FH  1
+P5 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D8H  1
+EA . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AFH  1
+T2 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C9H  1
+int32_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+int16_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+ERROR. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+EADC . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AEH  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+EXA0 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E9H  1
+EXA1 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EAH  1
+OPINX. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FEH  1
+WDT_DeInit . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+EXA2 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EBH  1
+EXA3 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ECH  1
+Status_TIMEOUT . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CP . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C8H  1
+ErrorStatus. . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+EXF2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CEH  1
+CHKSUMH. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FDH  1
+PWMDTY0. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D5H  1
+OPERCON. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EFH  1
+PWMDTY1. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D6H  1
+P0PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009BH  1
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+CHKSUML. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FCH  1
+PWMDTY2. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D7H  1
+P1PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0092H  1
+RI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0098H  1
+PWMDTY3. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DDH  1
+P2PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A2H  1
+SUCCESS. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CY . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D7H  1
+PWMDTY4. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DEH  1
+TI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0099H  1
+PWMDTY5. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DFH  1
+IPT0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B9H  1
+P5PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DAH  1
+FunctionalState. . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IPT1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BBH  1
+IPT2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
+HIGH . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+RCAP2H . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CBH  1
+SP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0081H  1
+OV . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D2H  1
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 16  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+ITStatus . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IAPADE . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F4H  1
+P0VO . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009CH  1
+RCAP2L . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CAH  1
+EXBH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EEH  1
+ENABLE . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BitStatus. . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IAPADH . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F3H  1
+PWMDTYA. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D4H  1
+PWMDTYB. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DCH  1
+ADCCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ADH  1
+s8 . . . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+EXBL . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EDH  1
+Status_BUSY. . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+u8 . . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+RCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CDH  1
+IAPADL . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F2H  1
+bool . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+TCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CCH  1
+P00. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0080H  1
+P10. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+P01. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0081H  1
+SBUF . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0099H  1
+PCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0087H  1
+P20. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A0H  1
+P11. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0091H  1
+P02. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0082H  1
+P21. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A1H  1
+P12. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0092H  1
+P03. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0083H  1
+P22. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A2H  1
+P13. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0093H  1
+P04. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0084H  1
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+P50. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D8H  1
+P23. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A3H  1
+P14. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0094H  1
+P05. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0085H  1
+IAPDAT . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F5H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+TMOD . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0089H  1
+P51. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D9H  1
+P24. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A4H  1
+P15. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0095H  1
+P06. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0086H  1
+IPINT0 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B8H  1
+WDT_OverflowTime_31_5MS. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+P25. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A5H  1
+P16. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0096H  1
+P07. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0087H  1
+IPINT1 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BAH  1
+P26. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A6H  1
+P17. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0097H  1
+SSCON0 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009DH  1
+P27. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A7H  1
+SSCON1 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009EH  1
+SSCON2 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0095H  1
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 17  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+WDT_OverflowTime_62_5MS. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+WDT_OverflowTime_3_94MS. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+StatusTypeDef. . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IAPCTL . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F6H  1
+IE1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A9H  1
+TRUE . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+B. . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F0H  1
+IOHCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0097H  1
+WDT_OverflowTime_7_88MS. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+IAPKEY . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F1H  1
+BTMCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CEH  1
+PWMCFG . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D1H  1
+ACC. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E0H  1
+ET0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A9H  1
+TF0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008DH  1
+ET1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ABH  1
+ADCCFG0. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ABH  1
+IP1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B9H  1
+TF1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008FH  1
+ET2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ADH  1
+ADCCFG1. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ACH  1
+RB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009AH  1
+TF2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CFH  1
+ADCCFG2. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00AAH  1
+TH0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008CH  1
+TH1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008DH  1
+TB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009BH  1
+TH2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CDH  1
+uint8_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+P. . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D0H  1
+SM0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009FH  1
+TL0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008AH  1
+SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
+WDTCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CFH  1
+TL1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008BH  1
+WDT_OverflowTime_TypeDef . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+SM2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009DH  1
+TL2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CCH  1
+WDT_OverflowTime_500MS . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+WDT_OverflowTime_250MS . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+RS0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D3H  1
+WDT_OverflowTime_125MS . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+TR0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008CH  1
+RS1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D4H  1
+PWMCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D2H  1
+TR1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008EH  1
+IPUART . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BCH  1
+s32. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+TR2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CAH  1
+int8_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+u32. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+s16. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+u16. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+PWMPRD . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D3H  1
+DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
+DPL. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0082H  1
+EINT0. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 18  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+P0CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009AH  1
+EINT1. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AAH  1
+IPADC. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BEH  1
+INT0F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BAH  1
+P1CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0091H  1
+EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
+INT1F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BCH  1
+P2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A1H  1
+INT2F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C6H  1
+_WDT_Cmd . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  NewState . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+REN. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009CH  1
+_WDT_Init. . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  OverflowTime . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+P5CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D9H  1
+ADCVH. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00AFH  1
+T2MOD. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C9H  1
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+EXADH. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F7H  1
+ADCVL. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00AEH  1
+SET. . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+FALSE. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+INT0R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BBH  1
+INT1R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BDH  1
+WDT_OverflowTime_15_75MS . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+PriorityStatus . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+INT2R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C7H  1
+LOW. . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+Status_ERROR . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+F0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D5H  1
+DISABLE. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+F1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D1H  1
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+uint32_t . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     26    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,6 @@
+
+LX51 LINKER/LOCATER V4.66.100.0 - SN: K1DZC-WAM80C
+COPYRIGHT Copyright (C) 1995-2021, Arm Limited or its Affiliates. All rights reserved.
+..\Output\wm_7seg_control.obj, ..\Output\wm_timed_activity.obj, ..\Output\wm_led_cntrl.obj, ..\Output\wm_global.obj, ..\Output\wm_state_flow.obj, ..\Output\wm_tk_cntrl.obj, ..\Output\wm_uart.obj, ..\Output\main.obj, ..\Output\SC_Init.obj, ..\Output\SC_it.obj, ..\Output\CompCtrlDefine.obj, ..\Output\CallBackFunction.obj, ..\Output\TKDriver.obj, ..\Output\sc92f_wdt.obj, ..\Output\sc92f_pwm.obj, ..\Output\sc92f_gpio.obj, ..\Output\sc92f_option.obj, ..\Output\sc92f_timer2.obj, ..\Output\sc92f_timer1.obj, ..\Output\STARTUP.obj,..\Drivers\TKDriver\C\SC92F8X6XB_HighSensitive_lib_T1_L_V2.2.0.LIB TO ..\Output\UiBoard PRINT(..\Output\UiBoard.map) REMOVEUNUSED CLASSES(CODE(C:0X100),CONST(C:0X100)) 
+Program Size: data=32.1 xdata=185 const=95 code=7593
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

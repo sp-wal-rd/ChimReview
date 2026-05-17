@@ -1,0 +1,1730 @@
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SC92F_TIMER2
+OBJECT MODULE PLACED IN ..\Output\sc92f_timer2.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.exe ..\FWLib\SC92F_Lib\src\sc92f_timer2.c OMF2 DEFINE(SC92F836xB) LARGE INCD
+                    -IR(..\FWLib\SC92F_Lib\inc;..\User;..\User\HeadFiles;..\User\global;..\Project\Chimney\Workspace\UiBoard\Keil_C\Project\.
+                    -.\User\global;..\User\stateflow;..\User\hal\wm_UiBoardControl;..\User\hal\wm_gpio_map;..\User\hal\wm_led_control;..\Driv
+                    -ers;..\User\hal\wm_7seg_control;..\User\hal\wm_uart;..\Drivers\TKDriver\C) BROWSE DEBUG OBJECTEXTEND OPTIMIZE(8,SIZE) CO
+                    -DE NOCOND SYMBOLS LISTINCLUDE PRINT(..\List\sc92f_timer2.lst) OBJECT(..\Output\sc92f_timer2.obj)
+
+line level    source
+
+   1          /**
+   2           ******************************************************************************
+   3           * @file    sc92f_timer2.c
+   4           * @author  SOC AE Team
+   5           * @version V1.2.1
+   6           * @date    2025-07-24
+   7           * @brief   TIM0 function module
+   8           *******************************************************************************
+   9           * @attention
+  10           *
+  11           *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
+  12           *intended for use with SinOne products. No other uses are authorized. This 
+  13           *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
+  14           *all applicable laws, including copyright laws. 
+  15           *2.The software which is for guidance only aims at providing customers with 
+  16           *coding information regarding their products in order for them to save time. 
+  17           *As a result, SinOne shall not be held liable for any direct, indirect or 
+  18           *consequential damages with respect to any claims arising from the content of 
+  19           *such software and/or the use made by customers of the coding information 
+  20           *contained herein in connection with their products.
+  21           *
+  22           *  COPYRIGHT 2025 SinOne Microelectronics
+  23           ******************************************************************************
+  24           */
+  25           
+  26          /* Includes ------------------------------------------------------------------*/
+  27          #include "sc92f_timer2.h"
+   1      =1  /**
+   2      =1   ******************************************************************************
+   3      =1   * @file    sc92f_timer2.h
+   4      =1   * @author  SOC AE Team
+   5      =1   * @version V1.2.1
+   6      =1   * @date    2025-07-24
+   7      =1   * @brief   Header file of TIMER2 module.
+   8      =1   ******************************************************************************
+   9      =1   * @attention
+  10      =1   *
+  11      =1   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
+  12      =1   *intended for use with SinOne products. No other uses are authorized. This 
+  13      =1   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
+  14      =1   *all applicable laws, including copyright laws. 
+  15      =1   *2.The software which is for guidance only aims at providing customers with 
+  16      =1   *coding information regarding their products in order for them to save time. 
+  17      =1   *As a result, SinOne shall not be held liable for any direct, indirect or 
+  18      =1   *consequential damages with respect to any claims arising from the content of 
+  19      =1   *such software and/or the use made by customers of the coding information 
+  20      =1   *contained herein in connection with their products.
+  21      =1   *
+  22      =1   *  COPYRIGHT 2025 SinOne Microelectronics
+  23      =1   ******************************************************************************
+  24      =1   */
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 2   
+
+  25      =1   
+  26      =1  /* Define to prevent recursive inclusion -------------------------------------*/
+  27      =1  #ifndef _sc92f_TIMER2_H_
+  28      =1  #define _sc92f_TIMER2_H_
+  29      =1  
+  30      =1  /* Includes ------------------------------------------------------------------*/
+  31      =1  #include "sc92f.h"
+   1      =2  /**
+   2      =2   ******************************************************************************
+   3      =2   * @file    Header file of SC92 Series
+   4      =2   * @author  SOC AE Team
+   5      =2   * @version V1.2.1
+   6      =2   * @date    2025-07-24
+   7      =2   * @brief   Header file of SC92 Series.
+   8      =2   ******************************************************************************
+   9      =2   * @attention
+  10      =2   *
+  11      =2   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
+  12      =2   *intended for use with SinOne products. No other uses are authorized. This 
+  13      =2   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
+  14      =2   *all applicable laws, including copyright laws. 
+  15      =2   *2.The software which is for guidance only aims at providing customers with 
+  16      =2   *coding information regarding their products in order for them to save time. 
+  17      =2   *As a result, SinOne shall not be held liable for any direct, indirect or 
+  18      =2   *consequential damages with respect to any claims arising from the content of 
+  19      =2   *such software and/or the use made by customers of the coding information 
+  20      =2   *contained herein in connection with their products.
+  21      =2   *
+  22      =2   *  COPYRIGHT 2025 SinOne Microelectronics
+  23      =2   ******************************************************************************
+  24      =2   */
+  25      =2   
+  26      =2  /* Includes ------------------------------------------------------------------*/
+  27      =2  #ifndef _sc92f_H
+  28      =2  #define _sc92f_H
+  29      =2  
+  30      =2  #ifdef SC92F841x
+  33      =2  
+  34      =2  #ifdef SC92Fx41xB
+  37      =2  
+  38      =2  #ifdef SC92F741x
+  41      =2  
+  42      =2  
+  43      =2  #ifdef SC92F854x
+  46      =2  
+  47      =2  #ifdef SC92F754x
+  50      =2  
+  51      =2  #ifdef SC92F844xB
+  54      =2  
+  55      =2  #ifdef SC92F744xB
+  58      =2  
+  59      =2  #ifdef SC92F846xB
+  62      =2  
+  63      =2  #ifdef SC92F746xB
+  66      =2  
+  67      =2  #ifdef SC92F836xB
+  68      =2    #include "SC92F836xB_C.H"
+   1      =3                                                   /*--------------------------------------------------------------------------
+   2      =3  SC92F836XB_C.H
+   3      =3  
+   4      =3  C Header file for SC92F836XB microcontroller.
+   5      =3  Copyright (c) 2018 Shenzhen SinOne Microelectronics CO., Ltd.
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 3   
+
+   6      =3  All rights reserved.
+   7      =3  ÉîÛÚÊÐÈüÔªÎ¢µç×Ó¹É·ÝÓÐÏÞ¹«Ë¾
+   8      =3  °æ±¾ºÅ:  V2.0    
+   9      =3  ÈÕÆÚ:  2018.08.24
+  10      =3  --------------------------------------------------------------------------*/
+  11      =3  #ifndef _SC92F836XB_H_
+  12      =3  #define _SC92F836XB_H_
+  13      =3  
+  14      =3  /* ------------------- ×Ö½Ú¼Ä´æÆ÷-------------------- */
+  15      =3  ///*CPU*/
+  16      =3  ///ÀÛ¼ÓÆ÷£Á
+  17      =3  sfr     ACC         = 0xE0;             
+  18      =3  ///Í¨ÓÃ¼Ä´æÆ÷B          
+  19      =3  sfr     B           = 0xF0;             
+  20      =3  ///³ÌÐò×´Ì¬×Ö           
+  21      =3  sfr     PSW         = 0xD0;             
+  22      =3  ///Êý¾ÝÖ¸Õë¸ß8Î»                
+  23      =3  sfr     DPH     = 0x83;         
+  24      =3  ///Êý¾ÝÖ¸ÕëµÍ8Î»                
+  25      =3  sfr     DPL         = 0x82;             
+  26      =3  ///¶ÑÕ»Ö¸Õë     
+  27      =3  sfr     SP          = 0x81;             
+  28      =3                  
+  29      =3  
+  30      =3  /*system*/
+  31      =3  ///µçÔ´¹ÜÀí¿ØÖÆ¼Ä´æÆ÷
+  32      =3  sfr     PCON    = 0x87;         
+  33      =3  
+  34      =3  /*interrupt*/
+  35      =3  ///ÖÐ¶ÏÓÅÏÈ¼¶¿ØÖÆ¼Ä´æÆ÷1
+  36      =3  sfr     IP1     = 0XB9;     
+  37      =3  ///ÖÐ¶ÏÓÅÏÈÈ¨¿ØÖÆ¼Ä´æÆ÷
+  38      =3  sfr     IP          = 0xB8;             
+  39      =3  ///ÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+  40      =3  sfr     IE          = 0xA8;             
+  41      =3  ///ÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷1
+  42      =3  sfr     IE1     = 0XA9;         
+  43      =3  
+  44      =3  /*PORT*/
+  45      =3  ///P5¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  46      =3  sfr     P5PH    = 0xDA;         
+  47      =3  ///P5¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  48      =3  sfr         P5CON       = 0xD9;         
+  49      =3  ///P5¿ÚÊý¾Ý¼Ä´æÆ÷
+  50      =3  sfr     P5          = 0xD8;             
+  51      =3  ///P2¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  52      =3  sfr     P2PH    = 0xA2;         
+  53      =3  ///P2¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  54      =3  sfr         P2CON       = 0xA1;         
+  55      =3  ///P2¿ÚÊý¾Ý¼Ä´æÆ÷
+  56      =3  sfr     P2          = 0xA0;             
+  57      =3  ///P1¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  58      =3  sfr     P1PH    = 0x92;         
+  59      =3  ///P1¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷   
+  60      =3  sfr         P1CON       = 0x91;         
+  61      =3  ///P1¿ÚÊý¾Ý¼Ä´æÆ÷
+  62      =3  sfr     P1          = 0x90;             
+  63      =3  ///P0¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  64      =3  sfr         P0PH        = 0x9B;         
+  65      =3  ///P0¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
+  66      =3  sfr         P0CON       = 0x9A;         
+  67      =3  ///P0¿ÚÊý¾Ý¼Ä´æÆ÷
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 4   
+
+  68      =3  sfr     P0          = 0x80;             
+  69      =3  ///IOHÉèÖÃ¼Ä´æÆ÷
+  70      =3  sfr     IOHCON  = 0x97;         
+  71      =3  
+  72      =3  /*TIMER*/
+  73      =3  ///¶¨Ê±Æ÷ÆµÂÊ¿ØÖÆ¼Ä´æÆ÷
+  74      =3  sfr     TMCON   = 0x8E;         
+  75      =3  ///¶¨Ê±Æ÷1¸ß8Î»
+  76      =3  sfr     TH1         = 0x8D;             
+  77      =3  ///¶¨Ê±Æ÷0¸ß8Î»
+  78      =3  sfr     TH0         = 0x8C;             
+  79      =3  ///¶¨Ê±Æ÷1µÍ8Î»
+  80      =3  sfr     TL1         = 0x8B;             
+  81      =3  ///¶¨Ê±Æ÷0µÍ8Î»
+  82      =3  sfr     TL0         = 0x8A;             
+  83      =3  ///¶¨Ê±Æ÷¹¤×÷Ä£Ê½¼Ä´æÆ÷
+  84      =3  sfr     TMOD    = 0x89;         
+  85      =3  ///¶¨Ê±Æ÷¿ØÖÆ¼Ä´æÆ÷
+  86      =3  sfr     TCON    = 0x88;         
+  87      =3  ///¶¨Ê±Æ÷2¿ØÖÆ¼Ä´æÆ÷
+  88      =3  sfr     T2CON   = 0xC8;     
+  89      =3  ///¶¨Ê±Æ÷2¹¤×÷Ä£Ê½¼Ä´æÆ÷
+  90      =3  sfr     T2MOD   = 0xC9;         
+  91      =3  ///¶¨Ê±Æ÷2ÖØÔØ/²¶×½µÍ8Î»
+  92      =3  sfr     RCAP2L  = 0xCA;     
+  93      =3  ///¶¨Ê±Æ÷2ÖØÔØ/²¶×½¸ß8Î»
+  94      =3  sfr     RCAP2H  = 0xCB;     
+  95      =3  ///¶¨Ê±Æ÷2µÍ8Î»
+  96      =3  sfr     TL2     = 0xCC;     
+  97      =3  ///¶¨Ê±Æ÷2¸ß8Î»
+  98      =3  sfr     TH2     = 0xCD;     
+  99      =3  
+ 100      =3  
+ 101      =3  /*ADC*/
+ 102      =3  ///ADC¹¦ÄÜÅäÖÃ¼Ä´æÆ÷0
+ 103      =3  sfr     ADCCFG0 = 0xAB;         
+ 104      =3  ///ADC¹¦ÄÜÅäÖÃ¼Ä´æÆ÷1
+ 105      =3  sfr         ADCCFG1 = 0xAC;             
+ 106      =3  ///ADC¹¦ÄÜÅäÖÃ¼Ä´æÆ÷2
+ 107      =3  sfr     ADCCFG2 = 0XAA;     
+ 108      =3  ///ADC¿ØÖÆ¼Ä´æÆ÷
+ 109      =3  sfr     ADCCON  = 0XAD;     
+ 110      =3  ///ADC ½á¹û¼Ä´æÆ÷
+ 111      =3  sfr     ADCVL   = 0xAE;         
+ 112      =3  ///ADC ½á¹û¼Ä´æÆ÷
+ 113      =3  sfr     ADCVH   = 0xAF;         
+ 114      =3  
+ 115      =3  /*PWM*/
+ 116      =3  ///PWMÉèÖÃ¼Ä´æÆ÷
+ 117      =3  sfr     PWMCFG  = 0xD1;         
+ 118      =3  ///PWM¿ØÖÆ¼Ä´æÆ÷
+ 119      =3  sfr     PWMCON  = 0xD2;         
+ 120      =3  ///PWMÖÜÆÚÉèÖÃ¼Ä´æÆ÷
+ 121      =3  sfr     PWMPRD  = 0xD3;         
+ 122      =3  ///PWMÕ¼¿Õ±ÈÉèÖÃ¼Ä´æÆ÷A
+ 123      =3  sfr     PWMDTYA = 0xD4;         
+ 124      =3  ///PWM0ÉèÖÃ¼Ä´æÆ÷
+ 125      =3  sfr     PWMDTY0 = 0xD5;         
+ 126      =3  ///PWM1ÉèÖÃ¼Ä´æÆ÷
+ 127      =3  sfr     PWMDTY1 = 0xD6;         
+ 128      =3  ///PWM2ÉèÖÃ¼Ä´æÆ÷
+ 129      =3  sfr     PWMDTY2 = 0xD7;         
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 5   
+
+ 130      =3  ///PWMÕ¼¿Õ±ÈÉèÖÃ¼Ä´æÆ÷B
+ 131      =3  sfr     PWMDTYB = 0xDC;         
+ 132      =3  ///PWM3ÉèÖÃ¼Ä´æÆ÷
+ 133      =3  sfr     PWMDTY3 = 0xDD;         
+ 134      =3  ///PWM4ÉèÖÃ¼Ä´æÆ÷
+ 135      =3  sfr     PWMDTY4 = 0xDE;         
+ 136      =3  ///PWM5ÉèÖÃ¼Ä´æÆ÷
+ 137      =3  sfr     PWMDTY5 = 0xDF;         
+ 138      =3  
+ 139      =3  ///*WatchDog*/
+ 140      =3  ///µÍÆµ¶¨Ê±Æ÷¿ØÖÆ¼Ä´æÆ÷
+ 141      =3  sfr         BTMCON  = 0XCE;     
+ 142      =3  ///WDT¿ØÖÆ¼Ä´æÆ÷
+ 143      =3  sfr     WDTCON  = 0xCF;         
+ 144      =3  
+ 145      =3  /*LCD*/
+ 146      =3  ///LCDµçÑ¹Êä³ö¿ØÖÆ¼Ä´æÆ÷
+ 147      =3  sfr     OTCON   = 0X8F;         
+ 148      =3  ///P0 LCD Bais Êä³ö¼Ä´æÆ÷
+ 149      =3  sfr     P0VO    = 0X9C;     
+ 150      =3  
+ 151      =3  /*INT*/
+ 152      =3  ///INT0 ÏÂ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 153      =3  sfr     INT0F   = 0XBA;         
+ 154      =3  ///INT0 ÉÏ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 155      =3  sfr     INT0R   = 0XBB;         
+ 156      =3  ///INT1 ÏÂ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 157      =3  sfr     INT1F   = 0XBC;         
+ 158      =3  ///INT1 ÉÏ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 159      =3  sfr     INT1R   = 0XBD;         
+ 160      =3  ///INT2 ÏÂ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 161      =3  sfr     INT2F   = 0XC6;         
+ 162      =3  ///INT2 ÉÏ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
+ 163      =3  sfr     INT2R   = 0XC7;         
+ 164      =3  
+ 165      =3  /*IAP */
+ 166      =3  ///IAP¿ØÖÆ¼Ä´æÆ÷
+ 167      =3  sfr     IAPCTL  = 0xF6;         
+ 168      =3  ///IAPÊý¾Ý¼Ä´æÆ÷
+ 169      =3  sfr     IAPDAT  = 0xF5;         
+ 170      =3  ///IAPÀ©Õ¹µØÖ·¼Ä´æÆ÷
+ 171      =3  sfr     IAPADE  = 0xF4;     
+ 172      =3  ///IAPÐ´ÈëµØÖ·¸ßÎ»¼Ä´æÆ÷
+ 173      =3  sfr     IAPADH  = 0xF3;         
+ 174      =3  ///IAPÐ´ÈëµØÖ·µÍ8Î»¼Ä´æÆ÷
+ 175      =3  sfr     IAPADL  = 0xF2;         
+ 176      =3  ///IAP±£»¤¼Ä´æÆ÷
+ 177      =3  sfr     IAPKEY  = 0xF1;         
+ 178      =3  
+ 179      =3  /*uart*/
+ 180      =3  ///´®¿Ú¿ØÖÆ¼Ä´æÆ÷
+ 181      =3  sfr     SCON    = 0x98;     
+ 182      =3  ///´®¿ÚÊý¾Ý»º´æ¼Ä´æÆ÷
+ 183      =3  sfr     SBUF    = 0x99;     
+ 184      =3  
+ 185      =3  /*ÈýºÏÒ»*/
+ 186      =3  ///SPI¿ØÖÆ¼Ä´æÆ÷0
+ 187      =3  sfr     SSCON0  = 0X9D;   
+ 188      =3  ///SPI¿ØÖÆ¼Ä´æÆ÷1
+ 189      =3  sfr     SSCON1  = 0X9E;   
+ 190      =3  ///SPI¿ØÖÆ¼Ä´æÆ÷2
+ 191      =3  sfr     SSCON2  = 0X95;   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 6   
+
+ 192      =3  ///SPIÊý¾Ý¼Ä´æÆ÷
+ 193      =3  sfr     SSDAT   = 0X9F;   
+ 194      =3  
+ 195      =3  sfr     OPINX   = 0XFE; 
+ 196      =3  sfr     OPREG   = 0XFF;
+ 197      =3  sfr     EXADH   = 0XF7;
+ 198      =3  
+ 199      =3  /*Check Sum*/
+ 200      =3  ///Check Sum½á¹û¼Ä´æÆ÷µÍÎ»
+ 201      =3  sfr     CHKSUML = 0XFC;   
+ 202      =3  ///Check Sum½á¹û¼Ä´æÆ÷¸ßÎ»
+ 203      =3  sfr     CHKSUMH = 0XFD;   
+ 204      =3  
+ 205      =3  /*³Ë³ý·¨*/
+ 206      =3  ///À©Õ¹ÀÛ¼ÓÆ÷0
+ 207      =3  sfr     EXA0    = 0xE9;   
+ 208      =3  ///À©Õ¹ÀÛ¼ÓÆ÷1
+ 209      =3  sfr     EXA1    = 0xEA;   
+ 210      =3  ///À©Õ¹ÀÛ¼ÓÆ÷2
+ 211      =3  sfr     EXA2    = 0xEB;   
+ 212      =3  ///À©Õ¹ÀÛ¼ÓÆ÷3
+ 213      =3  sfr     EXA3    = 0xEC;   
+ 214      =3  ///À©Õ¹B¼Ä´æÆ÷0
+ 215      =3  sfr     EXBL    = 0xED;   
+ 216      =3  ///À©Õ¹B¼Ä´æÆ÷1
+ 217      =3  sfr     EXBH    = 0xEE;   
+ 218      =3  ///ÔËËã¿ØÖÆ¼Ä´æÆ÷
+ 219      =3  sfr     OPERCON = 0xEF;   
+ 220      =3  
+ 221      =3  /* ------------------- Î»¼Ä´æÆ÷-------------------- */
+ 222      =3  /*PSW*/
+ 223      =3  ///±êÖ¾Î»               0:¼Ó·¨ÔËËã×î¸ßÎ»ÎÞ½øÎ»£¬»òÕß¼õ·¨ÔËËã×î¸ßÎ»ÎÞ½èÎ»Ê±              1:¼Ó·¨ÔËËã×î¸ßÎ»ÓÐ½øÎ»£¬»òÕß¼õ·¨ÔËËã×î¸ßÎ»Ó
+             -Ð½èÎ»Ê±
+ 224      =3  sbit    CY          = PSW^7;    
+ 225      =3  ///½øÎ»¸¨Öú±êÖ¾Î»       0:ÎÞ½èÎ»¡¢½øÎ»          1:¼Ó·¨ÔËËãÊ±ÔÚbit3Î»ÓÐ½øÎ»£¬»ò¼õ·¨ÔËËãÔÚbit3Î»ÓÐ½èÎ»Ê±
+ 226      =3  sbit    AC          = PSW^6;    
+ 227      =3  ///ÓÃ»§±êÖ¾Î»
+ 228      =3  sbit    F0          = PSW^5;    
+ 229      =3  ///¹¤×÷¼Ä´æÆ÷×éÑ¡ÔñÎ»
+ 230      =3  sbit    RS1         = PSW^4;    
+ 231      =3  ///¹¤×÷¼Ä´æÆ÷×éÑ¡ÔñÎ»
+ 232      =3  sbit    RS0         = PSW^3;    
+ 233      =3  ///Òç³ö±êÖ¾Î»
+ 234      =3  sbit    OV          = PSW^2;    
+ 235      =3  ///F1±êÖ¾
+ 236      =3  sbit    F1          = PSW^1;    
+ 237      =3  ///ÆæÅ¼±êÖ¾Î»           0:ACCÖÐ1µÄ¸öÊýÎªÅ¼Êý£¨°üÀ¨0¸ö£©         1:ACCÖÐ1µÄ¸öÊýÎªÆæÊý
+ 238      =3  sbit    P           = PSW^0;    
+ 239      =3  
+ 240      =3  /*T2CON*/
+ 241      =3  sbit    TF2     = T2CON^7;
+ 242      =3  sbit    EXF2    = T2CON^6;
+ 243      =3  sbit    RCLK    = T2CON^5;
+ 244      =3  sbit    TCLK    = T2CON^4;
+ 245      =3  sbit    EXEN2   = T2CON^3;
+ 246      =3  sbit    TR2         = T2CON^2;
+ 247      =3  sbit    T2      = T2CON^1;
+ 248      =3  sbit    CP          = T2CON^0;
+ 249      =3  
+ 250      =3  
+ 251      =3  /*IP*/
+ 252      =3  ///ADCÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨ ADCµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±               1:Éè¶¨ ADCµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 7   
+
+ 253      =3  sbit    IPADC   = IP^6;   
+ 254      =3  ///Timer2ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»   0:Éè¶¨ Timer2µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±            1:Éè¶¨Timer2µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 255      =3  sbit    IPT2    = IP^5;   
+ 256      =3  ///UARTÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨UARTµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±              1:Éè¶¨UARTµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 257      =3  sbit    IPUART  = IP^4;   
+ 258      =3  ///Timer1ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»   0:Éè¶¨ Timer 1µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±   1:Éè¶¨ Timer 1µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 259      =3  sbit    IPT1    = IP^3;   
+ 260      =3  ///INT1ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨INT1ÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±                    1:Éè¶¨INT1µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 261      =3  sbit    IPINT1  = IP^2;   
+ 262      =3  ///Timer0ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»   0:Éè¶¨ Timer 0µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±   1:Éè¶¨ Timer 0µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 263      =3  sbit    IPT0    = IP^1;   
+ 264      =3  ///INT0ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨INT0ÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±                    1:Éè¶¨INT0µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
+ 265      =3  sbit    IPINT0  = IP^0;   
+ 266      =3  
+ 267      =3  /*IE*/
+ 268      =3  ///ÖÐ¶ÏÊ¹ÄÜµÄ×Ü¿ØÖÆ     0:¹Ø±ÕËùÓÐµÄÖÐ¶Ï        1:´ò¿ªËùÓÐµÄÖÐ¶Ï
+ 269      =3  sbit    EA        = IE^7;         
+ 270      =3  ///ADCÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ          0:¹Ø±ÕADCÖÐ¶Ï               1:´ò¿ªADCÖÐ¶Ï
+ 271      =3  sbit    EADC  = IE^6;     
+ 272      =3  ///Timer2ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ   0:¹Ø±ÕTimer2ÖÐ¶Ï    1:´ò¿ªTimer2ÖÐ¶Ï
+ 273      =3  sbit    ET2   = IE^5;     
+ 274      =3  ///UARTÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕUARTÖÐ¶Ï          1:´ò¿ªUARTÖÐ¶Ï
+ 275      =3  sbit    EUART = IE^4;     
+ 276      =3  ///Timer1ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ   0:¹Ø±ÕTIMER1ÖÐ¶Ï        1:´ò¿ªTIMER1ÖÐ¶Ï
+ 277      =3  sbit    ET1   = IE^3;     
+ 278      =3  ///INT1ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕINT1ÖÐ¶Ï      1:´ò¿ªINT1ÖÐ¶Ï
+ 279      =3  sbit    EINT1 = IE^2;     
+ 280      =3  ///Timer0ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ   0:¹Ø±ÕTIMER0ÖÐ¶Ï        1:´ò¿ªTIMER0ÖÐ¶Ï
+ 281      =3  sbit    ET0       = IE^1;         
+ 282      =3  ///INT0ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕINT0ÖÐ¶Ï      1:´ò¿ªINT0ÖÐ¶Ï
+ 283      =3  sbit    EINT0 = IE^0;     
+ 284      =3  
+ 285      =3  /*TCON*/
+ 286      =3  ///T1Òç³öÖÐ¶ÏÇëÇó±êÖ¾Î» T1²úÉúÒç³ö£¬·¢ÉúÖÐ¶ÏÊ±£¬Ó²¼þ½«TF1ÖÃÎª¡°1¡±£¬ÉêÇëÖÐ¶Ï£¬CPUÏìÓ¦Ê±£¬Ó²¼þÇå¡°0¡±¡£
+ 287      =3  sbit    TF1         = TCON^7;   
+ 288      =3  ///¶¨Ê±Æ÷T1µÄÔËÐÐ¿ØÖÆÎ» 0:Timer1½ûÖ¹¼ÆÊý                1:Timer1¿ªÊ¼¼ÆÊý
+ 289      =3  sbit    TR1         = TCON^6;   
+ 290      =3  ///T0Òç³öÖÐ¶ÏÇëÇó±êÖ¾Î» T0²úÉúÒç³ö£¬·¢ÉúÖÐ¶ÏÊ±£¬Ó²¼þ½«TF0ÖÃÎª¡°1¡±£¬ÉêÇëÖÐ¶Ï£¬CPUÏìÓ¦Ê±£¬Ó²¼þÇå¡°0¡±¡£
+ 291      =3  sbit    TF0         = TCON^5;   
+ 292      =3  ///¶¨Ê±Æ÷T0µÄÔËÐÐ¿ØÖÆÎ» 0:Timer0½ûÖ¹¼ÆÊý                1:Timer0¿ªÊ¼¼ÆÊý
+ 293      =3  sbit    TR0         = TCON^4;   
+ 294      =3  
+ 295      =3  /*SCON*/
+ 296      =3  sbit    SM0     = SCON^7;
+ 297      =3  sbit    SM1     = SCON^6;
+ 298      =3  sbit    SM2     = SCON^5;
+ 299      =3  sbit    REN     = SCON^4;
+ 300      =3  sbit    TB8     = SCON^3;
+ 301      =3  sbit    RB8     = SCON^2;
+ 302      =3  sbit    TI      = SCON^1;
+ 303      =3  sbit    RI      = SCON^0;
+ 304      =3  
+ 305      =3  /******************* P0 ******************
+ 306      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 307      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP06/P07
+ 308      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP02/P03/P04/P06/P07
+ 309      =3  ******************************************/
+ 310      =3  sbit    P07     = P0^7;
+ 311      =3  sbit    P06     = P0^6;
+ 312      =3  sbit    P05     = P0^5;
+ 313      =3  sbit    P04     = P0^4;
+ 314      =3  sbit    P03     = P0^3;
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 8   
+
+ 315      =3  sbit    P02     = P0^2;
+ 316      =3  sbit    P01     = P0^1;
+ 317      =3  sbit    P00     = P0^0;
+ 318      =3  
+ 319      =3  /******************* P1 ******************
+ 320      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 321      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP16/P17
+ 322      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP16/P17
+ 323      =3  ******************************************/
+ 324      =3  sbit    P17     = P1^7;
+ 325      =3  sbit    P16     = P1^6;
+ 326      =3  sbit    P15     = P1^5;
+ 327      =3  sbit    P14     = P1^4;
+ 328      =3  sbit    P13     = P1^3;
+ 329      =3  sbit    P12     = P1^2;
+ 330      =3  sbit    P11     = P1^1;
+ 331      =3  sbit    P10     = P1^0;
+ 332      =3  
+ 333      =3  /******************* P2 ******************
+ 334      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 335      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP22/P23
+ 336      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP22/P23/P27
+ 337      =3  ******************************************/
+ 338      =3  sbit    P27     = P2^7;
+ 339      =3  sbit    P26     = P2^6;
+ 340      =3  sbit    P25     = P2^5;
+ 341      =3  sbit    P24     = P2^4;
+ 342      =3  sbit    P23     = P2^3;
+ 343      =3  sbit    P22     = P2^2;
+ 344      =3  sbit    P21     = P2^1;
+ 345      =3  sbit    P20     = P2^0;
+ 346      =3  
+ 347      =3  /******************* P5 ******************
+ 348      =3  *SC92F8363B·â×°Î´Òý³öµÄ¹Ü½Å£ºÎÞ
+ 349      =3  *SC92F8362B·â×°Î´Òý³öµÄ¹Ü½Å£ºP50/P51
+ 350      =3  *SC92F8361B·â×°Î´Òý³öµÄ¹Ü½Å£ºP50/P51
+ 351      =3  ******************************************/
+ 352      =3  sbit    P51     = P5^1;
+ 353      =3  sbit    P50     = P5^0;
+ 354      =3  
+ 355      =3  /****************************************************************************
+ 356      =3  *×¢Òâ£º·â×°Î´Òý³öµÄ¹Ü½Å£¬ÐèÉèÖÃÎªÇ¿ÍÆÍìÊä³öÄ£Ê½
+ 357      =3  *ICÑ¡ÐÍ£ºÇë¸ù¾ÝËùÊ¹ÓÃµÄICÐÍºÅ,ÔÚ³õÊ¼»¯ÍêIO¿Úºó£¬µ÷ÓÃÏà¶ÔÓ¦µÄÎ´Òý³ö¹Ü½ÅµÄIO¿ÚÅäÖÃ;
+ 358      =3  *ÈçÈôÑ¡ÔñSC92F8363B£¬Ôò²»ÓÃµ÷ÓÃºê¶¨Òå¡£
+ 359      =3  *****************************************************************************/
+ 360      =3  ///SC92F8362BµÄÎ´Òý³öÀ´µÄIO¿ÚÅäÖÃ
+ 361      =3  #define  SC92F8362B_NIO_Init()   {P0CON|=0xC0,P1CON|=0xC0,P2CON|=0x0C,P5CON|=0x03;}  
+ 362      =3  ///SC92F8361BµÄÎ´Òý³öÀ´µÄIO¿ÚÅäÖÃ
+ 363      =3  #define  SC92F8361B_NIO_Init()   {P0CON|=0xEC,P1CON|=0xC0,P2CON|=0x8C,P5CON|=0x03;}  
+ 364      =3  
+ 365      =3  #endif
+  69      =2  #endif
+  70      =2  
+  71      =2  #ifdef SC92F736xB
+  74      =2  
+  75      =2  #ifdef SC92F742x
+  78      =2  
+  79      =2  #ifdef SC92F7003
+  82      =2  
+  83      =2  #ifdef SC92F8003
+  86      =2  
+  87      =2  #ifdef SC92F8003B
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 9   
+
+  90      =2  
+  91      =2  #ifdef SC92F740x
+  94      =2  
+  95      =2  #ifdef SC92F74Ax
+  98      =2  
+  99      =2  #ifdef SC92F84Ax
+ 102      =2  
+ 103      =2  #ifdef SC92F73Ax
+ 106      =2  
+ 107      =2  #ifdef SC92F83Ax
+ 110      =2  
+ 111      =2  #ifdef SC92F74Ax_2
+ 114      =2  
+ 115      =2  #ifdef SC92F84Ax_2
+ 118      =2  
+ 119      =2  #ifdef SC92F730x
+ 122      =2  
+ 123      =2  #ifdef SC92F730x_2
+ 126      =2  
+ 127      =2  #ifdef SC92F720x
+ 130      =2  
+ 131      =2  #ifdef SC92F827X
+ 134      =2  
+ 135      =2  #ifdef SC92F837X
+ 138      =2  
+ 139      =2  #ifdef SC92F7490
+ 142      =2  
+ 143      =2  #ifdef SC92F725X
+ 146      =2  
+ 147      =2  #ifdef SC92F735X
+ 150      =2  
+ 151      =2  #ifdef SC92F732X
+ 154      =2  
+ 155      =2  #ifdef SC92FWxx
+ 158      =2  
+ 159      =2  #ifdef SC93F833x
+ 162      =2  
+ 163      =2  #ifdef SC93F843x
+ 166      =2  
+ 167      =2  #ifdef SC93F743x
+ 170      =2  
+ 171      =2  #ifdef SC92F848x
+ 174      =2  
+ 175      =2  #ifdef SC92F748x
+ 178      =2  
+ 179      =2  #ifdef SC92F859x
+ 182      =2  
+ 183      =2  #ifdef SC92F759x
+ 186      =2  
+ 187      =2  #ifdef SC92L853x
+ 190      =2  
+ 191      =2  #ifdef SC92L753x
+ 194      =2  
+ 195      =2  #ifdef SC92R511x
+ 198      =2  
+ 199      =2  #ifdef SC92R342
+ 202      =2  
+ 203      =2  #ifdef SC92F84Hx
+ 206      =2  
+ 207      =2  #ifdef SC92F83Hx
+ 210      =2  
+ 211      =2  #ifdef SC92F646x
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 10  
+
+ 214      =2  
+ 215      =2  #ifdef SC92F546x
+ 218      =2  
+ 219      =2  #ifdef SC92F542x
+ 222      =2  
+ 223      =2  #ifdef SC92F7308B
+ 226      =2  
+ 227      =2  
+ 228      =2  #ifdef SC92R436
+ 231      =2  
+ 232      =2  #ifdef SC92R438
+ 235      =2  
+ 236      =2  #ifdef SC92R439
+ 239      =2  
+ 240      =2  #if defined (SC92R445)
+ 243      =2  
+ 244      =2  #if defined (SC92F6x1x) || defined (SC92F5x1x)
+ 247      =2  
+ 248      =2  #if defined (SC92L840x)
+ 251      =2  
+ 252      =2  #if defined (SC92R422A)
+ 255      =2  
+ 256      =2  #if defined (SC92F652x)
+ 259      =2  
+ 260      =2  #define enableInterrupts()    EA=1       /** ?a??×ü?D??  **/
+ 261      =2  #define disableInterrupts()   EA=0       /** 1?±?×ü?D??  **/
+ 262      =2  
+ 263      =2  #define     __I     volatile const   /*!< defines 'read only' permissions     */
+ 264      =2  #define     __O     volatile         /*!< defines 'write only' permissions    */
+ 265      =2  #define     __IO    volatile         /*!< defines 'read / write' permissions  */
+ 266      =2  
+ 267      =2  /*!< Signed integer types  */
+ 268      =2  typedef   signed char     int8_t;
+ 269      =2  typedef   signed short    int16_t;
+ 270      =2  typedef   signed long     int32_t;
+ 271      =2  
+ 272      =2  /*!< Unsigned integer types  */
+ 273      =2  typedef unsigned char     uint8_t;
+ 274      =2  typedef unsigned short    uint16_t;
+ 275      =2  typedef unsigned long     uint32_t;
+ 276      =2  
+ 277      =2  typedef int32_t  s32;
+ 278      =2  typedef int16_t  s16;
+ 279      =2  typedef int8_t   s8;
+ 280      =2  
+ 281      =2  typedef uint32_t  u32;
+ 282      =2  typedef uint16_t  u16;
+ 283      =2  typedef uint8_t   u8;
+ 284      =2  
+ 285      =2  typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+ 286      =2  
+ 287      =2  typedef enum {RESET = 0, SET = !RESET} FlagStatus,
+ 288      =2  ITStatus, BitStatus;
+ 289      =2  
+ 290      =2  typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
+ 291      =2  
+ 292      =2  typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;
+ 293      =2  
+ 294      =2  typedef enum {LOW = 0, HIGH = !LOW} PriorityStatus;
+ 295      =2  
+ 296      =2  typedef enum
+ 297      =2  {
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 11  
+
+ 298      =2          Status_ERROR = 0x00U,
+ 299      =2          Status_OK = 0x01U,
+ 300      =2          Status_BUSY = 0x02U,
+ 301      =2          Status_TIMEOUT = 0x03U
+ 302      =2  } StatusTypeDef;
+ 303      =2  
+ 304      =2  #define SET_BIT(SFR,BIT)                                ((SFR) |= (BIT))
+ 305      =2  
+ 306      =2  #define CLEAR_BIT(SFR,BIT)                      ((SFR) &= ~(BIT))
+ 307      =2  
+ 308      =2  #define READ_BIT(SFR, BIT)      ((SFR) & (BIT))
+ 309      =2  
+ 310      =2  #define CLEAR_REG(SFR)          ((SFR) = (0x0))
+ 311      =2  
+ 312      =2  #define WRITE_REG(SFR, VAL)     ((SFR) = (VAL))
+ 313      =2  
+ 314      =2  #endif
+ 315      =2  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
+  32      =1  
+  33      =1  /** @addtogroup sc92f_StdPeriph_Driver
+  34      =1   * @{
+  35      =1   */
+  36      =1  
+  37      =1  /** @addtogroup TIMER2
+  38      =1   * @{
+  39      =1   */
+  40      =1   
+  41      =1  /** @defgroup TIMER2_Enumerations
+  42      =1   * @{
+  43      =1   */
+  44      =1   
+  45      =1   /** @brief TIM2_PresSel_TypeDef TIM2 Prescaler
+  46      =1   * @{
+  47      =1   */
+  48      =1  typedef enum
+  49      =1  {
+  50      =1    TIM2_PRESSEL_FSYS_D12  = ((uint8_t)0x00), /*!< TIMER2¼ÆÊýÔ´À´×ÔÏµÍ³Ê±ÖÓ12·ÖÆµ */
+  51      =1    TIM2_PRESSEL_FSYS_D1   = ((uint8_t)0x01)  /*!< TIMER2¼ÆÊýÔ´À´×ÔÏµÍ³Ê±ÖÓ */
+  52      =1  } TIM2_PresSel_TypeDef;
+  53      =1  /**
+  54      =1   * @}
+  55      =1   */
+  56      =1  
+  57      =1  #if defined (SC92F730x) || defined (SC92F827X) || defined (SC92F837X) || defined (SC92F725X) || defined(SC
+             -92F735X) || defined(SC92F730x_2) || defined(SC92F720x) \
+  58      =1  || defined (SC92F7308B)
+ 103      =1  /** @brief TIM2_CountMode_TypeDef TIM2 Count Mode
+ 104      =1   * @{
+ 105      =1   */
+ 106      =1  typedef enum
+ 107      =1  {
+ 108      =1    TIM2_MODE_TIMER   = ((uint8_t)0x01), /*!< TIMER2×ö¶¨Ê±Æ÷ */
+ 109      =1    TIM2_MODE_COUNTER = ((uint8_t)0x02)  /*!< TIMER2×ö¼ÆÊýÆ÷ */
+ 110      =1  } TIM2_CountMode_TypeDef;
+ 111      =1  /**
+ 112      =1   * @}
+ 113      =1   */
+ 114      =1  
+ 115      =1  /** @brief TIM_WorkMode TIM WorkMode
+ 116      =1   * @{
+ 117      =1   */
+ 118      =1  typedef enum
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 12  
+
+ 119      =1  {
+ 120      =1    TIM2_COUNTDIRECTION_UP                 = ((uint8_t)0x00),  /*!< ÏòÉÏ¼ÆÊýÄ£Ê½ */
+ 121      =1    TIM2_COUNTDIRECTION_DOWN_UP  = ((uint8_t)0x10)    /*!< ÏòÉÏ/ÏòÏÂ¼ÆÊýÄ£Ê½ */
+ 122      =1  } TIM2_CountDirection_TypeDef;
+ 123      =1  /**
+ 124      =1   * @}
+ 125      =1   */
+ 126      =1  
+ 127      =1  /** @brief TIM2_Flag_TypeDef TIM2 Flag
+ 128      =1   * @{
+ 129      =1   */
+ 130      =1  typedef enum
+ 131      =1  {
+ 132      =1    TIM2_FLAG_TF2   = (uint8_t)0x80,         /*!< ÖÐ¶Ï±êÖ¾Î»TF2£¬¼ÆÊýÒç³ö */
+ 133      =1    TIM2_FLAG_EXF2  = (uint8_t)0x40          /*!< ÖÐ¶Ï±êÖ¾Î»EXF2£¬Íâ²¿´¥·¢ */
+ 134      =1  } TIM2_Flag_TypeDef;
+ 135      =1  /**
+ 136      =1   * @}
+ 137      =1   */
+ 138      =1  
+ 139      =1  /** @brief TIM2_WorkMode_TypeDef TIM2 WorkMode
+ 140      =1   * @{
+ 141      =1   */
+ 142      =1  typedef enum
+ 143      =1  {
+ 144      =1    TIM2_WORK_MODE0   = ((uint8_t)0x00),          /*!< TIMER2Ñ¡Ôñ¹¤×÷Ä£Ê½0 */
+ 145      =1    TIM2_WORK_MODE1   = ((uint8_t)0x01),          /*!< TIMER2Ñ¡Ôñ¹¤×÷Ä£Ê½1 */
+ 146      =1    TIM2_WORK_MODE3   = ((uint8_t)0x03),          /*!< TIMER2Ñ¡Ôñ¹¤×÷Ä£Ê½3 */
+ 147      =1  } TIM2_WorkMode_TypeDef;
+ 148      =1  /**
+ 149      =1   * @}
+ 150      =1   */
+ 151      =1  #endif
+ 152      =1  
+ 153      =1  #if defined(SC92F84Hx) || defined(SC92F83Hx)
+ 167      =1  /**
+ 168      =1   * @}
+ 169      =1   */
+ 170      =1  /* End of enumerations -----------------------------------------------------*/
+ 171      =1  
+ 172      =1  /** @addtogroup TIM2_Functions TIM2 Functions
+ 173      =1   * @{
+ 174      =1   */
+ 175      =1  /* Initialization and Configuration functions ***********************************************/
+ 176      =1  void TIM2_DeInit();
+ 177      =1  void TIM2_PrescalerSelection(TIM2_PresSel_TypeDef TIM2_PrescalerSelection);
+ 178      =1  void TIM2_TimeBaseInit(TIM2_PresSel_TypeDef TIM2_PrescalerSelection,
+ 179      =1                         TIM2_CountMode_TypeDef TIM2_CountMode,
+ 180      =1                         TIM2_CountDirection_TypeDef TIM2_CountDirection);
+ 181      =1  void TIM2_WorkMode0Config(uint16_t TIM2_SetCounter);
+ 182      =1  void TIM2_WorkMode1Config(uint16_t TIM2_SetCounter);
+ 183      =1  void TIM2_WorkMode3Config(uint16_t TIM2_SetCounter);
+ 184      =1  void TIM2_WorkModeConfig(TIM2_WorkMode_TypeDef TIM2_WorkMode, uint16_t TIM2_SetCounter);
+ 185      =1  /* Time Base functions ********************************************************/
+ 186      =1  void TIM2_SetEXEN2(FunctionalState NewState);
+ 187      =1  void TIM2_Cmd(FunctionalState NewState);
+ 188      =1  /* Interrupt Handler functions  ***********************************************/
+ 189      =1  void TIM2_ITConfig(FunctionalState NewState, PriorityStatus Priority);
+ 190      =1  FlagStatus TIM2_GetFlagStatus(TIM2_Flag_TypeDef TIM2_Flag);
+ 191      =1  void TIM2_ClearFlag(TIM2_Flag_TypeDef TIM2_Flag);
+ 192      =1  /**
+ 193      =1   * @}
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 13  
+
+ 194      =1   */
+ 195      =1  /* End of exported functions --------------------------------------------------*/
+ 196      =1  #endif
+ 197      =1  /**
+ 198      =1   * @}
+ 199      =1   */
+ 200      =1  
+ 201      =1  /**
+ 202      =1   * @}
+ 203      =1   */
+ 204      =1  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
+  28          
+  29          #if !defined (SC92L853x) && !defined(SC92L753x) && !defined(SC92F84Hx) && !defined(SC92F83Hx) && !defined(
+             -SC92F646x) && !defined(SC92F546x) && !defined(SC92F542x)\
+  30                          && !defined (SC92F652x)
+  31          /** @addtogroup sc92f_StdPeriph_Driver
+  32           * @{
+  33           */
+  34          
+  35          /** @defgroup TIM2
+  36           * @brief TIM2 driver modules
+  37           * @{
+  38           */
+  39          
+  40          /** @defgroup TIM2_Functions
+  41           * @{
+  42           */
+  43          
+  44          /** @defgroup TIM2_Group1 Configuration of the TIM2 computation unit functions
+  45           *  @brief   Configuration of the TIM2 computation unit functions
+  46           *
+  47           
+  48          @verbatim
+  49           ===============================================================================
+  50                               ##### TIM2 configuration functions #####
+  51           ===============================================================================
+  52          @endverbatim
+  53            * @{
+  54            */
+  55            
+  56          /**
+  57           * @brief  TIMER2ç›¸å…³å¯„å­˜å™¨å¤ä½è‡³ç¼ºçœå€¼
+  58           * @param  None
+  59           * @retval None
+  60           */ 
+  61          void TIM2_DeInit(void)
+  62          {
+  63   1        T2CON = 0X00;
+  64   1      #if !defined (SC92F730x) && !defined (SC92F827X) && !defined (SC92F837X) && !defined (SC92F725X) && !defin
+             -ed (SC92F735X) && !defined (SC92F730x_2) \
+  65   1                && !defined (SC92F720x) &&!defined(SC92F7308B)
+  66   1        T2MOD = 0X00;
+  67   1      #endif
+  68   1        TMCON &= 0XFB;
+  69   1        TH2 = 0X00;
+  70   1        TL2 = 0X00;
+  71   1        RCAP2H = 0X00;
+  72   1        RCAP2L = 0X00;
+  73   1        ET2 = 0;
+  74   1        IPT2 = 0;
+  75   1      }
+  76          
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 14  
+
+  77          /**
+  78           * @brief  TIMER2åŸºæœ¬è®¾ç½®é…ç½®å‡½æ•°
+  79           * @param  TIM2_PrescalerSelection[in]:é¢„åˆ†é¢‘é€‰æ‹©
+  80           *          - TIM2_PRESSEL_FSYS_D12:TIMER2è®¡æ•°æºæ¥è‡ªç³»ç»Ÿæ—¶é’Ÿ12åˆ†é¢‘
+  81           *          - TIM2_PRESSEL_FSYS_D1:TIMER2è®¡æ•°æºæ¥è‡ªç³»ç»Ÿæ—¶é’Ÿ
+  82           * @param  TIM2_CountMode[in]:è®¡æ•°/å®šæ—¶æ¨¡å¼é€‰æ‹©
+  83           *          - TIM2_MODE_TIMER:TIMER2åšå®šæ—¶å™¨
+  84           *          - TIM2_MODE_COUNTER:TIMER2åšè®¡æ•°å™¨
+  85           * @param  TIM2_CountDirection[in]:è®¡æ•°/å®šæ—¶æ¨¡å¼é€‰æ‹©
+  86           *          - TIM2_COUNTDIRECTION_UP:å‘ä¸Šè®¡æ•°æ¨¡å¼
+  87           *          - TIM2_COUNTDIRECTION_DOWN_UP:å‘ä¸Š/å‘ä¸‹è®¡æ•°æ¨¡å¼
+  88           * @retval None
+  89           */ 
+  90          void TIM2_TimeBaseInit(TIM2_PresSel_TypeDef
+  91                                 TIM2_PrescalerSelection,
+  92                                 TIM2_CountMode_TypeDef TIM2_CountMode,
+  93                                 TIM2_CountDirection_TypeDef TIM2_CountDirection)
+  94          {
+  95   1      #if !defined (SC92F6x1x) && !defined (SC92F5x1x) && !defined (SC92R436)&& !defined (SC92R438)&& !defined (
+             -SC92R439)&& !defined (SC92R422A)
+  96   1        if(TIM2_PrescalerSelection == TIM2_PRESSEL_FSYS_D12)
+  97   1        {
+  98   2          TMCON &= 0XFB;
+  99   2        }
+ 100   1        else if(TIM2_PrescalerSelection == TIM2_PRESSEL_FSYS_D1)
+ 101   1        {
+ 102   2          TMCON |= 0X04;
+ 103   2        }
+ 104   1      #else
+ 114   1      
+ 115   1      
+ 116   1      #if !defined (SC92F730x) && !defined (SC92F827X) && !defined (SC92F837X) && !defined (SC92F725X) && !defin
+             -ed (SC92F735X)\
+ 117   1                      && !defined (SC92F825X) && !defined (SC92F835X) && !defined (SC92F730x_2) && !defined (SC92F720x) && !de
+             -fined (SC92F7308B)
+ 118   1      
+ 119   1        if(TIM2_CountDirection == TIM2_COUNTDIRECTION_UP)
+ 120   1        {
+ 121   2          T2MOD &= 0XFE;
+ 122   2        }
+ 123   1        else if(TIM2_CountDirection ==
+ 124   1                TIM2_COUNTDIRECTION_DOWN_UP)
+ 125   1        {
+ 126   2          T2MOD |= 0X01;
+ 127   2        }
+ 128   1      
+ 129   1        if(TIM2_CountMode == TIM2_MODE_TIMER)
+ 130   1        {
+ 131   2          T2CON &= 0XFD;
+ 132   2        }
+ 133   1        else if(TIM2_CountMode == TIM2_MODE_COUNTER)
+ 134   1        {
+ 135   2          T2CON |= 0X02;
+ 136   2        }
+ 137   1              
+ 138   1      
+ 139   1      #else
+ 143   1      
+ 144   1      }
+ 145          
+ 146          
+ 147          /**
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 15  
+
+ 148           * @brief  TIMER2å·¥ä½œæ¨¡å¼1é…ç½®å‡½æ•°
+ 149           * @param  TIM2_SetCounter[in]:é…ç½®è®¡æ•°åˆå€¼
+ 150           * @retval None
+ 151           */
+ 152          void TIM2_WorkMode1Config(uint16_t TIM2_SetCounter)
+ 153          {
+ 154   1        RCAP2L = TIM2_SetCounter % 256;
+ 155   1        RCAP2H = TIM2_SetCounter / 256;
+ 156   1        TL2 = RCAP2L;
+ 157   1        TH2 = RCAP2H;
+ 158   1      }
+ 159          
+ 160          /**
+ 161           * @brief  TIMER2å·¥ä½œæ¨¡å¼é…ç½®å‡½æ•°
+ 162           * @param  TIM2_WorkMode_TypeDef[in]:TIMER2å·¥ä½œæ¨¡å¼é€‰æ‹©
+ 163           *          - TIM2_WORK_MODE0:TIMER2é€‰æ‹©å·¥ä½œæ¨¡å¼0
+ 164           *          - TIM2_WORK_MODE1:TIMER2é€‰æ‹©å·¥ä½œæ¨¡å¼1
+ 165           *          - TIM2_WORK_MODE3:TIMER2é€‰æ‹©å·¥ä½œæ¨¡å¼3
+ 166           * @param  TIM2_SetCounter[in]:TIMER2è®¡æ•°åˆå€¼é…ç½®
+ 167           * @retval None
+ 168           */
+ 169          void TIM2_WorkModeConfig(TIM2_WorkMode_TypeDef
+ 170                                   TIM2_WorkMode, uint16_t TIM2_SetCounter)
+ 171          {
+ 172   1        switch(TIM2_WorkMode)
+ 173   1        {
+ 174   2          case TIM2_WORK_MODE1:
+ 175   2            TIM2_WorkMode1Config(TIM2_SetCounter);
+ 176   2            break;
+ 177   2      #if !defined (SC92F730x) && !defined (SC92F827X) && !defined (SC92F837X) && !defined (SC92F725X) && !defin
+             -ed (SC92F735X) && !defined (SC92F725X) && !defined (SC92F730x_2)\
+ 178   2                      && !defined (SC92F720x)  && !defined (SC92F7308B)
+ 179   2          case TIM2_WORK_MODE0:
+ 180   2            TIM2_WorkMode0Config(TIM2_SetCounter);
+ 181   2            break;
+ 182   2      
+ 183   2          case TIM2_WORK_MODE3:
+ 184   2            TIM2_WorkMode3Config(TIM2_SetCounter);
+ 185   2            break;
+ 186   2      #endif
+ 187   2          default:
+ 188   2            break;
+ 189   2        }
+ 190   1      }
+ 191          
+ 192          #if !defined (SC92F730x) && !defined (SC92F827X) && !defined (SC92F837X) && !defined (SC92F725X) && !defin
+             -ed (SC92F735X) && !defined (SC92F730x_2) && !defined (SC92F720x)\
+ 193           && !defined (SC92F7308B)
+ 194          /**
+ 195           * @brief  TIMER2å·¥ä½œæ¨¡å¼0é…ç½®å‡½æ•°
+ 196           * @param  TIM2_SetCounter[in]:é…ç½®è®¡æ•°åˆå€¼
+ 197           * @retval None
+ 198           */
+ 199          void TIM2_WorkMode0Config(uint16_t TIM2_SetCounter)
+ 200          {
+ 201   1        T2CON |= 0x09;
+ 202   1        TL2 = TIM2_SetCounter % 256;
+ 203   1        TH2 = TIM2_SetCounter / 256;
+ 204   1      }
+ 205          
+ 206          /**
+ 207           * @brief  TIMER2å·¥ä½œæ¨¡å¼3é…ç½®å‡½æ•°
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 16  
+
+ 208           * @param  TIM2_SetCounter[in]:é…ç½®è®¡æ•°åˆå€¼
+ 209           * @retval None
+ 210           */
+ 211          void TIM2_WorkMode3Config(uint16_t TIM2_SetCounter)
+ 212          {
+ 213   1        RCAP2L = TIM2_SetCounter % 256;
+ 214   1        RCAP2H = TIM2_SetCounter / 256;
+ 215   1        T2MOD |= 0X02;
+ 216   1      }
+ 217          
+ 218          /**
+ 219           * @brief  TIMER2_EXEN2é…ç½®å‡½æ•°
+ 220           * @param  NewState[in]:EXEN2ä½¿èƒ½é€‰æ‹©
+ 221           *              - DISABLE:å…³é—­
+ 222           *              - ENABLE:ä½¿èƒ½
+ 223           * @retval None
+ 224           */
+ 225          void TIM2_SetEXEN2(FunctionalState NewState)
+ 226          {
+ 227   1        if(NewState == DISABLE)
+ 228   1        {
+ 229   2          EXEN2 = 0;
+ 230   2        }
+ 231   1        else
+ 232   1        {
+ 233   2          EXEN2 = 1;
+ 234   2        }
+ 235   1      }
+ 236          #endif
+ 237          
+ 238          /**
+ 239           * @brief  TIMER2åŠŸèƒ½å¼€å…³å‡½æ•°
+ 240           * @param  NewState[in]:åŠŸèƒ½å¯åŠ¨/å…³é—­é€‰æ‹©
+ 241           *              - DISABLE:å…³é—­
+ 242           *              - ENABLE:ä½¿èƒ½
+ 243           * @retval None
+ 244           */
+ 245          void TIM2_Cmd(FunctionalState NewState)
+ 246          {
+ 247   1        if(NewState == DISABLE)
+ 248   1        {
+ 249   2          TR2 = 0;
+ 250   2        }
+ 251   1        else
+ 252   1        {
+ 253   2          TR2 = 1;
+ 254   2        }
+ 255   1      }
+ 256          
+ 257          /**
+ 258           * @}
+ 259           */
+ 260          /* End of TIM2_Group1.  */
+ 261          
+ 262          /** @defgroup TIM2_Group2 Interrupts and flags management functions
+ 263           *  @brief   Interrupts and flags management functions
+ 264           *
+ 265          @verbatim
+ 266           ===============================================================================
+ 267                               ##### Interrupts and flags management functions #####
+ 268           ===============================================================================
+ 269          @endverbatim
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 17  
+
+ 270            * @{
+ 271            */
+ 272          
+ 273          /**
+ 274           * @brief  TIMER2ä¸­æ–­åˆå§‹åŒ–
+ 275           * @param  NewState[in]: æ–­ä½¿èƒ½/å…³é—­é€‰æ‹©
+ 276           *              - DISABLE:å…³é—­
+ 277           *              - ENABLE:ä½¿èƒ½
+ 278           * @param  Priority[in]: ä¸­æ–­ä¼˜å…ˆçº§é€‰æ‹©
+ 279           *              - LOW:ä½Ž
+ 280           *              - HIGH:é«˜
+ 281           * @retval None
+ 282           */
+ 283          void TIM2_ITConfig(FunctionalState NewState,
+ 284                             PriorityStatus Priority)
+ 285          {
+ 286   1        if(NewState == DISABLE)
+ 287   1        {
+ 288   2          ET2 = 0;
+ 289   2        }
+ 290   1        else
+ 291   1        {
+ 292   2          ET2 = 1;
+ 293   2        }
+ 294   1      
+ 295   1        /************************************************************/
+ 296   1        if(Priority == LOW)
+ 297   1        {
+ 298   2          IPT2 = 0;
+ 299   2        }
+ 300   1        else
+ 301   1        {
+ 302   2          IPT2 = 1;
+ 303   2        }
+ 304   1      }
+ 305          
+ 306          /**
+ 307           * @brief  èŽ·å¾—TIMER2ä¸­æ–­æ ‡å¿—çŠ¶æ€
+ 308           * @param  TIM2_Flag[in]:å¾…è¯»å–çš„FLAGæ ‡å¿—
+ 309           * @retval TIMER2ä¸­æ–­æ ‡å¿—çŠ¶æ€
+ 310           *                  - RESET:ç½®é›¶
+ 311           *                  - SET:ç½®èµ·
+ 312           */ 
+ 313          FlagStatus TIM2_GetFlagStatus(TIM2_Flag_TypeDef TIM2_Flag)
+ 314          {
+ 315   1        FlagStatus status = RESET;
+ 316   1      
+ 317   1        if((TIM2_Flag & T2CON) != (uint8_t)RESET)
+ 318   1        {
+ 319   2          status = SET;
+ 320   2        }
+ 321   1        else
+ 322   1        {
+ 323   2          status = RESET;
+ 324   2        }
+ 325   1      
+ 326   1        return status;
+ 327   1      }
+ 328          
+ 329          /**
+ 330           * @brief  æ¸…é™¤TIMER2ä¸­æ–­æ ‡å¿—çŠ¶æ€
+ 331           * @param  None
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 18  
+
+ 332           * @retval None
+ 333           */
+ 334          void TIM2_ClearFlag(TIM2_Flag_TypeDef TIM2_Flag)
+ 335          {
+ 336   1        T2CON &= (~TIM2_Flag);
+ 337   1      }
+ 338          
+ 339          
+ 340          /**
+ 341           * @}
+ 342           */
+ 343          /* End of TIM2_Group2.  */
+ 344          #else
+ 673          /**
+ 674           * @}
+ 675           */
+ 676          
+ 677          /**
+ 678           * @}
+ 679           */
+ 680          
+ 681          /**
+ 682           * @}
+ 683           */
+ 684          /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 19  
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION TIM2_DeInit (BEGIN)
+                                           ; SOURCE LINE # 61
+                                           ; SOURCE LINE # 62
+                                           ; SOURCE LINE # 63
+0000 E4                CLR     A
+0001 F5C8              MOV     T2CON,A
+                                           ; SOURCE LINE # 66
+0003 F5C9              MOV     T2MOD,A
+                                           ; SOURCE LINE # 68
+0005 538EFB            ANL     TMCON,#0FBH
+                                           ; SOURCE LINE # 69
+0008 F5CD              MOV     TH2,A
+                                           ; SOURCE LINE # 70
+000A F5CC              MOV     TL2,A
+                                           ; SOURCE LINE # 71
+000C F5CB              MOV     RCAP2H,A
+                                           ; SOURCE LINE # 72
+000E F5CA              MOV     RCAP2L,A
+                                           ; SOURCE LINE # 73
+0010 C2AD              CLR     ET2
+                                           ; SOURCE LINE # 74
+0012 C2BD              CLR     IPT2
+                                           ; SOURCE LINE # 75
+0014 22                RET     
+             ; FUNCTION TIM2_DeInit (END)
+
+             ; FUNCTION _TIM2_TimeBaseInit (BEGIN)
+                                           ; SOURCE LINE # 90
+;---- Variable 'TIM2_PrescalerSelection' assigned to Register 'R7' ----
+;---- Variable 'TIM2_CountDirection' assigned to Register 'R3' ----
+;---- Variable 'TIM2_CountMode' assigned to Register 'R5' ----
+                                           ; SOURCE LINE # 94
+                                           ; SOURCE LINE # 96
+0000 EF                MOV     A,R7
+0001 7005              JNZ     ?C0002
+                                           ; SOURCE LINE # 97
+                                           ; SOURCE LINE # 98
+0003 538EFB            ANL     TMCON,#0FBH
+                                           ; SOURCE LINE # 99
+0006 8007              SJMP    ?C0003
+0008         ?C0002:
+                                           ; SOURCE LINE # 100
+0008 EF                MOV     A,R7
+0009 B40103            CJNE    A,#01H,?C0003
+                                           ; SOURCE LINE # 101
+                                           ; SOURCE LINE # 102
+000C 438E04            ORL     TMCON,#04H
+                                           ; SOURCE LINE # 103
+000F         ?C0003:
+                                           ; SOURCE LINE # 119
+000F EB                MOV     A,R3
+0010 7005              JNZ     ?C0005
+                                           ; SOURCE LINE # 120
+                                           ; SOURCE LINE # 121
+0012 53C9FE            ANL     T2MOD,#0FEH
+                                           ; SOURCE LINE # 122
+0015 8007              SJMP    ?C0006
+0017         ?C0005:
+                                           ; SOURCE LINE # 123
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 20  
+
+0017 EB                MOV     A,R3
+0018 B41003            CJNE    A,#010H,?C0006
+                                           ; SOURCE LINE # 125
+                                           ; SOURCE LINE # 126
+001B 43C901            ORL     T2MOD,#01H
+                                           ; SOURCE LINE # 127
+001E         ?C0006:
+                                           ; SOURCE LINE # 129
+001E ED                MOV     A,R5
+001F B40104            CJNE    A,#01H,?C0008
+                                           ; SOURCE LINE # 130
+                                           ; SOURCE LINE # 131
+0022 53C8FD            ANL     T2CON,#0FDH
+                                           ; SOURCE LINE # 132
+0025 22                RET     
+0026         ?C0008:
+                                           ; SOURCE LINE # 133
+0026 ED                MOV     A,R5
+0027 B40203            CJNE    A,#02H,?C0011
+                                           ; SOURCE LINE # 134
+                                           ; SOURCE LINE # 135
+002A 43C802            ORL     T2CON,#02H
+                                           ; SOURCE LINE # 136
+                                           ; SOURCE LINE # 144
+002D         ?C0011:
+002D 22                RET     
+             ; FUNCTION _TIM2_TimeBaseInit (END)
+
+             ; FUNCTION _TIM2_WorkMode1Config (BEGIN)
+                                           ; SOURCE LINE # 152
+;---- Variable 'TIM2_SetCounter' assigned to Register 'R6/R7' ----
+                                           ; SOURCE LINE # 153
+                                           ; SOURCE LINE # 154
+0000 AD07              MOV     R5,AR7
+0002 8DCA              MOV     RCAP2L,R5
+                                           ; SOURCE LINE # 155
+0004 EE                MOV     A,R6
+0005 F5CB              MOV     RCAP2H,A
+                                           ; SOURCE LINE # 156
+0007 85CACC            MOV     TL2,RCAP2L
+                                           ; SOURCE LINE # 157
+000A 85CBCD            MOV     TH2,RCAP2H
+                                           ; SOURCE LINE # 158
+000D 22                RET     
+             ; FUNCTION _TIM2_WorkMode1Config (END)
+
+             ; FUNCTION _TIM2_WorkModeConfig (BEGIN)
+                                           ; SOURCE LINE # 169
+0000 900000      R     MOV     DPTR,#TIM2_SetCounter
+0003 EC                MOV     A,R4
+0004 F0                MOVX    @DPTR,A
+0005 A3                INC     DPTR
+0006 ED                MOV     A,R5
+0007 F0                MOVX    @DPTR,A
+;---- Variable 'TIM2_WorkMode' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 171
+                                           ; SOURCE LINE # 172
+0008 EF                MOV     A,R7
+0009 6013              JZ      ?C0015
+000B 24FD              ADD     A,#0FDH
+000D 601A              JZ      ?C0016
+000F 2402              ADD     A,#02H
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 21  
+
+0011 7021              JNZ     ?C0018
+                                           ; SOURCE LINE # 173
+                                           ; SOURCE LINE # 174
+0013         ?C0014:
+                                           ; SOURCE LINE # 175
+0013 900000      R     MOV     DPTR,#TIM2_SetCounter
+0016 E0                MOVX    A,@DPTR
+0017 FE                MOV     R6,A
+0018 A3                INC     DPTR
+0019 E0                MOVX    A,@DPTR
+001A FF                MOV     R7,A
+001B 020000      R     LJMP    _TIM2_WorkMode1Config
+                                           ; SOURCE LINE # 176
+                                           ; SOURCE LINE # 179
+001E         ?C0015:
+                                           ; SOURCE LINE # 180
+001E 900000      R     MOV     DPTR,#TIM2_SetCounter
+0021 E0                MOVX    A,@DPTR
+0022 FE                MOV     R6,A
+0023 A3                INC     DPTR
+0024 E0                MOVX    A,@DPTR
+0025 FF                MOV     R7,A
+0026 020000      R     LJMP    _TIM2_WorkMode0Config
+                                           ; SOURCE LINE # 181
+                                           ; SOURCE LINE # 183
+0029         ?C0016:
+                                           ; SOURCE LINE # 184
+0029 900000      R     MOV     DPTR,#TIM2_SetCounter
+002C E0                MOVX    A,@DPTR
+002D FE                MOV     R6,A
+002E A3                INC     DPTR
+002F E0                MOVX    A,@DPTR
+0030 FF                MOV     R7,A
+0031 120000      R     LCALL   _TIM2_WorkMode3Config
+                                           ; SOURCE LINE # 185
+                                           ; SOURCE LINE # 187
+                                           ; SOURCE LINE # 188
+                                           ; SOURCE LINE # 189
+                                           ; SOURCE LINE # 190
+0034         ?C0018:
+0034 22                RET     
+             ; FUNCTION _TIM2_WorkModeConfig (END)
+
+             ; FUNCTION _TIM2_WorkMode0Config (BEGIN)
+                                           ; SOURCE LINE # 199
+;---- Variable 'TIM2_SetCounter' assigned to Register 'R6/R7' ----
+                                           ; SOURCE LINE # 200
+                                           ; SOURCE LINE # 201
+0000 43C809            ORL     T2CON,#09H
+                                           ; SOURCE LINE # 202
+0003 AD07              MOV     R5,AR7
+0005 8DCC              MOV     TL2,R5
+                                           ; SOURCE LINE # 203
+0007 EE                MOV     A,R6
+0008 F5CD              MOV     TH2,A
+                                           ; SOURCE LINE # 204
+000A 22                RET     
+             ; FUNCTION _TIM2_WorkMode0Config (END)
+
+             ; FUNCTION _TIM2_WorkMode3Config (BEGIN)
+                                           ; SOURCE LINE # 211
+;---- Variable 'TIM2_SetCounter' assigned to Register 'R6/R7' ----
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 22  
+
+                                           ; SOURCE LINE # 212
+                                           ; SOURCE LINE # 213
+0000 AD07              MOV     R5,AR7
+0002 8DCA              MOV     RCAP2L,R5
+                                           ; SOURCE LINE # 214
+0004 EE                MOV     A,R6
+0005 F5CB              MOV     RCAP2H,A
+                                           ; SOURCE LINE # 215
+0007 43C902            ORL     T2MOD,#02H
+                                           ; SOURCE LINE # 216
+000A 22                RET     
+             ; FUNCTION _TIM2_WorkMode3Config (END)
+
+             ; FUNCTION _TIM2_SetEXEN2 (BEGIN)
+                                           ; SOURCE LINE # 225
+;---- Variable 'NewState' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 226
+                                           ; SOURCE LINE # 227
+0000 EF                MOV     A,R7
+0001 7003              JNZ     ?C0021
+                                           ; SOURCE LINE # 228
+                                           ; SOURCE LINE # 229
+0003 C2CB              CLR     EXEN2
+                                           ; SOURCE LINE # 230
+0005 22                RET     
+0006         ?C0021:
+                                           ; SOURCE LINE # 232
+                                           ; SOURCE LINE # 233
+0006 D2CB              SETB    EXEN2
+                                           ; SOURCE LINE # 234
+                                           ; SOURCE LINE # 235
+0008         ?C0023:
+0008 22                RET     
+             ; FUNCTION _TIM2_SetEXEN2 (END)
+
+             ; FUNCTION _TIM2_Cmd (BEGIN)
+                                           ; SOURCE LINE # 245
+;---- Variable 'NewState' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 246
+                                           ; SOURCE LINE # 247
+0000 EF                MOV     A,R7
+0001 7003              JNZ     ?C0024
+                                           ; SOURCE LINE # 248
+                                           ; SOURCE LINE # 249
+0003 C2CA              CLR     TR2
+                                           ; SOURCE LINE # 250
+0005 22                RET     
+0006         ?C0024:
+                                           ; SOURCE LINE # 252
+                                           ; SOURCE LINE # 253
+0006 D2CA              SETB    TR2
+                                           ; SOURCE LINE # 254
+                                           ; SOURCE LINE # 255
+0008         ?C0026:
+0008 22                RET     
+             ; FUNCTION _TIM2_Cmd (END)
+
+             ; FUNCTION _TIM2_ITConfig (BEGIN)
+                                           ; SOURCE LINE # 283
+;---- Variable 'Priority' assigned to Register 'R5' ----
+;---- Variable 'NewState' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 285
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 23  
+
+                                           ; SOURCE LINE # 286
+0000 EF                MOV     A,R7
+0001 7004              JNZ     ?C0027
+                                           ; SOURCE LINE # 287
+                                           ; SOURCE LINE # 288
+0003 C2AD              CLR     ET2
+                                           ; SOURCE LINE # 289
+0005 8002              SJMP    ?C0028
+0007         ?C0027:
+                                           ; SOURCE LINE # 291
+                                           ; SOURCE LINE # 292
+0007 D2AD              SETB    ET2
+                                           ; SOURCE LINE # 293
+0009         ?C0028:
+                                           ; SOURCE LINE # 296
+0009 ED                MOV     A,R5
+000A 7003              JNZ     ?C0029
+                                           ; SOURCE LINE # 297
+                                           ; SOURCE LINE # 298
+000C C2BD              CLR     IPT2
+                                           ; SOURCE LINE # 299
+000E 22                RET     
+000F         ?C0029:
+                                           ; SOURCE LINE # 301
+                                           ; SOURCE LINE # 302
+000F D2BD              SETB    IPT2
+                                           ; SOURCE LINE # 303
+                                           ; SOURCE LINE # 304
+0011         ?C0031:
+0011 22                RET     
+             ; FUNCTION _TIM2_ITConfig (END)
+
+             ; FUNCTION _TIM2_GetFlagStatus (BEGIN)
+                                           ; SOURCE LINE # 313
+;---- Variable 'TIM2_Flag' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 314
+                                           ; SOURCE LINE # 315
+;---- Variable 'status' assigned to Register 'R6' ----
+0000 E4                CLR     A
+0001 FE                MOV     R6,A
+                                           ; SOURCE LINE # 317
+0002 E5C8              MOV     A,T2CON
+0004 5F                ANL     A,R7
+0005 6003              JZ      ?C0032
+                                           ; SOURCE LINE # 318
+                                           ; SOURCE LINE # 319
+0007 0E                INC     R6
+                                           ; SOURCE LINE # 320
+0008 8002              SJMP    ?C0033
+000A         ?C0032:
+                                           ; SOURCE LINE # 322
+                                           ; SOURCE LINE # 323
+000A E4                CLR     A
+000B FE                MOV     R6,A
+                                           ; SOURCE LINE # 324
+000C         ?C0033:
+                                           ; SOURCE LINE # 326
+000C AF06              MOV     R7,AR6
+                                           ; SOURCE LINE # 327
+000E 22                RET     
+             ; FUNCTION _TIM2_GetFlagStatus (END)
+
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 24  
+
+             ; FUNCTION _TIM2_ClearFlag (BEGIN)
+                                           ; SOURCE LINE # 334
+;---- Variable 'TIM2_Flag' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 335
+                                           ; SOURCE LINE # 336
+0000 EF                MOV     A,R7
+0001 F4                CPL     A
+0002 52C8              ANL     T2CON,A
+                                           ; SOURCE LINE # 337
+0004 22                RET     
+             ; FUNCTION _TIM2_ClearFlag (END)
+
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 25  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+uint16_t . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+OPREG. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FFH  1
+P0 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0080H  1
+SSDAT. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009FH  1
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+P2 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A0H  1
+Status_OK. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+EUART. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ACH  1
+TMCON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008EH  1
+AC . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D6H  1
+FlagStatus . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+RESET. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+OTCON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008FH  1
+P5 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D8H  1
+_TIM2_WorkModeConfig . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  TIM2_WorkMode. . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+  TIM2_SetCounter. . . . . . . . . . .  AUTO     XDATA  U_INT    0000H  2
+EA . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AFH  1
+T2 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C9H  1
+int32_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+TIM2_MODE_TIMER. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+int16_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+ERROR. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+EADC . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AEH  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+EXA0 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E9H  1
+_TIM2_SetEXEN2 . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  NewState . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+TIM2_Flag_TypeDef. . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+TIM2_FLAG_EXF2 . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+EXA1 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EAH  1
+OPINX. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FEH  1
+EXA2 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EBH  1
+EXA3 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ECH  1
+_TIM2_Cmd. . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  NewState . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+Status_TIMEOUT . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CP . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C8H  1
+ErrorStatus. . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+EXF2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CEH  1
+CHKSUMH. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FDH  1
+PWMDTY0. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D5H  1
+OPERCON. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EFH  1
+PWMDTY1. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D6H  1
+P0PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009BH  1
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+CHKSUML. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FCH  1
+PWMDTY2. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D7H  1
+P1PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0092H  1
+RI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0098H  1
+PWMDTY3. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DDH  1
+P2PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A2H  1
+TIM2_PRESSEL_FSYS_D1 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+SUCCESS. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CY . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D7H  1
+PWMDTY4. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DEH  1
+TI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0099H  1
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 26  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+PWMDTY5. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DFH  1
+IPT0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B9H  1
+P5PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DAH  1
+FunctionalState. . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IPT1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BBH  1
+IPT2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
+HIGH . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+RCAP2H . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CBH  1
+SP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0081H  1
+_TIM2_TimeBaseInit . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  TIM2_PrescalerSelection. . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+  TIM2_CountMode . . . . . . . . . . .  * REG *  DATA   U_CHAR   0005H  1
+  TIM2_CountDirection. . . . . . . . .  * REG *  DATA   U_CHAR   0003H  1
+_TIM2_GetFlagStatus. . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  TIM2_Flag. . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+  status . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0006H  1
+OV . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D2H  1
+ITStatus . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IAPADE . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F4H  1
+P0VO . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009CH  1
+RCAP2L . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CAH  1
+TIM2_CountMode_TypeDef . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+TIM2_MODE_COUNTER. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+EXBH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EEH  1
+ENABLE . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BitStatus. . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IAPADH . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F3H  1
+PWMDTYA. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D4H  1
+PWMDTYB. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DCH  1
+ADCCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ADH  1
+s8 . . . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+EXBL . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EDH  1
+Status_BUSY. . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+u8 . . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+RCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CDH  1
+IAPADL . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F2H  1
+bool . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+TCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CCH  1
+P00. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0080H  1
+P10. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+P01. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0081H  1
+SBUF . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0099H  1
+PCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0087H  1
+P20. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A0H  1
+P11. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0091H  1
+P02. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0082H  1
+P21. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A1H  1
+P12. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0092H  1
+P03. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0083H  1
+P22. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A2H  1
+P13. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0093H  1
+P04. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0084H  1
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+TIM2_COUNTDIRECTION_UP . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+P50. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D8H  1
+P23. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A3H  1
+P14. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0094H  1
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 27  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+P05. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0085H  1
+IAPDAT . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F5H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+TMOD . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0089H  1
+_TIM2_WorkMode0Config. . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  TIM2_SetCounter. . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+P51. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D9H  1
+P24. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A4H  1
+P15. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0095H  1
+P06. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0086H  1
+IPINT0 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B8H  1
+_TIM2_WorkMode1Config. . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  TIM2_SetCounter. . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+P25. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A5H  1
+P16. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0096H  1
+P07. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0087H  1
+IPINT1 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BAH  1
+P26. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A6H  1
+P17. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0097H  1
+SSCON0 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009DH  1
+_TIM2_WorkMode3Config. . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  TIM2_SetCounter. . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+P27. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A7H  1
+SSCON1 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009EH  1
+SSCON2 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0095H  1
+TIM2_DeInit. . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+StatusTypeDef. . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+IAPCTL . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F6H  1
+IE1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A9H  1
+TIM2_WorkMode_TypeDef. . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+TRUE . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+B. . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F0H  1
+IOHCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0097H  1
+IAPKEY . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F1H  1
+BTMCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CEH  1
+TIM2_FLAG_TF2. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+PWMCFG . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D1H  1
+ACC. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E0H  1
+TIM2_CountDirection_TypeDef. . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+ET0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A9H  1
+TF0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008DH  1
+ET1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ABH  1
+ADCCFG0. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ABH  1
+IP1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B9H  1
+TF1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008FH  1
+ET2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ADH  1
+ADCCFG1. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00ACH  1
+RB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009AH  1
+TF2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CFH  1
+ADCCFG2. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00AAH  1
+TH0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008CH  1
+TH1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008DH  1
+TIM2_PRESSEL_FSYS_D12. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+TB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009BH  1
+TH2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CDH  1
+TIM2_COUNTDIRECTION_DOWN_UP. . . . . .  E_CONST  -----  U_CHAR   -----  1
+uint8_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 28  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+P. . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D0H  1
+SM0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009FH  1
+TL0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008AH  1
+SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
+WDTCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CFH  1
+TL1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008BH  1
+SM2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009DH  1
+TL2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CCH  1
+RS0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D3H  1
+TIM2_PresSel_TypeDef . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+TR0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008CH  1
+RS1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D4H  1
+PWMCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D2H  1
+TR1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008EH  1
+IPUART . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BCH  1
+s32. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+TR2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CAH  1
+int8_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+u32. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+s16. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+u16. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+PWMPRD . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D3H  1
+DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
+DPL. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0082H  1
+EINT0. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
+P0CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009AH  1
+EINT1. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AAH  1
+IPADC. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BEH  1
+INT0F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BAH  1
+P1CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0091H  1
+EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
+INT1F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BCH  1
+P2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A1H  1
+_TIM2_ClearFlag. . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  TIM2_Flag. . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+INT2F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C6H  1
+REN. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009CH  1
+P5CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D9H  1
+ADCVH. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00AFH  1
+T2MOD. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C9H  1
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+EXADH. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F7H  1
+ADCVL. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00AEH  1
+SET. . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+FALSE. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+INT0R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BBH  1
+INT1R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BDH  1
+PriorityStatus . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+INT2R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C7H  1
+LOW. . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+Status_ERROR . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_TIM2_ITConfig . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  NewState . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+  Priority . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0005H  1
+F0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D5H  1
+DISABLE. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+F1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D1H  1
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 29  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+TIM2_WORK_MODE0. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+TIM2_WORK_MODE1. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+TIM2_WORK_MODE3. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+uint32_t . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    212    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----       2
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ProjectOpt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_opt.xsd">
+  <SchemaVersion>1.0</SchemaVersion>
+  <Header>### uVision Project, (C) Keil Software</Header>
+  <Extensions>
+    <cExt>*.c</cExt>
+    <aExt>*.s*; *.src; *.a*</aExt>
+    <oExt>*.obj</oExt>
+    <lExt>*.lib</lExt>
+    <tExt>*.txt; *.h; *.inc; *.md</tExt>
+    <pExt>*.plm</pExt>
+    <CppX>*.cpp</CppX>
+    <nMigrate>0</nMigrate>
+  </Extensions>
+  <DaveTm>
+    <dwLowDateTime>0</dwLowDateTime>
+    <dwHighDateTime>0</dwHighDateTime>
+  </DaveTm>
+  <Target>
+    <TargetName>UiBoard</TargetName>
+    <ToolsetNumber>0x0</ToolsetNumber>
+    <ToolsetName>MCS-51</ToolsetName>
+    <TargetOption>
+      <CLK51>16000000</CLK51>
+      <OPTTT>
+        <gFlags>1</gFlags>
+        <BeepAtEnd>1</BeepAtEnd>
+        <RunSim>1</RunSim>
+        <RunTarget>0</RunTarget>
+        <RunAbUc>0</RunAbUc>
+      </OPTTT>
+      <OPTHX>
+        <HexSelection>0</HexSelection>
+        <FlashByte>65535</FlashByte>
+        <HexRangeLowAddress>0</HexRangeLowAddress>
+        <HexRangeHighAddress>0</HexRangeHighAddress>
+        <HexOffset>0</HexOffset>
+      </OPTHX>
+      <OPTLEX>
+        <PageWidth>120</PageWidth>
+        <PageLength>65</PageLength>
+        <TabStop>8</TabStop>
+        <ListingPath>..\List\</ListingPath>
+      </OPTLEX>
+      <ListingPage>
+        <CreateCListing>1</CreateCListing>
+        <CreateAListing>1</CreateAListing>
+        <CreateLListing>1</CreateLListing>
+        <CreateIListing>0</CreateIListing>
+        <AsmCond>1</AsmCond>
+        <AsmSymb>1</AsmSymb>
+        <AsmXref>0</AsmXref>
+        <CCond>1</CCond>
+        <CCode>0</CCode>
+        <CListInc>0</CListInc>
+        <CSymb>0</CSymb>
+        <LinkerCodeListing>0</LinkerCodeListing>
+      </ListingPage>
+      <OPTXL>
+        <LMap>1</LMap>
+        <LComments>1</LComments>
+        <LGenerateSymbols>1</LGenerateSymbols>
+        <LLibSym>1</LLibSym>
+        <LLines>1</LLines>
+        <LLocSym>1</LLocSym>
+        <LPubSym>1</LPubSym>
+        <LXref>0</LXref>
+        <LExpSel>0</LExpSel>
+      </OPTXL>
+      <OPTFL>
+        <tvExp>1</tvExp>
+        <tvExpOptDlg>0</tvExpOptDlg>
+        <IsCurrentTarget>1</IsCurrentTarget>
+      </OPTFL>
+      <CpuCode>0</CpuCode>
+      <DebugOpt>
+        <uSim>1</uSim>
+        <uTrg>0</uTrg>
+        <sLdApp>1</sLdApp>
+        <sGomain>1</sGomain>
+        <sRbreak>1</sRbreak>
+        <sRwatch>1</sRwatch>
+        <sRmem>1</sRmem>
+        <sRfunc>1</sRfunc>
+        <sRbox>1</sRbox>
+        <tLdApp>1</tLdApp>
+        <tGomain>0</tGomain>
+        <tRbreak>1</tRbreak>
+        <tRwatch>1</tRwatch>
+        <tRmem>1</tRmem>
+        <tRfunc>0</tRfunc>
+        <tRbox>1</tRbox>
+        <tRtrace>0</tRtrace>
+        <sRSysVw>1</sRSysVw>
+        <tRSysVw>1</tRSysVw>
+        <sRunDeb>0</sRunDeb>
+        <sLrtime>0</sLrtime>
+        <bEvRecOn>1</bEvRecOn>
+        <bSchkAxf>0</bSchkAxf>
+        <bTchkAxf>0</bTchkAxf>
+        <nTsel>9</nTsel>
+        <sDll>
+        </sDll>
+        <sDllPa>
+        </sDllPa>
+        <sDlgDll>
+        </sDlgDll>
+        <sDlgPa>
+        </sDlgPa>
+        <sIfile>
+        </sIfile>
+        <tDll>
+        </tDll>
+        <tDllPa>
+        </tDllPa>
+        <tDlgDll>
+        </tDlgDll>
+        <tDlgPa>
+        </tDlgPa>
+        <tIfile>
+        </tIfile>
+        <pMon>SinOne_Chip\SOC_Debug_Driver\SinOne_Chip_Debug_Driver.dll</pMon>
+      </DebugOpt>
+      <TargetDriverDllRegistry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGDP51</Key>
+          <Name>(98=-1,-1,-1,-1,0)(82=-1,-1,-1,-1,0)(83=-1,-1,-1,-1,0)(84=-1,-1,-1,-1,0)(85=-1,-1,-1,-1,0)(80=-1,-1,-1,-1,0)(91=-1,-1,-1,-1,0)(92=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGTP51</Key>
+          <Name>(98=-1,-1,-1,-1,0)(82=-1,-1,-1,-1,0)(83=-1,-1,-1,-1,0)(84=-1,-1,-1,-1,0)(85=-1,-1,-1,-1,0)(80=-1,-1,-1,-1,0)(91=-1,-1,-1,-1,0)(92=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>SinOne_Chip_Debug_Driver</Key>
+          <Name>
+          </Name>
+        </SetRegEntry>
+      </TargetDriverDllRegistry>
+      <Breakpoint />
+      <WatchWindow1>
+        <Ww>
+          <count>0</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>test</ItemText>
+        </Ww>
+        <Ww>
+          <count>1</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>timer_1</ItemText>
+        </Ww>
+      </WatchWindow1>
+      <MemoryWindow1>
+        <Mm>
+          <WinNumber>1</WinNumber>
+          <SubType>0</SubType>
+          <ItemText>D:0</ItemText>
+          <AccSizeX>0</AccSizeX>
+        </Mm>
+      </MemoryWindow1>
+      <Tracepoint>
+        <THDelay>0</THDelay>
+      </Tracepoint>
+      <DebugFlag>
+        <trace>0</trace>
+        <periodic>0</periodic>
+        <aLwin>1</aLwin>
+        <aCover>0</aCover>
+        <aSer1>0</aSer1>
+        <aSer2>0</aSer2>
+        <aPa>0</aPa>
+        <viewmode>1</viewmode>
+        <vrSel>0</vrSel>
+        <aSym>0</aSym>
+        <aTbox>0</aTbox>
+        <AscS1>0</AscS1>
+        <AscS2>0</AscS2>
+        <AscS3>0</AscS3>
+        <aSer3>0</aSer3>
+        <eProf>0</eProf>
+        <aLa>0</aLa>
+        <aPa1>0</aPa1>
+        <AscS4>0</AscS4>
+        <aSer4>0</aSer4>
+        <StkLoc>0</StkLoc>
+        <TrcWin>0</TrcWin>
+        <newCpu>0</newCpu>
+        <uProt>0</uProt>
+      </DebugFlag>
+      <Breakpoint></Breakpoint>
+      <LintExecutable>
+      </LintExecutable>
+      <LintConfigFile>
+      </LintConfigFile>
+      <bLintAuto>0</bLintAuto>
+      <bAutoGenD>0</bAutoGenD>
+      <LntExFlags>0</LntExFlags>
+      <pMisraName>
+      </pMisraName>
+      <pszMrule>
+      </pszMrule>
+      <pSingCmds>
+      </pSingCmds>
+      <pMultCmds>
+      </pMultCmds>
+      <pMisraNamep>
+      </pMisraNamep>
+      <pszMrulep>
+      </pszMrulep>
+      <pSingCmdsp>
+      </pSingCmdsp>
+      <pMultCmdsp>
+      </pMultCmdsp>
+    </TargetOption>
+  </Target>
+  <Group>
+    <GroupName>User</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>1</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\hal\wm_7seg_control\wm_7seg_control.c</PathWithFileName>
+      <FilenameWithoutPath>wm_7seg_control.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>2</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\ril\wm_timed_activity\wm_timed_activity.c</PathWithFileName>
+      <FilenameWithoutPath>wm_timed_activity.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>3</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\hal\wm_led_control\wm_led_cntrl.c</PathWithFileName>
+      <FilenameWithoutPath>wm_led_cntrl.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>4</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\global\wm_global.c</PathWithFileName>
+      <FilenameWithoutPath>wm_global.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>5</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\stateflow\wm_state_flow.c</PathWithFileName>
+      <FilenameWithoutPath>wm_state_flow.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>6</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\hal\wm_TouchKeyControl\wm_tk_cntrl.c</PathWithFileName>
+      <FilenameWithoutPath>wm_tk_cntrl.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>7</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\hal\wm_uart\wm_uart.c</PathWithFileName>
+      <FilenameWithoutPath>wm_uart.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>8</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\main.c</PathWithFileName>
+      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>9</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\SC_Init.c</PathWithFileName>
+      <FilenameWithoutPath>SC_Init.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>10</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\SC_it.c</PathWithFileName>
+      <FilenameWithoutPath>SC_it.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>11</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\CompCtrlDefine.c</PathWithFileName>
+      <FilenameWithoutPath>CompCtrlDefine.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>12</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\CallBackFunction.c</PathWithFileName>
+      <FilenameWithoutPath>CallBackFunction.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+  <Group>
+    <GroupName>Apps</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+  </Group>
+  <Group>
+    <GroupName>Drivers</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>13</FileNumber>
+      <FileType>4</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Drivers\TKDriver\C\SC92F8X6XB_HighSensitive_lib_T1_L_V2.2.0.LIB</PathWithFileName>
+      <FilenameWithoutPath>SC92F8X6XB_HighSensitive_lib_T1_L_V2.2.0.LIB</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>14</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Drivers\TKDriver\C\TKDriver.C</PathWithFileName>
+      <FilenameWithoutPath>TKDriver.C</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+  <Group>
+    <GroupName>FWLib</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>15</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWLib\SC92F_Lib\src\sc92f_pwm.c</PathWithFileName>
+      <FilenameWithoutPath>sc92f_pwm.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>16</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWLib\SC92F_Lib\src\sc92f_gpio.c</PathWithFileName>
+      <FilenameWithoutPath>sc92f_gpio.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>17</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWLib\SC92F_Lib\src\sc92f_option.c</PathWithFileName>
+      <FilenameWithoutPath>sc92f_option.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>18</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWLib\SC92F_Lib\src\sc92f_timer2.c</PathWithFileName>
+      <FilenameWithoutPath>sc92f_timer2.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>19</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWLib\SC92F_Lib\src\sc92f_timer1.c</PathWithFileName>
+      <FilenameWithoutPath>sc92f_timer1.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+  <Group>
+    <GroupName>Startup</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>20</FileNumber>
+      <FileType>2</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\STARTUP.A51</PathWithFileName>
+      <FilenameWithoutPath>STARTUP.A51</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+  <DockPanel FormatVersion="1.0" DockLeftPortion="0.18" DockRightPortion="0.25" DockTopPortion="0.25" DockBottomPortion="0.25" ActiveDocumentPane="3" ActivePane="5">
+    <Contents Count="17">
+      <Content ID="0" PersistString="AIMS.Libraries.Scripting.ScriptControl.ErrorList" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="Information" />
+      <Content ID="1" PersistString="AIMS.Libraries.Scripting.ScriptControl.Windows.Assembly" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="Disassembly" />
+      <Content ID="2" PersistString="AIMS.Libraries.Scripting.ScriptControl.ProjectExplorer" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="Project Explorer" />
+      <Content ID="3" PersistString="AIMS.Libraries.Scripting.ScriptControl.Output" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="Output" />
+      <Content ID="4" PersistString="AIMS.Libraries.Scripting.ScriptControl.Symbols" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="Symbols" />
+      <Content ID="5" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="SC_Init.c" />
+      <Content ID="6" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="SC_it.c" />
+      <Content ID="7" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="main.c" />
+      <Content ID="8" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="wm_state_flow.c" />
+      <Content ID="9" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="S_TouchKeyCFG.h" />
+      <Content ID="10" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="TKDriver.C" />
+      <Content ID="11" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="wm_tk_cntrl.c" />
+      <Content ID="12" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="wm_timed_activity.c" />
+      <Content ID="13" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="wm_extern_fnc.h" />
+      <Content ID="14" PersistString="AIMS.Libraries.Scripting.ScriptControl.Windows.WMForm" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="Watch" />
+      <Content ID="15" PersistString="AIMS.Libraries.Scripting.ScriptControl.Windows.MmForm1" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="Memory" />
+      <Content ID="16" PersistString="AIMS.Libraries.Scripting.ScriptControl.Document" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" TabText="wm_global.c" />
+    </Contents>
+    <Panes Count="7">
+      <Pane ID="0" DockState="DockBottomAutoHide" ActiveContent="0">
+        <Contents Count="2">
+          <Content ID="0" RefID="0" />
+          <Content ID="1" RefID="4" />
+        </Contents>
+      </Pane>
+      <Pane ID="1" DockState="DockTop" ActiveContent="1">
+        <Contents Count="1">
+          <Content ID="0" RefID="1" />
+        </Contents>
+      </Pane>
+      <Pane ID="2" DockState="DockLeft" ActiveContent="2">
+        <Contents Count="1">
+          <Content ID="0" RefID="2" />
+        </Contents>
+      </Pane>
+      <Pane ID="3" DockState="Document" ActiveContent="12">
+        <Contents Count="10">
+          <Content ID="0" RefID="5" />
+          <Content ID="1" RefID="6" />
+          <Content ID="2" RefID="7" />
+          <Content ID="3" RefID="8" />
+          <Content ID="4" RefID="9" />
+          <Content ID="5" RefID="10" />
+          <Content ID="6" RefID="11" />
+          <Content ID="7" RefID="12" />
+          <Content ID="8" RefID="13" />
+          <Content ID="9" RefID="16" />
+        </Contents>
+      </Pane>
+      <Pane ID="4" DockState="DockBottom" ActiveContent="3">
+        <Contents Count="1">
+          <Content ID="0" RefID="3" />
+        </Contents>
+      </Pane>
+      <Pane ID="5" DockState="DockBottom" ActiveContent="14">
+        <Contents Count="1">
+          <Content ID="0" RefID="14" />
+        </Contents>
+      </Pane>
+      <Pane ID="6" DockState="DockBottom" ActiveContent="15">
+        <Contents Count="1">
+          <Content ID="0" RefID="15" />
+        </Contents>
+      </Pane>
+    </Panes>
+    <DockWindows>
+      <DockWindow ID="0" DockState="Document" ZOrderIndex="0">
+        <DockList Count="1">
+          <Pane ID="0" RefID="3" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+        </DockList>
+      </DockWindow>
+      <DockWindow ID="1" DockState="DockLeft" ZOrderIndex="3">
+        <DockList Count="1">
+          <Pane ID="0" RefID="2" PrevPane="-1" Alignment="Bottom" Proportion="0.5" />
+        </DockList>
+      </DockWindow>
+      <DockWindow ID="2" DockState="DockRight" ZOrderIndex="2">
+        <DockList Count="0" />
+      </DockWindow>
+      <DockWindow ID="3" DockState="DockTop" ZOrderIndex="1">
+        <DockList Count="1">
+          <Pane ID="0" RefID="1" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+        </DockList>
+      </DockWindow>
+      <DockWindow ID="4" DockState="DockBottom" ZOrderIndex="4">
+        <DockList Count="4">
+          <Pane ID="0" RefID="0" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+          <Pane ID="1" RefID="4" PrevPane="0" Alignment="Right" Proportion="0.15" />
+          <Pane ID="2" RefID="5" PrevPane="4" Alignment="Right" Proportion="0.7" />
+          <Pane ID="3" RefID="6" PrevPane="5" Alignment="Right" Proportion="0.4" />
+        </DockList>
+      </DockWindow>
+    </DockWindows>
+    <FloatWindows Count="0" />
+  </DockPanel>
+</ProjectOpt>
