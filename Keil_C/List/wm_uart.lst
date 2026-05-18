@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 1   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE WM_UART
@@ -62,7 +62,7 @@ line level    source
   15      =2   *2.The software which is for guidance only aims at providing customers with 
   16      =2   *coding information regarding their products in order for them to save time. 
   17      =2   *As a result, SinOne shall not be held liable for any direct, indirect or 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 2   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 2   
 
   18      =2   *consequential damages with respect to any claims arising from the content of 
   19      =2   *such software and/or the use made by customers of the coding information 
@@ -126,7 +126,7 @@ line level    source
   17      =4   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =4   *consequential damages with respect to any claims arising from the content of 
   19      =4   *such software and/or the use made by customers of the coding information 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 3   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 3   
 
   20      =4   *contained herein in connection with their products.
   21      =4   *
@@ -190,7 +190,7 @@ line level    source
   29      =5  
   30      =5  /*system*/
   31      =5  ///��Դ�������ƼĴ���
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 4   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 4   
 
   32      =5  sfr     PCON    = 0x87;         
   33      =5  
@@ -254,7 +254,7 @@ line level    source
   91      =5  ///��ʱ��2����/��׽��8λ
   92      =5  sfr     RCAP2L  = 0xCA;     
   93      =5  ///��ʱ��2����/��׽��8λ
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 5   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 5   
 
   94      =5  sfr     RCAP2H  = 0xCB;     
   95      =5  ///��ʱ��2��8λ
@@ -318,7 +318,7 @@ line level    source
  153      =5  sfr     INT0F   = 0XBA;         
  154      =5  ///INT0 �Ͻ����жϿ��ƼĴ���
  155      =5  sfr     INT0R   = 0XBB;         
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 6   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 6   
 
  156      =5  ///INT1 �½����жϿ��ƼĴ���
  157      =5  sfr     INT1F   = 0XBC;         
@@ -382,7 +382,7 @@ line level    source
  215      =5  sfr     EXBL    = 0xED;   
  216      =5  ///��չB�Ĵ���1
  217      =5  sfr     EXBH    = 0xEE;   
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 7   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 7   
 
  218      =5  ///������ƼĴ���
  219      =5  sfr     OPERCON = 0xEF;   
@@ -446,7 +446,7 @@ line level    source
  276      =5  ///Timer1�ж�ʹ�ܿ���   0:�ر�TIMER1�ж�        1:��TIMER1�ж�
  277      =5  sbit    ET1   = IE^3;     
  278      =5  ///INT1�ж�ʹ�ܿ���     0:�ر�INT1�ж�      1:��INT1�ж�
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 8   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 8   
 
  279      =5  sbit    EINT1 = IE^2;     
  280      =5  ///Timer0�ж�ʹ�ܿ���   0:�ر�TIMER0�ж�        1:��TIMER0�ж�
@@ -510,7 +510,7 @@ line level    source
  338      =5  sbit    P27     = P2^7;
  339      =5  sbit    P26     = P2^6;
  340      =5  sbit    P25     = P2^5;
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 9   
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 9   
 
  341      =5  sbit    P24     = P2^4;
  342      =5  sbit    P23     = P2^3;
@@ -574,7 +574,7 @@ line level    source
  135      =4  #ifdef SC92F837X
  138      =4  
  139      =4  #ifdef SC92F7490
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 10  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 10  
 
  142      =4  
  143      =4  #ifdef SC92F725X
@@ -638,7 +638,7 @@ line level    source
  259      =4  
  260      =4  #define enableInterrupts()    EA=1       /** ?a??��?D??  **/
  261      =4  #define disableInterrupts()   EA=0       /** 1?�?��?D??  **/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 11  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 11  
 
  262      =4  
  263      =4  #define     __I     volatile const   /*!< defines 'read only' permissions     */
@@ -702,7 +702,7 @@ line level    source
   37      =3  sbit IO03 = P0^3;
   38      =3  sbit IO04 = P0^4;
   39      =3  sbit IO05 = P0^5;
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 12  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 12  
 
   40      =3  sbit IO06 = P0^6;
   41      =3  sbit IO07 = P0^7;
@@ -766,7 +766,7 @@ line level    source
  131      =3    GPIO5 = (uint8_t)0x05                 /*!< P5 selected    */
  132      =3  }GPIO_TypeDef;
  133      =3  #endif
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 13  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 13  
 
  134      =3  /**
  135      =3   * @}
@@ -830,7 +830,7 @@ line level    source
  193      =3   * @{
  194      =3   */
  195      =3  /* Initialization and de-initialization functions *****************************/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 14  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 14  
 
  196      =3  #if !defined(SC92F7003) && !defined(SC92F8003)  && !defined(SC92F8003B) && !defined(SC92F740x)&& !defined 
              -(SC92F6x1x) && !defined (SC92F5x1x)&& !defined(SC92R436)\
@@ -894,7 +894,7 @@ line level    source
   30      =3  /* Includes ------------------------------------------------------------------*/
   31      =3  #include "sc92f.h"
    1      =4  /**
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 15  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 15  
 
    2      =4   ******************************************************************************
    3      =4   * @file    Header file of SC92 Series
@@ -958,7 +958,7 @@ line level    source
   64      =3  } TIM0_CountMode_TypeDef;
   65      =3  /**
   66      =3   * @}
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 16  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 16  
 
   67      =3   */
   68      =3  
@@ -1022,7 +1022,7 @@ line level    source
  126      =3   * @retval None
  127      =3   */                
  128      =3  #define TIM0_SetTL0Counter(TIM0_SetCounter) (TL0 = TIM0_SetCounter)
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 17  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 17  
 
  129      =3  
  130      =3  /**
@@ -1086,7 +1086,7 @@ line level    source
  188      =3   * @}
  189      =3   */
  190      =3  /* End of exported functions --------------------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 18  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 18  
 
  191      =3  #endif
  192      =3  
@@ -1150,7 +1150,7 @@ line level    source
   18      =4   *consequential damages with respect to any claims arising from the content of 
   19      =4   *such software and/or the use made by customers of the coding information 
   20      =4   *contained herein in connection with their products.
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 19  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 19  
 
   21      =4   *
   22      =4   *  COPYRIGHT 2025 SinOne Microelectronics
@@ -1214,7 +1214,7 @@ line level    source
   83      =3   * @}
   84      =3   */
   85      =3  /* End of enumerations -----------------------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 20  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 20  
 
   86      =3  
   87      =3  /** @addtogroup TIM1_Functions TIM1 Functions
@@ -1278,7 +1278,7 @@ line level    source
  145      =3   *                  - SET:����
  146      =3   */ 
  147      =3  #define TIM1_GetFlagStatus() (TF1)
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 21  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 21  
 
  148      =3  
  149      =3  /**
@@ -1342,7 +1342,7 @@ line level    source
   27      =3  #ifndef _sc92f_TIMER2_H_
   28      =3  #define _sc92f_TIMER2_H_
   29      =3  
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 22  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 22  
 
   30      =3  /* Includes ------------------------------------------------------------------*/
   31      =3  #include "sc92f.h"
@@ -1406,7 +1406,7 @@ line level    source
  104      =3   * @{
  105      =3   */
  106      =3  typedef enum
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 23  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 23  
 
  107      =3  {
  108      =3    TIM2_MODE_TIMER   = ((uint8_t)0x01), /*!< TIMER2����ʱ�� */
@@ -1470,7 +1470,7 @@ line level    source
  179      =3                         TIM2_CountMode_TypeDef TIM2_CountMode,
  180      =3                         TIM2_CountDirection_TypeDef TIM2_CountDirection);
  181      =3  void TIM2_WorkMode0Config(uint16_t TIM2_SetCounter);
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 24  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 24  
 
  182      =3  void TIM2_WorkMode1Config(uint16_t TIM2_SetCounter);
  183      =3  void TIM2_WorkMode3Config(uint16_t TIM2_SetCounter);
@@ -1534,7 +1534,7 @@ line level    source
    5      =4   * @version V1.2.1
    6      =4   * @date    2025-07-24
    7      =4   * @brief   Header file of SC92 Series.
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 25  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 25  
 
    8      =4   ******************************************************************************
    9      =4   * @attention
@@ -1598,7 +1598,7 @@ line level    source
   83      =3   * @{
   84      =3   */
   85      =3  typedef enum
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 26  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 26  
 
   86      =3  {
   87      =3    TIM3_COUNTDIRECTION_UP = ((uint8_t)0x00),     /*!< ���ϼ���ģʽ */
@@ -1662,7 +1662,7 @@ line level    source
  145      =3  /**
  146      =3   * @}
  147      =3   */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 27  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 27  
 
  148      =3  
  149      =3  /**
@@ -1726,7 +1726,7 @@ line level    source
   21      =4   *
   22      =4   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =4   ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 28  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 28  
 
   24      =4   */
   25      =4   
@@ -1790,7 +1790,7 @@ line level    source
   86      =3    TIM4_FLAG_TF4 = (uint8_t)0x80, /*!< �жϱ�־λTF4 */
   87      =3    TIM4_FLAG_EXF4 = (uint8_t)0x40 /*!< �жϱ�־λEXF4 */
   88      =3  } TIM4_Flag_TypeDef;
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 29  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 29  
 
   89      =3  /**
   90      =3   * @}
@@ -1854,7 +1854,7 @@ line level    source
    9      =3   * @attention
   10      =3   *
   11      =3   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 30  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 30  
 
   12      =3   *intended for use with SinOne products. No other uses are authorized. This 
   13      =3   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
@@ -1918,7 +1918,7 @@ line level    source
    9      =4   * @attention
   10      =4   *
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 31  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 31  
 
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
@@ -1982,7 +1982,7 @@ line level    source
   43      =4   */
   44      =4   
   45      =4   /** @brief SYSCLK clock Source
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 32  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 32  
 
   46      =4   * @{
   47      =4   */
@@ -2046,7 +2046,7 @@ line level    source
              -)
  173      =4  
  174      =4  typedef enum
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 33  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 33  
 
  175      =4  {
  176      =4    ADC_VREF_VDD  = 0x00,                             /*!< VDD as the ADC reference voltage */
@@ -2110,7 +2110,7 @@ line level    source
  228      =4  
  229      =4  #if !defined(SC92F848x) && !defined(SC92F748x) && !defined(SC92F730x_2) && !defined(SC92F720x)
  230      =4  void OPTION_XTIPLL_Cmd(FunctionalState NewState);
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 34  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 34  
 
  231      =4  #endif
  232      =4  
@@ -2174,7 +2174,7 @@ line level    source
   73      =3  #elif defined (SC92F742x) || defined (SC92F730x) || defined (SC92F725X) || defined (SC92F735X) || defined 
              -(SC92F732X) || defined (SC92F7490)\
   74      =3          || defined (SC93F833x) || defined (SC93F843x) || defined (SC93F743x) || defined(SC92F730x_2) || defined(S
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 35  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 35  
 
              -C92F720x) || defined (SC92F7308B)
  115      =3  /**
@@ -2238,7 +2238,7 @@ line level    source
  523      =3    ADC_EAIN_1 = (uint16_t)0x0002, /*!< Select AIN1  */
  524      =3    ADC_EAIN_2 = (uint16_t)0x0004, /*!< Select AIN2  */
  525      =3    ADC_EAIN_3 = (uint16_t)0x0008, /*!< Select AIN3  */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 36  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 36  
 
  526      =3    ADC_EAIN_4 = (uint16_t)0x0010, /*!< Select AIN4  */
  527      =3    ADC_EAIN_5 = (uint16_t)0x0020, /*!< Select AIN5  */
@@ -2302,7 +2302,7 @@ line level    source
  644      =3   * @brief  Start an AD conversion.
  645      =3   * @param  None
  646      =3   * @retval None
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 37  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 37  
 
  647      =3   */                  
  648      =3  #define ADC_StartConversion() SET_BIT(ADCCON,0X40)
@@ -2366,7 +2366,7 @@ line level    source
   24      =3   */
   25      =3  
   26      =3  /* Define to prevent recursive inclusion -------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 38  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 38  
 
   27      =3  #ifndef _sc92f_BTM_H_
   28      =3  #define _sc92f_BTM_H_
@@ -2430,7 +2430,7 @@ line level    source
  102      =3    BTM_TIMEBASE_125MS    = (uint8_t)0x03,                /*!< Every 125 milliseconds generates one interrupt */
  103      =3    BTM_TIMEBASE_250MS    = (uint8_t)0x04,                /*!< Every 250 milliseconds generates one interrupt */
  104      =3    BTM_TIMEBASE_500MS    = (uint8_t)0x05,                /*!< Every 500 milliseconds generates one interrupt */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 39  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 39  
 
  105      =3    BTM_TIMEBASE_1S       = (uint8_t)0x06,                /*!< Every 1 seconds generates one interrupt*/
  106      =3    BTM_TIMEBASE_2S       = (uint8_t)0x07,                /*!< Every 2 seconds generates one interrupt*/
@@ -2494,7 +2494,7 @@ line level    source
  164      =3   */
  165      =3  #endif
  166      =3  
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 40  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 40  
 
  167      =3  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   37      =2  #include "sc92f_pwm.h"
@@ -2558,7 +2558,7 @@ line level    source
   27      =4  #ifndef _sc92f_H
  315      =4  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   32      =3  
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 41  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 41  
 
   33      =3  /** @addtogroup sc92f_StdPeriph_Driver
   34      =3   * @{
@@ -2622,7 +2622,7 @@ line level    source
  987      =3  
  988      =3  /** @brief PWM_FaultDetectionWaveFilteringTime_TypeDef PWM Fault Detection WaveFiltering Time
  989      =3   * @{
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 42  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 42  
 
  990      =3   */
  991      =3  typedef enum
@@ -2686,7 +2686,7 @@ line level    source
              -42x) ||defined(SC92F6x1x) \
 1049      =3      ||  defined(SC92F5x1x)||  defined(SC92R436)||  defined(SC92R438)|| defined(SC92R439)|| defined(SC92R42
              -2A)|| defined(SC92F652x)
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 43  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 43  
 
 1078      =3  void PWM_Cmd(FunctionalState NewState);
 1079      =3  FlagStatus PWM_GetFlagStatus(void);
@@ -2750,7 +2750,7 @@ line level    source
   10      =3   *
   11      =3   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =3   *intended for use with SinOne products. No other uses are authorized. This 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 44  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 44  
 
   13      =3   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =3   *all applicable laws, including copyright laws. 
@@ -2814,7 +2814,7 @@ line level    source
   44      =3   */
   45      =3   
   46      =3   /** @brief INT_TriggerMode_Typedef INT TriggerMode
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 45  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 45  
 
   47      =3   * @{
   48      =3   */
@@ -2878,7 +2878,7 @@ line level    source
  158      =3                  || defined (SC92FWxx) || defined (SC92F859x) || defined (SC92F759x) || defined (SC92R511x) || defined (S
              -C92F652x)
  175      =3  typedef enum
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 46  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 46  
 
  176      =3  {
  177      =3    INT10 = (uint8_t)0x01,                    /*!< ��P14����ΪINT1��  */
@@ -2942,7 +2942,7 @@ line level    source
  334      =3                           INT_TriggerMode_Typedef TriggerMode);
  335      =3  void INT2_ITConfig(FunctionalState NewState,
  336      =3                     PriorityStatus Priority);
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 47  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 47  
 
  337      =3  #endif
  338      =3  /**
@@ -3006,7 +3006,7 @@ line level    source
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =4   *all applicable laws, including copyright laws. 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 48  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 48  
 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
   16      =4   *coding information regarding their products in order for them to save time. 
@@ -3070,7 +3070,7 @@ line level    source
  163      =3  }UART0_Clock_Typedef;    
  164      =3  #endif
  165      =3  /**
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 49  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 49  
 
  166      =3   * @}
  167      =3   */
@@ -3134,7 +3134,7 @@ line level    source
  232      =3   * @{
  233      =3   */
  234      =3  typedef struct __UART0_HandleInfoDef
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 50  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 50  
 
  235      =3  {
  236      =3    union
@@ -3198,7 +3198,7 @@ line level    source
  296      =3  #if defined (SC92F652x)
  300      =3  /* UART0 Base functions ********************************************************/
  301      =3  void UART0_SendData8(uint8_t Data);
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 51  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 51  
 
  302      =3  uint8_t UART0_ReceiveData8(void);
  303      =3  void UART0_SendData9(uint16_t Data);
@@ -3262,7 +3262,7 @@ line level    source
   25      =3   
   26      =3   /* Define to prevent recursive inclusion ------------------------------------*/
   27      =3  #ifndef _sc92f_UART2_H_
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 52  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 52  
 
   28      =3  #define _sc92f_UART2_H_
   29      =3  
@@ -3326,7 +3326,7 @@ line level    source
    7      =3   * @brief   Header file of SSI module.
    8      =3   ******************************************************************************
    9      =3   * @attention
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 53  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 53  
 
   10      =3   *
   11      =3   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
@@ -3390,7 +3390,7 @@ line level    source
   41      =3  #if defined (SC92F854x) || defined (SC92F754x) ||defined  (SC92F844xB) || defined (SC92F744xB)||defined  (
              -SC92F84Ax_2) || defined (SC92F74Ax_2)\
   42      =3                  || defined (SC92F846xB) || defined (SC92F746xB) || defined (SC92F836xB) || defined (SC92F736xB)||defined
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 54  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 54  
 
              -  (SC92F84Ax) || defined (SC92F74Ax)\
   43      =3                  || defined (SC92F83Ax) || defined (SC92F73Ax) || defined (SC92F7003) || defined(SC92F8003) || defined(SC
@@ -3454,7 +3454,7 @@ line level    source
   97      =3  typedef enum
   98      =3  {
   99      =3    SPI_CLOCKPOLARITY_LOW  = (uint8_t)0x00, /*!< SCK�ڿ���״̬��Ϊ�͵�ƽ */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 55  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 55  
 
  100      =3    SPI_CLOCKPOLARITY_HIGH = (uint8_t)0x10  /*!< SCK�ڿ���״̬��Ϊ�ߵ�ƽ */
  101      =3  } SPI_ClockPolarity_TypeDef;
@@ -3518,7 +3518,7 @@ line level    source
  159      =3   */
  160      =3  
  161      =3  /** @brief UART1_RX_TypeDef UART1 RX
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 56  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 56  
 
  162      =3   * @{
  163      =3   */
@@ -3582,7 +3582,7 @@ line level    source
  221      =3    } pRxBuffPtr;
  222      =3    uint8_t RxXferSize;              /*!< ���ݽ����� */
  223      =3    uint8_t RxXferCount;             /*!< ���ݽ��ռ�������С */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 57  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 57  
 
  224      =3    SSI_StatusTypeDef TxState;       /*!< ����״̬ */
  225      =3    SSI_StatusTypeDef RxState;       /*!< ����״̬ */ 
@@ -3646,7 +3646,7 @@ line level    source
  354      =3  StatusTypeDef SSI_TWI_Slave_Receive_IRQHandler(SSI_HandleInfoDef* SSI_HANDLE);
  355      =3  
  356      =3  /********************************* UART **************************************************/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 58  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 58  
 
  357      =3  void SSI_UART1_Init(uint32_t UART1Fsys,
  358      =3                      uint32_t BaudRate, UART1_Mode_TypeDef Mode,
@@ -3710,7 +3710,7 @@ line level    source
   20      =3   *contained herein in connection with their products.
   21      =3   *
   22      =3   *  COPYRIGHT 2025 SinOne Microelectronics
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 59  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 59  
 
   23      =3   ******************************************************************************
   24      =3   */
@@ -3774,7 +3774,7 @@ line level    source
   49      =3    void CHKSUM_DeInit(void);
   50      =3    void CHKSUM_StartOperation(void);
   51      =3    uint16_t CHKSUM_GetCheckValue(void);
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 60  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 60  
 
   52      =3  #endif
   53      =3  /**
@@ -3838,7 +3838,7 @@ line level    source
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =4   *all applicable laws, including copyright laws. 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 61  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 61  
 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
   16      =4   *coding information regarding their products in order for them to save time. 
@@ -3902,7 +3902,7 @@ line level    source
   43      =3  /** @defgroup IAP_Exported_Enumerations IAP Exported Enumerations
   44      =3   * @{
   45      =3   */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 62  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 62  
 
   46      =3   
   47      =3    /** @brief IAP_MemType_TypeDef IAP Operation Section
@@ -3966,7 +3966,7 @@ line level    source
  153      =3  uint8_t IAP_ProgramByteArray(uint32_t Address, uint8_t* ByteArray, uint8_t ArraySize, IAP_MemType_TypeDef 
              -IAP_MemType,uint8_t WriteTimeLimit);
  154      =3  uint8_t IAP_ReadByte(uint16_t Address,
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 63  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 63  
 
  155      =3                       IAP_MemType_TypeDef IAP_MemType);
  156      =3  uint8_t IAP_ReadByteArray(uint32_t Address, uint8_t* ByteArray, uint8_t ArraySize, IAP_MemType_TypeDef IAP
@@ -4030,7 +4030,7 @@ line level    source
  248      =3   * @}
  249      =3   */
  250      =3  
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 64  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 64  
 
  251      =3  /**
  252      =3   * @}
@@ -4094,7 +4094,7 @@ line level    source
   24      =4   */
   25      =4   
   26      =4  /* Includes ------------------------------------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 65  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 65  
 
   27      =4  #ifndef _sc92f_H
  315      =4  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
@@ -4158,7 +4158,7 @@ line level    source
   89      =3   */
   90      =3  
   91      =3  /**
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 66  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 66  
 
   92      =3   * @}
   93      =3   */
@@ -4222,7 +4222,7 @@ line level    source
   25      =4   
   26      =4  /* Includes ------------------------------------------------------------------*/
   27      =4  #ifndef _sc92f_H
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 67  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 67  
 
  315      =4  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   32      =3  #include <intrins.h>
@@ -4286,7 +4286,7 @@ line level    source
   14      =3   *all applicable laws, including copyright laws. 
   15      =3   *2.The software which is for guidance only aims at providing customers with 
   16      =3   *coding information regarding their products in order for them to save time. 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 68  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 68  
 
   17      =3   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =3   *consequential damages with respect to any claims arising from the content of 
@@ -4350,7 +4350,7 @@ line level    source
   48      =3   */
   49      =3  #if defined(SC92F854x) || defined(SC92F754x) || defined(SC92F844xB) || defined(SC92F744xB) || defined(SC92
              -F84Ax_2) || defined(SC92F74Ax_2)\
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 69  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 69  
 
   50      =3                  || defined(SC92F859x) || defined(SC92F759x) || defined (SC92L853x) || defined (SC92L753x) || defined (SC
              -92R511x) ||defined(SC92F6x1x) \
@@ -4414,7 +4414,7 @@ line level    source
  706      =3  /**
  707      =3   * @}
  708      =3   */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 70  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 70  
 
  709      =3  /* End of functions --------------------------------------------------*/
  710      =3  #endif
@@ -4478,7 +4478,7 @@ line level    source
   16      =4   *coding information regarding their products in order for them to save time. 
   17      =4   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =4   *consequential damages with respect to any claims arising from the content of 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 71  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 71  
 
   19      =4   *such software and/or the use made by customers of the coding information 
   20      =4   *contained herein in connection with their products.
@@ -4542,7 +4542,7 @@ line level    source
   18      =3   *consequential damages with respect to any claims arising from the content of 
   19      =3   *such software and/or the use made by customers of the coding information 
   20      =3   *contained herein in connection with their products.
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 72  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 72  
 
   21      =3   *
   22      =3   *  COPYRIGHT 2025 SinOne Microelectronics
@@ -4606,7 +4606,7 @@ line level    source
   48      =3          || defined (SC92F841x) || defined (SC92F741x) || defined(SC92F84Hx) || defined(SC92F83Hx) || defined(SC92
              -F646x) || defined(SC92F546x) || defined(SC92F542x)\
   49      =3    || defined(SC92F6x1x) || defined(SC92F5x1x) || defined(SC92R436)|| defined(SC92R438)|| defined(SC92L840x
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 73  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 73  
 
              -)|| defined(SC92R439)|| defined (SC92Fx41xB)\
   50      =3          || defined (SC92R445)||defined(SC92F652x)
@@ -4670,7 +4670,7 @@ line level    source
    3      =3   * @file    sc92F_CRC.h
    4      =3   * @author  SOC AE Team
    5      =3   * @version V1.2.1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 74  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 74  
 
    6      =3   * @date    2025-07-24
    7      =3   * @brief   Header file of CRC module.
@@ -4734,7 +4734,7 @@ line level    source
   37      =3  /** @addtogroup CRC
   38      =3   * @{
   39      =3   */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 75  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 75  
 
   40      =3   
   41      =3  /** @addtogroup CRC_Exported_Functions CRC Exported Functions
@@ -4798,7 +4798,7 @@ line level    source
    6      =4   * @date    2025-07-24
    7      =4   * @brief   Header file of SC92 Series.
    8      =4   ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 76  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 76  
 
    9      =4   * @attention
   10      =4   *
@@ -4862,7 +4862,7 @@ line level    source
   83      =3    USCI0_SPI_BAUDRATEPRESCALER_4 = (uint8_t)0x02,  /*!< SPIʱ������Ϊϵͳʱ�ӳ���4 */
   84      =3    USCI0_SPI_BAUDRATEPRESCALER_8 = (uint8_t)0x03,  /*!< SPIʱ������Ϊϵͳʱ�ӳ���8 */
   85      =3    USCI0_SPI_BAUDRATEPRESCALER_16 = (uint8_t)0x04, /*!< SPIʱ������Ϊϵͳʱ�ӳ���16 */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 77  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 77  
 
   86      =3    USCI0_SPI_BAUDRATEPRESCALER_32 = (uint8_t)0x05, /*!< SPIʱ������Ϊϵͳʱ�ӳ���32 */
   87      =3    USCI0_SPI_BAUDRATEPRESCALER_64 = (uint8_t)0x06, /*!< SPIʱ������Ϊϵͳʱ�ӳ���64 */
@@ -4926,7 +4926,7 @@ line level    source
  145      =3  typedef enum
  146      =3  {
  147      =3    USCI0_SPI_DATA8 = (uint8_t)0x00, /*!< SPI 8λ����ģʽ */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 78  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 78  
 
  148      =3    USCI0_SPI_DATA16 = (uint8_t)0x02 /*!< SPI 16λ����ģʽ */
  149      =3  } USCI0_TransmissionMode_TypeDef;
@@ -4990,7 +4990,7 @@ line level    source
  207      =3   * @{
  208      =3   */
  209      =3  typedef enum
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 79  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 79  
 
  210      =3  {
  211      =3    USCI0_UART_RX_ENABLE = 0X10, /*!< UART�������� */
@@ -5054,7 +5054,7 @@ line level    source
  267      =3  uint16_t USCI0_SPI_ReceiveData_16(void);
  268      =3  /********************************* TWI **************************************************/
  269      =3  void USCI0_TWI_Slave_Init(uint8_t TWI_Address);
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 80  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 80  
 
  270      =3  void USCI0_TWI_MasterCommunicationRate(USCI0_TWI_MasterCommunicationRate_TypeDef
  271      =3                                             TWI_MasterCommunicationRate);
@@ -5118,7 +5118,7 @@ line level    source
   24      =3   */
   25      =3   
   26      =3   /* Define to prevent recursive inclusion ------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 81  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 81  
 
   27      =3  #ifndef _sc92f_USCI1_H_
   28      =3  #define _sc92f_USCI1_H_
@@ -5182,7 +5182,7 @@ line level    source
   58      =3  /**
   59      =3   * @}
   60      =3   */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 82  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 82  
 
   61      =3  
   62      =3  /** @brief USCI1_SPI_FirstBit_TypeDef SPI FirstBit
@@ -5246,7 +5246,7 @@ line level    source
  120      =3  {
  121      =3    USCI1_SPI_CLOCKPHASE_1EDGE = (uint8_t)0x00, /*!< SCK�ĵ�һ�زɼ����� */
  122      =3    USCI1_SPI_CLOCKPHASE_2EDGE = (uint8_t)0x08  /*!< SCK�ĵڶ��زɼ����� */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 83  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 83  
 
  123      =3  } USCI1_SPI_ClockPhase_TypeDef;
  124      =3  /**
@@ -5310,7 +5310,7 @@ line level    source
  182      =3    USCI1_TWI_MasterSendAddress = 0x01,
  183      =3    USCI1_TWI_MasterSendData = 0x02,
  184      =3    USCI1_TWI_MasterReceivedaData = 0x03,
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 84  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 84  
 
  185      =3    USCI1_TWI_MasterReceivedaUACK = 0x04,
  186      =3  } USCI1_TWIState_TypeDef;
@@ -5374,7 +5374,7 @@ line level    source
  244      =3   * @}
  245      =3   */
  246      =3  /**
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 85  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 85  
 
  247      =3   * @}
  248      =3   */
@@ -5438,7 +5438,7 @@ line level    source
    1      =3  /**
    2      =3   ******************************************************************************
    3      =3   * @file    sc92F_usci2.h
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 86  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 86  
 
    4      =3   * @author  SOC AE Team
    5      =3   * @version V1.2.1
@@ -5502,7 +5502,7 @@ line level    source
   35      =3   */
   36      =3   
   37      =3   /** @addtogroup USCI2
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 87  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 87  
 
   38      =3   * @{
   39      =3   */
@@ -5566,7 +5566,7 @@ line level    source
   97      =3  {
   98      =3    USCI2_SPI_MODE_MASTER = (uint8_t)0x20, /*!< SPIΪ���豸 */
   99      =3    USCI2_SPI_MODE_SLAVE = (uint8_t)0x00   /*!< SPIΪ���豸 */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 88  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 88  
 
  100      =3  } USCI2_SPI_Mode_TypeDef;
  101      =3  /**
@@ -5630,7 +5630,7 @@ line level    source
  159      =3    USCI2_TWI_512 = (uint8_t)0x01,  /*!< TWIͨ������ Fhrc/512  */
  160      =3    USCI2_TWI_256 = (uint8_t)0x02,  /*!< TWIͨ������ Fhrc/256  */
  161      =3    USCI2_TWI_128 = (uint8_t)0x03,  /*!< TWIͨ������ Fhrc/128  */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 89  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 89  
 
  162      =3    USCI2_TWI_64 = (uint8_t)0x04,   /*!< TWIͨ������ Fhrc/64  */
  163      =3    USCI2_TWI_32 = (uint8_t)0x05,   /*!< TWIͨ������ Fhrc/32  */
@@ -5694,7 +5694,7 @@ line level    source
  221      =3  {
  222      =3    USCI2_SPI_FLAG_SPIF = (uint8_t)0x80, /*!< SPI���ݴ��ͱ�־λSPIF */
  223      =3    USCI2_SPI_FLAG_WCOL = (uint8_t)0x50, /*!< SPIд���ͻ��־λWCOL */
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 90  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 90  
 
  224      =3    USCI2_SPI_FLAG_TXE = (uint8_t)0x08,  /*!< SPI���ͻ������ձ�־TXE */
  225      =3    USCI2_TWI_FLAG_TWIF = (uint8_t)0x40, /*!< TWI�жϱ�־λTWIF */
@@ -5758,7 +5758,7 @@ line level    source
  281      =3  /********************************* UART **************************************************/
  282      =3  void USCI2_UART_Init(uint32_t UART1Fsys, uint32_t BaudRate, USCI2_UART_Mode_TypeDef Mode,
  283      =3                       USCI2_UART_RX_TypeDef RxMode);
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 91  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 91  
 
  284      =3  void USCI2_UART_SendData8(uint8_t Data);
  285      =3  uint8_t USCI2_UART_ReceiveData8(void);
@@ -5822,7 +5822,7 @@ line level    source
    7      =4   * @brief   Header file of SC92 Series.
    8      =4   ******************************************************************************
    9      =4   * @attention
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 92  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 92  
 
   10      =4   *
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
@@ -5886,7 +5886,7 @@ line level    source
   81      =3    LPD_FLAG_LPDOF = (uint8_t)0x80,  /*!< LPD״̬��־λ  */
   82      =3  } LPD_Flag_TypeDef;
   83      =3  /**
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 93  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 93  
 
   84      =3   * @}
   85      =3   */
@@ -5950,7 +5950,7 @@ line level    source
    6      =3   * @date    2025-07-24
    7      =3   * @brief   Header file of putchar module.
    8      =3   ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 94  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 94  
 
    9      =3   * @attention
   10      =3   *
@@ -6014,7 +6014,7 @@ line level    source
    8      =4  
    9      =4  #ifndef __STDIO_H__
   10      =4  #define __STDIO_H__
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 95  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 95  
 
   11      =4  
   12      =4  #ifndef EOF
@@ -6078,7 +6078,7 @@ line level    source
   66      =2   */
   67      =2  #endif
   68      =2  
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 96  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 96  
 
   69      =2  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   18      =1  #endif
@@ -6142,7 +6142,7 @@ line level    source
   12      =1    */
   13      =1  
   14      =1  #ifndef __WM_GLOBAL_H__
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 97  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 97  
 
   15      =1  #define __WM_GLOBAL_H__
   16      =1  
@@ -6206,7 +6206,7 @@ line level    source
    2      =2    ******************************************************************************
    3      =2    * @file    wm_extern_fnc.h
    4      =2    * @brief   External function calls.
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 98  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 98  
 
    5      =2    * @author  Walnut Medical
    6      =2    ******************************************************************************
@@ -6270,7 +6270,7 @@ line level    source
   35      =2  #endif
   20      =1  #include "global\wm_enum.h"
    1      =2  /**
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 99  
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 99  
 
    2      =2    ******************************************************************************
    3      =2    * @file    wm_enum.h
@@ -6334,7 +6334,7 @@ line level    source
    4      =2    * @author  Walnut Medical
    5      =2    ******************************************************************************
    6      =2    * @attention
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 100 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 100 
 
    7      =2    *
    8      =2    * Copyright (c) 2024 Walnut Medical
@@ -6398,7 +6398,7 @@ line level    source
    9      =2    * All rights reserved.
   10      =2    *
   11      =2    ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 101 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 101 
 
   12      =2    */
   13      =2  
@@ -6462,7 +6462,7 @@ line level    source
   26      =2  extern void wm_DisplayOff();
   27      =2  #endif
   28      =2  
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 102 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 102 
 
   29      =2  
   26      =1  #include "hal\wm_uart\wm_uart.h"
@@ -6526,7 +6526,7 @@ line level    source
   40      =2  
   41      =2  //**************�???2??�DT??**********************//
   42      =2  #define  IO_NULL                   0xFF00//??��??
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 103 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 103 
 
   43      =2  #define  SCD_IO_PORT(IO)    (uint8_t)(IO>>8)
   44      =2  #define  SCD_IO_PIN(IO)     (uint8_t)(IO)
@@ -6585,430 +6585,438 @@ line level    source
   54          
   55          void wm_TransmitSerialCMD()
   56          {
-  57   1              uint8_t i =0;
+  57   1              uint8_t i = 0;
   58   1      
   59   1              if(wm_SerialCmdTimeOutCnt >= 100)
   60   1              {
-  61   2                      
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 104 
+  61   2                      bit wm_HeaterBit = (wm_HeaterState && (!wm_IsHtDisFanEnReq));
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 104 
 
-  62   2                      bit wm_HeaterBit = (wm_HeaterState && (!wm_IsHtDisFanEnReq));
-  63   2              
-  64   2              wm_cmdByte = (wm_FanSpeed | ((uint8_t)wm_HeaterBit << WM_HEATER_INDX)| ((uint8_t)wm_KitchenLightState
-             - << WM_KL_INDX)| ((uint8_t)wm_UiBoardState << WM_UI_EN_DIS_INDX) | ((uint8_t)wm_ReservedBitState << WM_RESERVE_BIT_INDX)
-             -  );
-  65   2                      
-  66   2                  for (i = 3; i != 0; i--)
-  67   2                      {
-  68   3                              //if(!sendflag)
-  69   3                              while(sendflag);
-  70   3                              //{
-  71   3                      Uart_SendString(&wm_cmdByte,1);
-  72   3                 // }
-  73   3                      wm_DelayMS(5);
-  74   3                      }
-  75   2              wm_SerialCmdTimeOutCnt =0;
-  76   2           }
-  77   1      }
-  78                  
-  79          
-  80          //------------------------------------------------------------------------------------
-  81          
-  82          u8    Recedata[RecedataLength]={0};
-  83          bit      receflag=0,sendflag=0,startbitflag=0;
-  84          u8    THL,TLL;
-  85          u8    *senddata;
-  86          u8    sendlength=0;
-  87          u8    bitdata=0; 
-  88          u8    sendbuf=0,recebuf=0,bitcount=0,ReceCount=0,timecount=0; 
+  62   2      
+  63   2                      wm_cmdByte = (wm_FanSpeed | ((uint8_t)wm_HeaterBit << WM_HEATER_INDX) | ((uint8_t)wm_KitchenLightState <
+             -< WM_KL_INDX) | ((uint8_t)wm_UiBoardState << WM_UI_EN_DIS_INDX) | ((uint8_t)wm_ReservedBitState << WM_RESERVE_BIT_INDX))
+             -;
+  64   2      
+  65   2                      for (i = 3; i != 0; i--)
+  66   2                      {
+  67   3                              /* 10 ms hard timeout — if a previous send never completed, recover */
+  68   3                              {
+  69   4                                      uint16_t t0 = wm_SerialCmdTimeOutCnt;
+  70   4                                      while(sendflag)
+  71   4                                      {
+  72   5                                              if((uint16_t)(wm_SerialCmdTimeOutCnt - t0) >= 10)
+  73   5                                              {
+  74   6                                                      TR0 = 0;
+  75   6                                                      sendflag = 0;
+  76   6                                                      break;
+  77   6                                              }
+  78   5                                      }
+  79   4                              }
+  80   3                              Uart_SendString(&wm_cmdByte, 1);
+  81   3                              wm_DelayMS(5);
+  82   3                      }
+  83   2                      wm_SerialCmdTimeOutCnt = 0;
+  84   2              }
+  85   1      }
+  86                  
+  87          
+  88          //------------------------------------------------------------------------------------
   89          
-  90          /**************************************************
-  91          *oˉêy??3??oextern void UART_Timer0_Load()
-  92          *oˉêy1|?ü?o?¨ê±?÷?D??'|àíoˉêy
-  93          *è??ú2?êy?ovoid
-  94          *3??ú2?êy?ovoid
-  95          *1|?ü?μ?÷?o?D???'DDoˉêy
-  96          **************************************************/
-  97          extern void UART_Timer0_Load()
-  98          {
-  99   1                TH0+=THL;
- 100   1                TL0+=TLL;
- 101   1                timecount++;    
- 102   1                if(timecount%2==1)                                         //??êy'???DD'|àí????êy'?'|àí?óê?ê±??'????úêy?Y?D???áè?
- 103   1                {
- 104   2                      // if(timecount==1)                                                      //μúò?'????D??
- 105   2                      //  {
- 106   2                      //        if(startbitflag==1)                                    
- 107   2                      //        {
- 108   2                      //                startbitflag=0;                                        //?eê????D??±ê????á?
- 109   2                              //        bitdata=0;
- 110   2                                //  if(RXD){bitdata++;}                    //???μ??2¨???áèy'??μ
- 111   2                               //   _nop_();
- 112   2                                 // _nop_();
- 113   2                                //  _nop_();
- 114   2                                //  if(RXD){bitdata++;}
- 115   2                                 // _nop_();
- 116   2                               //   _nop_();
- 117   2                              //    _nop_();
- 118   2                               //   if(RXD){bitdata++;}                                 
- 119   2                      //          if(bitdata>>1==0)                                   //?D???eê?????óDD§?ò??DDêy?Y?óê????TD§1?±??¨ê±?÷?ò??PWM    */             
+  90          u8    Recedata[RecedataLength]={0};
+  91          bit      receflag=0,sendflag=0,startbitflag=0;
+  92          u8    THL,TLL;
+  93          u8    *senddata;
+  94          u8    sendlength=0;
+  95          u8    bitdata=0; 
+  96          u8    sendbuf=0,recebuf=0,bitcount=0,ReceCount=0,timecount=0; 
+  97          
+  98          /**************************************************
+  99          *oˉêy??3??oextern void UART_Timer0_Load()
+ 100          *oˉêy1|?ü?o?¨ê±?÷?D??'|àíoˉêy
+ 101          *è??ú2?êy?ovoid
+ 102          *3??ú2?êy?ovoid
+ 103          *1|?ü?μ?÷?o?D???'DDoˉêy
+ 104          **************************************************/
+ 105          extern void UART_Timer0_Load()
+ 106          {
+ 107   1                TH0+=THL;
+ 108   1                TL0+=TLL;
+ 109   1                timecount++;    
+ 110   1                if(timecount%2==1)                                         //??êy'???DD'|àí????êy'?'|àí?óê?ê±??'????úêy?Y?D???áè?
+ 111   1                {
+ 112   2                      // if(timecount==1)                                                      //μúò?'????D??
+ 113   2                      //  {
+ 114   2                      //        if(startbitflag==1)                                    
+ 115   2                      //        {
+ 116   2                      //                startbitflag=0;                                        //?eê????D??±ê????á?
+ 117   2                              //        bitdata=0;
+ 118   2                                //  if(RXD){bitdata++;}                    //???μ??2¨???áèy'??μ
+ 119   2                               //   _nop_();
+ 120   2                                 // _nop_();
+ 121   2                                //  _nop_();
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 105 
+
+ 122   2                                //  if(RXD){bitdata++;}
+ 123   2                                 // _nop_();
+ 124   2                               //   _nop_();
+ 125   2                              //    _nop_();
+ 126   2                               //   if(RXD){bitdata++;}                                 
+ 127   2                      //          if(bitdata>>1==0)                                   //?D???eê?????óDD§?ò??DDêy?Y?óê????TD§1?±??¨ê±?÷?ò??PWM    */             
              -                          
- 120   2                              //        {
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 105 
+ 128   2                              //        {
+ 129   2                              //                receflag=1;
+ 130   2                                      //        bitcount=0;                                    
+ 131   2              //                                UART_INT_DeInit();
+ 132   2                      //                }
+ 133   2                              //        else
+ 134   2                                      //  {                                                                             
+ 135   2                                              //  #if UART_USE==1                //1??¨ê±?÷oíPWM
+ 136   2                                                //PWMCFG &=0x7F;      
+ 137   2                      //                        #else 
+ 138   2                              //                TR0=0;
+ 139   2                                      //        #endif                
+ 140   2              //                        }
+ 141   2                      //                return;
+ 142   2                              //  }
+ 143   2                      //  }
+ 144   2                      if(sendflag==1)
+ 145   2                      {
+ 146   3                              Uart_SendByte();
+ 147   3                      }
+ 148   2              //      if(receflag==1)    
+ 149   2              //      {
+ 150   2                              //Uart_ReceByte();              
+ 151   2               // }
+ 152   2              } 
+ 153   1      }
+ 154          /**************************************************
+ 155          *oˉêy??3??oextern void UART_Pwm_Load()
+ 156          *oˉêy1|?ü?o?¨ê±?÷?D??'|àíoˉêy
+ 157          *è??ú2?êy?ovoid
+ 158          *3??ú2?êy?ovoid
+ 159          *1|?ü?μ?÷?o?D???'DDoˉêy
+ 160          **************************************************/
+ 161          
+ 162          static void UART_Pwm_Load()
+ 163          {
+ 164   1               PWMCFG &= 0XBF;                                
+ 165   1               timecount++;     
+ 166   1               if(timecount%2==1)                             //??êy'???DD'|àí????êy'?'|àí?óê?ê±??'????úêy?Y?D???áè?
+ 167   1               {
+ 168   2                        if(timecount==1)
+ 169   2                        {
+ 170   3                                if(startbitflag==1)                                    //?eê????D??±ê??
+ 171   3                                {
+ 172   4                                        startbitflag=0;                                        //?eê????D??±ê????á?                                 
+ 173   4                                        bitdata=0;
+ 174   4                                              if(RXD){bitdata++;}                  //???μ??2¨???áèy'??μ
+ 175   4                                              _nop_();
+ 176   4                                              _nop_();
+ 177   4                                              _nop_();
+ 178   4                                              if(RXD){bitdata++;}
+ 179   4                                              _nop_();
+ 180   4                                              _nop_();
+ 181   4                                              _nop_();
+ 182   4                                              if(RXD){bitdata++;}                               
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 106 
 
- 121   2                              //                receflag=1;
- 122   2                                      //        bitcount=0;                                    
- 123   2              //                                UART_INT_DeInit();
- 124   2                      //                }
- 125   2                              //        else
- 126   2                                      //  {                                                                             
- 127   2                                              //  #if UART_USE==1                //1??¨ê±?÷oíPWM
- 128   2                                                //PWMCFG &=0x7F;      
- 129   2                      //                        #else 
- 130   2                              //                TR0=0;
- 131   2                                      //        #endif                
- 132   2              //                        }
- 133   2                      //                return;
- 134   2                              //  }
- 135   2                      //  }
- 136   2                      if(sendflag==1)
- 137   2                      {
- 138   3                              Uart_SendByte();
- 139   3                      }
- 140   2              //      if(receflag==1)    
- 141   2              //      {
- 142   2                              //Uart_ReceByte();              
- 143   2               // }
- 144   2              } 
- 145   1      }
- 146          /**************************************************
- 147          *oˉêy??3??oextern void UART_Pwm_Load()
- 148          *oˉêy1|?ü?o?¨ê±?÷?D??'|àíoˉêy
- 149          *è??ú2?êy?ovoid
- 150          *3??ú2?êy?ovoid
- 151          *1|?ü?μ?÷?o?D???'DDoˉêy
- 152          **************************************************/
- 153          
- 154          static void UART_Pwm_Load()
- 155          {
- 156   1               PWMCFG &= 0XBF;                                
- 157   1               timecount++;     
- 158   1               if(timecount%2==1)                             //??êy'???DD'|àí????êy'?'|àí?óê?ê±??'????úêy?Y?D???áè?
- 159   1               {
- 160   2                        if(timecount==1)
- 161   2                        {
- 162   3                                if(startbitflag==1)                                    //?eê????D??±ê??
- 163   3                                {
- 164   4                                        startbitflag=0;                                        //?eê????D??±ê????á?                                 
- 165   4                                        bitdata=0;
- 166   4                                              if(RXD){bitdata++;}                  //???μ??2¨???áèy'??μ
- 167   4                                              _nop_();
- 168   4                                              _nop_();
- 169   4                                              _nop_();
- 170   4                                              if(RXD){bitdata++;}
- 171   4                                              _nop_();
- 172   4                                              _nop_();
- 173   4                                              _nop_();
- 174   4                                              if(RXD){bitdata++;}                               
- 175   4                                    if(bitdata>>1==0)                                 //?D???eê?????óDD§?ò??DDêy?Y?óê????TD§1?±??¨ê±?÷?ò??PWM    */             
+ 183   4                                    if(bitdata>>1==0)                                 //?D???eê?????óDD§?ò??DDêy?Y?óê????TD§1?±??¨ê±?÷?ò??PWM    */             
              -                         
- 176   4                                        {
- 177   5                                                receflag=1;
- 178   5                                                bitcount=0;                                    
- 179   5                                                UART_INT_DeInit();
- 180   5                                        }
- 181   4                                        else
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 106 
-
- 182   4                                        {                                                                               
- 183   5                                                #if   UART_USE==1                //1??¨ê±?÷oíPWM
- 186   5                                                TR0=0;
- 187   5                                                #endif                
+ 184   4                                        {
+ 185   5                                                receflag=1;
+ 186   5                                                bitcount=0;                                    
+ 187   5                                                UART_INT_DeInit();
  188   5                                        }
- 189   4                                        return;
- 190   4                                }
- 191   3                      }
- 192   2                      if(sendflag==1)
- 193   2                      {
- 194   3                              Uart_SendByte();
- 195   3                      }
- 196   2                      if(receflag==1)    
- 197   2                      {
- 198   3                              Uart_ReceByte();                                                  
+ 189   4                                        else
+ 190   4                                        {                                                                               
+ 191   5                                                #if   UART_USE==1                //1??¨ê±?÷oíPWM
+ 194   5                                                TR0=0;
+ 195   5                                                #endif                
+ 196   5                                        }
+ 197   4                                        return;
+ 198   4                                }
  199   3                      }
- 200   2                }                                      
- 201   1      }
- 202          /**************************************************
- 203          *oˉêy??3??oextern void UART_INT_Load()
- 204          *oˉêy1|?ü?o?¨ê±?÷?D??'|àíoˉêy
- 205          *è??ú2?êy?ovoid
- 206          *3??ú2?êy?ovoid
- 207          *1|?ü?μ?÷?o?D???'DDoˉêy
- 208          **************************************************/
- 209          static void UART_INT_Load()
- 210          {
- 211   1              if(sendflag==0)                                         //·??íê±2??óê?
- 212   1              {
- 213   2                      #if  UART_USE==1                        //'ò?a?¨ê±?÷?ò??PWM
- 216   2                      TR0=1;
- 217   2                      #endif
- 218   2                      timecount=0;
- 219   2                      startbitflag=1;                                 //?D???eê???±êê?????
- 220   2              }    
- 221   1      }
- 222          /**************************************************
- 223          *oˉêy??3??oextern void Uart_init()
- 224          *oˉêy1|?ü?o???aUART3?ê??ˉ
- 225          *è??ú2?êy?ovoid
- 226          *3??ú2?êy?ovoid
- 227          *1|?ü?μ?÷?o???aUART3?ê??ˉ
- 228          **************************************************/
- 229          extern void Uart_init()
- 230          {
- 231   1              //PWM_DeInit();         
- 232   1              #if  UART_USE==0 
- 233   1                      //{THL=(65536-LOAD)/256;TLL=(65536-LOAD)%256;}
- 234   1                      {THL=(65536-LOAD)/256;TLL=(65536-LOAD)%256;}
- 235   1                      //THL = (uint8_t)((65536 - 104) >> 8);   // 0xFF
- 236   1                      //TLL = (uint8_t)((65536 - 104) & 0xFF); // 0x98
- 237   1              #else
- 241   1              SCD_NT_PinMode(TXD_INIT, GPIO_MODE_OUT_PP);
- 242   1              SCD_NT_PinMode(RXD_INIT, GPIO_MODE_IN_PU);
- 243   1              #if UART_USE==0
- 244   1              //TMCON |= 0X01;
- 245   1              TMCON &= 0XFE;  // TIM0_PRESSEL_FSYS_D12
- 246   1              TMOD &= 0xFB;
- 247   1              TMOD &= 0XFC;
- 248   1              TMOD |= 0X01;
- 249   1              TH0=THL;
- 250   1              TL0=TLL;
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 107 
+ 200   2                      if(sendflag==1)
+ 201   2                      {
+ 202   3                              Uart_SendByte();
+ 203   3                      }
+ 204   2                      if(receflag==1)    
+ 205   2                      {
+ 206   3                              Uart_ReceByte();                                                  
+ 207   3                      }
+ 208   2                }                                      
+ 209   1      }
+ 210          /**************************************************
+ 211          *oˉêy??3??oextern void UART_INT_Load()
+ 212          *oˉêy1|?ü?o?¨ê±?÷?D??'|àíoˉêy
+ 213          *è??ú2?êy?ovoid
+ 214          *3??ú2?êy?ovoid
+ 215          *1|?ü?μ?÷?o?D???'DDoˉêy
+ 216          **************************************************/
+ 217          static void UART_INT_Load()
+ 218          {
+ 219   1              if(sendflag==0)                                         //·??íê±2??óê?
+ 220   1              {
+ 221   2                      #if  UART_USE==1                        //'ò?a?¨ê±?÷?ò??PWM
+ 224   2                      TR0=1;
+ 225   2                      #endif
+ 226   2                      timecount=0;
+ 227   2                      startbitflag=1;                                 //?D???eê???±êê?????
+ 228   2              }    
+ 229   1      }
+ 230          /**************************************************
+ 231          *oˉêy??3??oextern void Uart_init()
+ 232          *oˉêy1|?ü?o???aUART3?ê??ˉ
+ 233          *è??ú2?êy?ovoid
+ 234          *3??ú2?êy?ovoid
+ 235          *1|?ü?μ?÷?o???aUART3?ê??ˉ
+ 236          **************************************************/
+ 237          extern void Uart_init()
+ 238          {
+ 239   1              //PWM_DeInit();         
+ 240   1              #if  UART_USE==0 
+ 241   1                      //{THL=(65536-LOAD)/256;TLL=(65536-LOAD)%256;}
+ 242   1                      {THL=(65536-LOAD)/256;TLL=(65536-LOAD)%256;}
+ 243   1                      //THL = (uint8_t)((65536 - 104) >> 8);   // 0xFF
+ 244   1                      //TLL = (uint8_t)((65536 - 104) & 0xFF); // 0x98
+ 245   1              #else
+ 249   1              SCD_NT_PinMode(TXD_INIT, GPIO_MODE_OUT_PP);
+ 250   1              SCD_NT_PinMode(RXD_INIT, GPIO_MODE_IN_PU);
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 107 
 
- 251   1              IPT0 = 1;                                                       //0?aμíó??è????1?a??ó??è??
- 252   1              TF0 = 0;                                                    //???D??±ê??
- 253   1              TR0=0;                                                          //1??¨ê±?÷0
- 254   1              ET0=1;                                                          //ê1?ü?¨ê±?÷0?D??
- 255   1              #else
- 260   1              //UART_INT_Init();                                                      //ía2??D??3?ê??ˉ
- 261   1              EA=1; 
- 262   1      }
- 263          /**************************************************
- 264          *oˉêy??3??oextern void Uart_SendString(u8 *str,u8 strlen)
- 265          *oˉêy1|?ü?oUART ·??í êy?Y
- 266          *è??ú2?êy?ou8 *str ·??í×?·?'??òêy?Y     u8 strlen μ±·??íμ?ò?êy?Yê±??3¤?è?a1
- 267          *3??ú2?êy?ovoid
- 268          *1|?ü?μ?÷?oUART ·??í êy?Y
- 269          **************************************************/
- 270          
- 271          static void Uart_SendString(u8 *str,u8 strlen)
- 272          {
- 273   1              sendflag=1;
- 274   1              senddata=str;
- 275   1              sendlength=strlen;
- 276   1              bitcount=0;
- 277   1              timecount=0;
- 278   1              #if  UART_USE==1                        //'ò?a?¨ê±?÷?ò??PWM
- 281   1              TR0=1;
- 282   1              #endif    
- 283   1      }
- 284          /**************************************************
- 285          *oˉêy??3??ovoid SCD_NT_PinMode(unsigned int IO_Pxx, GPIO_Mode_TypeDef IO_Pxx_Mode)
- 286          *oˉêy1|?ü?oIO?ú??ê?éè??
- 287          *è??ú2?êy?ounsigned int IO_Pxx              IO?ú
- 288                             GPIO_Mode_TypeDef IO_Pxx_Mode        ??ê?????
- 289          *3??ú2?êy?ovoid
- 290          *1|?ü?μ?÷?oIO?úéè?????ú?§oD?y?ˉéè???D?T?a·?'?oˉêy?ó?ú 
- 291          **************************************************/
- 292          
- 293          static void SCD_NT_PinMode(unsigned int IO_Pxx, GPIO_Mode_TypeDef IO_Pxx_Mode)
- 294          {
- 295   1              if(IO_Pxx != IO_NULL)
- 296   1              {
- 297   2                      GPIO_Init(SCD_IO_PORT(IO_Pxx), SCD_IO_PIN(IO_Pxx), IO_Pxx_Mode);        
- 298   2              }       
- 299   1      }
- 300          /**************************************************
- 301          *oˉêy??3??ovoid UART_INT_Init(void)  
- 302          *oˉêy1|?ü?o3?ê??ˉía2??D??
- 303          *è??ú2?êy?ovoid
- 304          *3??ú2?êy?ovoid
- 305          *?μ?÷?o2??a·?
- 306          **************************************************/
- 307          static void UART_INT_Init(void) 
- 308          {
- 309   1              #if UART_INTselect==0
- 310   1              INT0R&=0x0F;  //INT0é?éy??'?·?1?±?
- 311   1              INT0F|=SCD_IO_PIN(RXD_INIT);  //INT0???μ??'?·?óDD§
- 312   1              IPINT0=1;
- 313   1              EINT0=1;
- 314   1              #endif
- 315   1              #if UART_INTselect==1
- 321   1              #if UART_INTselect==2
- 327   1      }
- 328          /**************************************************
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 108 
+ 251   1              #if UART_USE==0
+ 252   1              //TMCON |= 0X01;
+ 253   1              TMCON &= 0XFE;  // TIM0_PRESSEL_FSYS_D12
+ 254   1              TMOD &= 0xFB;
+ 255   1              TMOD &= 0XFC;
+ 256   1              TMOD |= 0X01;
+ 257   1              TH0=THL;
+ 258   1              TL0=TLL;
+ 259   1              IPT0 = 1;                                                       //0?aμíó??è????1?a??ó??è??
+ 260   1              TF0 = 0;                                                    //???D??±ê??
+ 261   1              TR0=0;                                                          //1??¨ê±?÷0
+ 262   1              ET0=1;                                                          //ê1?ü?¨ê±?÷0?D??
+ 263   1              #else
+ 268   1              //UART_INT_Init();                                                      //ía2??D??3?ê??ˉ
+ 269   1              EA=1; 
+ 270   1      }
+ 271          /**************************************************
+ 272          *oˉêy??3??oextern void Uart_SendString(u8 *str,u8 strlen)
+ 273          *oˉêy1|?ü?oUART ·??í êy?Y
+ 274          *è??ú2?êy?ou8 *str ·??í×?·?'??òêy?Y     u8 strlen μ±·??íμ?ò?êy?Yê±??3¤?è?a1
+ 275          *3??ú2?êy?ovoid
+ 276          *1|?ü?μ?÷?oUART ·??í êy?Y
+ 277          **************************************************/
+ 278          
+ 279          static void Uart_SendString(u8 *str,u8 strlen)
+ 280          {
+ 281   1              sendflag=1;
+ 282   1              senddata=str;
+ 283   1              sendlength=strlen;
+ 284   1              bitcount=0;
+ 285   1              timecount=0;
+ 286   1              #if  UART_USE==1                        //'ò?a?¨ê±?÷?ò??PWM
+ 289   1              TR0=1;
+ 290   1              #endif    
+ 291   1      }
+ 292          /**************************************************
+ 293          *oˉêy??3??ovoid SCD_NT_PinMode(unsigned int IO_Pxx, GPIO_Mode_TypeDef IO_Pxx_Mode)
+ 294          *oˉêy1|?ü?oIO?ú??ê?éè??
+ 295          *è??ú2?êy?ounsigned int IO_Pxx              IO?ú
+ 296                             GPIO_Mode_TypeDef IO_Pxx_Mode        ??ê?????
+ 297          *3??ú2?êy?ovoid
+ 298          *1|?ü?μ?÷?oIO?úéè?????ú?§oD?y?ˉéè???D?T?a·?'?oˉêy?ó?ú 
+ 299          **************************************************/
+ 300          
+ 301          static void SCD_NT_PinMode(unsigned int IO_Pxx, GPIO_Mode_TypeDef IO_Pxx_Mode)
+ 302          {
+ 303   1              if(IO_Pxx != IO_NULL)
+ 304   1              {
+ 305   2                      GPIO_Init(SCD_IO_PORT(IO_Pxx), SCD_IO_PIN(IO_Pxx), IO_Pxx_Mode);        
+ 306   2              }       
+ 307   1      }
+ 308          /**************************************************
+ 309          *oˉêy??3??ovoid UART_INT_Init(void)  
+ 310          *oˉêy1|?ü?o3?ê??ˉía2??D??
+ 311          *è??ú2?êy?ovoid
+ 312          *3??ú2?êy?ovoid
+ 313          *?μ?÷?o2??a·?
+ 314          **************************************************/
+ 315          static void UART_INT_Init(void) 
+ 316          {
+ 317   1              #if UART_INTselect==0
+ 318   1              INT0R&=0x0F;  //INT0é?éy??'?·?1?±?
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 108 
 
- 329          *oˉêy??3??ovoid UART_INT_DeInit(void) 
- 330          *oˉêy1|?ü?o1?±?ía2??D??
- 331          *è??ú2?êy?ovoid
- 332          *3??ú2?êy?ovoid
- 333          *?μ?÷?o2??a·?
- 334          **************************************************/
- 335          void UART_INT_DeInit(void)
- 336          {
- 337   1              switch(UART_INTselect)
- 338   1              {
- 339   2              #if UART_INTselect==0
- 340   2                              INT0R = 0x00;
- 341   2                              INT0F = 0x00;
- 342   2                              IE &= (~0X01);
- 343   2                              IP &= ~0X01;
- 344   2                              TCON &= (~0X02);
- 345   2              #endif
- 346   2      
- 347   2              #if UART_INTselect==1
+ 319   1              INT0F|=SCD_IO_PIN(RXD_INIT);  //INT0???μ??'?·?óDD§
+ 320   1              IPINT0=1;
+ 321   1              EINT0=1;
+ 322   1              #endif
+ 323   1              #if UART_INTselect==1
+ 329   1              #if UART_INTselect==2
+ 335   1      }
+ 336          /**************************************************
+ 337          *oˉêy??3??ovoid UART_INT_DeInit(void) 
+ 338          *oˉêy1|?ü?o1?±?ía2??D??
+ 339          *è??ú2?êy?ovoid
+ 340          *3??ú2?êy?ovoid
+ 341          *?μ?÷?o2??a·?
+ 342          **************************************************/
+ 343          void UART_INT_DeInit(void)
+ 344          {
+ 345   1              switch(UART_INTselect)
+ 346   1              {
+ 347   2              #if UART_INTselect==0
+ 348   2                              INT0R = 0x00;
+ 349   2                              INT0F = 0x00;
+ 350   2                              IE &= (~0X01);
+ 351   2                              IP &= ~0X01;
+ 352   2                              TCON &= (~0X02);
+ 353   2              #endif
  354   2      
- 355   2              #if UART_INTselect==2
- 361   2              }               
- 362   1      }
- 363          
- 364          /**************************************************
- 365          *oˉêy??3??ovoid Uart_SendByte(uchar byte) 
- 366          *oˉêy1|?ü?o???a'??ú·??íò?byte
- 367          *è??ú2?êy?ovoid
- 368          *3??ú2?êy?ovoid
- 369          *?μ?÷?o?D??·?ê?μ÷ó?
- 370          **************************************************/
- 371          void Uart_SendByte(void)
- 372          {
- 373   1           bit sendbit;
- 374   1               if(sendlength)
- 375   1               {
- 376   2                 if(bitcount==0)                         //?eê???
- 377   2                 {
- 378   3                   TXD=(bit)0;                 
- 379   3                       sendbuf=*(senddata++);
- 380   3                       sendbit=sendbuf&0x01;
- 381   3                 }
- 382   2                 else if(bitcount<=8)           //·??íbyte
- 383   2                 {
- 384   3                   TXD=(bit)sendbit;
- 385   3                       sendbuf=sendbuf>>1;
- 386   3                       sendbit=sendbuf&0x01;
- 387   3                 }
- 388   2                 else                                            //?áê???
- 389   2                 {
- 390   3                       TXD=(bit)1;
- 391   3                 }
- 392   2      
- 393   2                 if(bitcount<10)
- 394   2                 {
- 395   3                       bitcount++;
- 396   3                 }
- 397   2                 else
- 398   2                 {
- 399   3                   bitcount=0;
- 400   3                       sendlength--;
- 401   3                 }
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 109 
+ 355   2              #if UART_INTselect==1
+ 362   2      
+ 363   2              #if UART_INTselect==2
+ 369   2              }               
+ 370   1      }
+ 371          
+ 372          /**************************************************
+ 373          *oˉêy??3??ovoid Uart_SendByte(uchar byte) 
+ 374          *oˉêy1|?ü?o???a'??ú·??íò?byte
+ 375          *è??ú2?êy?ovoid
+ 376          *3??ú2?êy?ovoid
+ 377          *?μ?÷?o?D??·?ê?μ÷ó?
+ 378          **************************************************/
+ 379          void Uart_SendByte(void)
+ 380          {
+ 381   1           bit sendbit;
+ 382   1               if(sendlength)
+ 383   1               {
+ 384   2                 if(bitcount==0)                         //?eê???
+ 385   2                 {
+ 386   3                   TXD=(bit)0;                 
+ 387   3                       sendbuf=*(senddata++);
+ 388   3                       sendbit=sendbuf&0x01;
+ 389   3                 }
+ 390   2                 else if(bitcount<=8)           //·??íbyte
+ 391   2                 {
+ 392   3                   TXD=(bit)sendbit;
+ 393   3                       sendbuf=sendbuf>>1;
+ 394   3                       sendbit=sendbuf&0x01;
+ 395   3                 }
+ 396   2                 else                                            //?áê???
+ 397   2                 {
+ 398   3                       TXD=(bit)1;
+ 399   3                 }
+ 400   2      
+ 401   2                 if(bitcount<10)
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 109 
 
- 402   2               }
- 403   1               else
- 404   1               {
- 405   2                      sendflag=0;
- 406   2                      #if  UART_USE==1                  //1?±??¨ê±?÷oíPWM
- 409   2                      TR0=0;
- 410   2                      #endif
- 411   2               }
- 412   1      }
- 413          
- 414          /**************************************************
- 415          *oˉêy??3??ovoid Uart_ReceByte(uchar byte) 
- 416          *oˉêy1|?ü?o???a'??ú?óê?ò?byte
- 417          *è??ú2?êy?ovoid
- 418          *3??ú2?êy?ovoid
- 419          *?μ?÷?o ?D??·?ê?μ÷ó?
- 420          **************************************************/
- 421          void Uart_ReceByte(void)
- 422          {
- 423   1              if(bitcount<8)
- 424   1              {
- 425   2                      recebuf = recebuf>>1;
- 426   2                      bitdata=0;
- 427   2                  if(RXD){bitdata++;}              //???μ??2¨???áèy'??μ
- 428   2                  _nop_();
- 429   2              _nop_();
- 430   2                  _nop_();
- 431   2                  if(RXD){bitdata++;}
- 432   2                  _nop_();
- 433   2                  _nop_();
- 434   2                  _nop_();
- 435   2                  if(RXD){bitdata++;}                           
- 436   2                  if(bitdata>>1)                                                      
- 437   2                      //if(RXD)
- 438   2                      { recebuf |=0x80;}      
- 439   2                      bitcount++;
- 440   2              }
- 441   1              else 
- 442   1              {               
- 443   2                      bitdata=0;
- 444   2                  if(RXD){bitdata++;}              //???μ??2¨???áèy'??μ
- 445   2                  _nop_();
- 446   2              _nop_();
- 447   2                  _nop_();
- 448   2                  if(RXD){bitdata++;}
- 449   2                  _nop_();
- 450   2                  _nop_();
- 451   2                  _nop_();
- 452   2                  if(RXD){bitdata++;}                           
- 453   2                  if(bitdata>>1)                                              
- 454   2                      if(RXD==1)
- 455   2                      { 
- 456   3                              Recedata[ReceCount++]=recebuf;
- 457   3                      }       
- 458   2                      bitcount=0;
- 459   2                      receflag=0;                             
- 460   2                      #if     UART_USE==1                //1??¨ê±?÷oíPWM
- 463   2                      TR0=0;
- 464   2                      #endif          
- 465   2                      UART_INT_Init();  //'ò?aía2??D??                                       
- 466   2              }                         
- 467   1      }
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 110 
+ 402   2                 {
+ 403   3                       bitcount++;
+ 404   3                 }
+ 405   2                 else
+ 406   2                 {
+ 407   3                   bitcount=0;
+ 408   3                       sendlength--;
+ 409   3                 }
+ 410   2               }
+ 411   1               else
+ 412   1               {
+ 413   2                      sendflag=0;
+ 414   2                      #if  UART_USE==1                  //1?±??¨ê±?÷oíPWM
+ 417   2                      TR0=0;
+ 418   2                      #endif
+ 419   2               }
+ 420   1      }
+ 421          
+ 422          /**************************************************
+ 423          *oˉêy??3??ovoid Uart_ReceByte(uchar byte) 
+ 424          *oˉêy1|?ü?o???a'??ú?óê?ò?byte
+ 425          *è??ú2?êy?ovoid
+ 426          *3??ú2?êy?ovoid
+ 427          *?μ?÷?o ?D??·?ê?μ÷ó?
+ 428          **************************************************/
+ 429          void Uart_ReceByte(void)
+ 430          {
+ 431   1              if(bitcount<8)
+ 432   1              {
+ 433   2                      recebuf = recebuf>>1;
+ 434   2                      bitdata=0;
+ 435   2                  if(RXD){bitdata++;}              //???μ??2¨???áèy'??μ
+ 436   2                  _nop_();
+ 437   2              _nop_();
+ 438   2                  _nop_();
+ 439   2                  if(RXD){bitdata++;}
+ 440   2                  _nop_();
+ 441   2                  _nop_();
+ 442   2                  _nop_();
+ 443   2                  if(RXD){bitdata++;}                           
+ 444   2                  if(bitdata>>1)                                                      
+ 445   2                      //if(RXD)
+ 446   2                      { recebuf |=0x80;}      
+ 447   2                      bitcount++;
+ 448   2              }
+ 449   1              else 
+ 450   1              {               
+ 451   2                      bitdata=0;
+ 452   2                  if(RXD){bitdata++;}              //???μ??2¨???áèy'??μ
+ 453   2                  _nop_();
+ 454   2              _nop_();
+ 455   2                  _nop_();
+ 456   2                  if(RXD){bitdata++;}
+ 457   2                  _nop_();
+ 458   2                  _nop_();
+ 459   2                  _nop_();
+ 460   2                  if(RXD){bitdata++;}                           
+ 461   2                  if(bitdata>>1)                                              
+ 462   2                      if(RXD==1)
+ 463   2                      { 
+ 464   3                              Recedata[ReceCount++]=recebuf;
+ 465   3                      }       
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 110 
 
- 468          
- 469          // instead of using this, use below helper function snipper
- 470          
- 471          //bitdata=0;
- 472          //if(RXD){bitdata++;}
- 473          //_nop_(); _nop_(); _nop_();
- 474          //if(RXD){bitdata++;}
- 475          //_nop_(); _nop_(); _nop_();
- 476          //if(RXD){bitdata++;}
- 477          //if(bitdata>>1) ...
+ 466   2                      bitcount=0;
+ 467   2                      receflag=0;                             
+ 468   2                      #if     UART_USE==1                //1??¨ê±?÷oíPWM
+ 471   2                      TR0=0;
+ 472   2                      #endif          
+ 473   2                      UART_INT_Init();  //'ò?aía2??D??                                       
+ 474   2              }                         
+ 475   1      }
+ 476          
+ 477          // instead of using this, use below helper function snipper
  478          
- 479          //Create a tiny helper:
- 480          
- 481          //static bit rxd_majority_high(void)
- 482          //{
- 483           //   unsigned char b = 0;
- 484           //   if (RXD) b++;
- 485            //  _nop_(); _nop_(); _nop_();
- 486             // if (RXD) b++;
- 487             // _nop_(); _nop_(); _nop_();
- 488             // if (RXD) b++;
- 489            //  return (b >> 1);
- 490          //}
- 491          //Then use this in 3 places , where this code block is repeated:
- 492          
- 493          //Start-bit detect: if (rxd_majority_high() == 0) { ... }
- 494          
- 495          //Data-bit sample: if (rxd_majority_high()) recebuf |= 0x80;
- 496          
- 497          //Stop-bit sample: if (rxd_majority_high()) Recedata[ReceCount++] = recebuf;
- 498          
-*** WARNING C294 IN LINE 340 OF ..\User\hal\wm_uart\wm_uart.c: unreachable code
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 111 
+ 479          //bitdata=0;
+ 480          //if(RXD){bitdata++;}
+ 481          //_nop_(); _nop_(); _nop_();
+ 482          //if(RXD){bitdata++;}
+ 483          //_nop_(); _nop_(); _nop_();
+ 484          //if(RXD){bitdata++;}
+ 485          //if(bitdata>>1) ...
+ 486          
+ 487          //Create a tiny helper:
+ 488          
+ 489          //static bit rxd_majority_high(void)
+ 490          //{
+ 491           //   unsigned char b = 0;
+ 492           //   if (RXD) b++;
+ 493            //  _nop_(); _nop_(); _nop_();
+ 494             // if (RXD) b++;
+ 495             // _nop_(); _nop_(); _nop_();
+ 496             // if (RXD) b++;
+ 497            //  return (b >> 1);
+ 498          //}
+ 499          //Then use this in 3 places , where this code block is repeated:
+ 500          
+ 501          //Start-bit detect: if (rxd_majority_high() == 0) { ... }
+ 502          
+ 503          //Data-bit sample: if (rxd_majority_high()) recebuf |= 0x80;
+ 504          
+ 505          //Stop-bit sample: if (rxd_majority_high()) Recedata[ReceCount++] = recebuf;
+ 506          
+*** WARNING C294 IN LINE 348 OF ..\User\hal\wm_uart\wm_uart.c: unreachable code
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 111 
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -7072,7 +7080,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0048 E4                CLR     A
 0049 7B0A              MOV     R3,#0AH
 004B FA                MOV     R2,A
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 112 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 112 
 
 004C F9                MOV     R1,A
 004D F8                MOV     R0,A
@@ -7136,7 +7144,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00A5 2E                ADD     A,R6
 00A6 F582              MOV     DPL,A
 00A8 E4                CLR     A
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 113 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 113 
 
 00A9 3400        R     ADDC    A,#HIGH buffer
 00AB F583              MOV     DPH,A
@@ -7190,624 +7198,673 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 000C 900000      E     MOV     DPTR,#wm_SerialCmdTimeOutCnt
 000F E0                MOVX    A,@DPTR
 0010 9400              SUBB    A,#00H
-0012 406A              JC      ?C0017
+0012 5003              JNC     $ + 5H
+0014 020000      R     LJMP    ?C0018
                                            ; SOURCE LINE # 60
-                                           ; SOURCE LINE # 62
-0014 300006            JNB     wm_HeaterState,?C0010
-0017 200003            JB      wm_IsHtDisFanEnReq,?C0010
-001A D3                SETB    C
-001B 8001              SJMP    ?C0011
-001D         ?C0010:
-001D C3                CLR     C
-001E         ?C0011:
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 114 
+                                           ; SOURCE LINE # 61
+0017 300006            JNB     wm_HeaterState,?C0010
+001A 200003            JB      wm_IsHtDisFanEnReq,?C0010
+001D D3                SETB    C
+001E 8001              SJMP    ?C0011
+0020         ?C0010:
+0020 C3                CLR     C
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 114 
 
-001E 9200        R     MOV     wm_HeaterBit,C
-                                           ; SOURCE LINE # 64
-0020 A200        R     MOV     C,wm_HeaterBit
-0022 E4                CLR     A
-0023 33                RLC     A
-0024 C4                SWAP    A
-0025 54F0              ANL     A,#0F0H
-0027 FF                MOV     R7,A
-0028 900000      E     MOV     DPTR,#wm_FanSpeed
-002B E0                MOVX    A,@DPTR
-002C 4F                ORL     A,R7
-002D FF                MOV     R7,A
-002E A200        E     MOV     C,wm_KitchenLightState
-0030 E4                CLR     A
-0031 33                RLC     A
-0032 C4                SWAP    A
-0033 33                RLC     A
-0034 54E0              ANL     A,#0E0H
-0036 4F                ORL     A,R7
-0037 FF                MOV     R7,A
-0038 A200        E     MOV     C,wm_UiBoardState
-003A E4                CLR     A
-003B 33                RLC     A
-003C C4                SWAP    A
-003D 33                RLC     A
+0021         ?C0011:
+0021 9200        R     MOV     wm_HeaterBit,C
+                                           ; SOURCE LINE # 63
+0023 A200        R     MOV     C,wm_HeaterBit
+0025 E4                CLR     A
+0026 33                RLC     A
+0027 C4                SWAP    A
+0028 54F0              ANL     A,#0F0H
+002A FF                MOV     R7,A
+002B 900000      E     MOV     DPTR,#wm_FanSpeed
+002E E0                MOVX    A,@DPTR
+002F 4F                ORL     A,R7
+0030 FF                MOV     R7,A
+0031 A200        E     MOV     C,wm_KitchenLightState
+0033 E4                CLR     A
+0034 33                RLC     A
+0035 C4                SWAP    A
+0036 33                RLC     A
+0037 54E0              ANL     A,#0E0H
+0039 4F                ORL     A,R7
+003A FF                MOV     R7,A
+003B A200        E     MOV     C,wm_UiBoardState
+003D E4                CLR     A
 003E 33                RLC     A
-003F 54C0              ANL     A,#0C0H
-0041 4F                ORL     A,R7
-0042 FF                MOV     R7,A
-0043 A200        E     MOV     C,wm_ReservedBitState
-0045 E4                CLR     A
-0046 33                RLC     A
-0047 FE                MOV     R6,A
-0048 C4                SWAP    A
+003F C4                SWAP    A
+0040 33                RLC     A
+0041 33                RLC     A
+0042 54C0              ANL     A,#0C0H
+0044 4F                ORL     A,R7
+0045 FF                MOV     R7,A
+0046 A200        E     MOV     C,wm_ReservedBitState
+0048 E4                CLR     A
 0049 33                RLC     A
-004A 33                RLC     A
-004B 33                RLC     A
-004C 5480              ANL     A,#080H
-004E 4F                ORL     A,R7
-004F 900000      E     MOV     DPTR,#wm_cmdByte
-0052 F0                MOVX    @DPTR,A
+004A FE                MOV     R6,A
+004B C4                SWAP    A
+004C 33                RLC     A
+004D 33                RLC     A
+004E 33                RLC     A
+004F 5480              ANL     A,#080H
+0051 4F                ORL     A,R7
+0052 900000      E     MOV     DPTR,#wm_cmdByte
+0055 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 65
+0056 900000      R     MOV     DPTR,#i
+0059 7403              MOV     A,#03H
+005B F0                MOVX    @DPTR,A
+005C         ?C0012:
                                            ; SOURCE LINE # 66
-0053 900000      R     MOV     DPTR,#i
-0056 7403              MOV     A,#03H
-0058 F0                MOVX    @DPTR,A
-0059         ?C0012:
-                                           ; SOURCE LINE # 67
-0059         ?C0015:
+                                           ; SOURCE LINE # 68
                                            ; SOURCE LINE # 69
-0059 2000FD            JB      sendflag,?C0015
-                                           ; SOURCE LINE # 71
-005C 7B01              MOV     R3,#01H
-005E 7A00        E     MOV     R2,#HIGH wm_cmdByte
-0060 7900        E     MOV     R1,#LOW wm_cmdByte
-0062 7D01              MOV     R5,#01H
-0064 120000      R     LCALL   _Uart_SendString
-                                           ; SOURCE LINE # 73
-0067 7F05              MOV     R7,#05H
-0069 7E00              MOV     R6,#00H
-006B 120000      E     LCALL   _wm_DelayMS
-                                           ; SOURCE LINE # 74
-006E 900000      R     MOV     DPTR,#i
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 115 
+005C 900000      E     MOV     DPTR,#wm_SerialCmdTimeOutCnt
+005F E0                MOVX    A,@DPTR
+0060 FF                MOV     R7,A
+0061 A3                INC     DPTR
+0062 E0                MOVX    A,@DPTR
+0063 900000      R     MOV     DPTR,#t0
+0066 CF                XCH     A,R7
+0067 F0                MOVX    @DPTR,A
+0068 A3                INC     DPTR
+0069 EF                MOV     A,R7
+006A F0                MOVX    @DPTR,A
+006B         ?C0015:
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 115 
 
+                                           ; SOURCE LINE # 70
+006B 300022            JNB     sendflag,?C0016
+                                           ; SOURCE LINE # 71
+                                           ; SOURCE LINE # 72
+006E 900000      R     MOV     DPTR,#t0
 0071 E0                MOVX    A,@DPTR
-0072 14                DEC     A
-0073 F0                MOVX    @DPTR,A
+0072 FE                MOV     R6,A
+0073 A3                INC     DPTR
 0074 E0                MOVX    A,@DPTR
-0075 70E2              JNZ     ?C0012
-0077         ?C0013:
+0075 FF                MOV     R7,A
+0076 C3                CLR     C
+0077 900000      E     MOV     DPTR,#wm_SerialCmdTimeOutCnt+01H
+007A E0                MOVX    A,@DPTR
+007B 9F                SUBB    A,R7
+007C FF                MOV     R7,A
+007D 900000      E     MOV     DPTR,#wm_SerialCmdTimeOutCnt
+0080 E0                MOVX    A,@DPTR
+0081 9E                SUBB    A,R6
+0082 FE                MOV     R6,A
+0083 C3                CLR     C
+0084 EF                MOV     A,R7
+0085 940A              SUBB    A,#0AH
+0087 EE                MOV     A,R6
+0088 9400              SUBB    A,#00H
+008A 40DF              JC      ?C0015
+                                           ; SOURCE LINE # 73
+                                           ; SOURCE LINE # 74
+008C C28C              CLR     TR0
                                            ; SOURCE LINE # 75
-0077 E4                CLR     A
-0078 900000      E     MOV     DPTR,#wm_SerialCmdTimeOutCnt
-007B F0                MOVX    @DPTR,A
-007C A3                INC     DPTR
-007D F0                MOVX    @DPTR,A
+008E C200        R     CLR     sendflag
                                            ; SOURCE LINE # 76
                                            ; SOURCE LINE # 77
-007E         ?C0017:
-007E 22                RET     
+                                           ; SOURCE LINE # 78
+0090         ?C0016:
+                                           ; SOURCE LINE # 79
+                                           ; SOURCE LINE # 80
+0090 7B01              MOV     R3,#01H
+0092 7A00        E     MOV     R2,#HIGH wm_cmdByte
+0094 7900        E     MOV     R1,#LOW wm_cmdByte
+0096 7D01              MOV     R5,#01H
+0098 120000      R     LCALL   _Uart_SendString
+                                           ; SOURCE LINE # 81
+009B 7F05              MOV     R7,#05H
+009D 7E00              MOV     R6,#00H
+009F 120000      E     LCALL   _wm_DelayMS
+                                           ; SOURCE LINE # 82
+00A2 900000      R     MOV     DPTR,#i
+00A5 E0                MOVX    A,@DPTR
+00A6 14                DEC     A
+00A7 F0                MOVX    @DPTR,A
+00A8 E0                MOVX    A,@DPTR
+00A9 70B1              JNZ     ?C0012
+00AB         ?C0013:
+                                           ; SOURCE LINE # 83
+00AB E4                CLR     A
+00AC 900000      E     MOV     DPTR,#wm_SerialCmdTimeOutCnt
+00AF F0                MOVX    @DPTR,A
+00B0 A3                INC     DPTR
+00B1 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 84
+                                           ; SOURCE LINE # 85
+00B2         ?C0018:
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 116 
+
+00B2 22                RET     
              ; FUNCTION wm_TransmitSerialCMD (END)
 
              ; FUNCTION UART_Timer0_Load (BEGIN)
-                                           ; SOURCE LINE # 97
-                                           ; SOURCE LINE # 98
-                                           ; SOURCE LINE # 99
+                                           ; SOURCE LINE # 105
+                                           ; SOURCE LINE # 106
+                                           ; SOURCE LINE # 107
 0000 900000      R     MOV     DPTR,#THL
 0003 E0                MOVX    A,@DPTR
 0004 258C              ADD     A,TH0
 0006 F58C              MOV     TH0,A
-                                           ; SOURCE LINE # 100
+                                           ; SOURCE LINE # 108
 0008 900000      R     MOV     DPTR,#TLL
 000B E0                MOVX    A,@DPTR
 000C 258A              ADD     A,TL0
 000E F58A              MOV     TL0,A
-                                           ; SOURCE LINE # 101
+                                           ; SOURCE LINE # 109
 0010 900000      R     MOV     DPTR,#timecount
 0013 E0                MOVX    A,@DPTR
 0014 04                INC     A
 0015 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 102
+                                           ; SOURCE LINE # 110
 0016 E0                MOVX    A,@DPTR
-0017 30E006            JNB     ACC.0,?C0020
-                                           ; SOURCE LINE # 103
-                                           ; SOURCE LINE # 136
-001A 300003            JNB     sendflag,?C0020
-                                           ; SOURCE LINE # 137
-                                           ; SOURCE LINE # 138
-001D 120000      R     LCALL   Uart_SendByte
-                                           ; SOURCE LINE # 139
+0017 30E006            JNB     ACC.0,?C0021
+                                           ; SOURCE LINE # 111
                                            ; SOURCE LINE # 144
+001A 300003            JNB     sendflag,?C0021
                                            ; SOURCE LINE # 145
-0020         ?C0020:
+                                           ; SOURCE LINE # 146
+001D 120000      R     LCALL   Uart_SendByte
+                                           ; SOURCE LINE # 147
+                                           ; SOURCE LINE # 152
+                                           ; SOURCE LINE # 153
+0020         ?C0021:
 0020 22                RET     
              ; FUNCTION UART_Timer0_Load (END)
 
              ; FUNCTION UART_Pwm_Load (BEGIN)
-                                           ; SOURCE LINE # 154
-                                           ; SOURCE LINE # 155
-                                           ; SOURCE LINE # 156
+                                           ; SOURCE LINE # 162
+                                           ; SOURCE LINE # 163
+                                           ; SOURCE LINE # 164
 0000 53D1BF            ANL     PWMCFG,#0BFH
-                                           ; SOURCE LINE # 157
+                                           ; SOURCE LINE # 165
 0003 900000      R     MOV     DPTR,#timecount
 0006 E0                MOVX    A,@DPTR
 0007 04                INC     A
 0008 F0                MOVX    @DPTR,A
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 116 
-
-                                           ; SOURCE LINE # 158
+                                           ; SOURCE LINE # 166
 0009 E0                MOVX    A,@DPTR
 000A FF                MOV     R7,A
-000B 30E04C            JNB     ACC.0,?C0029
-                                           ; SOURCE LINE # 159
-                                           ; SOURCE LINE # 160
+000B 30E04C            JNB     ACC.0,?C0030
+                                           ; SOURCE LINE # 167
+                                           ; SOURCE LINE # 168
 000E 6401              XRL     A,#01H
-0010 703C              JNZ     ?C0022
-                                           ; SOURCE LINE # 161
-                                           ; SOURCE LINE # 162
-0012 300039            JNB     startbitflag,?C0022
-                                           ; SOURCE LINE # 163
-                                           ; SOURCE LINE # 164
+0010 703C              JNZ     ?C0023
+                                           ; SOURCE LINE # 169
+                                           ; SOURCE LINE # 170
+0012 300039            JNB     startbitflag,?C0023
+                                           ; SOURCE LINE # 171
+                                           ; SOURCE LINE # 172
 0015 C200        R     CLR     startbitflag
-                                           ; SOURCE LINE # 165
+                                           ; SOURCE LINE # 173
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 117 
+
 0017 900000      R     MOV     DPTR,#bitdata
 001A F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 166
-001B 309603            JNB     P16,?C0024
+                                           ; SOURCE LINE # 174
+001B 309603            JNB     P16,?C0025
 001E E0                MOVX    A,@DPTR
 001F 04                INC     A
 0020 F0                MOVX    @DPTR,A
-0021         ?C0024:
-                                           ; SOURCE LINE # 167
+0021         ?C0025:
+                                           ; SOURCE LINE # 175
 0021 00                NOP     
-                                           ; SOURCE LINE # 168
+                                           ; SOURCE LINE # 176
 0022 00                NOP     
-                                           ; SOURCE LINE # 169
+                                           ; SOURCE LINE # 177
 0023 00                NOP     
-                                           ; SOURCE LINE # 170
-0024 309606            JNB     P16,?C0025
+                                           ; SOURCE LINE # 178
+0024 309606            JNB     P16,?C0026
 0027 900000      R     MOV     DPTR,#bitdata
 002A E0                MOVX    A,@DPTR
 002B 04                INC     A
 002C F0                MOVX    @DPTR,A
-002D         ?C0025:
-                                           ; SOURCE LINE # 171
+002D         ?C0026:
+                                           ; SOURCE LINE # 179
 002D 00                NOP     
-                                           ; SOURCE LINE # 172
+                                           ; SOURCE LINE # 180
 002E 00                NOP     
-                                           ; SOURCE LINE # 173
+                                           ; SOURCE LINE # 181
 002F 00                NOP     
-                                           ; SOURCE LINE # 174
-0030 309606            JNB     P16,?C0026
+                                           ; SOURCE LINE # 182
+0030 309606            JNB     P16,?C0027
 0033 900000      R     MOV     DPTR,#bitdata
 0036 E0                MOVX    A,@DPTR
 0037 04                INC     A
 0038 F0                MOVX    @DPTR,A
-0039         ?C0026:
-                                           ; SOURCE LINE # 175
+0039         ?C0027:
+                                           ; SOURCE LINE # 183
 0039 900000      R     MOV     DPTR,#bitdata
 003C E0                MOVX    A,@DPTR
 003D FF                MOV     R7,A
 003E C3                CLR     C
 003F 13                RRC     A
-0040 7009              JNZ     ?C0027
-                                           ; SOURCE LINE # 176
-                                           ; SOURCE LINE # 177
+0040 7009              JNZ     ?C0028
+                                           ; SOURCE LINE # 184
+                                           ; SOURCE LINE # 185
 0042 D200        R     SETB    receflag
-                                           ; SOURCE LINE # 178
+                                           ; SOURCE LINE # 186
 0044 900000      R     MOV     DPTR,#bitcount
 0047 F0                MOVX    @DPTR,A
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 117 
-
-                                           ; SOURCE LINE # 179
+                                           ; SOURCE LINE # 187
 0048 020000      R     LJMP    UART_INT_DeInit
-                                           ; SOURCE LINE # 180
-004B         ?C0027:
-                                           ; SOURCE LINE # 182
-                                           ; SOURCE LINE # 186
-004B C28C              CLR     TR0
                                            ; SOURCE LINE # 188
-004D 22                RET     
+004B         ?C0028:
                                            ; SOURCE LINE # 190
-                                           ; SOURCE LINE # 191
-004E         ?C0022:
-                                           ; SOURCE LINE # 192
-004E 300003            JNB     sendflag,?C0030
-                                           ; SOURCE LINE # 193
                                            ; SOURCE LINE # 194
-0051 120000      R     LCALL   Uart_SendByte
-                                           ; SOURCE LINE # 195
-0054         ?C0030:
+004B C28C              CLR     TR0
                                            ; SOURCE LINE # 196
-0054 300003            JNB     receflag,?C0029
-                                           ; SOURCE LINE # 197
+004D 22                RET     
                                            ; SOURCE LINE # 198
-0057 120000      R     LCALL   Uart_ReceByte
                                            ; SOURCE LINE # 199
+004E         ?C0023:
                                            ; SOURCE LINE # 200
+004E 300003            JNB     sendflag,?C0031
                                            ; SOURCE LINE # 201
-005A         ?C0029:
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 118 
+
+                                           ; SOURCE LINE # 202
+0051 120000      R     LCALL   Uart_SendByte
+                                           ; SOURCE LINE # 203
+0054         ?C0031:
+                                           ; SOURCE LINE # 204
+0054 300003            JNB     receflag,?C0030
+                                           ; SOURCE LINE # 205
+                                           ; SOURCE LINE # 206
+0057 120000      R     LCALL   Uart_ReceByte
+                                           ; SOURCE LINE # 207
+                                           ; SOURCE LINE # 208
+                                           ; SOURCE LINE # 209
+005A         ?C0030:
 005A 22                RET     
              ; FUNCTION UART_Pwm_Load (END)
 
              ; FUNCTION UART_INT_Load (BEGIN)
-                                           ; SOURCE LINE # 209
-                                           ; SOURCE LINE # 210
-                                           ; SOURCE LINE # 211
-0000 200009            JB      sendflag,?C0033
-                                           ; SOURCE LINE # 212
-                                           ; SOURCE LINE # 216
-0003 D28C              SETB    TR0
+                                           ; SOURCE LINE # 217
                                            ; SOURCE LINE # 218
+                                           ; SOURCE LINE # 219
+0000 200009            JB      sendflag,?C0034
+                                           ; SOURCE LINE # 220
+                                           ; SOURCE LINE # 224
+0003 D28C              SETB    TR0
+                                           ; SOURCE LINE # 226
 0005 E4                CLR     A
 0006 900000      R     MOV     DPTR,#timecount
 0009 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 219
+                                           ; SOURCE LINE # 227
 000A D200        R     SETB    startbitflag
-                                           ; SOURCE LINE # 220
-                                           ; SOURCE LINE # 221
-000C         ?C0033:
+                                           ; SOURCE LINE # 228
+                                           ; SOURCE LINE # 229
+000C         ?C0034:
 000C 22                RET     
              ; FUNCTION UART_INT_Load (END)
 
              ; FUNCTION Uart_init (BEGIN)
-                                           ; SOURCE LINE # 229
-                                           ; SOURCE LINE # 230
-                                           ; SOURCE LINE # 234
+                                           ; SOURCE LINE # 237
+                                           ; SOURCE LINE # 238
+                                           ; SOURCE LINE # 242
 0000 900000      R     MOV     DPTR,#THL
 0003 74FF              MOV     A,#0FFH
 0005 F0                MOVX    @DPTR,A
 0006 900000      R     MOV     DPTR,#TLL
 0009 74CC              MOV     A,#0CCH
 000B F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 241
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 118 
-
+                                           ; SOURCE LINE # 249
 000C 7D02              MOV     R5,#02H
 000E 7F04              MOV     R7,#04H
 0010 7E01              MOV     R6,#01H
 0012 120000      R     LCALL   _SCD_NT_PinMode
-                                           ; SOURCE LINE # 242
+                                           ; SOURCE LINE # 250
 0015 7D01              MOV     R5,#01H
 0017 7F40              MOV     R7,#040H
 0019 7E01              MOV     R6,#01H
 001B 120000      R     LCALL   _SCD_NT_PinMode
-                                           ; SOURCE LINE # 245
+                                           ; SOURCE LINE # 253
 001E 538EFE            ANL     TMCON,#0FEH
-                                           ; SOURCE LINE # 246
+                                           ; SOURCE LINE # 254
 0021 5389FB            ANL     TMOD,#0FBH
-                                           ; SOURCE LINE # 247
+                                           ; SOURCE LINE # 255
 0024 5389FC            ANL     TMOD,#0FCH
-                                           ; SOURCE LINE # 248
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 119 
+
+                                           ; SOURCE LINE # 256
 0027 438901            ORL     TMOD,#01H
-                                           ; SOURCE LINE # 249
+                                           ; SOURCE LINE # 257
 002A 900000      R     MOV     DPTR,#THL
 002D E0                MOVX    A,@DPTR
 002E F58C              MOV     TH0,A
-                                           ; SOURCE LINE # 250
+                                           ; SOURCE LINE # 258
 0030 900000      R     MOV     DPTR,#TLL
 0033 E0                MOVX    A,@DPTR
 0034 F58A              MOV     TL0,A
-                                           ; SOURCE LINE # 251
+                                           ; SOURCE LINE # 259
 0036 D2B9              SETB    IPT0
-                                           ; SOURCE LINE # 252
+                                           ; SOURCE LINE # 260
 0038 C28D              CLR     TF0
-                                           ; SOURCE LINE # 253
-003A C28C              CLR     TR0
-                                           ; SOURCE LINE # 254
-003C D2A9              SETB    ET0
                                            ; SOURCE LINE # 261
-003E D2AF              SETB    EA
+003A C28C              CLR     TR0
                                            ; SOURCE LINE # 262
+003C D2A9              SETB    ET0
+                                           ; SOURCE LINE # 269
+003E D2AF              SETB    EA
+                                           ; SOURCE LINE # 270
 0040 22                RET     
              ; FUNCTION Uart_init (END)
 
              ; FUNCTION _Uart_SendString (BEGIN)
-                                           ; SOURCE LINE # 271
+                                           ; SOURCE LINE # 279
 ;---- Variable 'strlen' assigned to Register 'R5' ----
 ;---- Variable 'str' assigned to Register 'R1/R2/R3' ----
-                                           ; SOURCE LINE # 272
-                                           ; SOURCE LINE # 273
+                                           ; SOURCE LINE # 280
+                                           ; SOURCE LINE # 281
 0000 D200        R     SETB    sendflag
-                                           ; SOURCE LINE # 274
+                                           ; SOURCE LINE # 282
 0002 900000      R     MOV     DPTR,#senddata
 0005 120000      E     LCALL   ?C?PSTXDATA
-                                           ; SOURCE LINE # 275
+                                           ; SOURCE LINE # 283
 0008 900000      R     MOV     DPTR,#sendlength
 000B ED                MOV     A,R5
 000C F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 276
+                                           ; SOURCE LINE # 284
 000D E4                CLR     A
 000E 900000      R     MOV     DPTR,#bitcount
 0011 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 277
+                                           ; SOURCE LINE # 285
 0012 900000      R     MOV     DPTR,#timecount
 0015 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 281
+                                           ; SOURCE LINE # 289
 0016 D28C              SETB    TR0
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 119 
-
-                                           ; SOURCE LINE # 283
+                                           ; SOURCE LINE # 291
 0018 22                RET     
              ; FUNCTION _Uart_SendString (END)
 
              ; FUNCTION _SCD_NT_PinMode (BEGIN)
-                                           ; SOURCE LINE # 293
+                                           ; SOURCE LINE # 301
 ;---- Variable 'IO_Pxx' assigned to Register 'R2/R3' ----
 0000 AB07              MOV     R3,AR7
 0002 AA06              MOV     R2,AR6
 ;---- Variable 'IO_Pxx_Mode' assigned to Register 'R1' ----
 0004 A905              MOV     R1,AR5
-                                           ; SOURCE LINE # 294
-                                           ; SOURCE LINE # 295
+                                           ; SOURCE LINE # 302
+                                           ; SOURCE LINE # 303
 0006 EB                MOV     A,R3
-0007 7002              JNZ     ?C0062
+0007 7002              JNZ     ?C0063
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 120 
+
 0009 EA                MOV     A,R2
 000A F4                CPL     A
-000B         ?C0062:
-000B 600B              JZ      ?C0037
-                                           ; SOURCE LINE # 296
-                                           ; SOURCE LINE # 297
+000B         ?C0063:
+000B 600B              JZ      ?C0038
+                                           ; SOURCE LINE # 304
+                                           ; SOURCE LINE # 305
 000D EA                MOV     A,R2
 000E FF                MOV     R7,A
 000F AD03              MOV     R5,AR3
 0011 AE01              MOV     R6,AR1
 0013 AB06              MOV     R3,AR6
 0015 120000      E     LCALL   _GPIO_Init
-                                           ; SOURCE LINE # 298
-                                           ; SOURCE LINE # 299
-0018         ?C0037:
+                                           ; SOURCE LINE # 306
+                                           ; SOURCE LINE # 307
+0018         ?C0038:
 0018 22                RET     
              ; FUNCTION _SCD_NT_PinMode (END)
 
              ; FUNCTION UART_INT_Init (BEGIN)
-                                           ; SOURCE LINE # 307
-                                           ; SOURCE LINE # 308
-                                           ; SOURCE LINE # 310
+                                           ; SOURCE LINE # 315
+                                           ; SOURCE LINE # 316
+                                           ; SOURCE LINE # 318
 0000 53BB0F            ANL     INT0R,#0FH
-                                           ; SOURCE LINE # 311
+                                           ; SOURCE LINE # 319
 0003 43BA40            ORL     INT0F,#040H
-                                           ; SOURCE LINE # 312
+                                           ; SOURCE LINE # 320
 0006 D2B8              SETB    IPINT0
-                                           ; SOURCE LINE # 313
+                                           ; SOURCE LINE # 321
 0008 D2A8              SETB    EINT0
-                                           ; SOURCE LINE # 327
+                                           ; SOURCE LINE # 335
 000A 22                RET     
              ; FUNCTION UART_INT_Init (END)
 
              ; FUNCTION UART_INT_DeInit (BEGIN)
-                                           ; SOURCE LINE # 335
-                                           ; SOURCE LINE # 336
-                                           ; SOURCE LINE # 337
-                                           ; SOURCE LINE # 338
-                                           ; SOURCE LINE # 340
-                                           ; SOURCE LINE # 341
-                                           ; SOURCE LINE # 342
                                            ; SOURCE LINE # 343
                                            ; SOURCE LINE # 344
-                                           ; SOURCE LINE # 361
-                                           ; SOURCE LINE # 362
-0000         ?C0040:
+                                           ; SOURCE LINE # 345
+                                           ; SOURCE LINE # 346
+                                           ; SOURCE LINE # 348
+                                           ; SOURCE LINE # 349
+                                           ; SOURCE LINE # 350
+                                           ; SOURCE LINE # 351
+                                           ; SOURCE LINE # 352
+                                           ; SOURCE LINE # 369
+                                           ; SOURCE LINE # 370
+0000         ?C0041:
 0000 22                RET     
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 120 
-
              ; FUNCTION UART_INT_DeInit (END)
 
              ; FUNCTION Uart_SendByte (BEGIN)
-                                           ; SOURCE LINE # 371
-                                           ; SOURCE LINE # 372
-                                           ; SOURCE LINE # 374
+                                           ; SOURCE LINE # 379
+                                           ; SOURCE LINE # 380
+                                           ; SOURCE LINE # 382
 0000 900000      R     MOV     DPTR,#sendlength
 0003 E0                MOVX    A,@DPTR
-0004 604D              JZ      ?C0041
-                                           ; SOURCE LINE # 375
-                                           ; SOURCE LINE # 376
+0004 604D              JZ      ?C0042
+                                           ; SOURCE LINE # 383
+                                           ; SOURCE LINE # 384
 0006 900000      R     MOV     DPTR,#bitcount
 0009 E0                MOVX    A,@DPTR
 000A FF                MOV     R7,A
-000B 7015              JNZ     ?C0042
-                                           ; SOURCE LINE # 377
-                                           ; SOURCE LINE # 378
+000B 7015              JNZ     ?C0043
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 121 
+
+                                           ; SOURCE LINE # 385
+                                           ; SOURCE LINE # 386
 000D C292              CLR     P12
-                                           ; SOURCE LINE # 379
+                                           ; SOURCE LINE # 387
 000F 900000      R     MOV     DPTR,#senddata
 0012 75F001            MOV     B,#01H
 0015 120000      E     LCALL   ?C?PLDIXDATA
 0018 120000      E     LCALL   ?C?CLDPTR
 001B 900000      R     MOV     DPTR,#sendbuf
 001E F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 380
+                                           ; SOURCE LINE # 388
 001F E0                MOVX    A,@DPTR
-                                           ; SOURCE LINE # 381
-0020 8011              SJMP    ?C0063
-0022         ?C0042:
-                                           ; SOURCE LINE # 382
+                                           ; SOURCE LINE # 389
+0020 8011              SJMP    ?C0064
+0022         ?C0043:
+                                           ; SOURCE LINE # 390
 0022 EF                MOV     A,R7
 0023 D3                SETB    C
 0024 9408              SUBB    A,#08H
-0026 5010              JNC     ?C0044
-                                           ; SOURCE LINE # 383
-                                           ; SOURCE LINE # 384
+0026 5010              JNC     ?C0045
+                                           ; SOURCE LINE # 391
+                                           ; SOURCE LINE # 392
 0028 A200        R     MOV     C,sendbit
 002A 9292              MOV     P12,C
-                                           ; SOURCE LINE # 385
+                                           ; SOURCE LINE # 393
 002C 900000      R     MOV     DPTR,#sendbuf
 002F E0                MOVX    A,@DPTR
 0030 C3                CLR     C
 0031 13                RRC     A
 0032 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 386
-0033         ?C0063:
+                                           ; SOURCE LINE # 394
+0033         ?C0064:
 0033 13                RRC     A
 0034 9200        R     MOV     sendbit,C
-                                           ; SOURCE LINE # 387
-0036 8002              SJMP    ?C0043
-0038         ?C0044:
-                                           ; SOURCE LINE # 389
-                                           ; SOURCE LINE # 390
+                                           ; SOURCE LINE # 395
+0036 8002              SJMP    ?C0044
+0038         ?C0045:
+                                           ; SOURCE LINE # 397
+                                           ; SOURCE LINE # 398
 0038 D292              SETB    P12
-                                           ; SOURCE LINE # 391
-003A         ?C0043:
-                                           ; SOURCE LINE # 393
+                                           ; SOURCE LINE # 399
+003A         ?C0044:
+                                           ; SOURCE LINE # 401
 003A 900000      R     MOV     DPTR,#bitcount
 003D E0                MOVX    A,@DPTR
 003E C3                CLR     C
 003F 940A              SUBB    A,#0AH
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 121 
-
-0041 5004              JNC     ?C0046
-                                           ; SOURCE LINE # 394
-                                           ; SOURCE LINE # 395
+0041 5004              JNC     ?C0047
+                                           ; SOURCE LINE # 402
+                                           ; SOURCE LINE # 403
 0043 E0                MOVX    A,@DPTR
 0044 04                INC     A
 0045 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 396
+                                           ; SOURCE LINE # 404
 0046 22                RET     
-0047         ?C0046:
-                                           ; SOURCE LINE # 398
-                                           ; SOURCE LINE # 399
+0047         ?C0047:
+                                           ; SOURCE LINE # 406
+                                           ; SOURCE LINE # 407
 0047 E4                CLR     A
 0048 900000      R     MOV     DPTR,#bitcount
 004B F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 400
+                                           ; SOURCE LINE # 408
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 122 
+
 004C 900000      R     MOV     DPTR,#sendlength
 004F E0                MOVX    A,@DPTR
 0050 14                DEC     A
 0051 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 401
-                                           ; SOURCE LINE # 402
-0052 22                RET     
-0053         ?C0041:
-                                           ; SOURCE LINE # 404
-                                           ; SOURCE LINE # 405
-0053 C200        R     CLR     sendflag
                                            ; SOURCE LINE # 409
-0055 C28C              CLR     TR0
-                                           ; SOURCE LINE # 411
+                                           ; SOURCE LINE # 410
+0052 22                RET     
+0053         ?C0042:
                                            ; SOURCE LINE # 412
-0057         ?C0049:
+                                           ; SOURCE LINE # 413
+0053 C200        R     CLR     sendflag
+                                           ; SOURCE LINE # 417
+0055 C28C              CLR     TR0
+                                           ; SOURCE LINE # 419
+                                           ; SOURCE LINE # 420
+0057         ?C0050:
 0057 22                RET     
              ; FUNCTION Uart_SendByte (END)
 
              ; FUNCTION Uart_ReceByte (BEGIN)
-                                           ; SOURCE LINE # 421
-                                           ; SOURCE LINE # 422
-                                           ; SOURCE LINE # 423
+                                           ; SOURCE LINE # 429
+                                           ; SOURCE LINE # 430
+                                           ; SOURCE LINE # 431
 0000 900000      R     MOV     DPTR,#bitcount
 0003 E0                MOVX    A,@DPTR
 0004 C3                CLR     C
 0005 9408              SUBB    A,#08H
-0007 5040              JNC     ?C0050
-                                           ; SOURCE LINE # 424
-                                           ; SOURCE LINE # 425
+0007 5040              JNC     ?C0051
+                                           ; SOURCE LINE # 432
+                                           ; SOURCE LINE # 433
 0009 900000      R     MOV     DPTR,#recebuf
 000C E0                MOVX    A,@DPTR
 000D C3                CLR     C
 000E 13                RRC     A
 000F F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 426
+                                           ; SOURCE LINE # 434
 0010 E4                CLR     A
 0011 900000      R     MOV     DPTR,#bitdata
 0014 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 427
-0015 309603            JNB     P16,?C0051
+                                           ; SOURCE LINE # 435
+0015 309603            JNB     P16,?C0052
 0018 E0                MOVX    A,@DPTR
 0019 04                INC     A
 001A F0                MOVX    @DPTR,A
-001B         ?C0051:
-                                           ; SOURCE LINE # 428
+001B         ?C0052:
+                                           ; SOURCE LINE # 436
 001B 00                NOP     
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 122 
-
-                                           ; SOURCE LINE # 429
+                                           ; SOURCE LINE # 437
 001C 00                NOP     
-                                           ; SOURCE LINE # 430
+                                           ; SOURCE LINE # 438
 001D 00                NOP     
-                                           ; SOURCE LINE # 431
-001E 309606            JNB     P16,?C0052
+                                           ; SOURCE LINE # 439
+001E 309606            JNB     P16,?C0053
 0021 900000      R     MOV     DPTR,#bitdata
 0024 E0                MOVX    A,@DPTR
 0025 04                INC     A
 0026 F0                MOVX    @DPTR,A
-0027         ?C0052:
-                                           ; SOURCE LINE # 432
+0027         ?C0053:
+                                           ; SOURCE LINE # 440
 0027 00                NOP     
-                                           ; SOURCE LINE # 433
+                                           ; SOURCE LINE # 441
 0028 00                NOP     
-                                           ; SOURCE LINE # 434
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 123 
+
+                                           ; SOURCE LINE # 442
 0029 00                NOP     
-                                           ; SOURCE LINE # 435
-002A 309606            JNB     P16,?C0053
+                                           ; SOURCE LINE # 443
+002A 309606            JNB     P16,?C0054
 002D 900000      R     MOV     DPTR,#bitdata
 0030 E0                MOVX    A,@DPTR
 0031 04                INC     A
 0032 F0                MOVX    @DPTR,A
-0033         ?C0053:
-                                           ; SOURCE LINE # 436
+0033         ?C0054:
+                                           ; SOURCE LINE # 444
 0033 900000      R     MOV     DPTR,#bitdata
 0036 E0                MOVX    A,@DPTR
 0037 C3                CLR     C
 0038 13                RRC     A
-0039 6007              JZ      ?C0054
-                                           ; SOURCE LINE # 438
+0039 6007              JZ      ?C0055
+                                           ; SOURCE LINE # 446
 003B 900000      R     MOV     DPTR,#recebuf
 003E E0                MOVX    A,@DPTR
 003F 4480              ORL     A,#080H
 0041 F0                MOVX    @DPTR,A
-0042         ?C0054:
-                                           ; SOURCE LINE # 439
+0042         ?C0055:
+                                           ; SOURCE LINE # 447
 0042 900000      R     MOV     DPTR,#bitcount
 0045 E0                MOVX    A,@DPTR
 0046 04                INC     A
 0047 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 440
+                                           ; SOURCE LINE # 448
 0048 22                RET     
-0049         ?C0050:
-                                           ; SOURCE LINE # 442
-                                           ; SOURCE LINE # 443
+0049         ?C0051:
+                                           ; SOURCE LINE # 450
+                                           ; SOURCE LINE # 451
 0049 E4                CLR     A
 004A 900000      R     MOV     DPTR,#bitdata
 004D F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 444
-004E 309603            JNB     P16,?C0056
+                                           ; SOURCE LINE # 452
+004E 309603            JNB     P16,?C0057
 0051 E0                MOVX    A,@DPTR
 0052 04                INC     A
 0053 F0                MOVX    @DPTR,A
-0054         ?C0056:
-                                           ; SOURCE LINE # 445
+0054         ?C0057:
+                                           ; SOURCE LINE # 453
 0054 00                NOP     
-                                           ; SOURCE LINE # 446
+                                           ; SOURCE LINE # 454
 0055 00                NOP     
-                                           ; SOURCE LINE # 447
+                                           ; SOURCE LINE # 455
 0056 00                NOP     
-                                           ; SOURCE LINE # 448
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 123 
-
-0057 309606            JNB     P16,?C0057
+                                           ; SOURCE LINE # 456
+0057 309606            JNB     P16,?C0058
 005A 900000      R     MOV     DPTR,#bitdata
 005D E0                MOVX    A,@DPTR
 005E 04                INC     A
 005F F0                MOVX    @DPTR,A
-0060         ?C0057:
-                                           ; SOURCE LINE # 449
+0060         ?C0058:
+                                           ; SOURCE LINE # 457
 0060 00                NOP     
-                                           ; SOURCE LINE # 450
+                                           ; SOURCE LINE # 458
 0061 00                NOP     
-                                           ; SOURCE LINE # 451
+                                           ; SOURCE LINE # 459
 0062 00                NOP     
-                                           ; SOURCE LINE # 452
-0063 309606            JNB     P16,?C0058
+                                           ; SOURCE LINE # 460
+0063 309606            JNB     P16,?C0059
 0066 900000      R     MOV     DPTR,#bitdata
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 124 
+
 0069 E0                MOVX    A,@DPTR
 006A 04                INC     A
 006B F0                MOVX    @DPTR,A
-006C         ?C0058:
-                                           ; SOURCE LINE # 453
+006C         ?C0059:
+                                           ; SOURCE LINE # 461
 006C 900000      R     MOV     DPTR,#bitdata
 006F E0                MOVX    A,@DPTR
 0070 FF                MOV     R7,A
 0071 C3                CLR     C
 0072 13                RRC     A
-0073 601B              JZ      ?C0059
-                                           ; SOURCE LINE # 454
-0075 309618            JNB     P16,?C0059
-                                           ; SOURCE LINE # 455
-                                           ; SOURCE LINE # 456
+0073 601B              JZ      ?C0060
+                                           ; SOURCE LINE # 462
+0075 309618            JNB     P16,?C0060
+                                           ; SOURCE LINE # 463
+                                           ; SOURCE LINE # 464
 0078 900000      R     MOV     DPTR,#recebuf
 007B E0                MOVX    A,@DPTR
 007C FF                MOV     R7,A
@@ -7824,27 +7881,25 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 008C F583              MOV     DPH,A
 008E EF                MOV     A,R7
 008F F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 457
-0090         ?C0059:
-                                           ; SOURCE LINE # 458
+                                           ; SOURCE LINE # 465
+0090         ?C0060:
+                                           ; SOURCE LINE # 466
 0090 E4                CLR     A
 0091 900000      R     MOV     DPTR,#bitcount
 0094 F0                MOVX    @DPTR,A
-                                           ; SOURCE LINE # 459
-0095 C200        R     CLR     receflag
-                                           ; SOURCE LINE # 463
-0097 C28C              CLR     TR0
-                                           ; SOURCE LINE # 465
-0099 120000      R     LCALL   UART_INT_Init
-                                           ; SOURCE LINE # 466
                                            ; SOURCE LINE # 467
-009C         ?C0061:
+0095 C200        R     CLR     receflag
+                                           ; SOURCE LINE # 471
+0097 C28C              CLR     TR0
+                                           ; SOURCE LINE # 473
+0099 120000      R     LCALL   UART_INT_Init
+                                           ; SOURCE LINE # 474
+                                           ; SOURCE LINE # 475
+009C         ?C0062:
 009C 22                RET     
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 124 
-
              ; FUNCTION Uart_ReceByte (END)
 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 125 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 125 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7907,7 +7962,7 @@ USCI2_UART_Mode_TypeDef. . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 USCI2_SPI_BAUDRATEPRESCALER_128. . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_TWI_16 . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 UART1_RX_ENABLE. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 126 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 126 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7970,7 +8025,7 @@ IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
 LPD_VTRIP_2_85V. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_SPI_ClockPhase_TypeDef . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 SSI_StatusTypeDef. . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 127 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 127 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8033,7 +8088,7 @@ USCI0_UART_RX_ENABLE . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 SPI_BaudRatePrescaler_TypeDef. . . . .  TYPEDEF  -----  U_CHAR   -----  1
 OPERCON. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EFH  1
 PWMDTY1. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D6H  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 128 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 128 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8096,7 +8151,7 @@ USCI1_SPI_CLOCKPHASE_2EDGE . . . . . .  E_CONST  -----  U_CHAR   -----  1
 DDIC_PIN_02. . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 SPI_TXE_ENINT. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 IPT2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 129 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 129 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8159,7 +8214,7 @@ PWM4 . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 BTM_TIMEBASE_500MS . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM3_CountMode_TypeDef . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 TIM3_MODE_COUNTER. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 130 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 130 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8222,7 +8277,7 @@ GPIO_PIN_ALL . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 P21. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A1H  1
 P12. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0092H  1
 P03. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0083H  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 131 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 131 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8285,7 +8340,7 @@ IOH_Grade_2. . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 P27. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A7H  1
 SSCON1 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009EH  1
 USCI1_TWI_256. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 132 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 132 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8348,7 +8403,7 @@ USCI1_TWI_MasterReceivedaUACK. . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_SPI_FIRSTBIT_LSB . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI0_SPI_FIRSTBIT_MSB . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 PWM_DutyChange_Dowm. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 133 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 133 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8411,7 +8466,7 @@ MDU_Temp_Union . . . . . . . . . . . .  TYPEDEF  -----  UNION    -----  4
   MDU_EXAxReg. . . . . . . . . . . . .  MEMBER   -----  STRUCT   0000H  4
   MDU_Temp . . . . . . . . . . . . . .  MEMBER   -----  U_LONG   0000H  4
 INT1x_Typedef. . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 134 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 134 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8474,7 +8529,7 @@ TIM4_COUNTDIRECTION_DOWN_UP. . . . . .  E_CONST  -----  U_CHAR   -----  1
 SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
 WDTCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CFH  1
 TL1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008BH  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 135 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 135 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8511,6 +8566,7 @@ RS1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D4H  1
 PWMCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D2H  1
 wm_IsHtDisFanEnReq . . . . . . . . . .  EXTERN   DATA   BIT      -----  1
 wm_TransmitSerialCMD . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  t0 . . . . . . . . . . . . . . . . .  AUTO     XDATA  U_INT    0001H  2
   wm_HeaterBit . . . . . . . . . . . .  AUTO     DATA   BIT      0000H  1
   i. . . . . . . . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
 USCI1_TWIState_TypeDef . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
@@ -8536,13 +8592,13 @@ USCI1_Flag_TypeDef . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 UART0_Mode_10B . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 PWM_PRESSEL_FOSC_D1. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_EAIN_2 . . . . . . . . . . . . . .  E_CONST  -----  INT      -----  2
-ADC_Cycle_36Cycle. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 136 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 136 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
 
 
+ADC_Cycle_36Cycle. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_PRESSEL_FHRC_D32 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 int8_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
 USCI2_Flag_TypeDef . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
@@ -8599,13 +8655,13 @@ USCI0_TWI_FLAG_GCA . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI0_TWI_1024 . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 INT_TriggerMode_Typedef. . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
-INT1F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BCH  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 137 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 137 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
 
 
+INT1F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BCH  1
 P2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A1H  1
 USCI1_TWI_FLAG_GCA . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_TWI_1024 . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
@@ -8662,13 +8718,13 @@ SET. . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 FALSE. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 bitcount . . . . . . . . . . . . . . .  PUBLIC   XDATA  U_CHAR   001FH  1
 USCI2_Mode_UART. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-SPI_TXE_DISINT . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 138 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 138 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
 
 
+SPI_TXE_DISINT . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 _SCD_NT_PinMode. . . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
   IO_Pxx . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0002H  2
   IO_Pxx_Mode. . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0001H  1
@@ -8725,13 +8781,13 @@ TIM1_WORK_MODE0. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM0_WORK_MODE1. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 IO00 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0080H  1
 USCI2_TransmissionMode_TypeDef . . . .  TYPEDEF  -----  U_CHAR   -----  1
-INT_TRIGGER_RISE_FALL. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 139 
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 139 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
 
 
+INT_TRIGGER_RISE_FALL. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 BTM_TIMEBASE_4S. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM2_WORK_MODE0. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM1_WORK_MODE1. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
@@ -8788,15 +8844,19 @@ TIM3_WORK_MODE3. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 IO50 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D8H  1
 IO23 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A3H  1
 IO14 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0094H  1
-IO05 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0085H  1
+C51 COMPILER V9.60.7.0   WM_UART                                                           05/18/2026 10:24:57 PAGE 140 
 
-C51 COMPILER V9.60.7.0   WM_UART                                                           05/16/2026 17:36:10 PAGE 140 
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+IO05 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0085H  1
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    847    ----
+   CODE SIZE        =    899    ----
    CONSTANT SIZE    =   ----    ----
-   XDATA SIZE       =     32      29
+   XDATA SIZE       =     32      31
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----
    IDATA SIZE       =   ----    ----

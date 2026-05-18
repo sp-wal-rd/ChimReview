@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 1   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE TKDRIVER
@@ -62,7 +62,7 @@ line level    source
   11      =1  #define _TKDriver_H
   12      =1  
   13      =1  
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 2   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 2   
 
   14      =1  //<<<Use SPTML>>>
   15      =1  #define SCD_TK_Type 0 
@@ -126,7 +126,7 @@ line level    source
   26      =1  #pragma REGPARMS
   27      =1  extern char _getkey (void);
   28      =1  extern char getchar (void);
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 3   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 3   
 
   29      =1  extern char ungetchar (char);
   30      =1  extern char putchar (char);
@@ -190,7 +190,7 @@ line level    source
   58          extern  unsigned long int SensorKeyFlag(void);
   59          extern  void MultipleDeal(unsigned char CycleCnt);
   60          extern  void TouchKey_Service(void);
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 4   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 4   
 
   61          
   62          /*******************************库函数基础设置，一般不需要更改***************************************/
@@ -254,7 +254,7 @@ line level    source
  116          例如10ms 启动一次， 那SOCAPI_SET_KEY_CONTI_TIME*10ms，超过时间后此按键无效。
  117          **************************************************/
  118          unsigned int SetOneKeyPushResetTime(void)   
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 5   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 5   
 
  119          {         
  120   1              return  TKCFG[SET_KEY_CONTI_TIME];
@@ -318,7 +318,7 @@ line level    source
  178   1      }
  179          /**************************************************
  180          *函数名称：unsigned char IsDoubleKeyOrSlideKey(void)
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 6   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 6   
 
  181          *函数功能：检测是否是弹簧滑条或者双键
  182          *入口参数：void
@@ -382,7 +382,7 @@ line level    source
  240   1              return SetFingerThresholdtmp;
  241   1      }
  242          /**************************************************
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 7   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 7   
 
  243          *函数名称：void CurrentSensorChoose(void)
  244          *函数功能：当前通道选择
@@ -446,7 +446,7 @@ line level    source
  302   1              unsigned char  data     i;
  303   1              ConfirmTouchCnt = TKCFG[CONFIRMTOUCHCNT];
  304   1              SetNoiseThreshold = TKCFG[NOISE];
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 8   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 8   
 
  305   1              CurrentSensorChoose(); 
  306   1               for(i=0;i<CurrentChannelMax;i++)
@@ -510,7 +510,7 @@ line level    source
  363   4                              }
  364   3                              else    
  365   3                              {
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 9   
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 9   
 
  366   4                                      UpdateBaseLNum = 0;     
  367   4                              } 
@@ -557,7 +557,7 @@ line level    source
  408          
  409          
  410          
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 10  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 10  
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -621,7 +621,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 165
 0002 ED                MOV     A,R5
 0003 75F008            MOV     B,#08H
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 11  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 11  
 
 0006 A4                MUL     AB
 0007 2400        R     ADD     A,#LOW TKChannelCfg+06H
@@ -685,7 +685,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
              ; FUNCTION IsDoubleKeyOrSlideKey (END)
 
              ; FUNCTION _GetBaseLineAdjustValue (BEGIN)
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 12  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 12  
 
                                            ; SOURCE LINE # 198
 ;---- Variable 'i' assigned to Register 'R7' ----
@@ -749,7 +749,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 000D FF                MOV     R7,A
 000E 7C00              MOV     R4,#00H
 0010 7D0A              MOV     R5,#0AH
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 13  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 13  
 
 0012 020000      E     LJMP    ?C?UIDIV
              ; FUNCTION _GetTKYzThreshold (END)
@@ -813,7 +813,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0048 850000      E     MOV     CurrentChannelMax,Ctk_Channel_mark
                                            ; SOURCE LINE # 271
 004B 22                RET     
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 14  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 14  
 
              ; FUNCTION CurrentSensorChoose (END)
 
@@ -877,7 +877,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 301
                                            ; SOURCE LINE # 303
 0000 900000      R     MOV     DPTR,#TKCFG+06H
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 15  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 15  
 
 0003 7401              MOV     A,#01H
 0005 93                MOVC    A,@A+DPTR
@@ -941,7 +941,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0000 E4                CLR     A
 0001 F500        R     MOV     MultipleCnt,A
                                            ; SOURCE LINE # 328
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 16  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 16  
 
 0003 F500        R     MOV     KeyData+03H,A
 0005 F500        R     MOV     KeyData+02H,A
@@ -1005,7 +1005,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 005E FE                MOV     R6,A
 005F E500        R     MOV     A,KeyData+01H
 0061 4D                ORL     A,R5
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 17  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 17  
 
 0062 FD                MOV     R5,A
 0063 E500        R     MOV     A,KeyData
@@ -1069,7 +1069,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00A1 120000      E     LCALL   ?C?ULCMP
 00A4 600C              JZ      ?C0040
                                            ; SOURCE LINE # 361
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 18  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 18  
 
                                            ; SOURCE LINE # 362
 00A6 900000      R     MOV     DPTR,#UpdateBaseLNum
@@ -1133,7 +1133,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00EF 900000      R     MOV     DPTR,#MultipleLNum
 00F2 E0                MOVX    A,@DPTR
 00F3 9401              SUBB    A,#01H
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 19  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 19  
 
 00F5 401D              JC      ?C0045
                                            ; SOURCE LINE # 383
@@ -1197,7 +1197,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0026 D004              POP     AR4
 0028 D003              POP     AR3
 002A D002              POP     AR2
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 20  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 20  
 
 002C D001              POP     AR1
 002E D000              POP     AR0
@@ -1209,7 +1209,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 003A 32                RETI    
              ; FUNCTION CTK_ISR (END)
 
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 21  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 21  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1272,7 +1272,7 @@ FilterData . . . . . . . . . . . . . .  PUBLIC   XDATA  ARRAY    004FH  12
 TouchKey_Service . . . . . . . . . . .  EXTERN   CODE   PROC     -----  -----
 CFG_CYCLE_CNT. . . . . . . . . . . . .  PUBLIC   CODE   U_CHAR   0054H  1
 NoTouchCnt . . . . . . . . . . . . . .  PUBLIC   XDATA  ARRAY    005BH  6
-C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/16/2026 17:36:12 PAGE 22  
+C51 COMPILER V9.60.7.0   TKDRIVER                                                          05/18/2026 10:24:58 PAGE 22  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====

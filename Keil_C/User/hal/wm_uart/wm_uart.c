@@ -54,26 +54,34 @@ void print_u32(uint32_t x) {
 
 void wm_TransmitSerialCMD()
 {
-	uint8_t i =0;
+	uint8_t i = 0;
 
 	if(wm_SerialCmdTimeOutCnt >= 100)
 	{
-		
 		bit wm_HeaterBit = (wm_HeaterState && (!wm_IsHtDisFanEnReq));
-	
-    	wm_cmdByte = (wm_FanSpeed | ((uint8_t)wm_HeaterBit << WM_HEATER_INDX)| ((uint8_t)wm_KitchenLightState << WM_KL_INDX)| ((uint8_t)wm_UiBoardState << WM_UI_EN_DIS_INDX) | ((uint8_t)wm_ReservedBitState << WM_RESERVE_BIT_INDX)  );
-		
- 	    for (i = 3; i != 0; i--)
-	 	{
-			//if(!sendflag)
-			while(sendflag);
-	 		//{
-       	 	Uart_SendString(&wm_cmdByte,1);
-     	   // }
-      		wm_DelayMS(5);
-  	 	}
-        wm_SerialCmdTimeOutCnt =0;
-     }
+
+		wm_cmdByte = (wm_FanSpeed | ((uint8_t)wm_HeaterBit << WM_HEATER_INDX) | ((uint8_t)wm_KitchenLightState << WM_KL_INDX) | ((uint8_t)wm_UiBoardState << WM_UI_EN_DIS_INDX) | ((uint8_t)wm_ReservedBitState << WM_RESERVE_BIT_INDX));
+
+		for (i = 3; i != 0; i--)
+		{
+			/* 10 ms hard timeout — if a previous send never completed, recover */
+			{
+				uint16_t t0 = wm_SerialCmdTimeOutCnt;
+				while(sendflag)
+				{
+					if((uint16_t)(wm_SerialCmdTimeOutCnt - t0) >= 10)
+					{
+						TR0 = 0;
+						sendflag = 0;
+						break;
+					}
+				}
+			}
+			Uart_SendString(&wm_cmdByte, 1);
+			wm_DelayMS(5);
+		}
+		wm_SerialCmdTimeOutCnt = 0;
+	}
 }
 	
 

@@ -34,15 +34,15 @@ void wm_OnStartUp()
 void wm_TurnOnAllTKLed(uint16_t ms)
 {
 	TURN_ON_LED(LED_1);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_ON_LED(LED_2);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_ON_LED(LED_3);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_ON_LED(LED_4);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_ON_LED(LED_5);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_ON_LED(LED_6);
 }
 

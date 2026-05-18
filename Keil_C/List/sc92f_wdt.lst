@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 1   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SC92F_WDT
@@ -62,7 +62,7 @@ line level    source
   22      =1   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =1   ******************************************************************************
   24      =1   */
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 2   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 2   
 
   25      =1   
   26      =1  /* Define to prevent recursive inclusion -------------------------------------*/
@@ -126,7 +126,7 @@ line level    source
    3      =3  
    4      =3  C Header file for SC92F836XB microcontroller.
    5      =3  Copyright (c) 2018 Shenzhen SinOne Microelectronics CO., Ltd.
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 3   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 3   
 
    6      =3  All rights reserved.
    7      =3  ÉîÛÚÊÐÈüÔªÎ¢µç×Ó¹É·ÝÓÐÏÞ¹«Ë¾
@@ -190,7 +190,7 @@ line level    source
   65      =3  ///P0¿ÚÄ£Ê½¿ØÖÆ¼Ä´æÆ÷           
   66      =3  sfr         P0CON       = 0x9A;         
   67      =3  ///P0¿ÚÊý¾Ý¼Ä´æÆ÷
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 4   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 4   
 
   68      =3  sfr     P0          = 0x80;             
   69      =3  ///IOHÉèÖÃ¼Ä´æÆ÷
@@ -254,7 +254,7 @@ line level    source
  127      =3  sfr     PWMDTY1 = 0xD6;         
  128      =3  ///PWM2ÉèÖÃ¼Ä´æÆ÷
  129      =3  sfr     PWMDTY2 = 0xD7;         
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 5   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 5   
 
  130      =3  ///PWMÕ¼¿Õ±ÈÉèÖÃ¼Ä´æÆ÷B
  131      =3  sfr     PWMDTYB = 0xDC;         
@@ -318,7 +318,7 @@ line level    source
  189      =3  sfr     SSCON1  = 0X9E;   
  190      =3  ///SPI¿ØÖÆ¼Ä´æÆ÷2
  191      =3  sfr     SSCON2  = 0X95;   
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 6   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 6   
 
  192      =3  ///SPIÊý¾Ý¼Ä´æÆ÷
  193      =3  sfr     SSDAT   = 0X9F;   
@@ -382,7 +382,7 @@ line level    source
  250      =3  
  251      =3  /*IP*/
  252      =3  ///ADCÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»      0:Éè¶¨ ADCµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±               1:Éè¶¨ ADCµÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 7   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 7   
 
  253      =3  sbit    IPADC   = IP^6;   
  254      =3  ///Timer2ÖÐ¶ÏÓÅÏÈ¿ØÖÆÎ»   0:Éè¶¨ Timer2µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°µÍ¡±            1:Éè¶¨Timer2µÄÖÐ¶ÏÓÅÏÈÈ¨ÊÇ ¡°¸ß¡±
@@ -446,7 +446,7 @@ line level    source
  312      =3  sbit    P05     = P0^5;
  313      =3  sbit    P04     = P0^4;
  314      =3  sbit    P03     = P0^3;
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 8   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 8   
 
  315      =3  sbit    P02     = P0^2;
  316      =3  sbit    P01     = P0^1;
@@ -510,7 +510,7 @@ line level    source
   83      =2  #ifdef SC92F8003
   86      =2  
   87      =2  #ifdef SC92F8003B
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 9   
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 9   
 
   90      =2  
   91      =2  #ifdef SC92F740x
@@ -574,7 +574,7 @@ line level    source
  207      =2  #ifdef SC92F83Hx
  210      =2  
  211      =2  #ifdef SC92F646x
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 10  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 10  
 
  214      =2  
  215      =2  #ifdef SC92F546x
@@ -638,7 +638,7 @@ line level    source
  295      =2  
  296      =2  typedef enum
  297      =2  {
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 11  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 11  
 
  298      =2          Status_ERROR = 0x00U,
  299      =2          Status_OK = 0x01U,
@@ -702,7 +702,7 @@ line level    source
   73      =1   * @retval None
   74      =1   */
   75      =1  #define WDT_SetReload() SET_BIT(WDTCON,0x10)
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 12  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 12  
 
   76      =1  /* WDT Base functions ********************************************************/
   77      =1  void WDT_DeInit(void);
@@ -759,14 +759,14 @@ line level    source
   61   1      }
   62          
   63          /**************************************************
-  64          *º¯ÊýÃû³Æ:void WDT_Init(WDT_OverflowTime_TypeDef OverflowTime)
-  65          *º¯Êý¹¦ÄÜ:WDT³õÊ¼»¯ÅäÖÃº¯Êý
-  66          *Èë¿Ú²ÎÊý:
-  67          WDT_OverflowTime_TypeDef:OverflowTime:WDTÒç³öÊ±¼äÑ¡Ôñ
-  68          *³ö¿Ú²ÎÊý:void
+  64          *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:void WDT_Init(WDT_OverflowTime_TypeDef OverflowTime)
+  65          *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:WDTï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½
+  66          *ï¿½ï¿½Ú²ï¿½ï¿½ï¿½:
+  67          WDT_OverflowTime_TypeDef:OverflowTime:WDTï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ñ¡ï¿½ï¿½
+  68          *ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½:void
   69          **************************************************/
   70           /**
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 13  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 13  
 
   71           * @brief  WDT initialization configuration function
   72           * @param   OverflowTime:WDT overflow time selection
@@ -796,34 +796,38 @@ line level    source
   96           */
   97          void WDT_Cmd(FunctionalState NewState)
   98          {
-  99   1        OPINX = 0XC1;
- 100   1      
- 101   1        if(NewState == DISABLE)
- 102   1        {
- 103   2          OPREG &= 0X7F;
- 104   2        }
- 105   1        else
- 106   1        {
- 107   2          OPREG |= 0X80;
- 108   2        }
- 109   1      }
- 110          /**
- 111           * @}
- 112           */
- 113          /* End of wdt_Group1.   */
- 114          /**
- 115           * @}
- 116           */
- 117          
- 118          /**
- 119           * @}
- 120           */
- 121          
- 122          /**
- 123           * @}
- 124           */
- 125          /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 14  
+  99   1        bit ea_saved = EA;
+ 100   1        EA = 0;           /* OPINXâ†’OPREG is two instructions; mask interrupts so no ISR can change OPINX betwe
+             -en them */
+ 101   1        OPINX = 0XC1;
+ 102   1      
+ 103   1        if(NewState == DISABLE)
+ 104   1        {
+ 105   2          OPREG &= 0X7F;
+ 106   2        }
+ 107   1        else
+ 108   1        {
+ 109   2          OPREG |= 0X80;
+ 110   2        }
+ 111   1        EA = ea_saved;
+ 112   1      }
+ 113          /**
+ 114           * @}
+ 115           */
+ 116          /* End of wdt_Group1.   */
+ 117          /**
+ 118           * @}
+ 119           */
+ 120          
+ 121          /**
+ 122           * @}
+ 123           */
+ 124          
+ 125          /**
+ 126           * @}
+ 127           */
+ 128          /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 14  
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -856,26 +860,34 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 ;---- Variable 'NewState' assigned to Register 'R7' ----
                                            ; SOURCE LINE # 98
                                            ; SOURCE LINE # 99
-0000 75FEC1            MOV     OPINX,#0C1H
+0000 A2AF              MOV     C,EA
+0002 9200        R     MOV     ea_saved,C
+                                           ; SOURCE LINE # 100
+0004 C2AF              CLR     EA
                                            ; SOURCE LINE # 101
-0003 EF                MOV     A,R7
-0004 7004              JNZ     ?C0003
-                                           ; SOURCE LINE # 102
+0006 75FEC1            MOV     OPINX,#0C1H
                                            ; SOURCE LINE # 103
-0006 53FF7F            ANL     OPREG,#07FH
+0009 EF                MOV     A,R7
+000A 7005              JNZ     ?C0003
                                            ; SOURCE LINE # 104
-0009 22                RET     
-000A         ?C0003:
+                                           ; SOURCE LINE # 105
+000C 53FF7F            ANL     OPREG,#07FH
                                            ; SOURCE LINE # 106
-                                           ; SOURCE LINE # 107
-000A 43FF80            ORL     OPREG,#080H
+000F 8003              SJMP    ?C0004
+0011         ?C0003:
                                            ; SOURCE LINE # 108
                                            ; SOURCE LINE # 109
-000D         ?C0005:
-000D 22                RET     
+0011 43FF80            ORL     OPREG,#080H
+                                           ; SOURCE LINE # 110
+0014         ?C0004:
+                                           ; SOURCE LINE # 111
+0014 A200        R     MOV     C,ea_saved
+0016 92AF              MOV     EA,C
+                                           ; SOURCE LINE # 112
+0018 22                RET     
              ; FUNCTION _WDT_Cmd (END)
 
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 15  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 15  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -938,7 +950,7 @@ HIGH . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 RCAP2H . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CBH  1
 SP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0081H  1
 OV . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D2H  1
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 16  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 16  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1001,7 +1013,7 @@ SSCON0 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009DH  1
 P27. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A7H  1
 SSCON1 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009EH  1
 SSCON2 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0095H  1
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 17  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 17  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1064,7 +1076,7 @@ PWMPRD . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D3H  1
 DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
 DPL. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0082H  1
 EINT0. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
-C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/16/2026 17:36:12 PAGE 18  
+C51 COMPILER V9.60.7.0   SC92F_WDT                                                         05/18/2026 10:24:58 PAGE 18  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1081,6 +1093,7 @@ P2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A1H  1
 INT2F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C6H  1
 _WDT_Cmd . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
   NewState . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+  ea_saved . . . . . . . . . . . . . .  AUTO     DATA   BIT      0000H  1
 REN. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009CH  1
 _WDT_Init. . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
   OverflowTime . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
@@ -1107,13 +1120,13 @@ uint32_t . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     26    ----
+   CODE SIZE        =     37    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----
    IDATA SIZE       =   ----    ----
-   BIT SIZE         =   ----    ----
+   BIT SIZE         =   ----       1
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
    XDATA CONST SIZE =   ----    ----

@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 1   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SC_IT
@@ -62,7 +62,7 @@ line level    source
   17      =2   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =2   *consequential damages with respect to any claims arising from the content of 
   19      =2   *such software and/or the use made by customers of the coding information 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 2   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 2   
 
   20      =2   *contained herein in connection with their products.
   21      =2   *
@@ -126,7 +126,7 @@ line level    source
   19      =4   *such software and/or the use made by customers of the coding information 
   20      =4   *contained herein in connection with their products.
   21      =4   *
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 3   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 3   
 
   22      =4   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =4   ******************************************************************************
@@ -190,7 +190,7 @@ line level    source
   31      =5  ///µçÔ´¹ÜÀí¿ØÖÆ¼Ä´æÆ÷
   32      =5  sfr     PCON    = 0x87;         
   33      =5  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 4   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 4   
 
   34      =5  /*interrupt*/
   35      =5  ///ÖÐ¶ÏÓÅÏÈ¼¶¿ØÖÆ¼Ä´æÆ÷1
@@ -254,7 +254,7 @@ line level    source
   93      =5  ///¶¨Ê±Æ÷2ÖØÔØ/²¶×½¸ß8Î»
   94      =5  sfr     RCAP2H  = 0xCB;     
   95      =5  ///¶¨Ê±Æ÷2µÍ8Î»
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 5   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 5   
 
   96      =5  sfr     TL2     = 0xCC;     
   97      =5  ///¶¨Ê±Æ÷2¸ß8Î»
@@ -318,7 +318,7 @@ line level    source
  155      =5  sfr     INT0R   = 0XBB;         
  156      =5  ///INT1 ÏÂ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
  157      =5  sfr     INT1F   = 0XBC;         
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 6   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 6   
 
  158      =5  ///INT1 ÉÏ½µÑØÖÐ¶Ï¿ØÖÆ¼Ä´æÆ÷
  159      =5  sfr     INT1R   = 0XBD;         
@@ -382,7 +382,7 @@ line level    source
  217      =5  sfr     EXBH    = 0xEE;   
  218      =5  ///ÔËËã¿ØÖÆ¼Ä´æÆ÷
  219      =5  sfr     OPERCON = 0xEF;   
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 7   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 7   
 
  220      =5  
  221      =5  /* ------------------- Î»¼Ä´æÆ÷-------------------- */
@@ -446,7 +446,7 @@ line level    source
  278      =5  ///INT1ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕINT1ÖÐ¶Ï      1:´ò¿ªINT1ÖÐ¶Ï
  279      =5  sbit    EINT1 = IE^2;     
  280      =5  ///Timer0ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ   0:¹Ø±ÕTIMER0ÖÐ¶Ï        1:´ò¿ªTIMER0ÖÐ¶Ï
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 8   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 8   
 
  281      =5  sbit    ET0       = IE^1;         
  282      =5  ///INT0ÖÐ¶ÏÊ¹ÄÜ¿ØÖÆ     0:¹Ø±ÕINT0ÖÐ¶Ï      1:´ò¿ªINT0ÖÐ¶Ï
@@ -510,7 +510,7 @@ line level    source
  340      =5  sbit    P25     = P2^5;
  341      =5  sbit    P24     = P2^4;
  342      =5  sbit    P23     = P2^3;
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 9   
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 9   
 
  343      =5  sbit    P22     = P2^2;
  344      =5  sbit    P21     = P2^1;
@@ -574,7 +574,7 @@ line level    source
  139      =4  #ifdef SC92F7490
  142      =4  
  143      =4  #ifdef SC92F725X
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 10  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 10  
 
  146      =4  
  147      =4  #ifdef SC92F735X
@@ -638,7 +638,7 @@ line level    source
  261      =4  #define disableInterrupts()   EA=0       /** 1?±?×ü?D??  **/
  262      =4  
  263      =4  #define     __I     volatile const   /*!< defines 'read only' permissions     */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 11  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 11  
 
  264      =4  #define     __O     volatile         /*!< defines 'write only' permissions    */
  265      =4  #define     __IO    volatile         /*!< defines 'read / write' permissions  */
@@ -702,7 +702,7 @@ line level    source
   39      =3  sbit IO05 = P0^5;
   40      =3  sbit IO06 = P0^6;
   41      =3  sbit IO07 = P0^7;
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 12  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 12  
 
   42      =3  
   43      =3  sbit IO10 = P1^0;
@@ -766,7 +766,7 @@ line level    source
  133      =3  #endif
  134      =3  /**
  135      =3   * @}
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 13  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 13  
 
  136      =3   */
  137      =3  
@@ -830,7 +830,7 @@ line level    source
  195      =3  /* Initialization and de-initialization functions *****************************/
  196      =3  #if !defined(SC92F7003) && !defined(SC92F8003)  && !defined(SC92F8003B) && !defined(SC92F740x)&& !defined 
              -(SC92F6x1x) && !defined (SC92F5x1x)&& !defined(SC92R436)\
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 14  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 14  
 
  197      =3      && !defined(SC92L840x) && !defined(SC92R439) && !defined(SC92R422A) && !defined(SC92F652x)
  198      =3  void GPIO_IOH_Config(GPIO_TypeDef GPIOx, GPIO_Pin_TypeDef PortPins,GPIO_IOH_Grade_TypeDef GPIO_IOH_Grade);
@@ -894,7 +894,7 @@ line level    source
    1      =4  /**
    2      =4   ******************************************************************************
    3      =4   * @file    Header file of SC92 Series
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 15  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 15  
 
    4      =4   * @author  SOC AE Team
    5      =4   * @version V1.2.1
@@ -958,7 +958,7 @@ line level    source
   66      =3   * @}
   67      =3   */
   68      =3  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 16  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 16  
 
   69      =3  /** @brief TIM_WorkMode TIM WorkMode
   70      =3   * @{
@@ -1022,7 +1022,7 @@ line level    source
  128      =3  #define TIM0_SetTL0Counter(TIM0_SetCounter) (TL0 = TIM0_SetCounter)
  129      =3  
  130      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 17  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 17  
 
  131      =3   * @brief  TIMER0¹¦ÄÜ¿ª¹Øº¯Êý
  132      =3   * @param  NewState[in]:¹¦ÄÜÆô¶¯/¹Ø±ÕÑ¡Ôñ
@@ -1086,7 +1086,7 @@ line level    source
  190      =3  /* End of exported functions --------------------------------------------------*/
  191      =3  #endif
  192      =3  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 18  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 18  
 
  193      =3  /**
  194      =3   * @}
@@ -1150,7 +1150,7 @@ line level    source
   20      =4   *contained herein in connection with their products.
   21      =4   *
   22      =4   *  COPYRIGHT 2025 SinOne Microelectronics
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 19  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 19  
 
   23      =4   ******************************************************************************
   24      =4   */
@@ -1214,7 +1214,7 @@ line level    source
   85      =3  /* End of enumerations -----------------------------------------------------*/
   86      =3  
   87      =3  /** @addtogroup TIM1_Functions TIM1 Functions
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 20  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 20  
 
   88      =3   * @{
   89      =3   */
@@ -1278,7 +1278,7 @@ line level    source
  147      =3  #define TIM1_GetFlagStatus() (TF1)
  148      =3  
  149      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 21  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 21  
 
  150      =3   * @brief  Çå³ýTIMER1ÖÐ¶Ï±êÖ¾×´Ì¬
  151      =3   * @param  None
@@ -1342,7 +1342,7 @@ line level    source
   29      =3  
   30      =3  /* Includes ------------------------------------------------------------------*/
   31      =3  #include "sc92f.h"
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 22  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 22  
 
    1      =4  /**
    2      =4   ******************************************************************************
@@ -1406,7 +1406,7 @@ line level    source
  106      =3  typedef enum
  107      =3  {
  108      =3    TIM2_MODE_TIMER   = ((uint8_t)0x01), /*!< TIMER2×ö¶¨Ê±Æ÷ */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 23  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 23  
 
  109      =3    TIM2_MODE_COUNTER = ((uint8_t)0x02)  /*!< TIMER2×ö¼ÆÊýÆ÷ */
  110      =3  } TIM2_CountMode_TypeDef;
@@ -1470,7 +1470,7 @@ line level    source
  181      =3  void TIM2_WorkMode0Config(uint16_t TIM2_SetCounter);
  182      =3  void TIM2_WorkMode1Config(uint16_t TIM2_SetCounter);
  183      =3  void TIM2_WorkMode3Config(uint16_t TIM2_SetCounter);
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 24  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 24  
 
  184      =3  void TIM2_WorkModeConfig(TIM2_WorkMode_TypeDef TIM2_WorkMode, uint16_t TIM2_SetCounter);
  185      =3  /* Time Base functions ********************************************************/
@@ -1534,7 +1534,7 @@ line level    source
    7      =4   * @brief   Header file of SC92 Series.
    8      =4   ******************************************************************************
    9      =4   * @attention
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 25  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 25  
 
   10      =4   *
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
@@ -1598,7 +1598,7 @@ line level    source
   85      =3  typedef enum
   86      =3  {
   87      =3    TIM3_COUNTDIRECTION_UP = ((uint8_t)0x00),     /*!< ÏòÉÏ¼ÆÊýÄ£Ê½ */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 26  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 26  
 
   88      =3    TIM3_COUNTDIRECTION_DOWN_UP = ((uint8_t)0x10) /*!< ÏòÉÏ/ÏòÏÂ¼ÆÊýÄ£Ê½ */
   89      =3  } TIM3_CountDirection_TypeDef;
@@ -1662,7 +1662,7 @@ line level    source
  147      =3   */
  148      =3  
  149      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 27  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 27  
 
  150      =3   * @}
  151      =3   */
@@ -1726,7 +1726,7 @@ line level    source
   23      =4   ******************************************************************************
   24      =4   */
   25      =4   
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 28  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 28  
 
   26      =4  /* Includes ------------------------------------------------------------------*/
   27      =4  #ifndef _sc92f_H
@@ -1790,7 +1790,7 @@ line level    source
   88      =3  } TIM4_Flag_TypeDef;
   89      =3  /**
   90      =3   * @}
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 29  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 29  
 
   91      =3   */
   92      =3  
@@ -1854,7 +1854,7 @@ line level    source
   11      =3   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =3   *intended for use with SinOne products. No other uses are authorized. This 
   13      =3   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 30  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 30  
 
   14      =3   *all applicable laws, including copyright laws. 
   15      =3   *2.The software which is for guidance only aims at providing customers with 
@@ -1918,7 +1918,7 @@ line level    source
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 31  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 31  
 
   14      =4   *all applicable laws, including copyright laws. 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
@@ -1982,7 +1982,7 @@ line level    source
   45      =4   /** @brief SYSCLK clock Source
   46      =4   * @{
   47      =4   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 32  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 32  
 
   48      =4  #if defined (SC92L853x) || defined (SC92L753x)
   64      =4  typedef enum
@@ -2046,7 +2046,7 @@ line level    source
  174      =4  typedef enum
  175      =4  {
  176      =4    ADC_VREF_VDD  = 0x00,                             /*!< VDD as the ADC reference voltage */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 33  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 33  
 
  177      =4    ADC_VREF_2_4V = 0x80,                             /*!< internal 2.4V as the ADC reference voltage value */
  178      =4  } ADC_Vref_TypeDef;
@@ -2110,7 +2110,7 @@ line level    source
  230      =4  void OPTION_XTIPLL_Cmd(FunctionalState NewState);
  231      =4  #endif
  232      =4  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 34  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 34  
 
  233      =4  #if defined (SC92F742x)||defined (SC92F83Ax) || defined (SC92F73Ax)|| defined (SC92F84Ax) || defined (SC92
              -F74Ax) \
@@ -2174,7 +2174,7 @@ line level    source
   74      =3          || defined (SC93F833x) || defined (SC93F843x) || defined (SC93F743x) || defined(SC92F730x_2) || defined(S
              -C92F720x) || defined (SC92F7308B)
  115      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 35  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 35  
 
  116      =3   * @}
  117      =3   */
@@ -2238,7 +2238,7 @@ line level    source
  525      =3    ADC_EAIN_3 = (uint16_t)0x0008, /*!< Select AIN3  */
  526      =3    ADC_EAIN_4 = (uint16_t)0x0010, /*!< Select AIN4  */
  527      =3    ADC_EAIN_5 = (uint16_t)0x0020, /*!< Select AIN5  */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 36  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 36  
 
  528      =3    ADC_EAIN_6 = (uint16_t)0x0040, /*!< Select AIN6  */
  529      =3    ADC_EAIN_7 = (uint16_t)0x0080, /*!< Select AIN7  */
@@ -2302,7 +2302,7 @@ line level    source
  646      =3   * @retval None
  647      =3   */                  
  648      =3  #define ADC_StartConversion() SET_BIT(ADCCON,0X40)
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 37  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 37  
 
  649      =3  
  650      =3  #if defined(SC93F833x) || defined(SC93F843x) || defined(SC93F743x)
@@ -2366,7 +2366,7 @@ line level    source
   26      =3  /* Define to prevent recursive inclusion -------------------------------------*/
   27      =3  #ifndef _sc92f_BTM_H_
   28      =3  #define _sc92f_BTM_H_
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 38  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 38  
 
   29      =3  
   30      =3  /* Includes ------------------------------------------------------------------*/
@@ -2430,7 +2430,7 @@ line level    source
  104      =3    BTM_TIMEBASE_500MS    = (uint8_t)0x05,                /*!< Every 500 milliseconds generates one interrupt */
  105      =3    BTM_TIMEBASE_1S       = (uint8_t)0x06,                /*!< Every 1 seconds generates one interrupt*/
  106      =3    BTM_TIMEBASE_2S       = (uint8_t)0x07,                /*!< Every 2 seconds generates one interrupt*/
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 39  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 39  
 
  107      =3    BTM_TIMEBASE_4S       = (uint8_t)0x08,            /*!< Every 4 seconds generates one interrupt*/
  108      =3  } BTM_Timebase_TypeDef;
@@ -2494,7 +2494,7 @@ line level    source
  166      =3  
  167      =3  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   37      =2  #include "sc92f_pwm.h"
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 40  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 40  
 
    1      =3  /**
    2      =3   ******************************************************************************
@@ -2558,7 +2558,7 @@ line level    source
   32      =3  
   33      =3  /** @addtogroup sc92f_StdPeriph_Driver
   34      =3   * @{
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 41  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 41  
 
   35      =3   */
   36      =3  
@@ -2622,7 +2622,7 @@ line level    source
  989      =3   * @{
  990      =3   */
  991      =3  typedef enum
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 42  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 42  
 
  992      =3  { 
  993      =3    PWM_OUTPUTSTATE_DISABLE       = ((uint8_t)0x00),      /*!< ¸ÃPIN½Å×÷ÎªGPIO */
@@ -2686,7 +2686,7 @@ line level    source
              -2A)|| defined(SC92F652x)
 1078      =3  void PWM_Cmd(FunctionalState NewState);
 1079      =3  FlagStatus PWM_GetFlagStatus(void);
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 43  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 43  
 
 1080      =3  void PWM_ClearFlag(void);
 1081      =3  #endif
@@ -2750,7 +2750,7 @@ line level    source
   12      =3   *intended for use with SinOne products. No other uses are authorized. This 
   13      =3   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =3   *all applicable laws, including copyright laws. 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 44  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 44  
 
   15      =3   *2.The software which is for guidance only aims at providing customers with 
   16      =3   *coding information regarding their products in order for them to save time. 
@@ -2814,7 +2814,7 @@ line level    source
   46      =3   /** @brief INT_TriggerMode_Typedef INT TriggerMode
   47      =3   * @{
   48      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 45  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 45  
 
   49      =3  typedef enum
   50      =3  {
@@ -2878,7 +2878,7 @@ line level    source
  175      =3  typedef enum
  176      =3  {
  177      =3    INT10 = (uint8_t)0x01,                    /*!< ½«P14ÉèÖÃÎªINT1½Å  */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 46  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 46  
 
  178      =3    INT11 = (uint8_t)0x02,                    /*!< ½«P15ÉèÖÃÎªINT1½Å  */
  179      =3    INT12 = (uint8_t)0x04,                    /*!< ½«P16ÉèÖÃÎªINT1½Å  */
@@ -2942,7 +2942,7 @@ line level    source
  336      =3                     PriorityStatus Priority);
  337      =3  #endif
  338      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 47  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 47  
 
  339      =3   * @}
  340      =3   */
@@ -3006,7 +3006,7 @@ line level    source
   14      =4   *all applicable laws, including copyright laws. 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
   16      =4   *coding information regarding their products in order for them to save time. 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 48  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 48  
 
   17      =4   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =4   *consequential damages with respect to any claims arising from the content of 
@@ -3070,7 +3070,7 @@ line level    source
  165      =3  /**
  166      =3   * @}
  167      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 49  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 49  
 
  168      =3  
  169      =3  /** @brief UART0_Mode_Typedef UART0 Mode
@@ -3134,7 +3134,7 @@ line level    source
  234      =3  typedef struct __UART0_HandleInfoDef
  235      =3  {
  236      =3    union
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 50  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 50  
 
  237      =3    {
  238      =3      uint8_t* Size_u8;             /*!< 8Î»Êý¾Ý·¢ËÍ»º´æÇø */
@@ -3198,7 +3198,7 @@ line level    source
  301      =3  void UART0_SendData8(uint8_t Data);
  302      =3  uint8_t UART0_ReceiveData8(void);
  303      =3  void UART0_SendData9(uint16_t Data);
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 51  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 51  
 
  304      =3  uint16_t UART0_ReceiveData9(void);
  305      =3  
@@ -3262,7 +3262,7 @@ line level    source
   27      =3  #ifndef _sc92f_UART2_H_
   28      =3  #define _sc92f_UART2_H_
   29      =3  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 52  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 52  
 
   30      =3  /* Includes ------------------------------------------------------------------*/
   31      =3  #include "sc92f.h"
@@ -3326,7 +3326,7 @@ line level    source
    9      =3   * @attention
   10      =3   *
   11      =3   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 53  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 53  
 
   12      =3   *intended for use with SinOne products. No other uses are authorized. This 
   13      =3   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
@@ -3390,7 +3390,7 @@ line level    source
   42      =3                  || defined (SC92F846xB) || defined (SC92F746xB) || defined (SC92F836xB) || defined (SC92F736xB)||defined
              -  (SC92F84Ax) || defined (SC92F74Ax)\
   43      =3                  || defined (SC92F83Ax) || defined (SC92F73Ax) || defined (SC92F7003) || defined(SC92F8003) || defined(SC
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 54  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 54  
 
              -92F8003B) || defined (SC92F740x) || defined (SC92F827X)\
   44      =3                  || defined (SC92F837X) || defined (SC92FWxx) || defined (SC93F833x) || defined (SC93F843x) || defined (S
@@ -3454,7 +3454,7 @@ line level    source
   99      =3    SPI_CLOCKPOLARITY_LOW  = (uint8_t)0x00, /*!< SCKÔÚ¿ÕÏÐ×´Ì¬ÏÂÎªµÍµçÆ½ */
  100      =3    SPI_CLOCKPOLARITY_HIGH = (uint8_t)0x10  /*!< SCKÔÚ¿ÕÏÐ×´Ì¬ÏÂÎª¸ßµçÆ½ */
  101      =3  } SPI_ClockPolarity_TypeDef;
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 55  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 55  
 
  102      =3  /**
  103      =3   * @}
@@ -3518,7 +3518,7 @@ line level    source
  161      =3  /** @brief UART1_RX_TypeDef UART1 RX
  162      =3   * @{
  163      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 56  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 56  
 
  164      =3  typedef enum
  165      =3  {
@@ -3582,7 +3582,7 @@ line level    source
  223      =3    uint8_t RxXferCount;             /*!< Êý¾Ý½ÓÊÕ¼ÆÊýÆ÷´óÐ¡ */
  224      =3    SSI_StatusTypeDef TxState;       /*!< ·¢ËÍ×´Ì¬ */
  225      =3    SSI_StatusTypeDef RxState;       /*!< ½ÓÊÕ×´Ì¬ */ 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 57  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 57  
 
  226      =3  } SSI_HandleInfoDef;
  227      =3  /**
@@ -3646,7 +3646,7 @@ line level    source
  356      =3  /********************************* UART **************************************************/
  357      =3  void SSI_UART1_Init(uint32_t UART1Fsys,
  358      =3                      uint32_t BaudRate, UART1_Mode_TypeDef Mode,
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 58  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 58  
 
  359      =3                      UART1_RX_TypeDef RxMode);
  360      =3  void SSI_UART1_SendData8(uint8_t Data);
@@ -3710,7 +3710,7 @@ line level    source
   22      =3   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =3   ******************************************************************************
   24      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 59  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 59  
 
   25      =3  
   26      =3  /* Define to prevent recursive inclusion -------------------------------------*/
@@ -3774,7 +3774,7 @@ line level    source
   51      =3    uint16_t CHKSUM_GetCheckValue(void);
   52      =3  #endif
   53      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 60  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 60  
 
   54      =3   * @}
   55      =3   */
@@ -3838,7 +3838,7 @@ line level    source
   14      =4   *all applicable laws, including copyright laws. 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
   16      =4   *coding information regarding their products in order for them to save time. 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 61  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 61  
 
   17      =4   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =4   *consequential damages with respect to any claims arising from the content of 
@@ -3902,7 +3902,7 @@ line level    source
   45      =3   */
   46      =3   
   47      =3    /** @brief IAP_MemType_TypeDef IAP Operation Section
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 62  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 62  
 
   48      =3   * @{
   49      =3   */
@@ -3966,7 +3966,7 @@ line level    source
  154      =3  uint8_t IAP_ReadByte(uint16_t Address,
  155      =3                       IAP_MemType_TypeDef IAP_MemType);
  156      =3  uint8_t IAP_ReadByteArray(uint32_t Address, uint8_t* ByteArray, uint8_t ArraySize, IAP_MemType_TypeDef IAP
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 63  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 63  
 
              -_MemType);
  157      =3  
@@ -4030,7 +4030,7 @@ line level    source
  250      =3  
  251      =3  /**
  252      =3   * @}
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 64  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 64  
 
  253      =3   */
  254      =3   
@@ -4094,7 +4094,7 @@ line level    source
   26      =4  /* Includes ------------------------------------------------------------------*/
   27      =4  #ifndef _sc92f_H
  315      =4  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 65  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 65  
 
   32      =3  
   33      =3  /** @addtogroup sc92f_StdPeriph_Driver
@@ -4158,7 +4158,7 @@ line level    source
   91      =3  /**
   92      =3   * @}
   93      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 66  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 66  
 
   94      =3  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   46      =2  #include "sc92f_pwr.h"
@@ -4222,7 +4222,7 @@ line level    source
   27      =4  #ifndef _sc92f_H
  315      =4  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   32      =3  #include <intrins.h>
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 67  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 67  
 
    1      =4  /*--------------------------------------------------------------------------
    2      =4  INTRINS.H
@@ -4286,7 +4286,7 @@ line level    source
   16      =3   *coding information regarding their products in order for them to save time. 
   17      =3   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =3   *consequential damages with respect to any claims arising from the content of 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 68  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 68  
 
   19      =3   *such software and/or the use made by customers of the coding information 
   20      =3   *contained herein in connection with their products.
@@ -4350,7 +4350,7 @@ line level    source
              -F84Ax_2) || defined(SC92F74Ax_2)\
   50      =3                  || defined(SC92F859x) || defined(SC92F759x) || defined (SC92L853x) || defined (SC92L753x) || defined (SC
              -92R511x) ||defined(SC92F6x1x) \
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 69  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 69  
 
   51      =3                  || defined(SC92F5x1x) || defined(SC92R436)|| defined(SC92R438) || defined(SC92R439) || defined(SC92R422A
              -) || defined(SC92F652x)
@@ -4414,7 +4414,7 @@ line level    source
  708      =3   */
  709      =3  /* End of functions --------------------------------------------------*/
  710      =3  #endif
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 70  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 70  
 
  711      =3  
  712      =3  #endif
@@ -4478,7 +4478,7 @@ line level    source
   18      =4   *consequential damages with respect to any claims arising from the content of 
   19      =4   *such software and/or the use made by customers of the coding information 
   20      =4   *contained herein in connection with their products.
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 71  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 71  
 
   21      =4   *
   22      =4   *  COPYRIGHT 2025 SinOne Microelectronics
@@ -4542,7 +4542,7 @@ line level    source
   20      =3   *contained herein in connection with their products.
   21      =3   *
   22      =3   *  COPYRIGHT 2025 SinOne Microelectronics
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 72  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 72  
 
   23      =3   ******************************************************************************
   24      =3   */
@@ -4606,7 +4606,7 @@ line level    source
   49      =3    || defined(SC92F6x1x) || defined(SC92F5x1x) || defined(SC92R436)|| defined(SC92R438)|| defined(SC92L840x
              -)|| defined(SC92R439)|| defined (SC92Fx41xB)\
   50      =3          || defined (SC92R445)||defined(SC92F652x)
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 73  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 73  
 
   51      =3  /** @defgroup MDU_EXAxReg_Typedef MDU EXAx
   52      =3   * @{
@@ -4670,7 +4670,7 @@ line level    source
    5      =3   * @version V1.2.1
    6      =3   * @date    2025-07-24
    7      =3   * @brief   Header file of CRC module.
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 74  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 74  
 
    8      =3   ******************************************************************************
    9      =3   * @attention
@@ -4734,7 +4734,7 @@ line level    source
   39      =3   */
   40      =3   
   41      =3  /** @addtogroup CRC_Exported_Functions CRC Exported Functions
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 75  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 75  
 
   42      =3   * @{
   43      =3   */
@@ -4798,7 +4798,7 @@ line level    source
    8      =4   ******************************************************************************
    9      =4   * @attention
   10      =4   *
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 76  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 76  
 
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
@@ -4862,7 +4862,7 @@ line level    source
   85      =3    USCI0_SPI_BAUDRATEPRESCALER_16 = (uint8_t)0x04, /*!< SPIÊ±ÖÓËÙÂÊÎªÏµÍ³Ê±ÖÓ³ýÒÔ16 */
   86      =3    USCI0_SPI_BAUDRATEPRESCALER_32 = (uint8_t)0x05, /*!< SPIÊ±ÖÓËÙÂÊÎªÏµÍ³Ê±ÖÓ³ýÒÔ32 */
   87      =3    USCI0_SPI_BAUDRATEPRESCALER_64 = (uint8_t)0x06, /*!< SPIÊ±ÖÓËÙÂÊÎªÏµÍ³Ê±ÖÓ³ýÒÔ64 */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 77  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 77  
 
   88      =3    USCI0_SPI_BAUDRATEPRESCALER_128 = (uint8_t)0x07 /*!< SPIÊ±ÖÓËÙÂÊÎªÏµÍ³Ê±ÖÓ³ýÒÔ128 */
   89      =3  } USCI0_SPI_BaudRatePrescaler_TypeDef;
@@ -4926,7 +4926,7 @@ line level    source
  147      =3    USCI0_SPI_DATA8 = (uint8_t)0x00, /*!< SPI 8Î»´«ÊäÄ£Ê½ */
  148      =3    USCI0_SPI_DATA16 = (uint8_t)0x02 /*!< SPI 16Î»´«ÊäÄ£Ê½ */
  149      =3  } USCI0_TransmissionMode_TypeDef;
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 78  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 78  
 
  150      =3  /**
  151      =3   * @}
@@ -4990,7 +4990,7 @@ line level    source
  209      =3  typedef enum
  210      =3  {
  211      =3    USCI0_UART_RX_ENABLE = 0X10, /*!< UARTÔÊÐí½ÓÊÕ */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 79  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 79  
 
  212      =3    USCI0_UART_RX_DISABLE = 0X00 /*!< UART½ûÖ¹½ÓÊÕ */
  213      =3  } USCI0_UART_RX_TypeDef;
@@ -5054,7 +5054,7 @@ line level    source
  269      =3  void USCI0_TWI_Slave_Init(uint8_t TWI_Address);
  270      =3  void USCI0_TWI_MasterCommunicationRate(USCI0_TWI_MasterCommunicationRate_TypeDef
  271      =3                                             TWI_MasterCommunicationRate);
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 80  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 80  
 
  272      =3  void USCI0_TWI_Start(void);
  273      =3  void USCI0_TWI_MasterModeStop(void);
@@ -5118,7 +5118,7 @@ line level    source
   26      =3   /* Define to prevent recursive inclusion ------------------------------------*/
   27      =3  #ifndef _sc92f_USCI1_H_
   28      =3  #define _sc92f_USCI1_H_
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 81  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 81  
 
   29      =3  
   30      =3  /* Includes ------------------------------------------------------------------*/
@@ -5182,7 +5182,7 @@ line level    source
   60      =3   */
   61      =3  
   62      =3  /** @brief USCI1_SPI_FirstBit_TypeDef SPI FirstBit
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 82  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 82  
 
   63      =3   * @{
   64      =3   */
@@ -5246,7 +5246,7 @@ line level    source
  122      =3    USCI1_SPI_CLOCKPHASE_2EDGE = (uint8_t)0x08  /*!< SCKµÄµÚ¶þÑØ²É¼¯Êý¾Ý */
  123      =3  } USCI1_SPI_ClockPhase_TypeDef;
  124      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 83  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 83  
 
  125      =3   * @}
  126      =3   */
@@ -5310,7 +5310,7 @@ line level    source
  184      =3    USCI1_TWI_MasterReceivedaData = 0x03,
  185      =3    USCI1_TWI_MasterReceivedaUACK = 0x04,
  186      =3  } USCI1_TWIState_TypeDef;
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 84  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 84  
 
  187      =3  /**
  188      =3   * @}
@@ -5374,7 +5374,7 @@ line level    source
  246      =3  /**
  247      =3   * @}
  248      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 85  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 85  
 
  249      =3  /* End of enumerations -----------------------------------------------------*/
  250      =3  
@@ -5438,7 +5438,7 @@ line level    source
    3      =3   * @file    sc92F_usci2.h
    4      =3   * @author  SOC AE Team
    5      =3   * @version V1.2.1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 86  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 86  
 
    6      =3   * @date    2025-07-24
    7      =3   * @brief   Header file of UASI2 module.
@@ -5502,7 +5502,7 @@ line level    source
   37      =3   /** @addtogroup USCI2
   38      =3   * @{
   39      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 87  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 87  
 
   40      =3  ///½öÄ£Ê½0¿ÉÓÃ£¬´®ÐÐ¶Ë¿ÚÔÚÏµÍ³Ê±ÖÓµÄ1/12ÏÂÔËÐÐ
   41      =3  #define USCI2_UART_BaudRate_FsysDIV12 0X00 
@@ -5566,7 +5566,7 @@ line level    source
   99      =3    USCI2_SPI_MODE_SLAVE = (uint8_t)0x00   /*!< SPIÎª´ÓÉè±¸ */
  100      =3  } USCI2_SPI_Mode_TypeDef;
  101      =3  /**
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 88  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 88  
 
  102      =3   * @}
  103      =3   */
@@ -5630,7 +5630,7 @@ line level    source
  161      =3    USCI2_TWI_128 = (uint8_t)0x03,  /*!< TWIÍ¨ÐÅËÙÂÊ Fhrc/128  */
  162      =3    USCI2_TWI_64 = (uint8_t)0x04,   /*!< TWIÍ¨ÐÅËÙÂÊ Fhrc/64  */
  163      =3    USCI2_TWI_32 = (uint8_t)0x05,   /*!< TWIÍ¨ÐÅËÙÂÊ Fhrc/32  */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 89  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 89  
 
  164      =3    USCI2_TWI_16 = (uint8_t)0x06,   /*!< TWIÍ¨ÐÅËÙÂÊ Fhrc/16  */
  165      =3  } USCI2_TWI_MasterCommunicationRate_TypeDef;
@@ -5694,7 +5694,7 @@ line level    source
  223      =3    USCI2_SPI_FLAG_WCOL = (uint8_t)0x50, /*!< SPIÐ´Èë³åÍ»±êÖ¾Î»WCOL */
  224      =3    USCI2_SPI_FLAG_TXE = (uint8_t)0x08,  /*!< SPI·¢ËÍ»º´æÆ÷¿Õ±êÖ¾TXE */
  225      =3    USCI2_TWI_FLAG_TWIF = (uint8_t)0x40, /*!< TWIÖÐ¶Ï±êÖ¾Î»TWIF */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 90  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 90  
 
  226      =3    USCI2_TWI_FLAG_GCA = (uint8_t)0x10,  /*!< TWIÍ¨ÓÃµØÖ·ÏìÓ¦±êÖ¾Î»GCA */
  227      =3    USCI2_TWI_FLAG_MSTR = (uint8_t)0x20, /*!< TWIÖ÷´Ó±êÖ¾Î»MSTR */
@@ -5758,7 +5758,7 @@ line level    source
  283      =3                       USCI2_UART_RX_TypeDef RxMode);
  284      =3  void USCI2_UART_SendData8(uint8_t Data);
  285      =3  uint8_t USCI2_UART_ReceiveData8(void);
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 91  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 91  
 
  286      =3  void USCI2_UART_SendData9(uint16_t Data);
  287      =3  uint16_t USCI2_UART_ReceiveData9(void);
@@ -5822,7 +5822,7 @@ line level    source
    9      =4   * @attention
   10      =4   *
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 92  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 92  
 
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
@@ -5886,7 +5886,7 @@ line level    source
   83      =3  /**
   84      =3   * @}
   85      =3   */
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 93  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 93  
 
   86      =3  
   87      =3  /**
@@ -5950,7 +5950,7 @@ line level    source
    8      =3   ******************************************************************************
    9      =3   * @attention
   10      =3   *
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 94  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 94  
 
   11      =3   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =3   *intended for use with SinOne products. No other uses are authorized. This 
@@ -6014,7 +6014,7 @@ line level    source
   10      =4  #define __STDIO_H__
   11      =4  
   12      =4  #ifndef EOF
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 95  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 95  
 
   13      =4   #define EOF -1
   14      =4  #endif
@@ -6078,7 +6078,7 @@ line level    source
   68      =2  
   69      =2  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   20      =1  #endif
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 96  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 96  
 
   21      =1  
   22      =1  #endif
@@ -6142,7 +6142,7 @@ line level    source
    8      =2  //      ×¢ÒâÊÂÏî        :    
    9      =2  //************************************************************************************************
   10      =2  #ifndef _TKDriver_H
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 97  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 97  
 
   11      =2  #define _TKDriver_H
   12      =2  
@@ -6206,7 +6206,7 @@ line level    source
   33      =1  
   34      =1  
   35      =1  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 98  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 98  
 
   36      =1  
   37      =1  
@@ -6270,7 +6270,7 @@ line level    source
   95      =1  
   96      =1  
   97      =1  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 99  
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 99  
 
   98      =1  
   99      =1  
@@ -6334,7 +6334,7 @@ line level    source
   16      =2   *coding information regarding their products in order for them to save time. 
   17      =2   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =2   *consequential damages with respect to any claims arising from the content of 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 100 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 100 
 
   19      =2   *such software and/or the use made by customers of the coding information 
   20      =2   *contained herein in connection with their products.
@@ -6398,7 +6398,7 @@ line level    source
   17      =3   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =3   *consequential damages with respect to any claims arising from the content of 
   19      =3   *such software and/or the use made by customers of the coding information 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 101 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 101 
 
   20      =3   *contained herein in connection with their products.
   21      =3   *
@@ -6462,7 +6462,7 @@ line level    source
    4      =2    * @brief   External function calls.
    5      =2    * @author  Walnut Medical
    6      =2    ******************************************************************************
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 102 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 102 
 
    7      =2    * @attention
    8      =2    *
@@ -6526,7 +6526,7 @@ line level    source
    1      =2  /**
    2      =2    ******************************************************************************
    3      =2    * @file    wm_enum.h
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 103 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 103 
 
    4      =2    * @brief   External function calls.
    5      =2    * @author  Walnut Medical
@@ -6590,7 +6590,7 @@ line level    source
    6      =2    * @attention
    7      =2    *
    8      =2    * Copyright (c) 2024 Walnut Medical
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 104 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 104 
 
    9      =2    * All rights reserved.
   10      =2    *
@@ -6654,7 +6654,7 @@ line level    source
   11      =2    ******************************************************************************
   12      =2    */
   13      =2  
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 105 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 105 
 
   14      =2  #ifndef __WM_LED_CNTRL_H__
   15      =2  #define __WM_LED_CNTRL_H__
@@ -6718,7 +6718,7 @@ line level    source
   28      =2  
   29      =2  
   26      =1  #include "hal\wm_uart\wm_uart.h"
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 106 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 106 
 
    1      =2  /**
    2      =2    ******************************************************************************
@@ -6782,7 +6782,7 @@ line level    source
   42      =2  #define  IO_NULL                   0xFF00//??éè??
   43      =2  #define  SCD_IO_PORT(IO)    (uint8_t)(IO>>8)
   44      =2  #define  SCD_IO_PIN(IO)     (uint8_t)(IO)
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 107 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 107 
 
   45      =2  #define LOAD (52)
   46      =2  
@@ -6846,7 +6846,7 @@ line level    source
   65   1               //{
   66   1      //              P13 = !P13;
   67   1      //              P07 = !P07;             
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 108 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 108 
 
   68   1               //}
   69   1              
@@ -6910,14 +6910,14 @@ line level    source
  166          
  167          #if  defined (SC95F8x3x) || defined (SC95F7x3x) || defined (SC95F7619B) || defined ( SC95F8x6x) || defined
              - (SC95F7x6x) || defined (SC95F8x1xB)|| defined (SC95F7x1xB) || defined (SC95R751)|| defined (SC95R605)
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 109 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 109 
 
  189          void UART2Interrupt()           interrupt 12
  190          {
  191   1      
  192   1      
  193   1      }
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 110 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 110 
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -6981,7 +6981,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0008 C0D0              PUSH    PSW
 000A 75D000            MOV     PSW,#00H
 000D C000              PUSH    AR0
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 111 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 111 
 
 000F C001              PUSH    AR1
 0011 C002              PUSH    AR2
@@ -7045,7 +7045,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
              ; FUNCTION BTMInterrupt (BEGIN)
                                            ; SOURCE LINE # 109
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 112 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 112 
 
                                            ; SOURCE LINE # 114
 0000 32                RETI    
@@ -7063,7 +7063,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0000 32                RETI    
              ; FUNCTION UART2Interrupt (END)
 
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 113 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 113 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7126,7 +7126,7 @@ USCI2_SPI_BAUDRATEPRESCALER_128. . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_TWI_16 . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 UART1_RX_ENABLE. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 AC . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D6H  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 114 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 114 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7189,7 +7189,7 @@ USCI1_SPI_ClockPhase_TypeDef . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 SSI_StatusTypeDef. . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 GPIO_PIN_6 . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 EXA0 . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E9H  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 115 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 115 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7252,7 +7252,7 @@ USCI2_TWI_MasterReceivedaData. . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI2_SPI_MODE_SLAVE . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI2_SPI_BAUDRATEPRESCALER_2. . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_UART_RX_ENABLE . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 116 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 116 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7315,7 +7315,7 @@ GPIO_MODE_IN_HI. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 HIGH . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 DDIC_PIN_04. . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 SPI_TXE_INT_TypeDef. . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 117 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 117 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7378,7 +7378,7 @@ PWM5 . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_PRESSEL_FHRC_D6. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM4_CountMode_TypeDef . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 TIM4_MODE_COUNTER. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 118 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 118 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7441,7 +7441,7 @@ USCI1_TWI_512. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_SPI_TXE_DISINT . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_CHANNEL_0. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM2_COUNTDIRECTION_UP . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 119 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 119 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7504,7 +7504,7 @@ SPI_BAUDRATEPRESCALER_256. . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_CHANNEL_VDD_D4 . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_CHANNEL_8. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 WDT_OverflowTime_3_94MS. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 120 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 120 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7567,7 +7567,7 @@ USCI1_SPI_FLAG_SPIF. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_SamplesNum_TenTimes. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI2_SPI_FLAG_SPIF. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_CommunicationMode_TypeDef. . . .  TYPEDEF  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 121 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 121 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7630,7 +7630,7 @@ TIM1_PRESSEL_FSYS_D12. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TH1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008DH  1
 USCI1_SPI_BAUDRATEPRESCALER_16 . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI0_SPI_CLOCKPOLARITY_LOW. . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 122 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 122 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7693,7 +7693,7 @@ SPI_BAUDRATEPRESCALER_4. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 INT25. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_TWI_FLAG_TWIF. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TWI_SlaveIdle. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 123 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 123 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7756,7 +7756,7 @@ ADC_EAIN_5 . . . . . . . . . . . . . .  E_CONST  -----  INT      -----  2
 u16. . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
 PWMPRD . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D3H  1
 DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 124 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 124 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7819,7 +7819,7 @@ USCI0_SPI_DATA8. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 UART0_FLAG_TI. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADCVH. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00AFH  1
 T2MOD. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C9H  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 125 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 125 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7882,7 +7882,7 @@ USCI1_SPI_ClockPolarity_TypeDef. . . .  TYPEDEF  -----  U_CHAR   -----  1
 USCI0_TWI_SlaveReceivedaAddress. . . .  E_CONST  -----  U_CHAR   -----  1
 Status_ERROR . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI2_TWI_SlaveAddressError. . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 126 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 126 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7945,7 +7945,7 @@ ADC_Channel_TypeDef. . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 TIM4_WORK_MODE1. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM2_WORK_MODE3. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 IO22 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A2H  1
-C51 COMPILER V9.60.7.0   SC_IT                                                             05/16/2026 17:36:11 PAGE 127 
+C51 COMPILER V9.60.7.0   SC_IT                                                             05/18/2026 10:24:57 PAGE 127 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====

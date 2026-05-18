@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 1   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SC92F_GPIO
@@ -62,7 +62,7 @@ line level    source
   21      =1   *
   22      =1   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =1   ******************************************************************************
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 2   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 2   
 
   24      =1   */
   25      =1  
@@ -126,7 +126,7 @@ line level    source
    2      =3  SC92F836XB_C.H
    3      =3  
    4      =3  C Header file for SC92F836XB microcontroller.
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 3   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 3   
 
    5      =3  Copyright (c) 2018 Shenzhen SinOne Microelectronics CO., Ltd.
    6      =3  All rights reserved.
@@ -190,7 +190,7 @@ line level    source
   64      =3  sfr         P0PH        = 0x9B;         
   65      =3  ///P0口模式控制寄存器           
   66      =3  sfr         P0CON       = 0x9A;         
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 4   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 4   
 
   67      =3  ///P0口数据寄存器
   68      =3  sfr     P0          = 0x80;             
@@ -254,7 +254,7 @@ line level    source
  126      =3  ///PWM1设置寄存器
  127      =3  sfr     PWMDTY1 = 0xD6;         
  128      =3  ///PWM2设置寄存器
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 5   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 5   
 
  129      =3  sfr     PWMDTY2 = 0xD7;         
  130      =3  ///PWM占空比设置寄存器B
@@ -318,7 +318,7 @@ line level    source
  188      =3  ///SPI控制寄存器1
  189      =3  sfr     SSCON1  = 0X9E;   
  190      =3  ///SPI控制寄存器2
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 6   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 6   
 
  191      =3  sfr     SSCON2  = 0X95;   
  192      =3  ///SPI数据寄存器
@@ -382,7 +382,7 @@ line level    source
  249      =3  
  250      =3  
  251      =3  /*IP*/
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 7   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 7   
 
  252      =3  ///ADC中断优先控制位      0:设定 ADC的中断优先权是 “低”               1:设定 ADC的中断优先权是 “高”
  253      =3  sbit    IPADC   = IP^6;   
@@ -446,7 +446,7 @@ line level    source
  311      =3  sbit    P06     = P0^6;
  312      =3  sbit    P05     = P0^5;
  313      =3  sbit    P04     = P0^4;
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 8   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 8   
 
  314      =3  sbit    P03     = P0^3;
  315      =3  sbit    P02     = P0^2;
@@ -510,7 +510,7 @@ line level    source
   82      =2  
   83      =2  #ifdef SC92F8003
   86      =2  
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 9   
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 9   
 
   87      =2  #ifdef SC92F8003B
   90      =2  
@@ -574,7 +574,7 @@ line level    source
  206      =2  
  207      =2  #ifdef SC92F83Hx
  210      =2  
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 10  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 10  
 
  211      =2  #ifdef SC92F646x
  214      =2  
@@ -638,7 +638,7 @@ line level    source
  294      =2  typedef enum {LOW = 0, HIGH = !LOW} PriorityStatus;
  295      =2  
  296      =2  typedef enum
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 11  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 11  
 
  297      =2  {
  298      =2          Status_ERROR = 0x00U,
@@ -702,7 +702,7 @@ line level    source
   87      =1  sbit IO55 = P5^5;
   88      =1  #endif
   89      =1  
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 12  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 12  
 
   90      =1  /** @addtogroup sc92f_StdPeriph_Driver
   91      =1   * @{
@@ -766,7 +766,7 @@ line level    source
  166      =1  /** @brief GPIO_Pin GPIO Pins enumeration
  167      =1   * @{
  168      =1   */
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 13  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 13  
 
  169      =1  typedef enum
  170      =1  {
@@ -830,7 +830,7 @@ line level    source
   32           */
   33           
   34           /** @defgroup GPIO
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 14  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 14  
 
   35           * @brief GPIO driver modules
   36           * @{
@@ -894,7 +894,7 @@ line level    source
   98           *  SC92F730x,SC92F725X,SC92F735X,SC92F8003,SC92F8003B,SC92F740x,SC92F827X,SC92F837X,SC92F7003,SC92F730x_2
              -,SC92F720x/
   99           *  SC92F7308B
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 15  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 15  
 
  100           *               Selection range(GPIO0 - GPIO2)
  101           *  else model  
@@ -958,7 +958,7 @@ line level    source
  159   3          }
  160   2      
  161   2          if(GPIO_Mode == GPIO_MODE_IN_PU)
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 16  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 16  
 
  162   2          {
  163   3            /* Configure Pins to Pull-up input mode */  
@@ -1022,7 +1022,7 @@ line level    source
  265   3            /* Configure Pins to Strong push-pull output mode */    
  266   3            P5CON |= PortPins;
  267   3          }
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 17  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 17  
 
  268   2        }
  269   1      
@@ -1086,7 +1086,7 @@ line level    source
  325   1        {
  326   2          /* Set written value to P2 port data register */    
  327   2          P2 = PortVal;
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 18  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 18  
 
  328   2        }
  329   1      
@@ -1150,7 +1150,7 @@ line level    source
  397   2                                        if((PortPins&0x02))
  398   2                      {   
  399   3                  IO01 = 1;
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 19  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 19  
 
  400   3                }     
  401   2                                        if((PortPins&0x04))
@@ -1214,7 +1214,7 @@ line level    source
  459   3                  IO17 = 1;
  460   3                }     
  461   2        }
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 20  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 20  
 
  462   1      
  463   1        if(GPIOx == GPIO2)
@@ -1278,7 +1278,7 @@ line level    source
  593   2                      {   
  594   3                  IO53 = 1;
  595   3                }     
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 21  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 21  
 
  596   2                                              if((PortPins&0x10))
  597   2                      {   
@@ -1342,7 +1342,7 @@ line level    source
  653   2                      {   
  654   3                  IO02 = 0;
  655   3                }     
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 22  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 22  
 
  656   2                                        if((PortPins&0x08))
  657   2                      {   
@@ -1406,7 +1406,7 @@ line level    source
  715   1        {
  716   2                                       if((PortPins&0x01))
  717   2                {   
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 23  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 23  
 
  718   3                  IO20 = 0;
  719   3                }
@@ -1470,7 +1470,7 @@ line level    source
  849   3                  IO54 = 0;
  850   3                }     
  851   2                                        if((PortPins&0x20))
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 24  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 24  
 
  852   2                      {   
  853   3                  IO55 = 0;
@@ -1534,7 +1534,7 @@ line level    source
  917   1      }
  918          
  919          
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 25  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 25  
 
  920          /**
  921           * @brief  Reads the selected data port bits.
@@ -1598,7 +1598,7 @@ line level    source
  982   2          default:
  983   2            TempBitstatus = RESET;
  984   2                        break;
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 26  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 26  
 
  985   2        }
  986   1      
@@ -1662,7 +1662,7 @@ line level    source
 1042   3                      {   
 1043   4                  IO03 = ~IO03;
 1044   4                }     
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 27  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 27  
 
 1045   3                                              if((PortPins&0x10))
 1046   3                      {   
@@ -1726,7 +1726,7 @@ line level    source
 1104   4                }
 1105   3                                        if((PortPins&0x02))
 1106   3                      {   
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 28  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 28  
 
 1107   4                  IO21 = ~IO21;
 1108   4                }     
@@ -1790,7 +1790,7 @@ line level    source
 1236   4                  IO55 = ~IO55;
 1237   4                }     
 1238   3      
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 29  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 29  
 
 1239   3                      }
 1240   2            break;
@@ -1854,7 +1854,7 @@ line level    source
 1357   2            if(PortPins == GPIO_PIN_LNIB)
 1358   2            {
 1359   3              IOHCON &= 0xFC;
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 30  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 30  
 
 1360   3              IOHCON |= GPIO_IOH_Grade;
 1361   3            }
@@ -1901,7 +1901,7 @@ line level    source
 1402           */
 1403          
 1404          /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 31  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 31  
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -1965,7 +1965,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 000D B40107            CJNE    A,#01H,?C0004
                                            ; SOURCE LINE # 140
                                            ; SOURCE LINE # 142
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 32  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 32  
 
 0010 ED                MOV     A,R5
 0011 F4                CPL     A
@@ -2029,7 +2029,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 173
 0041 22                RET     
 0042         ?C0007:
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 33  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 33  
 
                                            ; SOURCE LINE # 174
 0042 EF                MOV     A,R7
@@ -2093,7 +2093,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 256
 0072 EB                MOV     A,R3
 0073 B40107            CJNE    A,#01H,?C0019
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 34  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 34  
 
                                            ; SOURCE LINE # 257
                                            ; SOURCE LINE # 259
@@ -2157,7 +2157,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0017 8FD8              MOV     P5,R7
                                            ; SOURCE LINE # 353
                                            ; SOURCE LINE # 356
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 35  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 35  
 
 0019         ?C0026:
 0019 22                RET     
@@ -2221,7 +2221,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 416
 0027         ?C0033:
                                            ; SOURCE LINE # 417
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 36  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 36  
 
 0027 ED                MOV     A,R5
 0028 30E602            JNB     ACC.6,?C0034
@@ -2285,7 +2285,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 448
 0056         ?C0041:
                                            ; SOURCE LINE # 449
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 37  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 37  
 
 0056 ED                MOV     A,R5
 0057 30E502            JNB     ACC.5,?C0042
@@ -2349,7 +2349,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 480
 0085         ?C0049:
                                            ; SOURCE LINE # 481
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 38  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 38  
 
 0085 ED                MOV     A,R5
 0086 30E402            JNB     ACC.4,?C0050
@@ -2413,7 +2413,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 591
 00B4         ?C0057:
                                            ; SOURCE LINE # 592
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 39  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 39  
 
 00B4 ED                MOV     A,R5
 00B5 30E302            JNB     ACC.3,?C0058
@@ -2477,7 +2477,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 655
 0015         ?C0065:
                                            ; SOURCE LINE # 656
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 40  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 40  
 
 0015 ED                MOV     A,R5
 0016 30E302            JNB     ACC.3,?C0066
@@ -2541,7 +2541,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 687
 0044         ?C0073:
                                            ; SOURCE LINE # 688
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 41  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 41  
 
 0044 ED                MOV     A,R5
 0045 30E202            JNB     ACC.2,?C0074
@@ -2605,7 +2605,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 719
 0073         ?C0081:
                                            ; SOURCE LINE # 720
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 42  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 42  
 
 0073 ED                MOV     A,R5
 0074 30E102            JNB     ACC.1,?C0082
@@ -2669,7 +2669,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00A0 7024              JNZ     ?C0096
                                            ; SOURCE LINE # 830
                                            ; SOURCE LINE # 831
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 43  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 43  
 
 00A2 ED                MOV     A,R5
 00A3 30E002            JNB     ACC.0,?C0090
@@ -2733,7 +2733,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 881
                                            ; SOURCE LINE # 882
 0003 AF80              MOV     R7,P0
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 44  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 44  
 
 0005 22                RET     
                                            ; SOURCE LINE # 883
@@ -2797,7 +2797,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0011 5D                ANL     A,R5
 0012 FE                MOV     R6,A
                                            ; SOURCE LINE # 960
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 45  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 45  
 
 0013 8014              SJMP    ?C0106
                                            ; SOURCE LINE # 961
@@ -2861,7 +2861,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 000B 020000      R     LJMP    ?C0143
 000E 2405              ADD     A,#05H
 0010 6003              JZ      $ + 5H
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 46  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 46  
 
 0012 020000      R     LJMP    ?C0151
                                            ; SOURCE LINE # 1026
@@ -2925,7 +2925,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 1056
 003F         ?C0123:
                                            ; SOURCE LINE # 1057
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 47  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 47  
 
 003F ED                MOV     A,R5
 0040 20E703            JB      ACC.7,$ + 6H
@@ -2989,7 +2989,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 1088
 006D         ?C0131:
                                            ; SOURCE LINE # 1089
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 48  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 48  
 
 006D ED                MOV     A,R5
 006E 30E602            JNB     ACC.6,?C0132
@@ -3053,7 +3053,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0098         ?C0139:
                                            ; SOURCE LINE # 1121
 0098 ED                MOV     A,R5
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 49  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 49  
 
 0099 30E502            JNB     ACC.5,?C0140
                                            ; SOURCE LINE # 1122
@@ -3117,7 +3117,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 1230
 00C3 ED                MOV     A,R5
 00C4 30E402            JNB     ACC.4,?C0148
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 50  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 50  
 
                                            ; SOURCE LINE # 1231
                                            ; SOURCE LINE # 1232
@@ -3181,7 +3181,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 001F 25E0              ADD     A,ACC
 0021 4297              ORL     IOHCON,A
                                            ; SOURCE LINE # 1366
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 51  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 51  
 
                                            ; SOURCE LINE # 1367
 0023 22                RET     
@@ -3225,7 +3225,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0043 22                RET     
              ; FUNCTION _GPIO_IOH_Config (END)
 
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 52  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 52  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -3288,7 +3288,7 @@ EXF2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CEH  1
 CHKSUMH. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FDH  1
 PWMDTY0. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D5H  1
 OPERCON. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EFH  1
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 53  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 53  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -3351,7 +3351,7 @@ EXBL . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EDH  1
 Status_BUSY. . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 u8 . . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 RCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CDH  1
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 54  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 54  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -3414,7 +3414,7 @@ StatusTypeDef. . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 IAPCTL . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F6H  1
 IE1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A9H  1
 TRUE . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 55  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 55  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -3477,7 +3477,7 @@ GPIO1. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 EINT0. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
 P0CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009AH  1
 GPIO2. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 56  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 56  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -3541,7 +3541,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
-C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/16/2026 17:36:12 PAGE 57  
+C51 COMPILER V9.60.7.0   SC92F_GPIO                                                        05/18/2026 10:24:59 PAGE 57  
 
    XDATA CONST SIZE =   ----    ----
    FAR CONST SIZE   =   ----    ----

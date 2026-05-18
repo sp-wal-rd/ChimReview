@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 1   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE WM_STATE_FLOW
@@ -62,7 +62,7 @@ line level    source
   17      =2   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =2   *consequential damages with respect to any claims arising from the content of 
   19      =2   *such software and/or the use made by customers of the coding information 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 2   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 2   
 
   20      =2   *contained herein in connection with their products.
   21      =2   *
@@ -126,7 +126,7 @@ line level    source
   66      =3  
   67      =3  #ifdef SC92F836xB
   68      =3    #include "SC92F836xB_C.H"
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 3   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 3   
 
    1      =4                                                   /*--------------------------------------------------------------------------
    2      =4  SC92F836XB_C.H
@@ -190,7 +190,7 @@ line level    source
   60      =4  sfr         P1CON       = 0x91;         
   61      =4  ///P1口数据寄存器
   62      =4  sfr     P1          = 0x90;             
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 4   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 4   
 
   63      =4  ///P0口模式控制寄存器           
   64      =4  sfr         P0PH        = 0x9B;         
@@ -254,7 +254,7 @@ line level    source
  122      =4  ///PWM占空比设置寄存器A
  123      =4  sfr     PWMDTYA = 0xD4;         
  124      =4  ///PWM0设置寄存器
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 5   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 5   
 
  125      =4  sfr     PWMDTY0 = 0xD5;         
  126      =4  ///PWM1设置寄存器
@@ -318,7 +318,7 @@ line level    source
  184      =4  
  185      =4  /*三合一*/
  186      =4  ///SPI控制寄存器0
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 6   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 6   
 
  187      =4  sfr     SSCON0  = 0X9D;   
  188      =4  ///SPI控制寄存器1
@@ -382,7 +382,7 @@ line level    source
  245      =4  sbit    EXEN2   = T2CON^3;
  246      =4  sbit    TR2         = T2CON^2;
  247      =4  sbit    T2      = T2CON^1;
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 7   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 7   
 
  248      =4  sbit    CP          = T2CON^0;
  249      =4  
@@ -446,7 +446,7 @@ line level    source
  307      =4  *SC92F8362B封装未引出的管脚：P06/P07
  308      =4  *SC92F8361B封装未引出的管脚：P02/P03/P04/P06/P07
  309      =4  ******************************************/
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 8   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 8   
 
  310      =4  sbit    P07     = P0^7;
  311      =4  sbit    P06     = P0^6;
@@ -510,7 +510,7 @@ line level    source
   74      =3  
   75      =3  #ifdef SC92F742x
   78      =3  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 9   
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 9   
 
   79      =3  #ifdef SC92F7003
   82      =3  
@@ -574,7 +574,7 @@ line level    source
  198      =3  
  199      =3  #ifdef SC92R342
  202      =3  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 10  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 10  
 
  203      =3  #ifdef SC92F84Hx
  206      =3  
@@ -638,7 +638,7 @@ line level    source
  290      =3  typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
  291      =3  
  292      =3  typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 11  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 11  
 
  293      =3  
  294      =3  typedef enum {LOW = 0, HIGH = !LOW} PriorityStatus;
@@ -702,7 +702,7 @@ line level    source
   83      =2  sbit IO51 = P5^1;
   84      =2  sbit IO52 = P5^2;
   85      =2  sbit IO53 = P5^3;
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 12  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 12  
 
   86      =2  sbit IO54 = P5^4;
   87      =2  sbit IO55 = P5^5;
@@ -766,7 +766,7 @@ line level    source
  162      =2   * @}
  163      =2   */
  164      =2  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 13  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 13  
 
  165      =2  
  166      =2  /** @brief GPIO_Pin GPIO Pins enumeration
@@ -830,7 +830,7 @@ line level    source
  223      =2  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   18      =1  #include "SC_Init.h"
    1      =2  //************************************************************
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 14  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 14  
 
    2      =2  //  Copyright (c)
    3      =2  //      FileName        : SC_Init.h
@@ -894,7 +894,7 @@ line level    source
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =4   *all applicable laws, including copyright laws. 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 15  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 15  
 
   16      =4   *coding information regarding their products in order for them to save time. 
   17      =4   *As a result, SinOne shall not be held liable for any direct, indirect or 
@@ -958,7 +958,7 @@ line level    source
    2      =5   ******************************************************************************
    3      =5   * @file    Header file of SC92 Series
    4      =5   * @author  SOC AE Team
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 16  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 16  
 
    5      =5   * @version V1.2.1
    6      =5   * @date    2025-07-24
@@ -1022,7 +1022,7 @@ line level    source
   67      =4   */
   68      =4  
   69      =4  /** @brief TIM_WorkMode TIM WorkMode
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 17  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 17  
 
   70      =4   * @{
   71      =4   */
@@ -1086,7 +1086,7 @@ line level    source
  129      =4  
  130      =4  /**
  131      =4   * @brief  TIMER0功能开关函数
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 18  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 18  
 
  132      =4   * @param  NewState[in]:功能启动/关闭选择
  133      =4   *                  - DISABLE:关闭
@@ -1150,7 +1150,7 @@ line level    source
  191      =4  #endif
  192      =4  
  193      =4  /**
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 19  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 19  
 
  194      =4   * @}
  195      =4   */
@@ -1214,7 +1214,7 @@ line level    source
   21      =5   *
   22      =5   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =5   ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 20  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 20  
 
   24      =5   */
   25      =5   
@@ -1278,7 +1278,7 @@ line level    source
   86      =4  
   87      =4  /** @addtogroup TIM1_Functions TIM1 Functions
   88      =4   * @{
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 21  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 21  
 
   89      =4   */
   90      =4  
@@ -1342,7 +1342,7 @@ line level    source
  148      =4  
  149      =4  /**
  150      =4   * @brief  清除TIMER1中断标志状态
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 22  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 22  
 
  151      =4   * @param  None
  152      =4   * @retval None
@@ -1406,7 +1406,7 @@ line level    source
   30      =4  /* Includes ------------------------------------------------------------------*/
   31      =4  #include "sc92f.h"
    1      =5  /**
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 23  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 23  
 
    2      =5   ******************************************************************************
    3      =5   * @file    Header file of SC92 Series
@@ -1470,7 +1470,7 @@ line level    source
  107      =4  {
  108      =4    TIM2_MODE_TIMER   = ((uint8_t)0x01), /*!< TIMER2做定时器 */
  109      =4    TIM2_MODE_COUNTER = ((uint8_t)0x02)  /*!< TIMER2做计数器 */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 24  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 24  
 
  110      =4  } TIM2_CountMode_TypeDef;
  111      =4  /**
@@ -1534,7 +1534,7 @@ line level    source
  182      =4  void TIM2_WorkMode1Config(uint16_t TIM2_SetCounter);
  183      =4  void TIM2_WorkMode3Config(uint16_t TIM2_SetCounter);
  184      =4  void TIM2_WorkModeConfig(TIM2_WorkMode_TypeDef TIM2_WorkMode, uint16_t TIM2_SetCounter);
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 25  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 25  
 
  185      =4  /* Time Base functions ********************************************************/
  186      =4  void TIM2_SetEXEN2(FunctionalState NewState);
@@ -1598,7 +1598,7 @@ line level    source
    8      =5   ******************************************************************************
    9      =5   * @attention
   10      =5   *
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 26  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 26  
 
   11      =5   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =5   *intended for use with SinOne products. No other uses are authorized. This 
@@ -1662,7 +1662,7 @@ line level    source
   86      =4  {
   87      =4    TIM3_COUNTDIRECTION_UP = ((uint8_t)0x00),     /*!< 向上计数模式 */
   88      =4    TIM3_COUNTDIRECTION_DOWN_UP = ((uint8_t)0x10) /*!< 向上/向下计数模式 */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 27  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 27  
 
   89      =4  } TIM3_CountDirection_TypeDef;
   90      =4  /**
@@ -1726,7 +1726,7 @@ line level    source
  148      =4  
  149      =4  /**
  150      =4   * @}
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 28  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 28  
 
  151      =4   */
  152      =4  
@@ -1790,7 +1790,7 @@ line level    source
   24      =5   */
   25      =5   
   26      =5  /* Includes ------------------------------------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 29  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 29  
 
   27      =5  #ifndef _sc92f_H
  315      =5  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
@@ -1854,7 +1854,7 @@ line level    source
   89      =4  /**
   90      =4   * @}
   91      =4   */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 30  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 30  
 
   92      =4  
   93      =4  typedef enum
@@ -1918,7 +1918,7 @@ line level    source
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =4   *all applicable laws, including copyright laws. 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 31  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 31  
 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
   16      =4   *coding information regarding their products in order for them to save time. 
@@ -1982,7 +1982,7 @@ line level    source
   12      =5   *intended for use with SinOne products. No other uses are authorized. This 
   13      =5   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =5   *all applicable laws, including copyright laws. 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 32  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 32  
 
   15      =5   *2.The software which is for guidance only aims at providing customers with 
   16      =5   *coding information regarding their products in order for them to save time. 
@@ -2046,7 +2046,7 @@ line level    source
   46      =5   * @{
   47      =5   */
   48      =5  #if defined (SC92L853x) || defined (SC92L753x)
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 33  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 33  
 
   64      =5  typedef enum
   65      =5  {
@@ -2110,7 +2110,7 @@ line level    source
  175      =5  {
  176      =5    ADC_VREF_VDD  = 0x00,                             /*!< VDD as the ADC reference voltage */
  177      =5    ADC_VREF_2_4V = 0x80,                             /*!< internal 2.4V as the ADC reference voltage value */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 34  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 34  
 
  178      =5  } ADC_Vref_TypeDef;
  179      =5  #endif
@@ -2174,7 +2174,7 @@ line level    source
  231      =5  #endif
  232      =5  
  233      =5  #if defined (SC92F742x)||defined (SC92F83Ax) || defined (SC92F73Ax)|| defined (SC92F84Ax) || defined (SC92
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 35  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 35  
 
              -F74Ax) \
  234      =5                  ||defined (SC92F74Ax_2)||defined (SC92F84Ax_2)||defined (SC92F844xB)||defined (SC92F744xB)|| defined (SC
@@ -2238,7 +2238,7 @@ line level    source
              -C92F720x) || defined (SC92F7308B)
  115      =4  /**
  116      =4   * @}
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 36  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 36  
 
  117      =4   */
  118      =4  
@@ -2302,7 +2302,7 @@ line level    source
  526      =4    ADC_EAIN_4 = (uint16_t)0x0010, /*!< Select AIN4  */
  527      =4    ADC_EAIN_5 = (uint16_t)0x0020, /*!< Select AIN5  */
  528      =4    ADC_EAIN_6 = (uint16_t)0x0040, /*!< Select AIN6  */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 37  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 37  
 
  529      =4    ADC_EAIN_7 = (uint16_t)0x0080, /*!< Select AIN7  */
  530      =4    ADC_EAIN_8 = (uint16_t)0x0100, /*!< Select AIN8  */
@@ -2366,7 +2366,7 @@ line level    source
  647      =4   */                  
  648      =4  #define ADC_StartConversion() SET_BIT(ADCCON,0X40)
  649      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 38  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 38  
 
  650      =4  #if defined(SC93F833x) || defined(SC93F843x) || defined(SC93F743x)
  660      =4  
@@ -2430,7 +2430,7 @@ line level    source
   27      =4  #ifndef _sc92f_BTM_H_
   28      =4  #define _sc92f_BTM_H_
   29      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 39  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 39  
 
   30      =4  /* Includes ------------------------------------------------------------------*/
   31      =4  #include "sc92f.h"
@@ -2494,7 +2494,7 @@ line level    source
  105      =4    BTM_TIMEBASE_1S       = (uint8_t)0x06,                /*!< Every 1 seconds generates one interrupt*/
  106      =4    BTM_TIMEBASE_2S       = (uint8_t)0x07,                /*!< Every 2 seconds generates one interrupt*/
  107      =4    BTM_TIMEBASE_4S       = (uint8_t)0x08,            /*!< Every 4 seconds generates one interrupt*/
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 40  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 40  
 
  108      =4  } BTM_Timebase_TypeDef;
  109      =4  #endif
@@ -2558,7 +2558,7 @@ line level    source
  167      =4  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   37      =3  #include "sc92f_pwm.h"
    1      =4  /**
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 41  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 41  
 
    2      =4   ******************************************************************************
    3      =4   * @file    sc92f_pwm.h
@@ -2622,7 +2622,7 @@ line level    source
   33      =4  /** @addtogroup sc92f_StdPeriph_Driver
   34      =4   * @{
   35      =4   */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 42  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 42  
 
   36      =4  
   37      =4  /** @addtogroup PWM
@@ -2686,7 +2686,7 @@ line level    source
  990      =4   */
  991      =4  typedef enum
  992      =4  { 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 43  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 43  
 
  993      =4    PWM_OUTPUTSTATE_DISABLE       = ((uint8_t)0x00),      /*!< 该PIN脚作为GPIO */
  994      =4    PWM_OUTPUTSTATE_ENABLE        = ((uint8_t)0x01)       /*!< 该PIN脚作为PWM */
@@ -2750,7 +2750,7 @@ line level    source
 1078      =4  void PWM_Cmd(FunctionalState NewState);
 1079      =4  FlagStatus PWM_GetFlagStatus(void);
 1080      =4  void PWM_ClearFlag(void);
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 44  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 44  
 
 1081      =4  #endif
 1082      =4  
@@ -2814,7 +2814,7 @@ line level    source
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =4   *all applicable laws, including copyright laws. 
   15      =4   *2.The software which is for guidance only aims at providing customers with 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 45  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 45  
 
   16      =4   *coding information regarding their products in order for them to save time. 
   17      =4   *As a result, SinOne shall not be held liable for any direct, indirect or 
@@ -2878,7 +2878,7 @@ line level    source
   47      =4   * @{
   48      =4   */
   49      =4  typedef enum
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 46  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 46  
 
   50      =4  {
   51      =4    INT_TRIGGER_RISE_ONLY = (uint8_t)0x01,        /*!< 外部中断触发方式为上升沿  */
@@ -2942,7 +2942,7 @@ line level    source
  176      =4  {
  177      =4    INT10 = (uint8_t)0x01,                    /*!< 将P14设置为INT1脚  */
  178      =4    INT11 = (uint8_t)0x02,                    /*!< 将P15设置为INT1脚  */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 47  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 47  
 
  179      =4    INT12 = (uint8_t)0x04,                    /*!< 将P16设置为INT1脚  */
  180      =4    INT13 = (uint8_t)0x08                     /*!< 将P17设置为INT1脚  */
@@ -3006,7 +3006,7 @@ line level    source
  337      =4  #endif
  338      =4  /**
  339      =4   * @}
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 48  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 48  
 
  340      =4   */
  341      =4  /* End of exported functions --------------------------------------------------*/
@@ -3070,7 +3070,7 @@ line level    source
   15      =5   *2.The software which is for guidance only aims at providing customers with 
   16      =5   *coding information regarding their products in order for them to save time. 
   17      =5   *As a result, SinOne shall not be held liable for any direct, indirect or 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 49  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 49  
 
   18      =5   *consequential damages with respect to any claims arising from the content of 
   19      =5   *such software and/or the use made by customers of the coding information 
@@ -3134,7 +3134,7 @@ line level    source
  166      =4   * @}
  167      =4   */
  168      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 50  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 50  
 
  169      =4  /** @brief UART0_Mode_Typedef UART0 Mode
  170      =4   * @{
@@ -3198,7 +3198,7 @@ line level    source
  235      =4  {
  236      =4    union
  237      =4    {
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 51  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 51  
 
  238      =4      uint8_t* Size_u8;             /*!< 8位数据发送缓存区 */
  239      =4      uint16_t* Size_u16;           /*!< 16位数据发送缓存区 */
@@ -3262,7 +3262,7 @@ line level    source
  302      =4  uint8_t UART0_ReceiveData8(void);
  303      =4  void UART0_SendData9(uint16_t Data);
  304      =4  uint16_t UART0_ReceiveData9(void);
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 52  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 52  
 
  305      =4  
  306      =4  StatusTypeDef UART0_Transmit(UART0_HandleInfoDef* UART_HANDLE, uint8_t* pData, uint8_t Size, uint32_t Time
@@ -3326,7 +3326,7 @@ line level    source
   28      =4  #define _sc92f_UART2_H_
   29      =4  
   30      =4  /* Includes ------------------------------------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 53  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 53  
 
   31      =4  #include "sc92f.h"
    1      =5  /**
@@ -3390,7 +3390,7 @@ line level    source
   10      =4   *
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 54  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 54  
 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =4   *all applicable laws, including copyright laws. 
@@ -3454,7 +3454,7 @@ line level    source
              -  (SC92F84Ax) || defined (SC92F74Ax)\
   43      =4                  || defined (SC92F83Ax) || defined (SC92F73Ax) || defined (SC92F7003) || defined(SC92F8003) || defined(SC
              -92F8003B) || defined (SC92F740x) || defined (SC92F827X)\
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 55  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 55  
 
   44      =4                  || defined (SC92F837X) || defined (SC92FWxx) || defined (SC93F833x) || defined (SC93F843x) || defined (S
              -C93F743x) || defined (SC92F848x) || defined (SC92F748x)\
@@ -3518,7 +3518,7 @@ line level    source
  100      =4    SPI_CLOCKPOLARITY_HIGH = (uint8_t)0x10  /*!< SCK在空闲状态下为高电平 */
  101      =4  } SPI_ClockPolarity_TypeDef;
  102      =4  /**
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 56  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 56  
 
  103      =4   * @}
  104      =4   */
@@ -3582,7 +3582,7 @@ line level    source
  162      =4   * @{
  163      =4   */
  164      =4  typedef enum
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 57  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 57  
 
  165      =4  {
  166      =4    UART1_RX_ENABLE  = 0X10,/*!< UART1允许接收 */
@@ -3646,7 +3646,7 @@ line level    source
  224      =4    SSI_StatusTypeDef TxState;       /*!< 发送状态 */
  225      =4    SSI_StatusTypeDef RxState;       /*!< 接收状态 */ 
  226      =4  } SSI_HandleInfoDef;
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 58  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 58  
 
  227      =4  /**
  228      =4   * @}
@@ -3710,7 +3710,7 @@ line level    source
  357      =4  void SSI_UART1_Init(uint32_t UART1Fsys,
  358      =4                      uint32_t BaudRate, UART1_Mode_TypeDef Mode,
  359      =4                      UART1_RX_TypeDef RxMode);
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 59  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 59  
 
  360      =4  void SSI_UART1_SendData8(uint8_t Data);
  361      =4  uint8_t SSI_UART1_ReceiveData8(void);
@@ -3774,7 +3774,7 @@ line level    source
   23      =4   ******************************************************************************
   24      =4   */
   25      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 60  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 60  
 
   26      =4  /* Define to prevent recursive inclusion -------------------------------------*/
   27      =4  #ifndef _sc92f_CHKSUM_H_
@@ -3838,7 +3838,7 @@ line level    source
   52      =4  #endif
   53      =4  /**
   54      =4   * @}
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 61  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 61  
 
   55      =4   */
   56      =4  /* End of CHKSUM Functions.     */
@@ -3902,7 +3902,7 @@ line level    source
   15      =5   *2.The software which is for guidance only aims at providing customers with 
   16      =5   *coding information regarding their products in order for them to save time. 
   17      =5   *As a result, SinOne shall not be held liable for any direct, indirect or 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 62  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 62  
 
   18      =5   *consequential damages with respect to any claims arising from the content of 
   19      =5   *such software and/or the use made by customers of the coding information 
@@ -3966,7 +3966,7 @@ line level    source
   46      =4   
   47      =4    /** @brief IAP_MemType_TypeDef IAP Operation Section
   48      =4   * @{
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 63  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 63  
 
   49      =4   */
   50      =4  #if defined(SC92F646x) || defined(SC92F546x) || defined(SC92F542x)
@@ -4030,7 +4030,7 @@ line level    source
  155      =4                       IAP_MemType_TypeDef IAP_MemType);
  156      =4  uint8_t IAP_ReadByteArray(uint32_t Address, uint8_t* ByteArray, uint8_t ArraySize, IAP_MemType_TypeDef IAP
              -_MemType);
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 64  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 64  
 
  157      =4  
  158      =4  #if defined(SC92F848x) || defined(SC92F748x) || defined(SC92F859x) || defined(SC92F759x) || defined (SC92L
@@ -4094,7 +4094,7 @@ line level    source
  251      =4  /**
  252      =4   * @}
  253      =4   */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 65  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 65  
 
  254      =4   
   45      =3  #include "sc92f_wdt.h"
@@ -4158,7 +4158,7 @@ line level    source
   27      =5  #ifndef _sc92f_H
  315      =5  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   32      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 66  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 66  
 
   33      =4  /** @addtogroup sc92f_StdPeriph_Driver
   34      =4   * @{
@@ -4222,7 +4222,7 @@ line level    source
   92      =4   * @}
   93      =4   */
   94      =4  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 67  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 67  
 
   46      =3  #include "sc92f_pwr.h"
    1      =4  /**
@@ -4286,7 +4286,7 @@ line level    source
  315      =5  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   32      =4  #include <intrins.h>
    1      =5  /*--------------------------------------------------------------------------
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 68  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 68  
 
    2      =5  INTRINS.H
    3      =5  
@@ -4350,7 +4350,7 @@ line level    source
   17      =4   *As a result, SinOne shall not be held liable for any direct, indirect or 
   18      =4   *consequential damages with respect to any claims arising from the content of 
   19      =4   *such software and/or the use made by customers of the coding information 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 69  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 69  
 
   20      =4   *contained herein in connection with their products.
   21      =4   *
@@ -4414,7 +4414,7 @@ line level    source
   50      =4                  || defined(SC92F859x) || defined(SC92F759x) || defined (SC92L853x) || defined (SC92L753x) || defined (SC
              -92R511x) ||defined(SC92F6x1x) \
   51      =4                  || defined(SC92F5x1x) || defined(SC92R436)|| defined(SC92R438) || defined(SC92R439) || defined(SC92R422A
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 70  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 70  
 
              -) || defined(SC92F652x)
  629      =4  /**
@@ -4478,7 +4478,7 @@ line level    source
  709      =4  /* End of functions --------------------------------------------------*/
  710      =4  #endif
  711      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 71  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 71  
 
  712      =4  #endif
  713      =4  /**
@@ -4542,7 +4542,7 @@ line level    source
   19      =5   *such software and/or the use made by customers of the coding information 
   20      =5   *contained herein in connection with their products.
   21      =5   *
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 72  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 72  
 
   22      =5   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =5   ******************************************************************************
@@ -4606,7 +4606,7 @@ line level    source
   21      =4   *
   22      =4   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =4   ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 73  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 73  
 
   24      =4   */
   25      =4  
@@ -4670,7 +4670,7 @@ line level    source
              -)|| defined(SC92R439)|| defined (SC92Fx41xB)\
   50      =4          || defined (SC92R445)||defined(SC92F652x)
   51      =4  /** @defgroup MDU_EXAxReg_Typedef MDU EXAx
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 74  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 74  
 
   52      =4   * @{
   53      =4   */
@@ -4734,7 +4734,7 @@ line level    source
    6      =4   * @date    2025-07-24
    7      =4   * @brief   Header file of CRC module.
    8      =4   ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 75  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 75  
 
    9      =4   * @attention
   10      =4   *
@@ -4798,7 +4798,7 @@ line level    source
   40      =4   
   41      =4  /** @addtogroup CRC_Exported_Functions CRC Exported Functions
   42      =4   * @{
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 76  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 76  
 
   43      =4   */
   44      =4  #if defined(SC92F6x1x) || defined(SC92F5x1x) || defined(SC92R436) || defined(SC92R438)||defined(SC92L840x)
@@ -4862,7 +4862,7 @@ line level    source
    9      =5   * @attention
   10      =5   *
   11      =5   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 77  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 77  
 
   12      =5   *intended for use with SinOne products. No other uses are authorized. This 
   13      =5   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
@@ -4926,7 +4926,7 @@ line level    source
   86      =4    USCI0_SPI_BAUDRATEPRESCALER_32 = (uint8_t)0x05, /*!< SPI时钟速率为系统时钟除以32 */
   87      =4    USCI0_SPI_BAUDRATEPRESCALER_64 = (uint8_t)0x06, /*!< SPI时钟速率为系统时钟除以64 */
   88      =4    USCI0_SPI_BAUDRATEPRESCALER_128 = (uint8_t)0x07 /*!< SPI时钟速率为系统时钟除以128 */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 78  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 78  
 
   89      =4  } USCI0_SPI_BaudRatePrescaler_TypeDef;
   90      =4  /**
@@ -4990,7 +4990,7 @@ line level    source
  148      =4    USCI0_SPI_DATA16 = (uint8_t)0x02 /*!< SPI 16位传输模式 */
  149      =4  } USCI0_TransmissionMode_TypeDef;
  150      =4  /**
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 79  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 79  
 
  151      =4   * @}
  152      =4   */
@@ -5054,7 +5054,7 @@ line level    source
  210      =4  {
  211      =4    USCI0_UART_RX_ENABLE = 0X10, /*!< UART允许接收 */
  212      =4    USCI0_UART_RX_DISABLE = 0X00 /*!< UART禁止接收 */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 80  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 80  
 
  213      =4  } USCI0_UART_RX_TypeDef;
  214      =4  /**
@@ -5118,7 +5118,7 @@ line level    source
  270      =4  void USCI0_TWI_MasterCommunicationRate(USCI0_TWI_MasterCommunicationRate_TypeDef
  271      =4                                             TWI_MasterCommunicationRate);
  272      =4  void USCI0_TWI_Start(void);
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 81  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 81  
 
  273      =4  void USCI0_TWI_MasterModeStop(void);
  274      =4  void USCI0_TWI_SendAddr(uint8_t Addr, USCI0_TWI_RWType RW);
@@ -5182,7 +5182,7 @@ line level    source
   27      =4  #ifndef _sc92f_USCI1_H_
   28      =4  #define _sc92f_USCI1_H_
   29      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 82  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 82  
 
   30      =4  /* Includes ------------------------------------------------------------------*/
   31      =4  #include "sc92f.h"
@@ -5246,7 +5246,7 @@ line level    source
   61      =4  
   62      =4  /** @brief USCI1_SPI_FirstBit_TypeDef SPI FirstBit
   63      =4   * @{
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 83  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 83  
 
   64      =4   */
   65      =4  typedef enum
@@ -5310,7 +5310,7 @@ line level    source
  123      =4  } USCI1_SPI_ClockPhase_TypeDef;
  124      =4  /**
  125      =4   * @}
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 84  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 84  
 
  126      =4   */
  127      =4  
@@ -5374,7 +5374,7 @@ line level    source
  185      =4    USCI1_TWI_MasterReceivedaUACK = 0x04,
  186      =4  } USCI1_TWIState_TypeDef;
  187      =4  /**
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 85  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 85  
 
  188      =4   * @}
  189      =4   */
@@ -5438,7 +5438,7 @@ line level    source
  247      =4   * @}
  248      =4   */
  249      =4  /* End of enumerations -----------------------------------------------------*/
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 86  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 86  
 
  250      =4  
  251      =4  /** @addtogroup USCI1_Functions USCI1 Functions
@@ -5502,7 +5502,7 @@ line level    source
    4      =4   * @author  SOC AE Team
    5      =4   * @version V1.2.1
    6      =4   * @date    2025-07-24
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 87  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 87  
 
    7      =4   * @brief   Header file of UASI2 module.
    8      =4   ******************************************************************************
@@ -5566,7 +5566,7 @@ line level    source
   38      =4   * @{
   39      =4   */
   40      =4  ///仅模式0可用，串行端口在系统时钟的1/12下运行
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 88  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 88  
 
   41      =4  #define USCI2_UART_BaudRate_FsysDIV12 0X00 
   42      =4  ///仅模式0可用，串行端口在系统时钟的1/4下运行
@@ -5630,7 +5630,7 @@ line level    source
  100      =4  } USCI2_SPI_Mode_TypeDef;
  101      =4  /**
  102      =4   * @}
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 89  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 89  
 
  103      =4   */
  104      =4  
@@ -5694,7 +5694,7 @@ line level    source
  162      =4    USCI2_TWI_64 = (uint8_t)0x04,   /*!< TWI通信速率 Fhrc/64  */
  163      =4    USCI2_TWI_32 = (uint8_t)0x05,   /*!< TWI通信速率 Fhrc/32  */
  164      =4    USCI2_TWI_16 = (uint8_t)0x06,   /*!< TWI通信速率 Fhrc/16  */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 90  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 90  
 
  165      =4  } USCI2_TWI_MasterCommunicationRate_TypeDef;
  166      =4  /**
@@ -5758,7 +5758,7 @@ line level    source
  224      =4    USCI2_SPI_FLAG_TXE = (uint8_t)0x08,  /*!< SPI发送缓存器空标志TXE */
  225      =4    USCI2_TWI_FLAG_TWIF = (uint8_t)0x40, /*!< TWI中断标志位TWIF */
  226      =4    USCI2_TWI_FLAG_GCA = (uint8_t)0x10,  /*!< TWI通用地址响应标志位GCA */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 91  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 91  
 
  227      =4    USCI2_TWI_FLAG_MSTR = (uint8_t)0x20, /*!< TWI主从标志位MSTR */
  228      =4    USCI2_TWI_FLAG_TXRXnE = (uint8_t)0x80,
@@ -5822,7 +5822,7 @@ line level    source
  284      =4  void USCI2_UART_SendData8(uint8_t Data);
  285      =4  uint8_t USCI2_UART_ReceiveData8(void);
  286      =4  void USCI2_UART_SendData9(uint16_t Data);
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 92  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 92  
 
  287      =4  uint16_t USCI2_UART_ReceiveData9(void);
  288      =4  void USCI2_ITConfig(FunctionalState NewState, PriorityStatus Priority);
@@ -5886,7 +5886,7 @@ line level    source
   10      =5   *
   11      =5   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
   12      =5   *intended for use with SinOne products. No other uses are authorized. This 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 93  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 93  
 
   13      =5   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
   14      =5   *all applicable laws, including copyright laws. 
@@ -5950,7 +5950,7 @@ line level    source
   84      =4   * @}
   85      =4   */
   86      =4  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 94  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 94  
 
   87      =4  /**
   88      =4   * @}
@@ -6014,7 +6014,7 @@ line level    source
    9      =4   * @attention
   10      =4   *
   11      =4   *1.This software is supplied by SinOne Microelectronics Co.,Ltd. and is only 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 95  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 95  
 
   12      =4   *intended for use with SinOne products. No other uses are authorized. This 
   13      =4   *software is owned by SinOne Microelectronics Co.,Ltd. and is protected under 
@@ -6078,7 +6078,7 @@ line level    source
   11      =5  
   12      =5  #ifndef EOF
   13      =5   #define EOF -1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 96  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 96  
 
   14      =5  #endif
   15      =5  
@@ -6142,7 +6142,7 @@ line level    source
   69      =3  /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
   18      =2  #endif
   19      =2  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 97  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 97  
 
   20      =2  void SC_Init(void);
   21      =2  
@@ -6206,7 +6206,7 @@ line level    source
   15      =2  #define __WM_EXTERN_FNC_H__
   16      =2  
   17      =2  #include <sc92f_int.h>
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 98  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 98  
 
    1      =3  /**
    2      =3   ******************************************************************************
@@ -6270,7 +6270,7 @@ line level    source
   12      =2    ******************************************************************************
   13      =2    */
   14      =2  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 99  
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 99  
 
   15      =2  #ifndef __WM_ENUM_H__
   16      =2  #define __WM_ENUM_H__
@@ -6334,7 +6334,7 @@ line level    source
   17      =2  /* Include statements */
   18      =2  
   19      =2  /* Defines */
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 100 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 100 
 
   20      =2  
   21      =2  /* Functions */
@@ -6398,7 +6398,7 @@ line level    source
   22      =2  // LED mode macros
   23      =2  #define SET_LED_INC_MODE()  do { wm_IncFanSpeedLED=1; wm_HalfFanSpeedLED=0; wm_DecFanSpeedLED=0; } while(0
              -)
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 101 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 101 
 
   24      =2  #define SET_LED_DEC_MODE()  do { wm_DecFanSpeedLED=1; wm_IncFanSpeedLED=0; wm_HalfFanSpeedLED=0; } while(0
              -)
@@ -6462,7 +6462,7 @@ line level    source
    9      =2    * All rights reserved.
   10      =2    *
   11      =2    ******************************************************************************
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 102 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 102 
 
   12      =2    */
   13      =2    
@@ -6526,7 +6526,7 @@ line level    source
   53      =2  
   54      =2  // extern
   55      =2  extern void wm_TransmitSerialCMD();
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 103 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 103 
 
   56      =2  
   57      =2  
@@ -6590,7 +6590,7 @@ line level    source
   53          
   54          void wm_StateFlow(void)
   55          {
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 104 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 104 
 
   56   1          if(wm_IsTkScanRoundFinished && (wm_TkDelayCnt >= WM_TK_DEBOUNCE_MS))
   57   1          {
@@ -6654,7 +6654,7 @@ line level    source
  115   4                  wm_TkDelayCnt = 0;
  116   4                              wm_IsTk2Released = FALSE;                       
  117   4                              
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 105 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 105 
 
  118   4                  if(wm_IsUiDisableRequested)
  119   4                      wm_IsUiDisableRequested = FALSE;            
@@ -6718,7 +6718,7 @@ line level    source
  177   4                  
  178   4                  wm_KitchenLightState = !wm_KitchenLightState;
  179   4                  
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 106 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 106 
 
  180   4                  if(wm_KitchenLightState) {
  181   5                      wm_TurnOffAllTKLed();
@@ -6782,7 +6782,7 @@ line level    source
  238   3                {
  239   4                  wm_TkDelayCnt = 0;
  240   4                  wm_IsTk6Released = FALSE;
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 107 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 107 
 
  241   4                  
  242   4                  if(!wm_UiBoardState) {
@@ -6842,7 +6842,7 @@ line level    source
  296   1          
  297   1          #ifdef DEBUG_UART
  302   1      }
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 108 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 108 
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -6906,7 +6906,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0000 200003      E     JB      wm_IsTkScanRoundFinished,$ + 6H
 0003 020000      R     LJMP    wm_HandleSleepState
 0006 C3                CLR     C
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 109 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 109 
 
 0007 900000      E     MOV     DPTR,#wm_TkDelayCnt+01H
 000A E0                MOVX    A,@DPTR
@@ -6970,7 +6970,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0059 020000      R     LJMP    wm_HandleSleepState
                                            ; SOURCE LINE # 69
 005C D200        E     SETB    wm_IsTk4Released
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 110 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 110 
 
                                            ; SOURCE LINE # 70
                                            ; SOURCE LINE # 71
@@ -7034,7 +7034,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00A0 8019              SJMP    ?C0026
 00A2         ?C0021:
                                            ; SOURCE LINE # 96
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 111 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 111 
 
 00A2 D200        E     SETB    wm_FanState
                                            ; SOURCE LINE # 97
@@ -7098,7 +7098,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00E5 F0                MOVX    @DPTR,A
                                            ; SOURCE LINE # 123
 00E6 8006              SJMP    ?C0031
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 112 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 112 
 
 00E8         ?C0030:
                                            ; SOURCE LINE # 124
@@ -7162,7 +7162,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 147
 0127 E4                CLR     A
 0128 900000      E     MOV     DPTR,#wm_TkDelayCnt
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 113 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 113 
 
 012B F0                MOVX    @DPTR,A
 012C A3                INC     DPTR
@@ -7226,7 +7226,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 016C FF                MOV     R7,A
 016D EE                MOV     A,R6
 016E 5410              ANL     A,#010H
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 114 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 114 
 
 0170 FE                MOV     R6,A
 0171 E4                CLR     A
@@ -7290,7 +7290,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 01AF FF                MOV     R7,A
 01B0 E4                CLR     A
 01B1 FE                MOV     R6,A
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 115 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 115 
 
 01B2 FD                MOV     R5,A
 01B3 FC                MOV     R4,A
@@ -7354,7 +7354,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 222
 0200 120000      E     LCALL   wm_TurnOffAllTKLed
                                            ; SOURCE LINE # 225
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 116 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 116 
 
 0203 C200        E     CLR     wm_IsHtDisFanEnReq
                                            ; SOURCE LINE # 226
@@ -7418,7 +7418,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0242 FF                MOV     R7,A
 0243 120000      E     LCALL   _wm_DisplayDigit
                                            ; SOURCE LINE # 246
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 117 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 117 
 
 0246 D200        E     SETB    wm_UiBoardState
                                            ; SOURCE LINE # 247
@@ -7482,7 +7482,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 275
 0285 C200        E     CLR     wm_IsHeaterEnRequested
                                            ; SOURCE LINE # 276
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 118 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 118 
 
 0287 D200        E     SETB    wm_IsHkReleased
                                            ; SOURCE LINE # 277
@@ -7514,7 +7514,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 02A2 020000      E     LJMP    wm_TransmitSerialCMD
              ; FUNCTION wm_StateFlow (END)
 
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 119 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 119 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7577,7 +7577,7 @@ USCI2_SPI_FLAG_TXE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI2_UART_Mode_TypeDef. . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 USCI2_SPI_BAUDRATEPRESCALER_128. . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_TWI_16 . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 120 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 120 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7640,7 +7640,7 @@ LPD_VTRIP_2_85V. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI1_SPI_ClockPhase_TypeDef . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 SSI_StatusTypeDef. . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 GPIO_PIN_6 . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 121 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 121 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7703,7 +7703,7 @@ PWMDTY1. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D6H  1
 P0PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009BH  1
 IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
 wm_UiDisTimeOutCnt . . . . . . . . . .  EXTERN   XDATA  U_LONG   -----  4
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 122 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 122 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7766,7 +7766,7 @@ USCI1_SPI_CLOCKPHASE_2EDGE . . . . . .  E_CONST  -----  U_CHAR   -----  1
 DDIC_PIN_02. . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 SPI_TXE_ENINT. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 IPT2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 123 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 123 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7829,7 +7829,7 @@ EXBH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00EEH  1
 UART0_STATE_READY. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 PWM4 . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 BTM_TIMEBASE_500MS . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 124 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 124 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7892,7 +7892,7 @@ P21. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A1H  1
 P12. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0092H  1
 P03. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0083H  1
 wm_IsUiDisableRequested. . . . . . . .  EXTERN   DATA   BIT      -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 125 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 125 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -7955,7 +7955,7 @@ SSCON1 . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   009EH  1
 USCI1_TWI_256. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_SamplesNum_FourTimes . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_CHANNEL_5. . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 126 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 126 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8018,7 +8018,7 @@ USCI1_SPI_FIRSTBIT_LSB . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 USCI0_SPI_FIRSTBIT_MSB . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 PWM_DutyChange_Dowm. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM3_WorkMode_TypeDef. . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 127 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 127 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8081,7 +8081,7 @@ MDU_Temp_Union . . . . . . . . . . . .  TYPEDEF  -----  UNION    -----  4
   MDU_EXAxReg. . . . . . . . . . . . .  MEMBER   -----  STRUCT   0000H  4
   MDU_Temp . . . . . . . . . . . . . .  MEMBER   -----  U_LONG   0000H  4
 INT1x_Typedef. . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 128 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 128 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8144,7 +8144,7 @@ XTIPLL_UNDER_12M . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM4_COUNTDIRECTION_DOWN_UP. . . . . .  E_CONST  -----  U_CHAR   -----  1
 SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
 WDTCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CFH  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 129 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 129 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8207,7 +8207,7 @@ ADC_EAIN_2 . . . . . . . . . . . . . .  E_CONST  -----  INT      -----  2
 ADC_Cycle_36Cycle. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ADC_PRESSEL_FHRC_D32 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 int8_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 130 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 130 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8270,7 +8270,7 @@ EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
 INT1F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BCH  1
 P2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A1H  1
 wm_StateFlow . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 131 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 131 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8333,7 +8333,7 @@ INT0R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BBH  1
 LPD_Vtrip_TypeDef. . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 USCI0_UART_Mode_10B. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 INT1R. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BDH  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 132 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 132 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8396,7 +8396,7 @@ TIM1_WORK_MODE1. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 TIM0_WORK_MODE2. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 IO10 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
 IO01 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0081H  1
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 133 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 133 
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -8460,7 +8460,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
-C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/16/2026 17:36:10 PAGE 134 
+C51 COMPILER V9.60.7.0   WM_STATE_FLOW                                                     05/18/2026 10:24:56 PAGE 134 
 
    XDATA CONST SIZE =   ----    ----
    FAR CONST SIZE   =   ----    ----

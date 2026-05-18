@@ -40,7 +40,7 @@ void wm_DelayMS(uint16_t Delay)
 
 
 
-void TIM1_Interrupt(void)//1ms???????????????????D??
+void TIM1_Interrupt(void)//1ms tick
 {
   wm_DelayCnt++;
   wm_IrDelayCnt++;
@@ -54,8 +54,6 @@ void TIM1_Interrupt(void)//1ms???????????????????D??
   wm_LedDelayCnt++;
   wm_IrGeastureTimeOutCnt++;
   wm_WdtTimOutCnt++;
-
-
 }
 
 void wm_HandleTimeActivity(void)
@@ -131,7 +129,7 @@ void wm_HandleTimeActivity(void)
 
 		}
 	}
-	if(wm_WdtTimOutCnt > 50) //Feed WDT on Every 50 ms
+	if(wm_WdtTimOutCnt > 50)
 	{
 		WDT_SetReload();
 		wm_WdtTimOutCnt = 0;

@@ -79,7 +79,7 @@ void wm_ProcessIrGesture(void)
         {
         	wm_UiBoardState = TRUE;
         	wm_ReservedBitState = FALSE;
-        	wm_TurnOnAllTKLed(300);
+        	wm_TurnOnAllTKLed(100);
         	SET_LED_INC_MODE();
         	wm_KitchenLightState = TRUE;
         	wm_TurnOffAllTKLed();
@@ -134,18 +134,18 @@ void wm_ProcessIrGesture(void)
 
 void wm_SleepFromGesture(uint16_t ms)
 {
-  	wm_TurnOnAllTKLed(0);
-	
+	wm_TurnOnAllTKLed(0);
+
 	TURN_OFF_LED(LED_6);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_OFF_LED(LED_5);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_OFF_LED(LED_4);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_OFF_LED(LED_3);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_OFF_LED(LED_2);
-	wm_DelayMS(ms);
+	wm_DelayMS(ms); WDT_SetReload();
 	TURN_OFF_LED(LED_1);
 	wm_DelayMS(ms);
 }

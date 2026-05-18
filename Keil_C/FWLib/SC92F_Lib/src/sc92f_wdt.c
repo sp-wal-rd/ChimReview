@@ -61,11 +61,11 @@ void WDT_DeInit(void)
 }
 
 /**************************************************
-*º¯ÊýÃû³Æ:void WDT_Init(WDT_OverflowTime_TypeDef OverflowTime)
-*º¯Êý¹¦ÄÜ:WDT³õÊ¼»¯ÅäÖÃº¯Êý
-*Èë¿Ú²ÎÊý:
-WDT_OverflowTime_TypeDef:OverflowTime:WDTÒç³öÊ±¼äÑ¡Ôñ
-*³ö¿Ú²ÎÊý:void
+*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:void WDT_Init(WDT_OverflowTime_TypeDef OverflowTime)
+*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:WDTï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½
+*ï¿½ï¿½Ú²ï¿½ï¿½ï¿½:
+WDT_OverflowTime_TypeDef:OverflowTime:WDTï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ñ¡ï¿½ï¿½
+*ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½:void
 **************************************************/
  /**
  * @brief  WDT initialization configuration function
@@ -96,6 +96,8 @@ void WDT_Init(WDT_OverflowTime_TypeDef
  */
 void WDT_Cmd(FunctionalState NewState)
 {
+  bit ea_saved = EA;
+  EA = 0;           /* OPINXâ†’OPREG is two instructions; mask interrupts so no ISR can change OPINX between them */
   OPINX = 0XC1;
 
   if(NewState == DISABLE)
@@ -106,6 +108,7 @@ void WDT_Cmd(FunctionalState NewState)
   {
     OPREG |= 0X80;
   }
+  EA = ea_saved;
 }
 /**
  * @}

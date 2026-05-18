@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 1   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SC92F_PWM
@@ -62,7 +62,7 @@ line level    source
   22      =1   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =1   ******************************************************************************
   24      =1   */
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 2   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 2   
 
   25      =1   
   26      =1  /* Define to prevent recursive inclusion -------------------------------------*/
@@ -126,7 +126,7 @@ line level    source
    3      =3  
    4      =3  C Header file for SC92F836XB microcontroller.
    5      =3  Copyright (c) 2018 Shenzhen SinOne Microelectronics CO., Ltd.
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 3   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 3   
 
    6      =3  All rights reserved.
    7      =3  深圳市赛元微电子股份有限公司
@@ -190,7 +190,7 @@ line level    source
   65      =3  ///P0口模式控制寄存器           
   66      =3  sfr         P0CON       = 0x9A;         
   67      =3  ///P0口数据寄存器
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 4   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 4   
 
   68      =3  sfr     P0          = 0x80;             
   69      =3  ///IOH设置寄存器
@@ -254,7 +254,7 @@ line level    source
  127      =3  sfr     PWMDTY1 = 0xD6;         
  128      =3  ///PWM2设置寄存器
  129      =3  sfr     PWMDTY2 = 0xD7;         
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 5   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 5   
 
  130      =3  ///PWM占空比设置寄存器B
  131      =3  sfr     PWMDTYB = 0xDC;         
@@ -318,7 +318,7 @@ line level    source
  189      =3  sfr     SSCON1  = 0X9E;   
  190      =3  ///SPI控制寄存器2
  191      =3  sfr     SSCON2  = 0X95;   
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 6   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 6   
 
  192      =3  ///SPI数据寄存器
  193      =3  sfr     SSDAT   = 0X9F;   
@@ -382,7 +382,7 @@ line level    source
  250      =3  
  251      =3  /*IP*/
  252      =3  ///ADC中断优先控制位      0:设定 ADC的中断优先权是 “低”               1:设定 ADC的中断优先权是 “高”
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 7   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 7   
 
  253      =3  sbit    IPADC   = IP^6;   
  254      =3  ///Timer2中断优先控制位   0:设定 Timer2的中断优先权是 “低”            1:设定Timer2的中断优先权是 “高”
@@ -446,7 +446,7 @@ line level    source
  312      =3  sbit    P05     = P0^5;
  313      =3  sbit    P04     = P0^4;
  314      =3  sbit    P03     = P0^3;
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 8   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 8   
 
  315      =3  sbit    P02     = P0^2;
  316      =3  sbit    P01     = P0^1;
@@ -510,7 +510,7 @@ line level    source
   83      =2  #ifdef SC92F8003
   86      =2  
   87      =2  #ifdef SC92F8003B
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 9   
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 9   
 
   90      =2  
   91      =2  #ifdef SC92F740x
@@ -574,7 +574,7 @@ line level    source
  207      =2  #ifdef SC92F83Hx
  210      =2  
  211      =2  #ifdef SC92F646x
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 10  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 10  
 
  214      =2  
  215      =2  #ifdef SC92F546x
@@ -638,7 +638,7 @@ line level    source
  295      =2  
  296      =2  typedef enum
  297      =2  {
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 11  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 11  
 
  298      =2          Status_ERROR = 0x00U,
  299      =2          Status_OK = 0x01U,
@@ -702,7 +702,7 @@ line level    source
  168      =1  } PWM_OutputPin_TypeDef;
  169      =1  /**
  170      =1   * @}
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 12  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 12  
 
  171      =1   */
  172      =1  
@@ -766,7 +766,7 @@ line level    source
 1030      =1   */
 1031      =1  
 1032      =1  /* PWM Base functions ********************************************************/
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 13  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 13  
 
 1033      =1  void PWM_DeInit(void);
 1034      =1  void PWM_Init(PWM_PresSel_TypeDef PWM_PresSel,
@@ -830,7 +830,7 @@ line level    source
 1147      =1  /**
 1148      =1   * @}
 1149      =1   */
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 14  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 14  
 
 1150      =1  
 1151      =1  /**
@@ -894,7 +894,7 @@ line level    source
 1634           *          - PWM0_PRESSEL_FOSC_D1:PWM0预分频为Fosc/1
 1635           *          - PWM0_PRESSEL_FOSC_D2:PWM0预分频为Fosc/2
 1636           *          - PWM0_PRESSEL_FOSC_D4:PWM0预分频为Fosc/4
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 15  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 15  
 
 1637           *          - PWM0_PRESSEL_FOSC_D8:PWM0预分频为Fosc/8
 1638           * @param  PWM_Period:PWM周期配置
@@ -958,7 +958,7 @@ line level    source
 1696           *          - PWM41:PWM输出通道选择:PWM41
 1697           *          - PWM42:PWM输出通道选择:PWM42
 1698           *          - PWM43:PWM输出通道选择:PWM43
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 16  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 16  
 
 1699           *          - PWM50:PWM输出通道选择:PWM50
 1700           *          - PWM51:PWM输出通道选择:PWM51
@@ -1022,7 +1022,7 @@ line level    source
 1758           *          - PWM43:PWM输出通道选择:PWM43
 1759           *          - PWM50:PWM输出通道选择:PWM50
 1760           *          - PWM51:PWM输出通道选择:PWM51
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 17  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 17  
 
 1761           *          - PWM52:PWM输出通道选择:PWM52
 1762           *          - PWM53:PWM输出通道选择:PWM53
@@ -1086,7 +1086,7 @@ line level    source
 1820   2                              {
 1821   3                                      PWMDTYA = PWMDTYA & 0xcf | ((tmpRegValue % 4) << 4);
 1822   3              PWMDTY2 = (uint8_t)(tmpRegValue >> 2);
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 18  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 18  
 
 1823   3                                Result = SUCCESS;                             
 1824   3                              }
@@ -1150,7 +1150,7 @@ line level    source
 1882   1      
 1883   1        switch(PWM_ComplementaryOutputPin)    //设置占空比
 1884   1        {
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 19  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 19  
 
 1885   2          case PWM0PWM3:
 1886   2            PWMDTYA = PWMDTYA & 0xfc | (PWM_DutyCycle % 4);
@@ -1214,7 +1214,7 @@ line level    source
 1943   2      
 1944   2          default:
 1945   2            break;
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 20  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 20  
 
 1946   2        }
 1947   1      
@@ -1278,7 +1278,7 @@ line level    source
 2005          {
 2006   1        if(NewState != DISABLE)
 2007   1        {
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 21  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 21  
 
 2008   2          PWMCON |= 0X80;
 2009   2        }
@@ -1342,7 +1342,7 @@ line level    source
 2067   1        PWMCON &= 0XBF;
 2068   1      }
 2069          #endif
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 22  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 22  
 
 2070          
 2071          #if defined (SC92F7003) || defined (SC92F8003) || defined(SC92F8003B) || defined (SC92F740x)
@@ -1358,7 +1358,7 @@ line level    source
 3885          
 3886          #if defined (SC92L853x) || defined (SC92L753x) || defined (SC92L840x)
 4537          /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 23  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 23  
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -1422,7 +1422,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 1646
 0013 ED                MOV     A,R5
 0014 5403              ANL     A,#03H
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 24  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 24  
 
 0016 C4                SWAP    A
 0017 33                RLC     A
@@ -1486,7 +1486,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0001 B40104            CJNE    A,#01H,?C0006
                                            ; SOURCE LINE # 1683
                                            ; SOURCE LINE # 1684
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 25  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 25  
 
 0004 EF                MOV     A,R7
 0005 42D1              ORL     PWMCFG,A
@@ -1550,7 +1550,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0036 13                RRC     A
 0037 D8F9              DJNZ    R0,?C0068
 0039 F5D5              MOV     PWMDTY0,A
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 26  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 26  
 
                                            ; SOURCE LINE # 1716
 003B 22                RET     
@@ -1614,7 +1614,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 007A FF                MOV     R7,A
 007B E5DC              MOV     A,PWMDTYB
 007D 54FC              ANL     A,#0FCH
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 27  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 27  
 
 007F 4F                ORL     A,R7
 0080 F5DC              MOV     PWMDTYB,A
@@ -1678,7 +1678,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00C2 CE                XCH     A,R6
 00C3 C3                CLR     C
 00C4 13                RRC     A
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 28  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 28  
 
 00C5 CE                XCH     A,R6
 00C6 13                RRC     A
@@ -1742,7 +1742,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0038 F0                MOVX    @DPTR,A
                                            ; SOURCE LINE # 1777
 ;---- Variable 'DutychangeValue' assigned to Register 'R4/R5' ----
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 29  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 29  
 
 0039 E4                CLR     A
 003A FD                MOV     R5,A
@@ -1806,7 +1806,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0083 241F              ADD     A,#01FH
 0085 6003              JZ      $ + 5H
 0087 020000      R     LJMP    ?C0020
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 30  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 30  
 
                                            ; SOURCE LINE # 1790
                                            ; SOURCE LINE # 1791
@@ -1870,7 +1870,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00D5 CE                XCH     A,R6
 00D6 C3                CLR     C
 00D7 13                RRC     A
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 31  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 31  
 
 00D8 CE                XCH     A,R6
 00D9 13                RRC     A
@@ -1934,7 +1934,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0123 5403              ANL     A,#03H
 0125 25E0              ADD     A,ACC
 0127 25E0              ADD     A,ACC
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 32  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 32  
 
 0129 FF                MOV     R7,A
 012A E5D4              MOV     A,PWMDTYA
@@ -1998,7 +1998,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0176 A3                INC     DPTR
 0177 E0                MOVX    A,@DPTR
 0178 FB                MOV     R3,A
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 33  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 33  
 
 0179 D3                SETB    C
 017A 9F                SUBB    A,R7
@@ -2062,7 +2062,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 1831
 01C5 900000      R     MOV     DPTR,#tmpPolarity
 01C8 E0                MOVX    A,@DPTR
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 34  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 34  
 
 01C9 FE                MOV     R6,A
 01CA A3                INC     DPTR
@@ -2126,7 +2126,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0210 900000      R     MOV     DPTR,#tmpRegValue
 0213 E5F0              MOV     A,B
 0215 F0                MOVX    @DPTR,A
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 35  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 35  
 
 0216 A3                INC     DPTR
 0217 EF                MOV     A,R7
@@ -2190,7 +2190,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 025D C4                SWAP    A
 025E 540F              ANL     A,#0FH
 0260 FB                MOV     R3,A
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 36  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 36  
 
 0261 AFDF              MOV     R7,PWMDTY5
 0263 EF                MOV     A,R7
@@ -2254,7 +2254,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 02AE D8F9              DJNZ    R0,?C0080
 02B0 F5DF              MOV     PWMDTY5,A
                                            ; SOURCE LINE # 1859
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 37  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 37  
 
 02B2 7901              MOV     R1,#01H
                                            ; SOURCE LINE # 1860
@@ -2318,7 +2318,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 002D 25E0              ADD     A,ACC
 002F FF                MOV     R7,A
 0030 E5D4              MOV     A,PWMDTYA
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 38  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 38  
 
 0032 54F3              ANL     A,#0F3H
 0034 4F                ORL     A,R7
@@ -2382,7 +2382,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 1928
 0007 AFD4              MOV     R7,PWMDTYA
 0009 7E00              MOV     R6,#00H
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 39  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 39  
 
 000B EF                MOV     A,R7
 000C 54C0              ANL     A,#0C0H
@@ -2446,7 +2446,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0054 FD                MOV     R5,A
 0055 AFD6              MOV     R7,PWMDTY1
 0057 EF                MOV     A,R7
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 40  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 40  
 
 0058 75F004            MOV     B,#04H
 005B A4                MUL     AB
@@ -2510,7 +2510,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 1955
 009A         ?C0047:
                                            ; SOURCE LINE # 1958
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 41  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 41  
 
 009A 900000      R     MOV     DPTR,#tmpPolarity
 009D E0                MOVX    A,@DPTR
@@ -2574,7 +2574,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 00DD FE                MOV     R6,A
 00DE A3                INC     DPTR
 00DF E0                MOVX    A,@DPTR
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 42  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 42  
 
 00E0 FF                MOV     R7,A
 00E1 5403              ANL     A,#03H
@@ -2638,7 +2638,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0120 22                RET     
              ; FUNCTION _PWM_ComplementaryMode_DutyChange (END)
 
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 43  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 43  
 
              ; FUNCTION _PWM_DeadTimeConfig (BEGIN)
                                            ; SOURCE LINE # 1990
@@ -2702,7 +2702,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 000C 7004              JNZ     ?C0061
                                            ; SOURCE LINE # 2039
                                            ; SOURCE LINE # 2040
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 44  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 44  
 
 000E 53B9FD            ANL     IP1,#0FDH
                                            ; SOURCE LINE # 2041
@@ -2737,7 +2737,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0003 22                RET     
              ; FUNCTION PWM_ClearFlag (END)
 
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 45  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 45  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2800,7 +2800,7 @@ RI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0098H  1
 PWMDTY3. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DDH  1
 P2PH . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A2H  1
 SUCCESS. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 46  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 46  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2863,7 +2863,7 @@ bool . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 TCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CCH  1
 P00. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0080H  1
 P10. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 47  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 47  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2926,7 +2926,7 @@ _PWM_OutputStateConfig . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
   PWM_OutputState. . . . . . . . . . .  * REG *  DATA   U_CHAR   0005H  1
 TF0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008DH  1
 ET1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ABH  1
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 48  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 48  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2989,7 +2989,7 @@ P1CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0091H  1
 EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
 INT1F. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BCH  1
 P2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A1H  1
-C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/16/2026 17:36:12 PAGE 49  
+C51 COMPILER V9.60.7.0   SC92F_PWM                                                         05/18/2026 10:24:59 PAGE 49  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====

@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 1   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SC92F_TIMER2
@@ -62,7 +62,7 @@ line level    source
   22      =1   *  COPYRIGHT 2025 SinOne Microelectronics
   23      =1   ******************************************************************************
   24      =1   */
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 2   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 2   
 
   25      =1   
   26      =1  /* Define to prevent recursive inclusion -------------------------------------*/
@@ -126,7 +126,7 @@ line level    source
    3      =3  
    4      =3  C Header file for SC92F836XB microcontroller.
    5      =3  Copyright (c) 2018 Shenzhen SinOne Microelectronics CO., Ltd.
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 3   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 3   
 
    6      =3  All rights reserved.
    7      =3  …Ó€⁄ –»¸‘™Œ¢µÁ◊”π…∑›”–œﬁπ´Àæ
@@ -190,7 +190,7 @@ line level    source
   65      =3  ///P0ø⁄ƒ£ Ωøÿ÷∆ºƒ¥Ê∆˜           
   66      =3  sfr         P0CON       = 0x9A;         
   67      =3  ///P0ø⁄ ˝æ›ºƒ¥Ê∆˜
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 4   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 4   
 
   68      =3  sfr     P0          = 0x80;             
   69      =3  ///IOH…Ë÷√ºƒ¥Ê∆˜
@@ -254,7 +254,7 @@ line level    source
  127      =3  sfr     PWMDTY1 = 0xD6;         
  128      =3  ///PWM2…Ë÷√ºƒ¥Ê∆˜
  129      =3  sfr     PWMDTY2 = 0xD7;         
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 5   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 5   
 
  130      =3  ///PWM’ºø’±»…Ë÷√ºƒ¥Ê∆˜B
  131      =3  sfr     PWMDTYB = 0xDC;         
@@ -318,7 +318,7 @@ line level    source
  189      =3  sfr     SSCON1  = 0X9E;   
  190      =3  ///SPIøÿ÷∆ºƒ¥Ê∆˜2
  191      =3  sfr     SSCON2  = 0X95;   
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 6   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 6   
 
  192      =3  ///SPI ˝æ›ºƒ¥Ê∆˜
  193      =3  sfr     SSDAT   = 0X9F;   
@@ -382,7 +382,7 @@ line level    source
  250      =3  
  251      =3  /*IP*/
  252      =3  ///ADC÷–∂œ”≈œ»øÿ÷∆Œª      0:…Ë∂® ADCµƒ÷–∂œ”≈œ»»® « °∞µÕ°±               1:…Ë∂® ADCµƒ÷–∂œ”≈œ»»® « °∞∏ﬂ°±
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 7   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 7   
 
  253      =3  sbit    IPADC   = IP^6;   
  254      =3  ///Timer2÷–∂œ”≈œ»øÿ÷∆Œª   0:…Ë∂® Timer2µƒ÷–∂œ”≈œ»»® « °∞µÕ°±            1:…Ë∂®Timer2µƒ÷–∂œ”≈œ»»® « °∞∏ﬂ°±
@@ -446,7 +446,7 @@ line level    source
  312      =3  sbit    P05     = P0^5;
  313      =3  sbit    P04     = P0^4;
  314      =3  sbit    P03     = P0^3;
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 8   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 8   
 
  315      =3  sbit    P02     = P0^2;
  316      =3  sbit    P01     = P0^1;
@@ -510,7 +510,7 @@ line level    source
   83      =2  #ifdef SC92F8003
   86      =2  
   87      =2  #ifdef SC92F8003B
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 9   
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 9   
 
   90      =2  
   91      =2  #ifdef SC92F740x
@@ -574,7 +574,7 @@ line level    source
  207      =2  #ifdef SC92F83Hx
  210      =2  
  211      =2  #ifdef SC92F646x
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 10  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 10  
 
  214      =2  
  215      =2  #ifdef SC92F546x
@@ -638,7 +638,7 @@ line level    source
  295      =2  
  296      =2  typedef enum
  297      =2  {
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 11  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 11  
 
  298      =2          Status_ERROR = 0x00U,
  299      =2          Status_OK = 0x01U,
@@ -702,7 +702,7 @@ line level    source
  116      =1   * @{
  117      =1   */
  118      =1  typedef enum
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 12  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 12  
 
  119      =1  {
  120      =1    TIM2_COUNTDIRECTION_UP                 = ((uint8_t)0x00),  /*!< œÚ…œº∆ ˝ƒ£ Ω */
@@ -766,7 +766,7 @@ line level    source
  191      =1  void TIM2_ClearFlag(TIM2_Flag_TypeDef TIM2_Flag);
  192      =1  /**
  193      =1   * @}
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 13  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 13  
 
  194      =1   */
  195      =1  /* End of exported functions --------------------------------------------------*/
@@ -830,7 +830,7 @@ line level    source
   74   1        IPT2 = 0;
   75   1      }
   76          
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 14  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 14  
 
   77          /**
   78           * @brief  TIMER2Âü∫Êú¨ËÆæÁΩÆÈÖçÁΩÆÂáΩÊï∞
@@ -894,7 +894,7 @@ line level    source
  145          
  146          
  147          /**
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 15  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 15  
 
  148           * @brief  TIMER2Â∑•‰ΩúÊ®°Âºè1ÈÖçÁΩÆÂáΩÊï∞
  149           * @param  TIM2_SetCounter[in]:ÈÖçÁΩÆËÆ°Êï∞ÂàùÂÄº
@@ -958,7 +958,7 @@ line level    source
  205          
  206          /**
  207           * @brief  TIMER2Â∑•‰ΩúÊ®°Âºè3ÈÖçÁΩÆÂáΩÊï∞
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 16  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 16  
 
  208           * @param  TIM2_SetCounter[in]:ÈÖçÁΩÆËÆ°Êï∞ÂàùÂÄº
  209           * @retval None
@@ -1022,7 +1022,7 @@ line level    source
  267                               ##### Interrupts and flags management functions #####
  268           ===============================================================================
  269          @endverbatim
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 17  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 17  
 
  270            * @{
  271            */
@@ -1086,7 +1086,7 @@ line level    source
  329          /**
  330           * @brief  Ê∏ÖÈô§TIMER2‰∏≠Êñ≠Ê†áÂøóÁä∂ÊÄÅ
  331           * @param  None
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 18  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 18  
 
  332           * @retval None
  333           */
@@ -1113,7 +1113,7 @@ line level    source
  682           * @}
  683           */
  684          /******************* (C) COPYRIGHT 2025 SinOne Microelectronics *****END OF FILE****/
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 19  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 19  
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -1177,7 +1177,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0015 8007              SJMP    ?C0006
 0017         ?C0005:
                                            ; SOURCE LINE # 123
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 20  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 20  
 
 0017 EB                MOV     A,R3
 0018 B41003            CJNE    A,#010H,?C0006
@@ -1241,7 +1241,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 000B 24FD              ADD     A,#0FDH
 000D 601A              JZ      ?C0016
 000F 2402              ADD     A,#02H
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 21  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 21  
 
 0011 7021              JNZ     ?C0018
                                            ; SOURCE LINE # 173
@@ -1305,7 +1305,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
              ; FUNCTION _TIM2_WorkMode3Config (BEGIN)
                                            ; SOURCE LINE # 211
 ;---- Variable 'TIM2_SetCounter' assigned to Register 'R6/R7' ----
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 22  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 22  
 
                                            ; SOURCE LINE # 212
                                            ; SOURCE LINE # 213
@@ -1369,7 +1369,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 ;---- Variable 'Priority' assigned to Register 'R5' ----
 ;---- Variable 'NewState' assigned to Register 'R7' ----
                                            ; SOURCE LINE # 285
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 23  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 23  
 
                                            ; SOURCE LINE # 286
 0000 EF                MOV     A,R7
@@ -1433,7 +1433,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 000E 22                RET     
              ; FUNCTION _TIM2_GetFlagStatus (END)
 
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 24  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 24  
 
              ; FUNCTION _TIM2_ClearFlag (BEGIN)
                                            ; SOURCE LINE # 334
@@ -1447,7 +1447,7 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
 0004 22                RET     
              ; FUNCTION _TIM2_ClearFlag (END)
 
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 25  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 25  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1510,7 +1510,7 @@ SUCCESS. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 CY . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D7H  1
 PWMDTY4. . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00DEH  1
 TI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0099H  1
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 26  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 26  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1573,7 +1573,7 @@ TIM2_COUNTDIRECTION_UP . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 P50. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D8H  1
 P23. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A3H  1
 P14. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0094H  1
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 27  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 27  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1636,7 +1636,7 @@ TB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009BH  1
 TH2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CDH  1
 TIM2_COUNTDIRECTION_DOWN_UP. . . . . .  E_CONST  -----  U_CHAR   -----  1
 uint8_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 28  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 28  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -1699,7 +1699,7 @@ _TIM2_ITConfig . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
 F0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D5H  1
 DISABLE. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 F1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D1H  1
-C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/16/2026 17:36:13 PAGE 29  
+C51 COMPILER V9.60.7.0   SC92F_TIMER2                                                      05/18/2026 10:24:59 PAGE 29  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
